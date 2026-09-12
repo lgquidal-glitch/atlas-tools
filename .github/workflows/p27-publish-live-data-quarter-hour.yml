@@ -1,0 +1,73 @@
+name: P27 publish live data quarter hour
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/15 * * * *'
+  push:
+    branches: [p27-consolidation-candidate]
+    paths:
+      - '.github/workflows/p27-publish-live-data-quarter-hour.yml'
+permissions:
+  contents: write
+concurrency:
+  group: p27-live-data-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: p27-consolidation-candidate
+          path: candidate
+      - uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: pages
+          fetch-depth: 0
+      - name: Validate current candidate feeds
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json,glob,os
+          t=json.load(open('candidate/web/data/tennis-feed.json'))
+          assert t.get('events') and t.get('generatedAt')
+          fs=glob.glob('candidate/web/data/football-*.json')
+          required={'football-eng.1.json','football-fra.1.json','football-esp.1.json','football-ger.1.json','football-ita.1.json','football-ksa.1.json'}
+          got={os.path.basename(x) for x in fs}
+          assert required <= got
+          for p in fs:
+              d=json.load(open(p))
+              if 'leagueCode' in d: assert isinstance(d.get('events',[]),list)
+          print('candidate data validation PASS', t['generatedAt'], len(fs))
+          PY
+      - name: Publish only candidate data subpath
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p pages/p27-candidate/data
+          cp candidate/web/data/tennis-feed.json pages/p27-candidate/data/tennis-feed.json
+          cp candidate/web/data/football-*.json pages/p27-candidate/data/
+          cd pages
+          git config user.name 'atlas-data-automation'
+          git config user.email 'atlas-data-automation@users.noreply.github.com'
+          git add p27-candidate/data/tennis-feed.json p27-candidate/data/football-*.json
+          if git diff --cached --quiet; then
+            echo 'Public candidate data already current'
+          else
+            git commit -m 'Publish fresh P27 candidate live data'
+            for i in 1 2 3; do
+              git pull --rebase origin gh-pages && git push origin HEAD:gh-pages && exit 0
+              sleep $((i*3))
+            done
+            exit 1
+          fi
+      - name: Verify active root untouched and public candidate data exists
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f pages/p27-candidate/data/tennis-feed.json
+          test -f pages/p27-candidate/data/football-fra.1.json
+          echo 'P27 candidate data publication PASS'
