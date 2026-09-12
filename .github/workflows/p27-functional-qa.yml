@@ -1,0 +1,106 @@
+name: P27 functional interaction QA
+on:
+  push:
+    branches: [p27-consolidation-candidate]
+    paths:
+      - '.github/workflows/p27-functional-qa.yml'
+      - 'web/**'
+      - 'p27/**'
+permissions:
+  contents: write
+jobs:
+  functional:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: p27-consolidation-candidate
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: |
+          npm init -y >/dev/null 2>&1
+          npm install playwright@latest >/dev/null 2>&1
+          npx playwright install --with-deps chromium webkit >/dev/null 2>&1
+      - name: Run functional interaction checks
+        shell: bash
+        run: |
+          cat > p27-functional.mjs <<'EOF'
+          import {chromium,webkit} from 'playwright';
+          import fs from 'fs';
+          const base='https://lgquidal-glitch.github.io/atlas-tools/p27-candidate';
+          const tools=[
+            ['tennis-command','tennis-command/index.html','tennis'],['tennis-deep','tennis-deep/index.html','tennis'],['tennis-fusion','tennis-fusion/index.html','tennis'],
+            ['football-command','football-command/index.html','football'],['football-deep','football-deep/index.html','football'],['football-fusion','football-fusion/index.html','football'],['calibration','calibration/index.html','calibration']
+          ];
+          const profiles=[['android',390,844],['iphone',393,852],['ipad',820,1180],['desktop',1366,768]];
+          const browsers=[['chromium',chromium],['webkit',webkit]];
+          const norm=s=>(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+          const results=[];
+          fs.mkdirSync('p27/functional-screenshots',{recursive:true});
+          for(const [bn,bt] of browsers){
+            const browser=await bt.launch({headless:true});
+            for(const [tool,path,kind] of tools){
+              for(const [profile,w,h] of profiles){
+                const ctx=await browser.newContext({viewport:{width:w,height:h}}); const page=await ctx.newPage();
+                const errors=[]; page.on('pageerror',e=>errors.push(String(e)));
+                let status=0, body='', overflow=false, sourceFeed=false, liveOk=false, controls={}, pass=false;
+                try{
+                  const resp=await page.goto(`${base}/${path}`,{waitUntil:'domcontentloaded',timeout:90000}); status=resp?.status()||0;
+                  await page.waitForTimeout(3500); body=await page.locator('body').innerText(); const txt=norm(body);
+                  overflow=await page.evaluate(()=>document.documentElement.scrollWidth>document.documentElement.clientWidth+2);
+                  ({sourceFeed,liveOk}=await page.evaluate(kind=>{
+                    const feed=kind==='tennis'?window.ATLAS_TENNIS_SOURCE_FEED:kind==='football'?window.ATLAS_FOOT_SOURCE_FEED:window.ATLAS_CALIBRATION_SOURCE_FEED;
+                    const live=kind==='tennis'?window.ATLAS_TENNIS_LIVE_STATUS:kind==='football'?window.ATLAS_FOOT_LIVE_STATUS:window.ATLAS_CALIBRATION_LIVE_STATUS;
+                    return {sourceFeed:!!feed,liveOk:!!live&&live.ok!==false};
+                  },kind));
+                  const buttons=await page.locator('button').allTextContents(); const inputs=await page.locator('input').count(); const selects=await page.locator('select').count();
+                  const btxt=norm(buttons.join(' | '));
+                  controls={buttons:buttons.length,inputs,selects};
+                  if(kind==='tennis'){
+                    controls.preselect=/preselectionner|preselection/.test(btxt||txt);
+                    controls.analyse=/analyser|analyse/.test(btxt||txt);
+                    controls.training=/entrainement/.test(txt);
+                    controls.all=/\ball\b/.test(txt);
+                    controls.staking=/staking|mise/.test(txt);
+                  } else if(kind==='football'){
+                    controls.preselect=/preselectionner|preselection/.test(btxt||txt);
+                    controls.analyse=/analyser|analyse/.test(btxt||txt);
+                    controls.training=/entrainement/.test(txt);
+                    controls.all=/\ball\b/.test(txt);
+                    controls.staking=/staking|mise/.test(txt);
+                  } else {
+                    controls.status=/a venir|en cours|termine/.test(txt);
+                  }
+                  const required=kind==='calibration'?[controls.status]:[controls.preselect,controls.analyse,controls.training,controls.all,controls.staking];
+                  pass=status===200&&!overflow&&errors.length===0&&sourceFeed&&liveOk&&required.every(Boolean);
+                  await page.screenshot({path:`p27/functional-screenshots/${tool}__${profile}__${bn}.png`,fullPage:true});
+                }catch(e){errors.push(String(e));}
+                results.push({browser:bn,tool,profile,status,overflow,errors,sourceFeed,liveOk,controls,pass});
+                await ctx.close();
+              }
+            }
+            await browser.close();
+          }
+          const summary={total:results.length,pass:results.filter(x=>x.pass).length,fail:results.filter(x=>!x.pass).length,results};
+          fs.mkdirSync('p27/candidate-qa',{recursive:true}); fs.writeFileSync('p27/candidate-qa/functional.json',JSON.stringify(summary,null,2));
+          console.log(JSON.stringify({total:summary.total,pass:summary.pass,fail:summary.fail},null,2));
+          if(summary.fail)process.exitCode=1;
+          EOF
+          node p27-functional.mjs
+      - name: Commit functional report
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add p27/candidate-qa/functional.json 2>/dev/null || true
+          git diff --cached --quiet || git commit -m 'Record P27 functional QA'
+          git push origin HEAD:p27-consolidation-candidate
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: p27-functional-qa
+          path: |
+            p27/candidate-qa/functional.json
+            p27/functional-screenshots/
