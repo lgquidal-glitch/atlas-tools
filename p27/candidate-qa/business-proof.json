@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T13:52:55.075Z",
+  "generatedAt": "2026-09-12T15:37:30.465Z",
   "base": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate",
   "targets": [
     {
@@ -13,45 +13,20 @@
           "proof": {
             "live": {
               "ok": true,
-              "updatedAt": "2026-09-12T13:52:56.209Z",
+              "updatedAt": "2026-09-12T15:37:31.519Z",
               "source": "ATLAS same-origin broker · corroborated feed",
-              "competitions": 182
+              "competitions": 187
             },
             "feedPresent": true,
-            "renderedCount": 182,
-            "six": [
-              {
-                "text": "Sabalenka A. — Rybakina E.\nUS Open · 22:00 · US Open\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Dencheva R. — Burillo Escorihuela I.\nAntalya 5 WTA · 12:10 · Antalya 5 WTA\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Ibragimova A. — Herrero Linana A.\nAntalya 5 WTA · 14:55 · Antalya 5 WTA\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Blinkova A. — Jacquemot E.\nBarranquilla · 01:00 · Barranquilla\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Liu C. — Blinkova A.\nBarranquilla · 23:30 · Barranquilla\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Noha Akugue N. — Maristany Zuleta De Re\nMontreux WTA · 14:30 · Montreux WTA\nEn cours",
-                "visible": true
-              }
-            ],
+            "fixtureCount": 0,
+            "six": [],
             "bodyHasPre": true,
             "bodyHasLive": true,
             "bodyHasPost": true,
             "overflow": false
           },
-          "sixVisible": true,
-          "pass": true
+          "fixturePass": false,
+          "pass": false
         },
         {
           "profile": "ipad-webkit",
@@ -60,245 +35,20 @@
           "proof": {
             "live": {
               "ok": true,
-              "updatedAt": "2026-09-12T13:53:05.949Z",
+              "updatedAt": "2026-09-12T15:37:45.142Z",
               "source": "ATLAS same-origin broker · corroborated feed",
-              "competitions": 182
+              "competitions": 187
             },
             "feedPresent": true,
-            "renderedCount": 182,
-            "six": [
-              {
-                "text": "Sabalenka A. — Rybakina E.\nUS Open · 22:00 · US Open\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Dencheva R. — Burillo Escorihuela I.\nAntalya 5 WTA · 12:10 · Antalya 5 WTA\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Ibragimova A. — Herrero Linana A.\nAntalya 5 WTA · 14:55 · Antalya 5 WTA\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Blinkova A. — Jacquemot E.\nBarranquilla · 01:00 · Barranquilla\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Liu C. — Blinkova A.\nBarranquilla · 23:30 · Barranquilla\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Noha Akugue N. — Maristany Zuleta De Re\nMontreux WTA · 14:30 · Montreux WTA\nEn cours",
-                "visible": true
-              }
-            ],
+            "fixtureCount": 0,
+            "six": [],
             "bodyHasPre": true,
-            "bodyHasLive": true,
+            "bodyHasLive": false,
             "bodyHasPost": true,
             "overflow": false
           },
-          "sixVisible": true,
-          "pass": true
-        }
-      ]
-    },
-    {
-      "kind": "tennis",
-      "tool": "tennis-deep",
-      "profiles": [
-        {
-          "profile": "android",
-          "status": 200,
-          "errors": [],
-          "proof": {
-            "live": {
-              "ok": true,
-              "updatedAt": "2026-09-12T13:53:15.038Z",
-              "source": "ATLAS same-origin broker · corroborated feed",
-              "competitions": 182
-            },
-            "feedPresent": true,
-            "renderedCount": 182,
-            "six": [
-              {
-                "text": "Sabalenka A. — Rybakina E.\nUS Open · 22:00 · US Open\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Dencheva R. — Burillo Escorihuela I.\nAntalya 5 WTA · 12:10 · Antalya 5 WTA\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Ibragimova A. — Herrero Linana A.\nAntalya 5 WTA · 14:55 · Antalya 5 WTA\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Blinkova A. — Jacquemot E.\nBarranquilla · 01:00 · Barranquilla\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Liu C. — Blinkova A.\nBarranquilla · 23:30 · Barranquilla\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Noha Akugue N. — Maristany Zuleta De Re\nMontreux WTA · 14:30 · Montreux WTA\nEn cours",
-                "visible": true
-              }
-            ],
-            "bodyHasPre": true,
-            "bodyHasLive": true,
-            "bodyHasPost": true,
-            "overflow": false
-          },
-          "sixVisible": true,
-          "pass": true
-        },
-        {
-          "profile": "ipad-webkit",
-          "status": 200,
-          "errors": [],
-          "proof": {
-            "live": {
-              "ok": true,
-              "updatedAt": "2026-09-12T13:53:24.013Z",
-              "source": "ATLAS same-origin broker · corroborated feed",
-              "competitions": 182
-            },
-            "feedPresent": true,
-            "renderedCount": 182,
-            "six": [
-              {
-                "text": "Sabalenka A. — Rybakina E.\nUS Open · 22:00 · US Open\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Dencheva R. — Burillo Escorihuela I.\nAntalya 5 WTA · 12:10 · Antalya 5 WTA\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Ibragimova A. — Herrero Linana A.\nAntalya 5 WTA · 14:55 · Antalya 5 WTA\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Blinkova A. — Jacquemot E.\nBarranquilla · 01:00 · Barranquilla\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Liu C. — Blinkova A.\nBarranquilla · 23:30 · Barranquilla\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Noha Akugue N. — Maristany Zuleta De Re\nMontreux WTA · 14:30 · Montreux WTA\nEn cours",
-                "visible": true
-              }
-            ],
-            "bodyHasPre": true,
-            "bodyHasLive": true,
-            "bodyHasPost": true,
-            "overflow": false
-          },
-          "sixVisible": true,
-          "pass": true
-        }
-      ]
-    },
-    {
-      "kind": "tennis",
-      "tool": "tennis-fusion",
-      "profiles": [
-        {
-          "profile": "android",
-          "status": 200,
-          "errors": [],
-          "proof": {
-            "live": {
-              "ok": true,
-              "updatedAt": "2026-09-12T13:53:33.210Z",
-              "source": "ATLAS same-origin broker · corroborated feed",
-              "competitions": 182
-            },
-            "feedPresent": true,
-            "renderedCount": 182,
-            "six": [
-              {
-                "text": "Sabalenka A. — Rybakina E.\nUS Open · 22:00 · US Open\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Dencheva R. — Burillo Escorihuela I.\nAntalya 5 WTA · 12:10 · Antalya 5 WTA\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Ibragimova A. — Herrero Linana A.\nAntalya 5 WTA · 14:55 · Antalya 5 WTA\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Blinkova A. — Jacquemot E.\nBarranquilla · 01:00 · Barranquilla\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Liu C. — Blinkova A.\nBarranquilla · 23:30 · Barranquilla\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Noha Akugue N. — Maristany Zuleta De Re\nMontreux WTA · 14:30 · Montreux WTA\nEn cours",
-                "visible": true
-              }
-            ],
-            "bodyHasPre": true,
-            "bodyHasLive": true,
-            "bodyHasPost": true,
-            "overflow": false
-          },
-          "sixVisible": true,
-          "pass": true
-        },
-        {
-          "profile": "ipad-webkit",
-          "status": 200,
-          "errors": [],
-          "proof": {
-            "live": {
-              "ok": true,
-              "updatedAt": "2026-09-12T13:53:42.264Z",
-              "source": "ATLAS same-origin broker · corroborated feed",
-              "competitions": 182
-            },
-            "feedPresent": true,
-            "renderedCount": 182,
-            "six": [
-              {
-                "text": "Sabalenka A. — Rybakina E.\nUS Open · 22:00 · US Open\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Dencheva R. — Burillo Escorihuela I.\nAntalya 5 WTA · 12:10 · Antalya 5 WTA\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Ibragimova A. — Herrero Linana A.\nAntalya 5 WTA · 14:55 · Antalya 5 WTA\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Blinkova A. — Jacquemot E.\nBarranquilla · 01:00 · Barranquilla\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Liu C. — Blinkova A.\nBarranquilla · 23:30 · Barranquilla\nEn cours",
-                "visible": true
-              },
-              {
-                "text": "Noha Akugue N. — Maristany Zuleta De Re\nMontreux WTA · 14:30 · Montreux WTA\nEn cours",
-                "visible": true
-              }
-            ],
-            "bodyHasPre": true,
-            "bodyHasLive": true,
-            "bodyHasPost": true,
-            "overflow": false
-          },
-          "sixVisible": true,
-          "pass": true
+          "fixturePass": false,
+          "pass": false
         }
       ]
     },
@@ -313,7 +63,7 @@
           "proof": {
             "live": {
               "ok": true,
-              "updatedAt": "2026-09-12T13:53:51.373Z",
+              "updatedAt": "2026-09-12T15:37:54.022Z",
               "providersOk": 6,
               "totalEvents": 28,
               "matchesUpdated": 28,
@@ -328,40 +78,15 @@
               }
             },
             "feedPresent": true,
-            "renderedCount": 28,
-            "six": [
-              {
-                "text": "Racing Santander — Alaves\nLaLiga · Half Time\nEn cours 1-1",
-                "visible": true
-              },
-              {
-                "text": "Ath Bilbao — Elche\nLaLiga · SCHEDULED\nÀ venir",
-                "visible": true
-              },
-              {
-                "text": "Osasuna — Espanyol\nLaLiga · SCHEDULED\nÀ venir",
-                "visible": true
-              },
-              {
-                "text": "Real Madrid — Rayo Vallecano\nLaLiga · SCHEDULED\nÀ venir",
-                "visible": true
-              },
-              {
-                "text": "Aston Villa — Nottingham\nPremier League · SCHEDULED\nÀ venir",
-                "visible": true
-              },
-              {
-                "text": "Bournemouth — Brentford\nPremier League · SCHEDULED\nÀ venir",
-                "visible": true
-              }
-            ],
+            "fixtureCount": 0,
+            "six": [],
             "bodyHasPre": true,
             "bodyHasLive": true,
             "bodyHasPost": true,
             "overflow": false
           },
-          "sixVisible": true,
-          "pass": true
+          "fixturePass": false,
+          "pass": false
         },
         {
           "profile": "ipad-webkit",
@@ -370,7 +95,7 @@
           "proof": {
             "live": {
               "ok": true,
-              "updatedAt": "2026-09-12T13:53:59.845Z",
+              "updatedAt": "2026-09-12T15:38:02.252Z",
               "providersOk": 6,
               "totalEvents": 28,
               "matchesUpdated": 28,
@@ -385,283 +110,18 @@
               }
             },
             "feedPresent": true,
-            "renderedCount": 28,
-            "six": [
-              {
-                "text": "Racing Santander — Alaves\nLaLiga · Half Time\nEn cours 1-1",
-                "visible": true
-              },
-              {
-                "text": "Ath Bilbao — Elche\nLaLiga · SCHEDULED\nÀ venir",
-                "visible": true
-              },
-              {
-                "text": "Osasuna — Espanyol\nLaLiga · SCHEDULED\nÀ venir",
-                "visible": true
-              },
-              {
-                "text": "Real Madrid — Rayo Vallecano\nLaLiga · SCHEDULED\nÀ venir",
-                "visible": true
-              },
-              {
-                "text": "Augsburg — Bayer Leverkusen\nBundesliga · SCHEDULED\nÀ venir",
-                "visible": true
-              },
-              {
-                "text": "Dortmund — Paderborn\nBundesliga · SCHEDULED\nÀ venir",
-                "visible": true
-              }
-            ],
+            "fixtureCount": 0,
+            "six": [],
             "bodyHasPre": true,
             "bodyHasLive": true,
             "bodyHasPost": false,
             "overflow": false
           },
-          "sixVisible": true,
-          "pass": true
-        }
-      ]
-    },
-    {
-      "kind": "football",
-      "tool": "football-deep",
-      "profiles": [
-        {
-          "profile": "android",
-          "status": 200,
-          "errors": [],
-          "proof": {
-            "live": {
-              "ok": true,
-              "updatedAt": "2026-09-12T13:54:08.068Z",
-              "providersOk": 6,
-              "totalEvents": 28,
-              "matchesUpdated": 28,
-              "rendered": 28,
-              "source": "ATLAS same-origin broker · direct render",
-              "rules": {
-                "threeStatesOnly": true,
-                "scoreAloneNeverFinal": true,
-                "liveScoreVisible": true,
-                "finalLock": true,
-                "trainingOption": true
-              }
-            },
-            "feedPresent": true,
-            "renderedCount": 28,
-            "six": [
-              {
-                "text": "Racing Santander — Alaves\nLaLiga · Half Time\nEn cours 1-1",
-                "visible": true
-              },
-              {
-                "text": "Atalanta — Cagliari\nSerie A · SCHEDULED\nÀ venir",
-                "visible": true
-              },
-              {
-                "text": "Genoa — Frosinone\nSerie A · SCHEDULED\nÀ venir",
-                "visible": true
-              },
-              {
-                "text": "Lazio — AC Milan\nSerie A · SCHEDULED\nÀ venir",
-                "visible": true
-              },
-              {
-                "text": "Al Taawon — Al Hilal\nSaudi Pro League · SCHEDULED\nÀ venir",
-                "visible": true
-              },
-              {
-                "text": "Al Khaleej — Al Nassr\nSaudi Pro League · SCHEDULED\nÀ venir",
-                "visible": true
-              }
-            ],
-            "bodyHasPre": true,
-            "bodyHasLive": true,
-            "bodyHasPost": true,
-            "overflow": false
-          },
-          "sixVisible": true,
-          "pass": true
-        },
-        {
-          "profile": "ipad-webkit",
-          "status": 200,
-          "errors": [],
-          "proof": {
-            "live": {
-              "ok": true,
-              "updatedAt": "2026-09-12T13:54:16.937Z",
-              "providersOk": 6,
-              "totalEvents": 28,
-              "matchesUpdated": 28,
-              "rendered": 28,
-              "source": "ATLAS same-origin broker · direct render",
-              "rules": {
-                "threeStatesOnly": true,
-                "scoreAloneNeverFinal": true,
-                "liveScoreVisible": true,
-                "finalLock": true,
-                "trainingOption": true
-              }
-            },
-            "feedPresent": true,
-            "renderedCount": 28,
-            "six": [
-              {
-                "text": "Racing Santander — Alaves\nLaLiga · Half Time\nEn cours 1-1",
-                "visible": true
-              },
-              {
-                "text": "Atalanta — Cagliari\nSerie A · SCHEDULED\nÀ venir",
-                "visible": true
-              },
-              {
-                "text": "Genoa — Frosinone\nSerie A · SCHEDULED\nÀ venir",
-                "visible": true
-              },
-              {
-                "text": "Lazio — AC Milan\nSerie A · SCHEDULED\nÀ venir",
-                "visible": true
-              },
-              {
-                "text": "Auxerre — Nice\nLigue 1 · SCHEDULED\nÀ venir",
-                "visible": true
-              },
-              {
-                "text": "Le Havre — Angers\nLigue 1 · SCHEDULED\nÀ venir",
-                "visible": true
-              }
-            ],
-            "bodyHasPre": true,
-            "bodyHasLive": true,
-            "bodyHasPost": false,
-            "overflow": false
-          },
-          "sixVisible": true,
-          "pass": true
-        }
-      ]
-    },
-    {
-      "kind": "football",
-      "tool": "football-fusion",
-      "profiles": [
-        {
-          "profile": "android",
-          "status": 200,
-          "errors": [],
-          "proof": {
-            "live": {
-              "ok": true,
-              "updatedAt": "2026-09-12T13:54:25.420Z",
-              "providersOk": 6,
-              "totalEvents": 28,
-              "matchesUpdated": 28,
-              "rendered": 28,
-              "source": "ATLAS same-origin broker · direct render",
-              "rules": {
-                "threeStatesOnly": true,
-                "scoreAloneNeverFinal": true,
-                "liveScoreVisible": true,
-                "finalLock": true,
-                "trainingOption": true
-              }
-            },
-            "feedPresent": true,
-            "renderedCount": 28,
-            "six": [
-              {
-                "text": "Racing Santander — Alaves\nLaLiga · Half Time\nEn cours 1-1",
-                "visible": true
-              },
-              {
-                "text": "Atalanta — Cagliari\nSerie A · SCHEDULED\nÀ venir",
-                "visible": true
-              },
-              {
-                "text": "Genoa — Frosinone\nSerie A · SCHEDULED\nÀ venir",
-                "visible": true
-              },
-              {
-                "text": "Lazio — AC Milan\nSerie A · SCHEDULED\nÀ venir",
-                "visible": true
-              },
-              {
-                "text": "Auxerre — Nice\nLigue 1 · SCHEDULED\nÀ venir",
-                "visible": true
-              },
-              {
-                "text": "Le Havre — Angers\nLigue 1 · SCHEDULED\nÀ venir",
-                "visible": true
-              }
-            ],
-            "bodyHasPre": true,
-            "bodyHasLive": true,
-            "bodyHasPost": true,
-            "overflow": false
-          },
-          "sixVisible": true,
-          "pass": true
-        },
-        {
-          "profile": "ipad-webkit",
-          "status": 200,
-          "errors": [],
-          "proof": {
-            "live": {
-              "ok": true,
-              "updatedAt": "2026-09-12T13:54:34.149Z",
-              "providersOk": 6,
-              "totalEvents": 28,
-              "matchesUpdated": 28,
-              "rendered": 28,
-              "source": "ATLAS same-origin broker · direct render",
-              "rules": {
-                "threeStatesOnly": true,
-                "scoreAloneNeverFinal": true,
-                "liveScoreVisible": true,
-                "finalLock": true,
-                "trainingOption": true
-              }
-            },
-            "feedPresent": true,
-            "renderedCount": 28,
-            "six": [
-              {
-                "text": "Racing Santander — Alaves\nLaLiga · Half Time\nEn cours 1-1",
-                "visible": true
-              },
-              {
-                "text": "Aston Villa — Nottingham\nPremier League · SCHEDULED\nÀ venir",
-                "visible": true
-              },
-              {
-                "text": "Bournemouth — Brentford\nPremier League · SCHEDULED\nÀ venir",
-                "visible": true
-              },
-              {
-                "text": "Chelsea — Hull\nPremier League · SCHEDULED\nÀ venir",
-                "visible": true
-              },
-              {
-                "text": "Crystal Palace — Ipswich\nPremier League · SCHEDULED\nÀ venir",
-                "visible": true
-              },
-              {
-                "text": "Liverpool — Fulham\nPremier League · SCHEDULED\nÀ venir",
-                "visible": true
-              }
-            ],
-            "bodyHasPre": true,
-            "bodyHasLive": true,
-            "bodyHasPost": false,
-            "overflow": false
-          },
-          "sixVisible": true,
-          "pass": true
+          "fixturePass": false,
+          "pass": false
         }
       ]
     }
   ],
-  "pass": true
+  "pass": false
 }
