@@ -1,0 +1,47 @@
+name: P27 tennis source snippets
+on:
+  push:
+    branches: [p27-consolidation-candidate]
+    paths:
+      - '.github/workflows/p27-tennis-source-snippets.yml'
+permissions:
+  contents: write
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: p27-consolidation-candidate
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --quiet requests beautifulsoup4
+      - name: Capture TennisExplorer match row markup
+        run: |
+          python - <<'PY'
+          import requests,datetime,json,pathlib
+          from bs4 import BeautifulSoup
+          d=datetime.datetime.now(datetime.timezone.utc).date()
+          u=f'https://www.tennisexplorer.com/matches/?type=all&year={d.year}&month={d.month:02d}&day={d.day:02d}'
+          r=requests.get(u,headers={'User-Agent':'Mozilla/5.0 ATLAS-P27'},timeout=30); r.raise_for_status()
+          s=BeautifulSoup(r.text,'html.parser'); out=[]
+          rows=s.find_all('tr')
+          for idx,tr in enumerate(rows):
+              rid=tr.get('id') or ''
+              text=' | '.join(tr.stripped_strings)
+              if rid and not rid.endswith('b') and idx+1<len(rows) and (rows[idx+1].get('id') or '')==rid+'b':
+                  tr2=rows[idx+1]
+                  out.append({'id':rid,'class1':tr.get('class',[]),'class2':tr2.get('class',[]),'text1':text,'text2':' | '.join(tr2.stripped_strings),'html1':str(tr)[:2500],'html2':str(tr2)[:2500]})
+          pathlib.Path('p27/candidate-qa/tennis-source-snippets.json').write_text(json.dumps({'date':str(d),'url':u,'rows':out[:40]},ensure_ascii=False,indent=2),encoding='utf-8')
+          print('captured',len(out))
+          PY
+      - name: Commit diagnostics
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add p27/candidate-qa/tennis-source-snippets.json
+          git diff --cached --quiet || git commit -m 'Record Tennis source markup diagnostic'
+          git pull --rebase origin p27-consolidation-candidate
+          git push origin HEAD:p27-consolidation-candidate
