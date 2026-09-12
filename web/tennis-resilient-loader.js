@@ -1,3 +1,4 @@
+/* P27 Tennis direct-render lifecycle loader · corrected result/score classification */
 (function(){
  const stateOf=c=>{const s=(c?.status?.type?.state||'pre').toLowerCase();return s==='post'?'post':s==='in'?'in':'pre'};
  const label=s=>s==='post'?'Terminé':s==='in'?'En cours':'À venir';
