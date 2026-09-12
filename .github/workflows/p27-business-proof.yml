@@ -1,0 +1,89 @@
+name: P27 published business proof
+on:
+  push:
+    branches: [p27-consolidation-candidate]
+    paths:
+      - '.github/workflows/p27-business-proof.yml'
+permissions:
+  contents: write
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: p27-consolidation-candidate
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: |
+          npm init -y >/dev/null 2>&1
+          npm install playwright@latest >/dev/null 2>&1
+          npx playwright install --with-deps chromium webkit >/dev/null 2>&1
+      - name: Test published candidate with 6 Tennis and 6 Football fixtures
+        shell: bash
+        run: |
+          cat > p27-business-proof.mjs <<'EOF'
+          import {chromium,webkit} from 'playwright';
+          import fs from 'fs';
+          const base='https://lgquidal-glitch.github.io/atlas-tools/p27-candidate';
+          const targets=[
+            {kind:'tennis',tool:'tennis-command',path:'tennis-command/index.html'},
+            {kind:'football',tool:'football-command',path:'football-command/index.html'}
+          ];
+          const profiles=[['android',chromium,390,844],['ipad-webkit',webkit,820,1180]];
+          fs.mkdirSync('p27/business-proof',{recursive:true});
+          const report={generatedAt:new Date().toISOString(),base,targets:[]};
+          for(const t of targets){
+            const tr={kind:t.kind,tool:t.tool,profiles:[]};
+            for(const [profile,bt,w,h] of profiles){
+              const browser=await bt.launch({headless:true});
+              const ctx=await browser.newContext({viewport:{width:w,height:h}});
+              const page=await ctx.newPage();
+              const errors=[];page.on('pageerror',e=>errors.push(String(e)));
+              let status=0,proof={};
+              try{
+                const r=await page.goto(`${base}/${t.path}?proof=${Date.now()}`,{waitUntil:'domcontentloaded',timeout:90000});status=r?.status()||0;
+                await page.waitForTimeout(7000);
+                proof=await page.evaluate(kind=>{
+                  const live=kind==='tennis'?window.ATLAS_TENNIS_LIVE_STATUS:window.ATLAS_FOOT_LIVE_STATUS;
+                  const feed=kind==='tennis'?window.ATLAS_TENNIS_SOURCE_FEED:window.ATLAS_FOOT_SOURCE_FEED;
+                  const arr=(typeof fixtures!=='undefined'&&Array.isArray(fixtures))?fixtures:[];
+                  const six=arr.slice(0,6).map(f=>({home:f.h||f.home||f.player1||'',away:f.a||f.away||f.player2||'',state:f._atlasLiveState||f.status||'',label:f._atlasStatusLabel||'',score:f._atlasLiveScore||f._atlasFinalScore||f.s||'',date:f.d||f.date||'',tour:f.tour||f.comp||f.l||''}));
+                  const body=(document.body.innerText||'');
+                  const visible=six.map(x=>({ ...x, visible: !!(x.home&&x.away&&body.includes(x.home)&&body.includes(x.away)) }));
+                  return {live,feedPresent:!!feed,fixtureCount:arr.length,six:visible,bodyHasPre:/À venir/i.test(body),bodyHasLive:/En cours/i.test(body),bodyHasPost:/Terminé/i.test(body),overflow:document.documentElement.scrollWidth>document.documentElement.clientWidth+2};
+                },t.kind);
+                await page.screenshot({path:`p27/business-proof/${t.tool}__${profile}.png`,fullPage:true});
+              }catch(e){errors.push(String(e));}
+              const six=proof.six||[];
+              const fixturePass=six.length>=6&&six.every(x=>x.home&&x.away&&x.visible);
+              const pass=status===200&&!errors.length&&proof.feedPresent&&proof.live?.ok!==false&&!proof.overflow&&fixturePass;
+              tr.profiles.push({profile,status,errors,proof,fixturePass,pass});
+              await ctx.close();await browser.close();
+            }
+            report.targets.push(tr);
+          }
+          report.pass=report.targets.every(t=>t.profiles.every(p=>p.pass));
+          fs.writeFileSync('p27/candidate-qa/business-proof.json',JSON.stringify(report,null,2));
+          console.log(JSON.stringify(report,null,2));
+          if(!report.pass)process.exitCode=1;
+          EOF
+          mkdir -p p27/candidate-qa
+          node p27-business-proof.mjs
+      - name: Commit proof report
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add p27/candidate-qa/business-proof.json 2>/dev/null || true
+          git diff --cached --quiet || git commit -m 'Record P27 published business proof'
+          git push origin HEAD:p27-consolidation-candidate
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: p27-business-proof
+          path: |
+            p27/candidate-qa/business-proof.json
+            p27/business-proof/
