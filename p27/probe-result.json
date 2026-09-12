@@ -1,62 +1,60 @@
 {
-  "generatedAt": "2026-09-12T08:58:41.158183+00:00",
+  "generatedAt": "2026-09-12T09:00:29.681601+00:00",
   "date": "2026-09-12",
-  "probes": [
+  "tennis": {
+    "url": "https://www.tennisexplorer.com/matches/?type=all&year=2026&month=09&day=12",
+    "http": 200,
+    "rows": 0,
+    "samples": []
+  },
+  "football": [
     {
-      "sport": "football",
-      "provider": "openfootapi",
-      "url": "https://openfootapi.com/v1/matches?date=2026-09-12",
-      "ok": false,
-      "error": "<HTTPError 401: 'Unauthorized'>"
-    },
-    {
-      "sport": "tennis",
-      "provider": "tennisexplorer",
-      "url": "https://www.tennisexplorer.com/matches/?type=all&year=2026&month=09&day=12",
+      "league": "eng.1",
+      "url": "https://worldcup26.ir/get/soccer/eng.1/scoreboard?dates=20260912",
       "http": 200,
-      "contentType": "text/html; charset=UTF-8",
-      "bytes": 415802,
-      "ok": true,
-      "markers": {
-        "live": true,
-        "score": true,
-        "match": true
-      }
+      "bytes": 50885,
+      "type": "dict",
+      "keys": [
+        "leagues",
+        "events"
+      ],
+      "preview": "{'leagues': [{'id': '700', 'uid': 's:600~l:700', 'name': 'English Premier League', 'abbreviation': 'Premier League', 'slug': 'eng.1', 'country': 'England', 'kind': 'club', 'logo': '', 'season': {'year': 2026, 'display_name': '2026-27 English Premier League', 'current': True, 'type_id': '1', 'type_name': '2026-27 English Premier League'}, 'calendar': ['2026-08-21T07:00Z', '2026-08-22T07:00Z', '2026-08-23T07:00Z', '2026-08-24T07:00Z', '2026-08-28T07:00Z', '2026-08-29T07:00Z', '2026-08-30T07:00Z', '2026-08-31T07:00Z', '2026-09-04T07:00Z', '2026-09-05T07:00Z', '2026-09-06T07:00Z', '2026-09-12T07:00Z', '2026-09-13T07:00Z', '2026-09-14T07:00Z', '2026-09-18T07:00Z', '2026-09-19T07:00Z', '2026-09-20T07:00Z', '2026-10-10T07:00Z', '2026-10-11T07:00Z', '2026-10-12T07:00Z', '2026-10-17T07:00Z', '2026-10-18T07:00Z', '2026-10-19T07:00Z', '2026-10-23T07:00Z', '2026-10-24T07:00Z', '2026-10-25T07:00Z', '2026-10-31T07:00Z', '2026-11-01T07:00Z', '2026-11-02T08:00Z', '2026-11-07T08:00Z', '2026-11-21T08:00"
     },
     {
-      "sport": "tennis",
-      "provider": "atptour",
-      "url": "https://www.atptour.com/en/scores/current",
-      "ok": false,
-      "error": "<HTTPError 403: 'Forbidden'>"
-    },
-    {
-      "sport": "tennis",
-      "provider": "wtatennis",
-      "url": "https://www.wtatennis.com/scores",
+      "league": "esp.1",
+      "url": "https://worldcup26.ir/get/soccer/esp.1/scoreboard?dates=20260912",
       "http": 200,
-      "contentType": "text/html;charset=utf-8",
-      "bytes": 205529,
-      "ok": true,
-      "markers": {
-        "live": true,
-        "score": true,
-        "match": true
-      }
+      "bytes": 29747,
+      "type": "dict",
+      "keys": [
+        "leagues",
+        "events"
+      ],
+      "preview": "{'leagues': [{'id': '740', 'uid': 's:600~l:740', 'name': 'Spanish LALIGA', 'abbreviation': 'LALIGA', 'slug': 'esp.1', 'country': 'Spain', 'kind': 'club', 'logo': '', 'season': {'year': 2026, 'display_name': '2026-27 Spanish LALIGA', 'current': True, 'type_id': '1', 'type_name': '2026-27 LALIGA'}, 'calendar': ['2026-08-15T07:00Z', '2026-08-16T07:00Z', '2026-08-17T07:00Z', '2026-08-19T07:00Z', '2026-08-20T07:00Z', '2026-08-21T07:00Z', '2026-08-22T07:00Z', '2026-08-23T07:00Z', '2026-08-24T07:00Z', '2026-08-25T07:00Z', '2026-08-26T07:00Z', '2026-08-27T07:00Z', '2026-08-28T07:00Z', '2026-08-29T07:00Z', '2026-08-30T07:00Z', '2026-08-31T07:00Z', '2026-09-03T07:00Z', '2026-09-04T07:00Z', '2026-09-05T07:00Z', '2026-09-06T07:00Z', '2026-09-07T07:00Z', '2026-09-11T07:00Z', '2026-09-12T07:00Z', '2026-09-13T07:00Z', '2026-09-14T07:00Z', '2026-09-15T07:00Z', '2026-09-16T07:00Z', '2026-09-17T07:00Z', '2026-09-18T07:00Z', '2026-09-19T07:00Z', '2026-09-20T07:00Z', '2026-10-09T07:00Z', '2026-10-10T07:00"
     },
     {
-      "sport": "tennis",
-      "provider": "sofascore-page",
-      "url": "https://www.sofascore.com/tennis/2026-09-12",
-      "ok": false,
-      "error": "<HTTPError 403: 'Forbidden'>"
+      "league": "deu.1",
+      "url": "https://worldcup26.ir/get/soccer/deu.1/scoreboard?dates=20260912",
+      "http": 404,
+      "bytes": 28
     },
     {
-      "sport": "football",
-      "provider": "sofascore-page",
-      "url": "https://www.sofascore.com/football/2026-09-12",
-      "ok": false,
-      "error": "<HTTPError 403: 'Forbidden'>"
+      "league": "ger.1",
+      "url": "https://worldcup26.ir/get/soccer/ger.1/scoreboard?dates=20260912",
+      "http": 404,
+      "bytes": 28
+    },
+    {
+      "league": "fra.1",
+      "url": "https://worldcup26.ir/get/soccer/fra.1/scoreboard?dates=20260912",
+      "http": 404,
+      "bytes": 28
+    },
+    {
+      "league": "ita.1",
+      "url": "https://worldcup26.ir/get/soccer/ita.1/scoreboard?dates=20260912",
+      "http": 404,
+      "bytes": 28
     }
   ]
 }
