@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T13:27:38.382Z",
+  "generatedAt": "2026-09-12T13:41:39.705Z",
   "base": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate",
   "targets": [
     {
@@ -13,20 +13,45 @@
           "proof": {
             "live": {
               "ok": true,
-              "updatedAt": "2026-09-12T13:27:40.435Z",
+              "updatedAt": "2026-09-12T13:41:43.657Z",
               "source": "ATLAS same-origin broker · corroborated feed",
               "competitions": 182
             },
             "feedPresent": true,
-            "fixtureCount": 0,
-            "six": [],
+            "renderedCount": 182,
+            "six": [
+              {
+                "text": "Sabalenka A. — Rybakina E.\nUS Open · 22:00 · US Open\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Dencheva R. — Burillo Escorihuela I.\nAntalya 5 WTA · 12:10 · Antalya 5 WTA\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Ibragimova A. — Herrero Linana A.\nAntalya 5 WTA · 14:55 · Antalya 5 WTA\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Blinkova A. — Jacquemot E.\nBarranquilla · 01:00 · Barranquilla\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Liu C. — Blinkova A.\nBarranquilla · 23:30 · Barranquilla\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Noha Akugue N. — Maristany Zuleta De Re\nMontreux WTA · 14:30 · Montreux WTA\nEn cours",
+                "visible": true
+              }
+            ],
             "bodyHasPre": true,
             "bodyHasLive": true,
             "bodyHasPost": true,
             "overflow": false
           },
-          "fixturePass": false,
-          "pass": false
+          "sixVisible": true,
+          "pass": true
         },
         {
           "profile": "ipad-webkit",
@@ -35,20 +60,245 @@
           "proof": {
             "live": {
               "ok": true,
-              "updatedAt": "2026-09-12T13:27:55.269Z",
+              "updatedAt": "2026-09-12T13:42:01.200Z",
               "source": "ATLAS same-origin broker · corroborated feed",
               "competitions": 182
             },
             "feedPresent": true,
-            "fixtureCount": 0,
-            "six": [],
-            "bodyHasPre": false,
-            "bodyHasLive": false,
+            "renderedCount": 182,
+            "six": [
+              {
+                "text": "Sabalenka A. — Rybakina E.\nUS Open · 22:00 · US Open\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Dencheva R. — Burillo Escorihuela I.\nAntalya 5 WTA · 12:10 · Antalya 5 WTA\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Ibragimova A. — Herrero Linana A.\nAntalya 5 WTA · 14:55 · Antalya 5 WTA\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Blinkova A. — Jacquemot E.\nBarranquilla · 01:00 · Barranquilla\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Liu C. — Blinkova A.\nBarranquilla · 23:30 · Barranquilla\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Noha Akugue N. — Maristany Zuleta De Re\nMontreux WTA · 14:30 · Montreux WTA\nEn cours",
+                "visible": true
+              }
+            ],
+            "bodyHasPre": true,
+            "bodyHasLive": true,
             "bodyHasPost": true,
             "overflow": false
           },
-          "fixturePass": false,
-          "pass": false
+          "sixVisible": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "kind": "tennis",
+      "tool": "tennis-deep",
+      "profiles": [
+        {
+          "profile": "android",
+          "status": 200,
+          "errors": [],
+          "proof": {
+            "live": {
+              "ok": true,
+              "updatedAt": "2026-09-12T13:42:09.563Z",
+              "source": "ATLAS same-origin broker · corroborated feed",
+              "competitions": 182
+            },
+            "feedPresent": true,
+            "renderedCount": 182,
+            "six": [
+              {
+                "text": "Sabalenka A. — Rybakina E.\nUS Open · 22:00 · US Open\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Dencheva R. — Burillo Escorihuela I.\nAntalya 5 WTA · 12:10 · Antalya 5 WTA\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Ibragimova A. — Herrero Linana A.\nAntalya 5 WTA · 14:55 · Antalya 5 WTA\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Blinkova A. — Jacquemot E.\nBarranquilla · 01:00 · Barranquilla\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Liu C. — Blinkova A.\nBarranquilla · 23:30 · Barranquilla\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Noha Akugue N. — Maristany Zuleta De Re\nMontreux WTA · 14:30 · Montreux WTA\nEn cours",
+                "visible": true
+              }
+            ],
+            "bodyHasPre": true,
+            "bodyHasLive": true,
+            "bodyHasPost": true,
+            "overflow": false
+          },
+          "sixVisible": true,
+          "pass": true
+        },
+        {
+          "profile": "ipad-webkit",
+          "status": 200,
+          "errors": [],
+          "proof": {
+            "live": {
+              "ok": true,
+              "updatedAt": "2026-09-12T13:42:17.863Z",
+              "source": "ATLAS same-origin broker · corroborated feed",
+              "competitions": 182
+            },
+            "feedPresent": true,
+            "renderedCount": 182,
+            "six": [
+              {
+                "text": "Sabalenka A. — Rybakina E.\nUS Open · 22:00 · US Open\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Dencheva R. — Burillo Escorihuela I.\nAntalya 5 WTA · 12:10 · Antalya 5 WTA\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Ibragimova A. — Herrero Linana A.\nAntalya 5 WTA · 14:55 · Antalya 5 WTA\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Blinkova A. — Jacquemot E.\nBarranquilla · 01:00 · Barranquilla\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Liu C. — Blinkova A.\nBarranquilla · 23:30 · Barranquilla\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Noha Akugue N. — Maristany Zuleta De Re\nMontreux WTA · 14:30 · Montreux WTA\nEn cours",
+                "visible": true
+              }
+            ],
+            "bodyHasPre": true,
+            "bodyHasLive": true,
+            "bodyHasPost": true,
+            "overflow": false
+          },
+          "sixVisible": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "kind": "tennis",
+      "tool": "tennis-fusion",
+      "profiles": [
+        {
+          "profile": "android",
+          "status": 200,
+          "errors": [],
+          "proof": {
+            "live": {
+              "ok": true,
+              "updatedAt": "2026-09-12T13:42:26.202Z",
+              "source": "ATLAS same-origin broker · corroborated feed",
+              "competitions": 182
+            },
+            "feedPresent": true,
+            "renderedCount": 182,
+            "six": [
+              {
+                "text": "Sabalenka A. — Rybakina E.\nUS Open · 22:00 · US Open\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Dencheva R. — Burillo Escorihuela I.\nAntalya 5 WTA · 12:10 · Antalya 5 WTA\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Ibragimova A. — Herrero Linana A.\nAntalya 5 WTA · 14:55 · Antalya 5 WTA\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Blinkova A. — Jacquemot E.\nBarranquilla · 01:00 · Barranquilla\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Liu C. — Blinkova A.\nBarranquilla · 23:30 · Barranquilla\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Noha Akugue N. — Maristany Zuleta De Re\nMontreux WTA · 14:30 · Montreux WTA\nEn cours",
+                "visible": true
+              }
+            ],
+            "bodyHasPre": true,
+            "bodyHasLive": true,
+            "bodyHasPost": true,
+            "overflow": false
+          },
+          "sixVisible": true,
+          "pass": true
+        },
+        {
+          "profile": "ipad-webkit",
+          "status": 200,
+          "errors": [],
+          "proof": {
+            "live": {
+              "ok": true,
+              "updatedAt": "2026-09-12T13:42:34.526Z",
+              "source": "ATLAS same-origin broker · corroborated feed",
+              "competitions": 182
+            },
+            "feedPresent": true,
+            "renderedCount": 182,
+            "six": [
+              {
+                "text": "Sabalenka A. — Rybakina E.\nUS Open · 22:00 · US Open\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Dencheva R. — Burillo Escorihuela I.\nAntalya 5 WTA · 12:10 · Antalya 5 WTA\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Ibragimova A. — Herrero Linana A.\nAntalya 5 WTA · 14:55 · Antalya 5 WTA\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Blinkova A. — Jacquemot E.\nBarranquilla · 01:00 · Barranquilla\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Liu C. — Blinkova A.\nBarranquilla · 23:30 · Barranquilla\nEn cours",
+                "visible": true
+              },
+              {
+                "text": "Noha Akugue N. — Maristany Zuleta De Re\nMontreux WTA · 14:30 · Montreux WTA\nEn cours",
+                "visible": true
+              }
+            ],
+            "bodyHasPre": true,
+            "bodyHasLive": true,
+            "bodyHasPost": true,
+            "overflow": false
+          },
+          "sixVisible": true,
+          "pass": true
         }
       ]
     },
@@ -63,21 +313,21 @@
           "proof": {
             "live": {
               "ok": true,
-              "updatedAt": "2026-09-12T13:28:13.433Z",
+              "updatedAt": "2026-09-12T13:42:42.718Z",
               "providersOk": 6,
               "totalEvents": 28,
               "matchesUpdated": 0,
               "source": "ATLAS same-origin broker · resilient loader"
             },
             "feedPresent": true,
-            "fixtureCount": 0,
+            "renderedCount": 0,
             "six": [],
             "bodyHasPre": false,
             "bodyHasLive": false,
             "bodyHasPost": true,
             "overflow": false
           },
-          "fixturePass": false,
+          "sixVisible": false,
           "pass": false
         },
         {
@@ -87,21 +337,129 @@
           "proof": {
             "live": {
               "ok": true,
-              "updatedAt": "2026-09-12T13:28:21.979Z",
+              "updatedAt": "2026-09-12T13:42:50.640Z",
               "providersOk": 6,
               "totalEvents": 28,
               "matchesUpdated": 0,
               "source": "ATLAS same-origin broker · resilient loader"
             },
             "feedPresent": true,
-            "fixtureCount": 0,
+            "renderedCount": 0,
             "six": [],
             "bodyHasPre": false,
             "bodyHasLive": false,
             "bodyHasPost": false,
             "overflow": false
           },
-          "fixturePass": false,
+          "sixVisible": false,
+          "pass": false
+        }
+      ]
+    },
+    {
+      "kind": "football",
+      "tool": "football-deep",
+      "profiles": [
+        {
+          "profile": "android",
+          "status": 200,
+          "errors": [],
+          "proof": {
+            "live": {
+              "ok": true,
+              "updatedAt": "2026-09-12T13:42:58.392Z",
+              "providersOk": 6,
+              "totalEvents": 28,
+              "matchesUpdated": 0,
+              "source": "ATLAS same-origin broker · resilient loader"
+            },
+            "feedPresent": true,
+            "renderedCount": 0,
+            "six": [],
+            "bodyHasPre": false,
+            "bodyHasLive": false,
+            "bodyHasPost": true,
+            "overflow": false
+          },
+          "sixVisible": false,
+          "pass": false
+        },
+        {
+          "profile": "ipad-webkit",
+          "status": 200,
+          "errors": [],
+          "proof": {
+            "live": {
+              "ok": true,
+              "updatedAt": "2026-09-12T13:43:06.566Z",
+              "providersOk": 6,
+              "totalEvents": 28,
+              "matchesUpdated": 0,
+              "source": "ATLAS same-origin broker · resilient loader"
+            },
+            "feedPresent": true,
+            "renderedCount": 0,
+            "six": [],
+            "bodyHasPre": false,
+            "bodyHasLive": false,
+            "bodyHasPost": false,
+            "overflow": false
+          },
+          "sixVisible": false,
+          "pass": false
+        }
+      ]
+    },
+    {
+      "kind": "football",
+      "tool": "football-fusion",
+      "profiles": [
+        {
+          "profile": "android",
+          "status": 200,
+          "errors": [],
+          "proof": {
+            "live": {
+              "ok": true,
+              "updatedAt": "2026-09-12T13:43:14.602Z",
+              "providersOk": 6,
+              "totalEvents": 28,
+              "matchesUpdated": 0,
+              "source": "ATLAS same-origin broker · resilient loader"
+            },
+            "feedPresent": true,
+            "renderedCount": 0,
+            "six": [],
+            "bodyHasPre": false,
+            "bodyHasLive": false,
+            "bodyHasPost": true,
+            "overflow": false
+          },
+          "sixVisible": false,
+          "pass": false
+        },
+        {
+          "profile": "ipad-webkit",
+          "status": 200,
+          "errors": [],
+          "proof": {
+            "live": {
+              "ok": true,
+              "updatedAt": "2026-09-12T13:43:22.671Z",
+              "providersOk": 6,
+              "totalEvents": 28,
+              "matchesUpdated": 0,
+              "source": "ATLAS same-origin broker · resilient loader"
+            },
+            "feedPresent": true,
+            "renderedCount": 0,
+            "six": [],
+            "bodyHasPre": false,
+            "bodyHasLive": false,
+            "bodyHasPost": false,
+            "overflow": false
+          },
+          "sixVisible": false,
           "pass": false
         }
       ]
