@@ -1,0 +1,12 @@
+{
+  "generatedAt": "2026-09-12T11:53:44.803789+00:00",
+  "footballHistory": 28,
+  "footballFinished": 0,
+  "footballLive": 0,
+  "tennisHistory": 173,
+  "tennisFinished": 0,
+  "tennisLive": 143,
+  "threeStatesOnly": true,
+  "finalLock": true,
+  "neverDelete": true
+}
