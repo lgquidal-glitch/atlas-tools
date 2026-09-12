@@ -1,0 +1,20 @@
+name: P27 refresh durable history quarter hour
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '7,22,37,52 * * * *'
+  push:
+    branches: [p27-consolidation-candidate]
+    paths:
+      - '.github/workflows/p27-refresh-history-quarter-hour.yml'
+permissions:
+  actions: write
+  contents: read
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch durable history builder
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run p27-build-match-history.yml --repo "${{ github.repository }}" --ref p27-consolidation-candidate
