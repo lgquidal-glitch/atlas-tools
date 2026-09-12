@@ -1,6 +1,6 @@
 {
   "schema": "atlas-football-history-v1",
-  "generatedAt": "2026-09-12T11:53:44.803789+00:00",
+  "generatedAt": "2026-09-12T14:04:37.418185+00:00",
   "retention": "durable-never-delete",
   "finalLock": true,
   "matches": [
@@ -17,9 +17,9 @@
       "awayScore": null,
       "detail": "SCHEDULED",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "Q91EiXXN",
@@ -34,9 +34,9 @@
       "awayScore": null,
       "detail": "SCHEDULED",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "Iqb6gg3B",
@@ -51,9 +51,9 @@
       "awayScore": null,
       "detail": "SCHEDULED",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "Mo2opFzi",
@@ -68,9 +68,9 @@
       "awayScore": null,
       "detail": "SCHEDULED",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "GnzE2NjI",
@@ -85,9 +85,9 @@
       "awayScore": null,
       "detail": "SCHEDULED",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "G8yViRgc",
@@ -102,9 +102,9 @@
       "awayScore": null,
       "detail": "SCHEDULED",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "UVsolqgM",
@@ -119,9 +119,9 @@
       "awayScore": null,
       "detail": "SCHEDULED",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "YRWOt1od",
@@ -136,9 +136,9 @@
       "awayScore": null,
       "detail": "SCHEDULED",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "YoNI2r8F",
@@ -153,9 +153,9 @@
       "awayScore": null,
       "detail": "SCHEDULED",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "K2LQ0MxS",
@@ -170,9 +170,9 @@
       "awayScore": null,
       "detail": "SCHEDULED",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "QPLotmXa",
@@ -187,9 +187,9 @@
       "awayScore": null,
       "detail": "SCHEDULED",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "SC0Jfnng",
@@ -204,9 +204,9 @@
       "awayScore": null,
       "detail": "SCHEDULED",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "zw4RhQG5",
@@ -215,15 +215,15 @@
       "date": "2026-09-12T00:00:00+02:00",
       "home": "Racing Santander",
       "away": "Alaves",
-      "state": "pre",
-      "status": "À venir",
-      "homeScore": null,
-      "awayScore": null,
-      "detail": "SCHEDULED",
+      "state": "in",
+      "status": "En cours",
+      "homeScore": "1",
+      "awayScore": "1",
+      "detail": "Half Time",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "r37Zj4oI",
@@ -238,9 +238,9 @@
       "awayScore": null,
       "detail": "SCHEDULED",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "KUw6nHvo",
@@ -255,9 +255,9 @@
       "awayScore": null,
       "detail": "SCHEDULED",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "YiUa8b14",
@@ -272,9 +272,9 @@
       "awayScore": null,
       "detail": "SCHEDULED",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "roMoafOj",
@@ -289,9 +289,9 @@
       "awayScore": null,
       "detail": "SCHEDULED",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "zu9XMcGc",
@@ -306,9 +306,9 @@
       "awayScore": null,
       "detail": "SCHEDULED",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "jVFmJFFM",
@@ -323,9 +323,9 @@
       "awayScore": null,
       "detail": "SCHEDULED",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "Q3IOHrq3",
@@ -340,9 +340,9 @@
       "awayScore": null,
       "detail": "SCHEDULED",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "2kmjGV7b",
@@ -357,9 +357,9 @@
       "awayScore": null,
       "detail": "SCHEDULED",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "xQAA8v6k",
@@ -374,9 +374,9 @@
       "awayScore": null,
       "detail": "SCHEDULED",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "Y9Vxfuid",
@@ -391,9 +391,9 @@
       "awayScore": null,
       "detail": "SCHEDULED",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "t2DVe1Mq",
@@ -408,9 +408,9 @@
       "awayScore": null,
       "detail": "SCHEDULED",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "YTLWFMDF",
@@ -425,9 +425,9 @@
       "awayScore": null,
       "detail": "SCHEDULED",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "zkzXvQEF",
@@ -442,9 +442,9 @@
       "awayScore": null,
       "detail": "SCHEDULED",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "EcUAXs7k",
@@ -459,9 +459,9 @@
       "awayScore": null,
       "detail": "SCHEDULED",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "vJU3gPT8",
@@ -476,9 +476,9 @@
       "awayScore": null,
       "detail": "SCHEDULED",
       "source": "Soccerway rendered scoreboard",
-      "verifiedAt": "2026-09-12T13:17:12+02:00",
+      "verifiedAt": "2026-09-12T14:58:15+02:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     }
   ]
 }

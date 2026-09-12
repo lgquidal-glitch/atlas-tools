@@ -1,6 +1,6 @@
 {
   "schema": "atlas-tennis-history-v1",
-  "generatedAt": "2026-09-12T11:53:44.803789+00:00",
+  "generatedAt": "2026-09-12T14:04:37.418185+00:00",
   "retention": "durable-never-delete",
   "finalLock": true,
   "matches": [
@@ -11,15 +11,15 @@
       "playerA": "Dencheva R.",
       "playerB": "Burillo Escorihuela I.",
       "tournament": "Antalya 5 WTA",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
-      "detail": "12:00 · Antalya 5 WTA",
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "1",
+      "detail": "12:10 · Antalya 5 WTA",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "475dd286b599afcde910",
@@ -36,7 +36,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "f5249321aa23f41292cd",
@@ -45,15 +45,15 @@
       "playerA": "Blinkova A.",
       "playerB": "Jacquemot E.",
       "tournament": "Barranquilla",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "01:00 · Barranquilla",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "e127f57dd1815f8c7725",
@@ -70,7 +70,24 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
+      "id": "6dc3c2e10f4a5ecc3db9",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Biro M.",
+      "playerB": "Bojica S.",
+      "tournament": "Campulung ITF",
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
+      "detail": "09:00 · Campulung ITF",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "d2d48b81cc97bf75a0bc",
@@ -96,15 +113,15 @@
       "playerA": "Popa G.",
       "playerB": "Todoni C.",
       "tournament": "Campulung ITF",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "09:00 · Campulung ITF",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "ccdb5f5eba9c50115478",
@@ -121,7 +138,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "828e0191fd900f248a5c",
@@ -130,15 +147,15 @@
       "playerA": "Lajal M.",
       "playerB": "Masur D.",
       "tournament": "Cassis challenger",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
-      "detail": "11:30 · Cassis challenger",
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
+      "detail": "11:40 · Cassis challenger",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "48d4315e5e56282a76d7",
@@ -147,15 +164,15 @@
       "playerA": "Iliev S.",
       "playerB": "Mpetshi Perricard D.",
       "tournament": "Dijon 2 ITF",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "1",
       "detail": "10:00 · Dijon 2 ITF",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "71d091663e740e4e641b",
@@ -164,15 +181,15 @@
       "playerA": "Gasanova A.",
       "playerB": "Ito A.",
       "tournament": "Evora ITF",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "11:40 · Evora ITF",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "c5285653d78bc607708a",
@@ -192,6 +209,23 @@
       "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
     },
     {
+      "id": "26c9b46d062bb3cf3487",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Jorge M.",
+      "playerB": "Johnson S.",
+      "tournament": "Evora ITF",
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "1",
+      "detail": "11:40 · Evora ITF",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
       "id": "7246e8541fe8a3671f61",
       "sport": "tennis",
       "date": "2026-09-12",
@@ -206,7 +240,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "306f15f7a5786deaa1ac",
@@ -215,15 +249,15 @@
       "playerA": "Alves M.",
       "playerB": "Lage E.",
       "tournament": "Futures 2026",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "03:06 · Futures 2026",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "455a014f8f9d02f78894",
@@ -240,7 +274,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "02b3e4e3513371ff5ee6",
@@ -257,7 +291,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "594c64ae671d226c6b05",
@@ -266,15 +300,32 @@
       "playerA": "Bouchelaghem C.",
       "playerB": "Rahmani K.",
       "tournament": "Futures 2026",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "10:30 · Futures 2026",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
+      "id": "a4951d77815842b6d9ce",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Brown O.",
+      "playerB": "Naw H.",
+      "tournament": "Futures 2026",
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
+      "detail": "10:30 · Futures 2026",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "8b56e8ec85a3f4c7925c",
@@ -283,15 +334,15 @@
       "playerA": "Chang A.",
       "playerB": "Barki N.",
       "tournament": "Futures 2026",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "1",
       "detail": "05:00 · Futures 2026",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "3339ec2a1b0be05bf35c",
@@ -300,15 +351,15 @@
       "playerA": "Chanta T.",
       "playerB": "Sornlaksup P.",
       "tournament": "Futures 2026",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "05:00 · Futures 2026",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "eb9e7859e50c65343dad",
@@ -325,7 +376,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "618efd0c368ef39138f9",
@@ -334,15 +385,15 @@
       "playerA": "Efstathiou M.",
       "playerB": "Moroni F.",
       "tournament": "Futures 2026",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "11:10 · Futures 2026",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "1bfe15f2a17567b30123",
@@ -359,7 +410,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "6d1f51fe5cef7bc4121c",
@@ -368,15 +419,15 @@
       "playerA": "Hurrion M.",
       "playerB": "Petrov S.",
       "tournament": "Futures 2026",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "08:00 · Futures 2026",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "67f4b999e73dacc29e05",
@@ -385,15 +436,15 @@
       "playerA": "Koyama H.",
       "playerB": "Choe J.",
       "tournament": "Futures 2026",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "04:00 · Futures 2026",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "ca3e6c41f0ebe8ff5a09",
@@ -402,15 +453,15 @@
       "playerA": "Kshitij A.",
       "playerB": "Lorusso L.",
       "tournament": "Futures 2026",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "1",
       "detail": "08:00 · Futures 2026",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "47a57e177a39f36f0d6e",
@@ -419,15 +470,15 @@
       "playerA": "Kupcic J.",
       "playerB": "Baragiola Mordini T.",
       "tournament": "Futures 2026",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "1",
       "detail": "10:00 · Futures 2026",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "2c600def115da0b03293",
@@ -436,15 +487,15 @@
       "playerA": "Malaszszak M.",
       "playerB": "De Cuyper J.",
       "tournament": "Futures 2026",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "1",
       "detail": "05:00 · Futures 2026",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "4eeb3da622a884ec2ee5",
@@ -453,15 +504,32 @@
       "playerA": "Marmousez L.",
       "playerB": "Kimhi O.",
       "tournament": "Futures 2026",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "10:00 · Futures 2026",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
+      "id": "eb707f44c83ccf4fb603",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Marmousez L.",
+      "playerB": "Sperle J.",
+      "tournament": "Futures 2026",
+      "state": "pre",
+      "status": "À venir",
+      "scoreA": null,
+      "scoreB": null,
+      "detail": "14:22 · Futures 2026",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "3a9931ecc6dfc1b6e413",
@@ -470,15 +538,15 @@
       "playerA": "Marques G.",
       "playerB": "Tabacco F.",
       "tournament": "Futures 2026",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "1",
       "detail": "11:10 · Futures 2026",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "4e729ab35c9447b230f4",
@@ -504,15 +572,15 @@
       "playerA": "Monzon I.",
       "playerB": "Denolly C.",
       "tournament": "Futures 2026",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "08:30 · Futures 2026",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "305b6c7239d28acb6276",
@@ -538,15 +606,15 @@
       "playerA": "Nijboer R.",
       "playerB": "Jong S.",
       "tournament": "Futures 2026",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
-      "detail": "12:00 · Futures 2026",
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
+      "detail": "12:10 · Futures 2026",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "331bc64d8e366d351f96",
@@ -555,15 +623,15 @@
       "playerA": "Popko D.",
       "playerB": "Shebekin G.",
       "tournament": "Futures 2026",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "08:30 · Futures 2026",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "7ec670f8622286d358da",
@@ -580,7 +648,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "805e92e7a5db45a99d52",
@@ -589,15 +657,32 @@
       "playerA": "Roddick J.",
       "playerB": "Ferguson C.",
       "tournament": "Futures 2026",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "1",
       "detail": "03:10 · Futures 2026",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
+      "id": "19339c3d090445ff750a",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Rossi L.",
+      "playerB": "McHugh A.",
+      "tournament": "Futures 2026",
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
+      "detail": "12:50 · Futures 2026",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "86c8764dc196dabdd7fb",
@@ -606,15 +691,15 @@
       "playerA": "Saitoh K.",
       "playerB": "Hong S.",
       "tournament": "Futures 2026",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "1",
       "detail": "06:20 · Futures 2026",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "1f5864f806f16439757b",
@@ -631,7 +716,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "f36e09411b0e9a642dc8",
@@ -640,15 +725,15 @@
       "playerA": "Singh K.",
       "playerB": "Singh D.",
       "tournament": "Futures 2026",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "05:00 · Futures 2026",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "e6b61cba2309fc142d03",
@@ -657,15 +742,15 @@
       "playerA": "Sperle J.",
       "playerB": "Noce G.",
       "tournament": "Futures 2026",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "1",
       "detail": "10:00 · Futures 2026",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "a7ee79f5cd68688b6abf",
@@ -674,15 +759,32 @@
       "playerA": "Valkusz M.",
       "playerB": "Fernandez B.",
       "tournament": "Futures 2026",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "10:00 · Futures 2026",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
+      "id": "197609ef2cba41604ec6",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Valkusz M.",
+      "playerB": "Kupcic J.",
+      "tournament": "Futures 2026",
+      "state": "pre",
+      "status": "À venir",
+      "scoreA": null,
+      "scoreB": null,
+      "detail": "15:30 · Futures 2026",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "215022b4c6c44765a5f1",
@@ -691,15 +793,15 @@
       "playerA": "Zhao Z.",
       "playerB": "Kim G.",
       "tournament": "Futures 2026",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "1",
       "detail": "04:00 · Futures 2026",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "3a8dbff826bf8b05e699",
@@ -716,7 +818,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "96df269920f90afab8dd",
@@ -733,7 +835,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "d012a601ad50912de673",
@@ -750,7 +852,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "e3b279d12324ea4cc002",
@@ -767,7 +869,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "2d49e1334a9adeaa8c15",
@@ -784,7 +886,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "4281e8c9781da56b02b2",
@@ -801,7 +903,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "a12c33461cb136e237d6",
@@ -818,7 +920,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "2500ce77d1387f757f61",
@@ -835,7 +937,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "d31b6037954e0213f3d8",
@@ -852,7 +954,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "97e3e970073ff120bb23",
@@ -869,7 +971,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "02bbcfcd1b59277185df",
@@ -878,15 +980,15 @@
       "playerA": "Ren Y.",
       "playerB": "Khomutsianskaya D.",
       "tournament": "Guiyang ITF",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "1",
       "detail": "04:10 · Guiyang ITF",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "4ef776b6bace1a23930d",
@@ -895,15 +997,15 @@
       "playerA": "Shubladze A.",
       "playerB": "Kokkinis T.",
       "tournament": "Guiyang ITF",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "07:10 · Guiyang ITF",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "b486d9fa55a37ed01e3d",
@@ -912,15 +1014,15 @@
       "playerA": "Ezzat Y.",
       "playerB": "Perapekhina Y.",
       "tournament": "Hurghada 10 ITF",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "1",
       "detail": "08:00 · Hurghada 10 ITF",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "aeb99ae480282bb2f8df",
@@ -929,15 +1031,15 @@
       "playerA": "Mdlulwa W.",
       "playerB": "Breen S.",
       "tournament": "Hurghada 10 ITF",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "1",
+      "scoreB": "0",
       "detail": "08:00 · Hurghada 10 ITF",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "56fd8a0b5044f206dcdd",
@@ -946,15 +1048,32 @@
       "playerA": "Basing M.",
       "playerB": "Mayot H.",
       "tournament": "Istanbul challenger",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "10:10 · Istanbul challenger",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
+      "id": "2dfd72599e2ece315bf6",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Friend J.",
+      "playerB": "Kasnikowski M.",
+      "tournament": "Istanbul challenger",
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
+      "detail": "11:45 · Istanbul challenger",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "b8b2367553f3888e4a1c",
@@ -980,15 +1099,15 @@
       "playerA": "Haddad I.",
       "playerB": "Cirotte A.",
       "tournament": "Monastir 49 ITF",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "1",
       "detail": "10:30 · Monastir 49 ITF",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "9c26485faf263993d1d1",
@@ -997,15 +1116,15 @@
       "playerA": "Lukosiute A.",
       "playerB": "Kikawada R.",
       "tournament": "Monastir 49 ITF",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "1",
+      "scoreB": "0",
       "detail": "10:30 · Monastir 49 ITF",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "94c37e74b3582ba9b04a",
@@ -1022,7 +1141,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "8150d25f9189765efb29",
@@ -1039,7 +1158,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "dd2cc70fa558a82df942",
@@ -1048,15 +1167,15 @@
       "playerA": "Simakin I.",
       "playerB": "Purcell M.",
       "tournament": "Phan Thiet 3 challenger",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "1",
       "detail": "05:10 · Phan Thiet 3 challenger",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "a54cba0732bb03727946",
@@ -1065,15 +1184,15 @@
       "playerA": "Weber A.",
       "playerB": "Shimizu Y.",
       "tournament": "Phan Thiet 3 challenger",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "05:10 · Phan Thiet 3 challenger",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "661aeb8809fae556547e",
@@ -1090,7 +1209,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "f81c250358b583334d98",
@@ -1107,7 +1226,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "b5f30e3d3e665cd940ce",
@@ -1116,15 +1235,32 @@
       "playerA": "Adams J.",
       "playerB": "Kmiecik A.",
       "tournament": "Radom ITF",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "12:00 · Radom ITF",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
+      "id": "1fa09ee086a1983c980b",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Petruzelova L.",
+      "playerB": "Sucha A.",
+      "tournament": "Radom ITF",
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "1",
+      "detail": "10:30 · Radom ITF",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "0885c70ee60970278873",
@@ -1150,15 +1286,15 @@
       "playerA": "Cortez Llorca L.",
       "playerB": "Argyrokastriti M.",
       "tournament": "Reus ITF",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "10:10 · Reus ITF",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "9beca1eaccb0c229a957",
@@ -1167,15 +1303,15 @@
       "playerA": "Geerlings A.",
       "playerB": "Pace F.",
       "tournament": "Reus ITF",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
-      "detail": "11:35 · Reus ITF",
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
+      "detail": "11:55 · Reus ITF",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "4a303b78d77b2867d729",
@@ -1192,7 +1328,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "88dee8e53d5ad8cd3b02",
@@ -1209,7 +1345,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "882847414423b7377e55",
@@ -1226,7 +1362,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "0e76b6725d4ab693c851",
@@ -1243,7 +1379,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "c420c8f0b633316a81d8",
@@ -1260,7 +1396,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "a7416f9f7f7de12eb7af",
@@ -1277,7 +1413,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "ccca17f131115a17b83d",
@@ -1311,7 +1447,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "bc50365beb16d8bc7b03",
@@ -1328,7 +1464,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "652dab459876ab2a5339",
@@ -1345,7 +1481,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "2e878475df065b40443d",
@@ -1365,6 +1501,23 @@
       "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
     },
     {
+      "id": "5a3283c171b172125835",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Ivashka I.",
+      "playerB": "Castelnuovo L.",
+      "tournament": "Shanghai challenger",
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
+      "detail": "11:05 · Shanghai challenger",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
       "id": "eef394d5787e47c1990e",
       "sport": "tennis",
       "date": "2026-09-12",
@@ -1382,21 +1535,55 @@
       "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
     },
     {
+      "id": "977c62bc3561debf4318",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Sharipov M.",
+      "playerB": "Kotov P.",
+      "tournament": "Shanghai challenger",
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
+      "detail": "12:35 · Shanghai challenger",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
+      "id": "bdb308848204015bc408",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Brunold M.",
+      "playerB": "Sachko V.",
+      "tournament": "Tulln challenger",
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
+      "detail": "11:05 · Tulln challenger",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
       "id": "24ad9dd47557278e88ec",
       "sport": "tennis",
       "date": "2026-09-12",
       "playerA": "Reis Da Silva J.",
       "playerB": "Barrena A.",
       "tournament": "Tulln challenger",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
-      "detail": "13:45 · Tulln challenger",
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
+      "detail": "13:40 · Tulln challenger",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "d866131d868ebd4c7502",
@@ -1430,7 +1617,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "ec2988e34ce15063fd54",
@@ -1439,15 +1626,15 @@
       "playerA": "Shelton B.",
       "playerB": "Tiafoe F.",
       "tournament": "US Open",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "3",
+      "scoreB": "1",
       "detail": "01:45 · US Open",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "6555cdefc01391099d33",
@@ -1462,9 +1649,9 @@
       "scoreB": null,
       "detail": "20:00 · UTR Pro Match Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "8700c0546856a989a79c",
@@ -1479,9 +1666,60 @@
       "scoreB": null,
       "detail": "17:00 · UTR Pro Match Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
+      "id": "95a9aa1618addbef7bc5",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Battesti A.",
+      "playerB": "Mattioli F.",
+      "tournament": "UTR Pro Match Series",
+      "state": "pre",
+      "status": "À venir",
+      "scoreA": null,
+      "scoreB": null,
+      "detail": "19:10 · UTR Pro Match Series",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
+      "id": "138648e6f01f35a52708",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Bjork J.",
+      "playerB": "Evtimova D.",
+      "tournament": "UTR Pro Match Series",
+      "state": "pre",
+      "status": "À venir",
+      "scoreA": null,
+      "scoreB": null,
+      "detail": "16:40 · UTR Pro Match Series",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
+      "id": "fd2f7f5daa754eca544c",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Castillo Meza M.",
+      "playerB": "Fairclough L.",
+      "tournament": "UTR Pro Match Series",
+      "state": "pre",
+      "status": "À venir",
+      "scoreA": null,
+      "scoreB": null,
+      "detail": "23:30 · UTR Pro Match Series",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "b9d6292539b71808d7e5",
@@ -1498,7 +1736,24 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
+      "id": "653057f3b470bc46d99d",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Di Genova C.",
+      "playerB": "Moore E.",
+      "tournament": "UTR Pro Match Series",
+      "state": "pre",
+      "status": "À venir",
+      "scoreA": null,
+      "scoreB": null,
+      "detail": "19:10 · UTR Pro Match Series",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "0637e6829b723aea1901",
@@ -1515,7 +1770,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "b1c0807d318beddfb036",
@@ -1530,9 +1785,43 @@
       "scoreB": null,
       "detail": "03:30 · UTR Pro Match Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
+      "id": "f75c650162a0f494042b",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Fakih K.",
+      "playerB": "Ekstrand M.",
+      "tournament": "UTR Pro Match Series",
+      "state": "pre",
+      "status": "À venir",
+      "scoreA": null,
+      "scoreB": null,
+      "detail": "23:30 · UTR Pro Match Series",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
+      "id": "35060d712a3fceffb8b7",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Gilbert A.",
+      "playerB": "Hendricks F.",
+      "tournament": "UTR Pro Match Series",
+      "state": "pre",
+      "status": "À venir",
+      "scoreA": null,
+      "scoreB": null,
+      "detail": "18:30 · UTR Pro Match Series",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "bd42a9aae7c74a95f2e0",
@@ -1549,7 +1838,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "1a422ace9d3c136fdb7e",
@@ -1566,7 +1855,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "b0e95231033cbc62f7e1",
@@ -1583,7 +1872,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "0f3930c93a96028bd77f",
@@ -1600,7 +1889,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "e51a9deec203416d9b06",
@@ -1615,9 +1904,9 @@
       "scoreB": null,
       "detail": "22:00 · UTR Pro Match Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "9ae1db6202d2d2914f4c",
@@ -1632,9 +1921,9 @@
       "scoreB": null,
       "detail": "22:45 · UTR Pro Match Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "dd8815f5eaf90f4626a2",
@@ -1649,9 +1938,9 @@
       "scoreB": null,
       "detail": "20:00 · UTR Pro Match Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "794fa0e8f10cb180c53b",
@@ -1668,7 +1957,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "115873e3336fb7b57936",
@@ -1683,9 +1972,9 @@
       "scoreB": null,
       "detail": "20:00 · UTR Pro Match Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "d628099612f3ba1db46a",
@@ -1700,9 +1989,26 @@
       "scoreB": null,
       "detail": "18:30 · UTR Pro Match Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
+      "id": "75cb23796325c9813683",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Niewiadomska P.",
+      "playerB": "Wojcik M.",
+      "tournament": "UTR Pro Match Series",
+      "state": "pre",
+      "status": "À venir",
+      "scoreA": null,
+      "scoreB": null,
+      "detail": "16:40 · UTR Pro Match Series",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "b7165fdc26c197f46518",
@@ -1717,9 +2023,9 @@
       "scoreB": null,
       "detail": "16:30 · UTR Pro Match Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "e158b05c3480dedd1006",
@@ -1736,7 +2042,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "614e9729b407bf7121df",
@@ -1751,9 +2057,9 @@
       "scoreB": null,
       "detail": "18:30 · UTR Pro Match Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "b0ec0648e4b069152978",
@@ -1770,7 +2076,24 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
+      "id": "b550eff91deb673060ee",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Pinson L.",
+      "playerB": "Makela J.",
+      "tournament": "UTR Pro Match Series",
+      "state": "pre",
+      "status": "À venir",
+      "scoreA": null,
+      "scoreB": null,
+      "detail": "19:40 · UTR Pro Match Series",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "84e1e5d878262d26cfc3",
@@ -1787,7 +2110,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "8ad4061e30ef8bdf1ddc",
@@ -1802,9 +2125,9 @@
       "scoreB": null,
       "detail": "03:30 · UTR Pro Match Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "8a433cec85cc7ea670a4",
@@ -1821,7 +2144,24 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
+      "id": "ca93c24d7a24aff36832",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Thorne S.",
+      "playerB": "Olsen A.",
+      "tournament": "UTR Pro Match Series",
+      "state": "pre",
+      "status": "À venir",
+      "scoreA": null,
+      "scoreB": null,
+      "detail": "19:40 · UTR Pro Match Series",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "f9f48122703477cb7b06",
@@ -1838,7 +2178,24 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
+      "id": "e59394a7b0a4baae5c90",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Yli-Piipari S.",
+      "playerB": "Kamigata L.",
+      "tournament": "UTR Pro Match Series",
+      "state": "pre",
+      "status": "À venir",
+      "scoreA": null,
+      "scoreB": null,
+      "detail": "16:10 · UTR Pro Match Series",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "56b978b68da32cfcd79a",
@@ -1853,9 +2210,9 @@
       "scoreB": null,
       "detail": "03:40 · UTR Pro Tennis Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "de632a2a34c0a09f5af2",
@@ -1870,9 +2227,9 @@
       "scoreB": null,
       "detail": "02:30 · UTR Pro Tennis Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "91f8d750e36a2cfd9c7e",
@@ -1881,15 +2238,15 @@
       "playerA": "Apisah V.",
       "playerB": "Di Tommaso C.",
       "tournament": "UTR Pro Tennis Series",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "05:05 · UTR Pro Tennis Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "f1e42a32491dca089578",
@@ -1906,7 +2263,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "e62b6b526cef9115ddf2",
@@ -1921,9 +2278,9 @@
       "scoreB": null,
       "detail": "02:25 · UTR Pro Tennis Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "055b637fe8c2dcc56353",
@@ -1940,7 +2297,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "04e3c92b078e796a91b3",
@@ -1949,15 +2306,15 @@
       "playerA": "Braund A.",
       "playerB": "Andrews O.",
       "tournament": "UTR Pro Tennis Series",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "01:00 · UTR Pro Tennis Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "b6dde7beb61409659c1a",
@@ -1966,15 +2323,15 @@
       "playerA": "Bulte A.",
       "playerB": "Hoole C.",
       "tournament": "UTR Pro Tennis Series",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "02:45 · UTR Pro Tennis Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "b696a7b83dfab2e6d1f7",
@@ -1983,15 +2340,15 @@
       "playerA": "Burton C.",
       "playerB": "Boniel N.",
       "tournament": "UTR Pro Tennis Series",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "01:00 · UTR Pro Tennis Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "ff4f10d44b734e0fef4c",
@@ -2000,15 +2357,15 @@
       "playerA": "Burton M.",
       "playerB": "Staley J.",
       "tournament": "UTR Pro Tennis Series",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "02:25 · UTR Pro Tennis Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "68d4088eeaa03854bf17",
@@ -2025,7 +2382,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "fe33fb913113acef1a21",
@@ -2040,9 +2397,9 @@
       "scoreB": null,
       "detail": "01:00 · UTR Pro Tennis Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "976bb702bbc3437a074c",
@@ -2051,15 +2408,15 @@
       "playerA": "Ito K.",
       "playerB": "Estephan J.",
       "tournament": "UTR Pro Tennis Series",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "04:10 · UTR Pro Tennis Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "4a3e185fbdaaa1437d2d",
@@ -2068,15 +2425,15 @@
       "playerA": "Jones S.",
       "playerB": "Beale J.",
       "tournament": "UTR Pro Tennis Series",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "03:20 · UTR Pro Tennis Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "a2a6a3a55cb908fc21c9",
@@ -2085,15 +2442,15 @@
       "playerA": "Khan L.",
       "playerB": "Arnautovic L.",
       "tournament": "UTR Pro Tennis Series",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "01:00 · UTR Pro Tennis Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "e380f27c75661c73affb",
@@ -2108,9 +2465,9 @@
       "scoreB": null,
       "detail": "02:30 · UTR Pro Tennis Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "466719c8f6af50c1bd3a",
@@ -2119,15 +2476,15 @@
       "playerA": "Mickoska S.",
       "playerB": "Zylberman A.",
       "tournament": "UTR Pro Tennis Series",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "1",
       "detail": "01:00 · UTR Pro Tennis Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "52513aaad9881b9e4035",
@@ -2144,7 +2501,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "f53fb8b1e5037210604d",
@@ -2159,9 +2516,9 @@
       "scoreB": null,
       "detail": "01:00 · UTR Pro Tennis Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "3ed945bcc3c6c62eebf8",
@@ -2178,7 +2535,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "1ad3028d710295d5fd1d",
@@ -2187,15 +2544,15 @@
       "playerA": "Simes A.",
       "playerB": "Desai N.",
       "tournament": "UTR Pro Tennis Series",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "03:50 · UTR Pro Tennis Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "de22d7893e4426eb82bb",
@@ -2210,9 +2567,9 @@
       "scoreB": null,
       "detail": "03:45 · UTR Pro Tennis Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "af6b339fe2549481a933",
@@ -2229,7 +2586,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "1555ee6438e190e4cdd8",
@@ -2238,15 +2595,15 @@
       "playerA": "Tripathi E.",
       "playerB": "Girdler J.",
       "tournament": "UTR Pro Tennis Series",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
       "detail": "01:00 · UTR Pro Tennis Series",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "188d8a5140852def8320",
@@ -2263,7 +2620,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "4844bc6ebad713838810",
@@ -2278,9 +2635,9 @@
       "scoreB": null,
       "detail": "19:20 · UTR Pro Tennis Series 3",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "68073d1055c5e0469dea",
@@ -2297,7 +2654,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "cd61435516b09e10b2c2",
@@ -2314,7 +2671,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "4db7b82e6974ac0c1795",
@@ -2331,7 +2688,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "32e2c1bfa9a1bf039f71",
@@ -2348,7 +2705,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "e7f1a3cec08fa0f073bc",
@@ -2357,15 +2714,15 @@
       "playerA": "Djakouris A.",
       "playerB": "Gamal G.",
       "tournament": "UTR Pro Tennis Series 3",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "1",
       "detail": "03:30 · UTR Pro Tennis Series 3",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "d608156e935bd8d9d88c",
@@ -2382,7 +2739,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "eaed5ffe1cf78e757099",
@@ -2397,9 +2754,9 @@
       "scoreB": null,
       "detail": "17:00 · UTR Pro Tennis Series 3",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "ef89a1dc6c8b045fef00",
@@ -2416,7 +2773,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "02bac34cf81edcbfe857",
@@ -2431,9 +2788,9 @@
       "scoreB": null,
       "detail": "15:30 · UTR Pro Tennis Series 3",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "7988dc40d584815885e1",
@@ -2448,9 +2805,9 @@
       "scoreB": null,
       "detail": "17:35 · UTR Pro Tennis Series 3",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "5a7f2bf4c778decf3058",
@@ -2467,7 +2824,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "c40605f9fe808b1d8b91",
@@ -2484,7 +2841,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "dc9295982c025890143a",
@@ -2501,7 +2858,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "ceb6fb0a4f754a7973f4",
@@ -2518,7 +2875,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "00d27f05ba3eb9aa1e17",
@@ -2533,9 +2890,9 @@
       "scoreB": null,
       "detail": "03:30 · UTR Pro Tennis Series 3",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "fe095c82eb65031f2454",
@@ -2552,7 +2909,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "34b5e981f96c63ea5b92",
@@ -2569,7 +2926,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "87b6b3f84ebebcf62a52",
@@ -2586,7 +2943,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "2473b025c53780906c79",
@@ -2603,7 +2960,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "31780686722a4e56f4d5",
@@ -2618,9 +2975,9 @@
       "scoreB": null,
       "detail": "16:00 · UTR Pro Tennis Series 3",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "2862393b07bf73fc1d54",
@@ -2637,7 +2994,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "e924b19707829b9c09fa",
@@ -2654,7 +3011,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "daca1f0d04df727a052d",
@@ -2669,9 +3026,9 @@
       "scoreB": null,
       "detail": "03:35 · UTR Pro Tennis Series 3",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "dd13cd7454e9a97fbf34",
@@ -2688,7 +3045,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "234c23a7ee9ea99694a7",
@@ -2703,9 +3060,9 @@
       "scoreB": null,
       "detail": "17:00 · UTR Pro Tennis Series 3",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "582952d1158ecec0a867",
@@ -2722,7 +3079,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "5f55627d9f0cd32fceee",
@@ -2737,9 +3094,9 @@
       "scoreB": null,
       "detail": "15:30 · UTR Pro Tennis Series 3",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "48429d92e0c947416b72",
@@ -2754,9 +3111,9 @@
       "scoreB": null,
       "detail": "16:00 · UTR Pro Tennis Series 3",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "b99708a7bdbf185033d7",
@@ -2771,9 +3128,9 @@
       "scoreB": null,
       "detail": "17:10 · UTR Pro Tennis Series 3",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "18e83afe7b5ebdb45fb7",
@@ -2790,7 +3147,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "7140d7f3ccb06250423a",
@@ -2805,9 +3162,9 @@
       "scoreB": null,
       "detail": "03:30 · UTR Pro Tennis Series 3",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "7b2ae2b871eccd9bf0e1",
@@ -2824,7 +3181,24 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
+      "id": "f590c6996db5497996dc",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Widell A.",
+      "playerB": "Hernandez J.",
+      "tournament": "UTR Pro Tennis Series 3",
+      "state": "pre",
+      "status": "À venir",
+      "scoreA": null,
+      "scoreB": null,
+      "detail": "18:30 · UTR Pro Tennis Series 3",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "0e26f82191e76c9d7527",
@@ -2841,7 +3215,7 @@
       "source": "TennisExplorer",
       "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "c617560f0929f3cb1fc0",
@@ -2878,6 +3252,91 @@
       "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
     },
     {
+      "id": "e329b52eabfa377b28ff",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Lombardini M.",
+      "playerB": "Fumagalli S.",
+      "tournament": "Viserba ITF",
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
+      "detail": "11:30 · Viserba ITF",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
+      "id": "6d295107d93a3a2a95c9",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Raggi A.",
+      "playerB": "Shapatava S.",
+      "tournament": "Viserba ITF",
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
+      "detail": "11:30 · Viserba ITF",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
+      "id": "7de3e26d0dbfaf9ef2ca",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Raggi A.",
+      "playerB": "Lombardini M.",
+      "tournament": "Viserba ITF",
+      "state": "pre",
+      "status": "À venir",
+      "scoreA": null,
+      "scoreB": null,
+      "detail": "18:05 · Viserba ITF",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
+      "id": "b9adaa8c521a356d800d",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Schaefer A.",
+      "playerB": "Tomase E.",
+      "tournament": "Viserba ITF",
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
+      "detail": "10:00 · Viserba ITF",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
+      "id": "6d7f9875eb193ce6895e",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Schaefer A.",
+      "playerB": "Voracek E.",
+      "tournament": "Viserba ITF",
+      "state": "pre",
+      "status": "À venir",
+      "scoreA": null,
+      "scoreB": null,
+      "detail": "14:30 · Viserba ITF",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
       "id": "eda45c0be75771a928f2",
       "sport": "tennis",
       "date": "2026-09-12",
@@ -2912,21 +3371,38 @@
       "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
     },
     {
+      "id": "9c27d674ba93667c8529",
+      "sport": "tennis",
+      "date": "2026-09-12",
+      "playerA": "Voracek E.",
+      "playerB": "Alvisi E.",
+      "tournament": "Viserba ITF",
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "0",
+      "detail": "10:00 · Viserba ITF",
+      "source": "TennisExplorer",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
+      "firstSeenAt": "2026-09-12T14:04:37.418185+00:00",
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
+    },
+    {
       "id": "536770a1faa0f2e88068",
       "sport": "tennis",
       "date": "2026-09-12",
       "playerA": "Kim D.",
       "playerB": "Lee H.",
       "tournament": "Yeongwol 2 ITF",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "1",
       "detail": "10:00 · Yeongwol 2 ITF",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     },
     {
       "id": "1e1d1906e6d8c0e3e404",
@@ -2935,15 +3411,15 @@
       "playerA": "Kim Y.",
       "playerB": "Tsao C.",
       "tournament": "Yeongwol 2 ITF",
-      "state": "in",
-      "status": "En cours",
-      "scoreA": null,
-      "scoreB": null,
+      "state": "post",
+      "status": "Terminé",
+      "scoreA": "2",
+      "scoreB": "1",
       "detail": "10:00 · Yeongwol 2 ITF",
       "source": "TennisExplorer",
-      "verifiedAt": "2026-09-12T09:31:11.685606+00:00",
+      "verifiedAt": "2026-09-12T13:58:39.387626+00:00",
       "firstSeenAt": "2026-09-12T11:53:44.803789+00:00",
-      "lastSeenAt": "2026-09-12T11:53:44.803789+00:00"
+      "lastSeenAt": "2026-09-12T14:04:37.418185+00:00"
     }
   ]
 }
