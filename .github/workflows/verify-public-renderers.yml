@@ -1,0 +1,56 @@
+name: Verify ATLAS public renderers
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  verify:
+    if: startsWith(github.event.issue.title, 'ATLAS-PUBLIC-QA')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify public mirrors byte-for-byte
+        shell: bash
+        run: |
+          set -euo pipefail
+          paths=(
+            index.html
+            tennis-command/index.html
+            tennis-deep/index.html
+            tennis-fusion/index.html
+            football-command/index.html
+            football-deep/index.html
+            football-fusion/index.html
+            calibration/index.html
+          )
+          renderers=(
+            'https://cdn.jsdelivr.net/gh/lgquidal-glitch/atlas-tools@main/web'
+            'https://raw.githack.com/lgquidal-glitch/atlas-tools/main/web'
+          )
+          : > qa-public-renderers.txt
+          for base in "${renderers[@]}"; do
+            echo "RENDERER $base" | tee -a qa-public-renderers.txt
+            for p in "${paths[@]}"; do
+              url="$base/$p"
+              tmp=$(mktemp)
+              code=$(curl -L --retry 2 --connect-timeout 20 --max-time 90 -sS -o "$tmp" -w '%{http_code}' "$url" || true)
+              ctype=$(curl -L --retry 1 --connect-timeout 20 --max-time 90 -sSI "$url" | tr -d '\r' | awk -F': ' 'tolower($1)=="content-type"{print $2}' | tail -n1 || true)
+              if [ "$code" != "200" ]; then
+                echo "FAIL $p HTTP=$code CT=$ctype" | tee -a qa-public-renderers.txt
+                rm -f "$tmp"
+                continue
+              fi
+              if cmp -s "web/$p" "$tmp"; then
+                echo "PASS $p HTTP=200 CT=$ctype EXACT=YES" | tee -a qa-public-renderers.txt
+              else
+                echo "FAIL $p HTTP=200 CT=$ctype EXACT=NO" | tee -a qa-public-renderers.txt
+              fi
+              rm -f "$tmp"
+            done
+          done
+          cat qa-public-renderers.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: atlas-public-renderer-qa
+          path: qa-public-renderers.txt
