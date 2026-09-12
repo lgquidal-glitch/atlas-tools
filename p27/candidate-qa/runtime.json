@@ -1,95 +1,254 @@
 {
   "total": 56,
-  "pass": 0,
-  "fail": 56,
+  "pass": 37,
+  "fail": 19,
   "results": [
     {
       "browser": "chromium",
       "tool": "tennis-command",
       "profile": "android",
       "status": 200,
-      "bodyChars": 551,
+      "bodyChars": 10879,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:38:48.508Z",
+        "source": "ATLAS same-origin broker · corroborated feed",
+        "competitions": 173
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
       "tool": "tennis-command",
       "profile": "iphone",
       "status": 200,
-      "bodyChars": 438,
+      "bodyChars": 10913,
       "overflow": false,
       "pageErrors": [],
-      "consoleErrors": [
-        "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-      ],
-      "failedRequests": [
-        {
-          "url": "https://server.ethicalads.io/api/v1/decision/?publisher=githackcom&ad_types=image-v1&div_ids=githack-other-ad&callback=ad_1789205582911_327128&keywords=&campaign_types=paid%7Cpublisher-house%7Ccommunity%7Chouse&format=jsonp&client_version=2.4.0&placement_index=0&url=https%3A%2F%2Fraw.githack.com%2Flgquidal-glitch%2Fatlas-tools%2Fp27-consolidation-candidate%2Fweb%2Ftennis-command%2Findex.html",
-          "failure": "net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-        }
-      ],
-      "live": null,
-      "sourceFeed": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:38:52.682Z",
+        "source": "ATLAS same-origin broker · corroborated feed",
+        "competitions": 173
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
       "tool": "tennis-command",
       "profile": "ipad",
       "status": 200,
-      "bodyChars": 438,
+      "bodyChars": 11098,
       "overflow": false,
       "pageErrors": [],
-      "consoleErrors": [
-        "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-      ],
-      "failedRequests": [
-        {
-          "url": "https://server.ethicalads.io/api/v1/decision/?publisher=githackcom&ad_types=image-v1&div_ids=githack-other-ad&callback=ad_1789205587172_535267&keywords=&campaign_types=paid%7Cpublisher-house%7Ccommunity%7Chouse&format=jsonp&client_version=2.4.0&placement_index=0&url=https%3A%2F%2Fraw.githack.com%2Flgquidal-glitch%2Fatlas-tools%2Fp27-consolidation-candidate%2Fweb%2Ftennis-command%2Findex.html",
-          "failure": "net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-        }
-      ],
-      "live": null,
-      "sourceFeed": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:38:56.851Z",
+        "source": "ATLAS same-origin broker · corroborated feed",
+        "competitions": 173
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
       "tool": "tennis-command",
       "profile": "desktop",
       "status": 200,
-      "bodyChars": 438,
+      "bodyChars": 11098,
       "overflow": false,
       "pageErrors": [],
-      "consoleErrors": [
-        "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-      ],
-      "failedRequests": [
-        {
-          "url": "https://server.ethicalads.io/api/v1/decision/?publisher=githackcom&ad_types=image-v1&div_ids=githack-other-ad&callback=ad_1789205590724_400400&keywords=&campaign_types=paid%7Cpublisher-house%7Ccommunity%7Chouse&format=jsonp&client_version=2.4.0&placement_index=0&url=https%3A%2F%2Fraw.githack.com%2Flgquidal-glitch%2Fatlas-tools%2Fp27-consolidation-candidate%2Fweb%2Ftennis-command%2Findex.html",
-          "failure": "net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-        }
-      ],
-      "live": null,
-      "sourceFeed": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:39:01.181Z",
+        "source": "ATLAS same-origin broker · corroborated feed",
+        "competitions": 173
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
       "tool": "tennis-deep",
       "profile": "android",
       "status": 200,
-      "bodyChars": 551,
+      "bodyChars": 12836,
+      "overflow": false,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:39:05.678Z",
+        "source": "ATLAS same-origin broker · corroborated feed",
+        "competitions": 173
+      },
+      "sourceFeed": true,
+      "espnRequests": 0,
+      "pass": true
+    },
+    {
+      "browser": "chromium",
+      "tool": "tennis-deep",
+      "profile": "iphone",
+      "status": 200,
+      "bodyChars": 12870,
+      "overflow": false,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:39:09.998Z",
+        "source": "ATLAS same-origin broker · corroborated feed",
+        "competitions": 173
+      },
+      "sourceFeed": true,
+      "espnRequests": 0,
+      "pass": true
+    },
+    {
+      "browser": "chromium",
+      "tool": "tennis-deep",
+      "profile": "ipad",
+      "status": 200,
+      "bodyChars": 13055,
+      "overflow": false,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:39:14.395Z",
+        "source": "ATLAS same-origin broker · corroborated feed",
+        "competitions": 173
+      },
+      "sourceFeed": true,
+      "espnRequests": 0,
+      "pass": true
+    },
+    {
+      "browser": "chromium",
+      "tool": "tennis-deep",
+      "profile": "desktop",
+      "status": 200,
+      "bodyChars": 13055,
+      "overflow": false,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:39:19.003Z",
+        "source": "ATLAS same-origin broker · corroborated feed",
+        "competitions": 173
+      },
+      "sourceFeed": true,
+      "espnRequests": 0,
+      "pass": true
+    },
+    {
+      "browser": "chromium",
+      "tool": "tennis-fusion",
+      "profile": "android",
+      "status": 200,
+      "bodyChars": 12817,
+      "overflow": false,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:39:23.812Z",
+        "source": "ATLAS same-origin broker · corroborated feed",
+        "competitions": 173
+      },
+      "sourceFeed": true,
+      "espnRequests": 0,
+      "pass": true
+    },
+    {
+      "browser": "chromium",
+      "tool": "tennis-fusion",
+      "profile": "iphone",
+      "status": 200,
+      "bodyChars": 12851,
+      "overflow": false,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:39:28.197Z",
+        "source": "ATLAS same-origin broker · corroborated feed",
+        "competitions": 173
+      },
+      "sourceFeed": true,
+      "espnRequests": 0,
+      "pass": true
+    },
+    {
+      "browser": "chromium",
+      "tool": "tennis-fusion",
+      "profile": "ipad",
+      "status": 200,
+      "bodyChars": 13036,
+      "overflow": false,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:39:32.559Z",
+        "source": "ATLAS same-origin broker · corroborated feed",
+        "competitions": 173
+      },
+      "sourceFeed": true,
+      "espnRequests": 0,
+      "pass": true
+    },
+    {
+      "browser": "chromium",
+      "tool": "tennis-fusion",
+      "profile": "desktop",
+      "status": 200,
+      "bodyChars": 13036,
+      "overflow": false,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:39:37.054Z",
+        "source": "ATLAS same-origin broker · corroborated feed",
+        "competitions": 173
+      },
+      "sourceFeed": true,
+      "espnRequests": 0,
+      "pass": true
+    },
+    {
+      "browser": "chromium",
+      "tool": "football-command",
+      "profile": "android",
+      "status": 200,
+      "bodyChars": 21980,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
@@ -101,142 +260,10 @@
     },
     {
       "browser": "chromium",
-      "tool": "tennis-deep",
+      "tool": "football-command",
       "profile": "iphone",
       "status": 200,
-      "bodyChars": 438,
-      "overflow": false,
-      "pageErrors": [],
-      "consoleErrors": [
-        "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-      ],
-      "failedRequests": [
-        {
-          "url": "https://server.ethicalads.io/api/v1/decision/?publisher=githackcom&ad_types=image-v1&div_ids=githack-other-ad&callback=ad_1789205599777_413526&keywords=&campaign_types=paid%7Cpublisher-house%7Ccommunity%7Chouse&format=jsonp&client_version=2.4.0&placement_index=0&url=https%3A%2F%2Fraw.githack.com%2Flgquidal-glitch%2Fatlas-tools%2Fp27-consolidation-candidate%2Fweb%2Ftennis-deep%2Findex.html",
-          "failure": "net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-        }
-      ],
-      "live": null,
-      "sourceFeed": false,
-      "espnRequests": 0,
-      "pass": false
-    },
-    {
-      "browser": "chromium",
-      "tool": "tennis-deep",
-      "profile": "ipad",
-      "status": 200,
-      "bodyChars": 438,
-      "overflow": false,
-      "pageErrors": [],
-      "consoleErrors": [
-        "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-      ],
-      "failedRequests": [
-        {
-          "url": "https://server.ethicalads.io/api/v1/decision/?publisher=githackcom&ad_types=image-v1&div_ids=githack-other-ad&callback=ad_1789205603132_892455&keywords=&campaign_types=paid%7Cpublisher-house%7Ccommunity%7Chouse&format=jsonp&client_version=2.4.0&placement_index=0&url=https%3A%2F%2Fraw.githack.com%2Flgquidal-glitch%2Fatlas-tools%2Fp27-consolidation-candidate%2Fweb%2Ftennis-deep%2Findex.html",
-          "failure": "net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-        }
-      ],
-      "live": null,
-      "sourceFeed": false,
-      "espnRequests": 0,
-      "pass": false
-    },
-    {
-      "browser": "chromium",
-      "tool": "tennis-deep",
-      "profile": "desktop",
-      "status": 200,
-      "bodyChars": 438,
-      "overflow": false,
-      "pageErrors": [],
-      "consoleErrors": [
-        "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-      ],
-      "failedRequests": [
-        {
-          "url": "https://server.ethicalads.io/api/v1/decision/?publisher=githackcom&ad_types=image-v1&div_ids=githack-other-ad&callback=ad_1789205606916_16687&keywords=&campaign_types=paid%7Cpublisher-house%7Ccommunity%7Chouse&format=jsonp&client_version=2.4.0&placement_index=0&url=https%3A%2F%2Fraw.githack.com%2Flgquidal-glitch%2Fatlas-tools%2Fp27-consolidation-candidate%2Fweb%2Ftennis-deep%2Findex.html",
-          "failure": "net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-        }
-      ],
-      "live": null,
-      "sourceFeed": false,
-      "espnRequests": 0,
-      "pass": false
-    },
-    {
-      "browser": "chromium",
-      "tool": "tennis-fusion",
-      "profile": "android",
-      "status": 200,
-      "bodyChars": 438,
-      "overflow": false,
-      "pageErrors": [],
-      "consoleErrors": [
-        "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-      ],
-      "failedRequests": [
-        {
-          "url": "https://server.ethicalads.io/api/v1/decision/?publisher=githackcom&ad_types=image-v1&div_ids=githack-other-ad&callback=ad_1789205610725_902401&keywords=&campaign_types=paid%7Cpublisher-house%7Ccommunity%7Chouse&format=jsonp&client_version=2.4.0&placement_index=0&url=https%3A%2F%2Fraw.githack.com%2Flgquidal-glitch%2Fatlas-tools%2Fp27-consolidation-candidate%2Fweb%2Ftennis-fusion%2Findex.html",
-          "failure": "net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-        }
-      ],
-      "live": null,
-      "sourceFeed": false,
-      "espnRequests": 0,
-      "pass": false
-    },
-    {
-      "browser": "chromium",
-      "tool": "tennis-fusion",
-      "profile": "iphone",
-      "status": 200,
-      "bodyChars": 438,
-      "overflow": false,
-      "pageErrors": [],
-      "consoleErrors": [
-        "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-      ],
-      "failedRequests": [
-        {
-          "url": "https://server.ethicalads.io/api/v1/decision/?publisher=githackcom&ad_types=image-v1&div_ids=githack-other-ad&callback=ad_1789205614503_598668&keywords=&campaign_types=paid%7Cpublisher-house%7Ccommunity%7Chouse&format=jsonp&client_version=2.4.0&placement_index=0&url=https%3A%2F%2Fraw.githack.com%2Flgquidal-glitch%2Fatlas-tools%2Fp27-consolidation-candidate%2Fweb%2Ftennis-fusion%2Findex.html",
-          "failure": "net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-        }
-      ],
-      "live": null,
-      "sourceFeed": false,
-      "espnRequests": 0,
-      "pass": false
-    },
-    {
-      "browser": "chromium",
-      "tool": "tennis-fusion",
-      "profile": "ipad",
-      "status": 200,
-      "bodyChars": 438,
-      "overflow": false,
-      "pageErrors": [],
-      "consoleErrors": [
-        "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-      ],
-      "failedRequests": [
-        {
-          "url": "https://server.ethicalads.io/api/v1/decision/?publisher=githackcom&ad_types=image-v1&div_ids=githack-other-ad&callback=ad_1789205618288_284558&keywords=&campaign_types=paid%7Cpublisher-house%7Ccommunity%7Chouse&format=jsonp&client_version=2.4.0&placement_index=0&url=https%3A%2F%2Fraw.githack.com%2Flgquidal-glitch%2Fatlas-tools%2Fp27-consolidation-candidate%2Fweb%2Ftennis-fusion%2Findex.html",
-          "failure": "net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-        }
-      ],
-      "live": null,
-      "sourceFeed": false,
-      "espnRequests": 0,
-      "pass": false
-    },
-    {
-      "browser": "chromium",
-      "tool": "tennis-fusion",
-      "profile": "desktop",
-      "status": 200,
-      "bodyChars": 569,
+      "bodyChars": 22007,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
@@ -249,64 +276,13 @@
     {
       "browser": "chromium",
       "tool": "football-command",
-      "profile": "android",
-      "status": 200,
-      "bodyChars": 438,
-      "overflow": false,
-      "pageErrors": [],
-      "consoleErrors": [
-        "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-      ],
-      "failedRequests": [
-        {
-          "url": "https://server.ethicalads.io/api/v1/decision/?publisher=githackcom&ad_types=image-v1&div_ids=githack-other-ad&callback=ad_1789205625898_907869&keywords=&campaign_types=paid%7Cpublisher-house%7Ccommunity%7Chouse&format=jsonp&client_version=2.4.0&placement_index=0&url=https%3A%2F%2Fraw.githack.com%2Flgquidal-glitch%2Fatlas-tools%2Fp27-consolidation-candidate%2Fweb%2Ffootball-command%2Findex.html",
-          "failure": "net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-        }
-      ],
-      "live": null,
-      "sourceFeed": false,
-      "espnRequests": 0,
-      "pass": false
-    },
-    {
-      "browser": "chromium",
-      "tool": "football-command",
-      "profile": "iphone",
-      "status": 200,
-      "bodyChars": 438,
-      "overflow": false,
-      "pageErrors": [],
-      "consoleErrors": [
-        "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-      ],
-      "failedRequests": [
-        {
-          "url": "https://server.ethicalads.io/api/v1/decision/?publisher=githackcom&ad_types=image-v1&div_ids=githack-other-ad&callback=ad_1789205629663_494014&keywords=&campaign_types=paid%7Cpublisher-house%7Ccommunity%7Chouse&format=jsonp&client_version=2.4.0&placement_index=0&url=https%3A%2F%2Fraw.githack.com%2Flgquidal-glitch%2Fatlas-tools%2Fp27-consolidation-candidate%2Fweb%2Ffootball-command%2Findex.html",
-          "failure": "net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-        }
-      ],
-      "live": null,
-      "sourceFeed": false,
-      "espnRequests": 0,
-      "pass": false
-    },
-    {
-      "browser": "chromium",
-      "tool": "football-command",
       "profile": "ipad",
       "status": 200,
-      "bodyChars": 438,
+      "bodyChars": 22196,
       "overflow": false,
       "pageErrors": [],
-      "consoleErrors": [
-        "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-      ],
-      "failedRequests": [
-        {
-          "url": "https://server.ethicalads.io/api/v1/decision/?publisher=githackcom&ad_types=image-v1&div_ids=githack-other-ad&callback=ad_1789205633442_745813&keywords=&campaign_types=paid%7Cpublisher-house%7Ccommunity%7Chouse&format=jsonp&client_version=2.4.0&placement_index=0&url=https%3A%2F%2Fraw.githack.com%2Flgquidal-glitch%2Fatlas-tools%2Fp27-consolidation-candidate%2Fweb%2Ffootball-command%2Findex.html",
-          "failure": "net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-        }
-      ],
+      "consoleErrors": [],
+      "failedRequests": [],
       "live": null,
       "sourceFeed": false,
       "espnRequests": 0,
@@ -317,18 +293,11 @@
       "tool": "football-command",
       "profile": "desktop",
       "status": 200,
-      "bodyChars": 438,
+      "bodyChars": 22196,
       "overflow": false,
       "pageErrors": [],
-      "consoleErrors": [
-        "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-      ],
-      "failedRequests": [
-        {
-          "url": "https://server.ethicalads.io/api/v1/decision/?publisher=githackcom&ad_types=image-v1&div_ids=githack-other-ad&callback=ad_1789205637243_77686&keywords=&campaign_types=paid%7Cpublisher-house%7Ccommunity%7Chouse&format=jsonp&client_version=2.4.0&placement_index=0&url=https%3A%2F%2Fraw.githack.com%2Flgquidal-glitch%2Fatlas-tools%2Fp27-consolidation-candidate%2Fweb%2Ffootball-command%2Findex.html",
-          "failure": "net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-        }
-      ],
+      "consoleErrors": [],
+      "failedRequests": [],
       "live": null,
       "sourceFeed": false,
       "espnRequests": 0,
@@ -339,18 +308,11 @@
       "tool": "football-deep",
       "profile": "android",
       "status": 200,
-      "bodyChars": 438,
+      "bodyChars": 24265,
       "overflow": false,
       "pageErrors": [],
-      "consoleErrors": [
-        "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-      ],
-      "failedRequests": [
-        {
-          "url": "https://server.ethicalads.io/api/v1/decision/?publisher=githackcom&ad_types=image-v1&div_ids=githack-other-ad&callback=ad_1789205641056_959348&keywords=&campaign_types=paid%7Cpublisher-house%7Ccommunity%7Chouse&format=jsonp&client_version=2.4.0&placement_index=0&url=https%3A%2F%2Fraw.githack.com%2Flgquidal-glitch%2Fatlas-tools%2Fp27-consolidation-candidate%2Fweb%2Ffootball-deep%2Findex.html",
-          "failure": "net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-        }
-      ],
+      "consoleErrors": [],
+      "failedRequests": [],
       "live": null,
       "sourceFeed": false,
       "espnRequests": 0,
@@ -361,18 +323,11 @@
       "tool": "football-deep",
       "profile": "iphone",
       "status": 200,
-      "bodyChars": 438,
+      "bodyChars": 24292,
       "overflow": false,
       "pageErrors": [],
-      "consoleErrors": [
-        "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-      ],
-      "failedRequests": [
-        {
-          "url": "https://server.ethicalads.io/api/v1/decision/?publisher=githackcom&ad_types=image-v1&div_ids=githack-other-ad&callback=ad_1789205644822_240699&keywords=&campaign_types=paid%7Cpublisher-house%7Ccommunity%7Chouse&format=jsonp&client_version=2.4.0&placement_index=0&url=https%3A%2F%2Fraw.githack.com%2Flgquidal-glitch%2Fatlas-tools%2Fp27-consolidation-candidate%2Fweb%2Ffootball-deep%2Findex.html",
-          "failure": "net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-        }
-      ],
+      "consoleErrors": [],
+      "failedRequests": [],
       "live": null,
       "sourceFeed": false,
       "espnRequests": 0,
@@ -383,7 +338,7 @@
       "tool": "football-deep",
       "profile": "ipad",
       "status": 200,
-      "bodyChars": 538,
+      "bodyChars": 24481,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
@@ -398,7 +353,7 @@
       "tool": "football-deep",
       "profile": "desktop",
       "status": 200,
-      "bodyChars": 562,
+      "bodyChars": 24481,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
@@ -413,7 +368,7 @@
       "tool": "football-fusion",
       "profile": "android",
       "status": 200,
-      "bodyChars": 535,
+      "bodyChars": 24293,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
@@ -428,18 +383,11 @@
       "tool": "football-fusion",
       "profile": "iphone",
       "status": 200,
-      "bodyChars": 438,
+      "bodyChars": 24320,
       "overflow": false,
       "pageErrors": [],
-      "consoleErrors": [
-        "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-      ],
-      "failedRequests": [
-        {
-          "url": "https://server.ethicalads.io/api/v1/decision/?publisher=githackcom&ad_types=image-v1&div_ids=githack-other-ad&callback=ad_1789205660007_408382&keywords=&campaign_types=paid%7Cpublisher-house%7Ccommunity%7Chouse&format=jsonp&client_version=2.4.0&placement_index=0&url=https%3A%2F%2Fraw.githack.com%2Flgquidal-glitch%2Fatlas-tools%2Fp27-consolidation-candidate%2Fweb%2Ffootball-fusion%2Findex.html",
-          "failure": "net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-        }
-      ],
+      "consoleErrors": [],
+      "failedRequests": [],
       "live": null,
       "sourceFeed": false,
       "espnRequests": 0,
@@ -450,18 +398,11 @@
       "tool": "football-fusion",
       "profile": "ipad",
       "status": 200,
-      "bodyChars": 438,
+      "bodyChars": 24509,
       "overflow": false,
       "pageErrors": [],
-      "consoleErrors": [
-        "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-      ],
-      "failedRequests": [
-        {
-          "url": "https://server.ethicalads.io/api/v1/decision/?publisher=githackcom&ad_types=image-v1&div_ids=githack-other-ad&callback=ad_1789205663774_22558&keywords=&campaign_types=paid%7Cpublisher-house%7Ccommunity%7Chouse&format=jsonp&client_version=2.4.0&placement_index=0&url=https%3A%2F%2Fraw.githack.com%2Flgquidal-glitch%2Fatlas-tools%2Fp27-consolidation-candidate%2Fweb%2Ffootball-fusion%2Findex.html",
-          "failure": "net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-        }
-      ],
+      "consoleErrors": [],
+      "failedRequests": [],
       "live": null,
       "sourceFeed": false,
       "espnRequests": 0,
@@ -472,18 +413,11 @@
       "tool": "football-fusion",
       "profile": "desktop",
       "status": 200,
-      "bodyChars": 438,
+      "bodyChars": 24509,
       "overflow": false,
       "pageErrors": [],
-      "consoleErrors": [
-        "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-      ],
-      "failedRequests": [
-        {
-          "url": "https://server.ethicalads.io/api/v1/decision/?publisher=githackcom&ad_types=image-v1&div_ids=githack-other-ad&callback=ad_1789205667546_648647&keywords=&campaign_types=paid%7Cpublisher-house%7Ccommunity%7Chouse&format=jsonp&client_version=2.4.0&placement_index=0&url=https%3A%2F%2Fraw.githack.com%2Flgquidal-glitch%2Fatlas-tools%2Fp27-consolidation-candidate%2Fweb%2Ffootball-fusion%2Findex.html",
-          "failure": "net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-        }
-      ],
+      "consoleErrors": [],
+      "failedRequests": [],
       "live": null,
       "sourceFeed": false,
       "espnRequests": 0,
@@ -494,253 +428,343 @@
       "tool": "calibration",
       "profile": "android",
       "status": 200,
-      "bodyChars": 438,
+      "bodyChars": 11682,
       "overflow": false,
       "pageErrors": [],
-      "consoleErrors": [
-        "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-      ],
-      "failedRequests": [
-        {
-          "url": "https://server.ethicalads.io/api/v1/decision/?publisher=githackcom&ad_types=image-v1&div_ids=githack-other-ad&callback=ad_1789205671382_341369&keywords=&campaign_types=paid%7Cpublisher-house%7Ccommunity%7Chouse&format=jsonp&client_version=2.4.0&placement_index=0&url=https%3A%2F%2Fraw.githack.com%2Flgquidal-glitch%2Fatlas-tools%2Fp27-consolidation-candidate%2Fweb%2Fcalibration%2Findex.html",
-          "failure": "net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-        }
-      ],
-      "live": null,
-      "sourceFeed": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:40:50.101Z",
+        "source": "ATLAS same-origin broker"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
       "tool": "calibration",
       "profile": "iphone",
       "status": 200,
-      "bodyChars": 438,
+      "bodyChars": 11682,
       "overflow": false,
       "pageErrors": [],
-      "consoleErrors": [
-        "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-      ],
-      "failedRequests": [
-        {
-          "url": "https://server.ethicalads.io/api/v1/decision/?publisher=githackcom&ad_types=image-v1&div_ids=githack-other-ad&callback=ad_1789205675140_237163&keywords=&campaign_types=paid%7Cpublisher-house%7Ccommunity%7Chouse&format=jsonp&client_version=2.4.0&placement_index=0&url=https%3A%2F%2Fraw.githack.com%2Flgquidal-glitch%2Fatlas-tools%2Fp27-consolidation-candidate%2Fweb%2Fcalibration%2Findex.html",
-          "failure": "net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-        }
-      ],
-      "live": null,
-      "sourceFeed": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:40:54.349Z",
+        "source": "ATLAS same-origin broker"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
       "tool": "calibration",
       "profile": "ipad",
       "status": 200,
-      "bodyChars": 438,
+      "bodyChars": 11707,
       "overflow": false,
       "pageErrors": [],
-      "consoleErrors": [
-        "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-      ],
-      "failedRequests": [
-        {
-          "url": "https://server.ethicalads.io/api/v1/decision/?publisher=githackcom&ad_types=image-v1&div_ids=githack-other-ad&callback=ad_1789205678909_377536&keywords=&campaign_types=paid%7Cpublisher-house%7Ccommunity%7Chouse&format=jsonp&client_version=2.4.0&placement_index=0&url=https%3A%2F%2Fraw.githack.com%2Flgquidal-glitch%2Fatlas-tools%2Fp27-consolidation-candidate%2Fweb%2Fcalibration%2Findex.html",
-          "failure": "net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-        }
-      ],
-      "live": null,
-      "sourceFeed": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:40:58.550Z",
+        "source": "ATLAS same-origin broker"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
       "tool": "calibration",
       "profile": "desktop",
       "status": 200,
-      "bodyChars": 582,
+      "bodyChars": 11707,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:41:02.674Z",
+        "source": "ATLAS same-origin broker"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "tennis-command",
       "profile": "android",
       "status": 200,
-      "bodyChars": 558,
+      "bodyChars": 4407,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:41:12.235Z",
+        "source": "ATLAS same-origin broker · corroborated feed",
+        "competitions": 173
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "tennis-command",
       "profile": "iphone",
       "status": 200,
-      "bodyChars": 558,
+      "bodyChars": 4441,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:41:17.317Z",
+        "source": "ATLAS same-origin broker · corroborated feed",
+        "competitions": 173
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "tennis-command",
       "profile": "ipad",
       "status": 200,
-      "bodyChars": 552,
+      "bodyChars": 4626,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:41:21.759Z",
+        "source": "ATLAS same-origin broker · corroborated feed",
+        "competitions": 173
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "tennis-command",
       "profile": "desktop",
       "status": 200,
-      "bodyChars": 561,
+      "bodyChars": 4626,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:41:26.334Z",
+        "source": "ATLAS same-origin broker · corroborated feed",
+        "competitions": 173
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "tennis-deep",
       "profile": "android",
       "status": 200,
-      "bodyChars": 561,
+      "bodyChars": 6364,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:41:31.027Z",
+        "source": "ATLAS same-origin broker · corroborated feed",
+        "competitions": 173
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "tennis-deep",
       "profile": "iphone",
       "status": 200,
-      "bodyChars": 574,
+      "bodyChars": 6398,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:41:35.609Z",
+        "source": "ATLAS same-origin broker · corroborated feed",
+        "competitions": 173
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "tennis-deep",
       "profile": "ipad",
       "status": 200,
-      "bodyChars": 575,
+      "bodyChars": 6583,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:41:40.201Z",
+        "source": "ATLAS same-origin broker · corroborated feed",
+        "competitions": 173
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "tennis-deep",
       "profile": "desktop",
       "status": 200,
-      "bodyChars": 538,
+      "bodyChars": 6583,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:41:44.913Z",
+        "source": "ATLAS same-origin broker · corroborated feed",
+        "competitions": 173
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "tennis-fusion",
       "profile": "android",
       "status": 200,
-      "bodyChars": 567,
+      "bodyChars": 6345,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:41:49.831Z",
+        "source": "ATLAS same-origin broker · corroborated feed",
+        "competitions": 173
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "tennis-fusion",
       "profile": "iphone",
       "status": 200,
-      "bodyChars": 560,
+      "bodyChars": 6379,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:41:54.402Z",
+        "source": "ATLAS same-origin broker · corroborated feed",
+        "competitions": 173
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "tennis-fusion",
       "profile": "ipad",
       "status": 200,
-      "bodyChars": 545,
+      "bodyChars": 6564,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:41:58.992Z",
+        "source": "ATLAS same-origin broker · corroborated feed",
+        "competitions": 173
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "tennis-fusion",
       "profile": "desktop",
       "status": 200,
-      "bodyChars": 557,
+      "bodyChars": 6564,
+      "overflow": false,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:42:03.718Z",
+        "source": "ATLAS same-origin broker · corroborated feed",
+        "competitions": 173
+      },
+      "sourceFeed": true,
+      "espnRequests": 0,
+      "pass": true
+    },
+    {
+      "browser": "webkit",
+      "tool": "football-command",
+      "profile": "android",
+      "status": 200,
+      "bodyChars": 13793,
+      "overflow": false,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "live": {
+        "updatedAt": "2026-09-12T09:42:09.155Z",
+        "providersOk": 6,
+        "matchesUpdated": 17,
+        "source": "ATLAS same-origin broker · corroborated feed"
+      },
+      "sourceFeed": true,
+      "espnRequests": 0,
+      "pass": true
+    },
+    {
+      "browser": "webkit",
+      "tool": "football-command",
+      "profile": "iphone",
+      "status": 200,
+      "bodyChars": 13724,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
@@ -753,69 +777,49 @@
     {
       "browser": "webkit",
       "tool": "football-command",
-      "profile": "android",
-      "status": 200,
-      "bodyChars": 567,
-      "overflow": false,
-      "pageErrors": [],
-      "consoleErrors": [],
-      "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
-      "espnRequests": 0,
-      "pass": false
-    },
-    {
-      "browser": "webkit",
-      "tool": "football-command",
-      "profile": "iphone",
-      "status": 200,
-      "bodyChars": 575,
-      "overflow": false,
-      "pageErrors": [],
-      "consoleErrors": [],
-      "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
-      "espnRequests": 0,
-      "pass": false
-    },
-    {
-      "browser": "webkit",
-      "tool": "football-command",
       "profile": "ipad",
       "status": 200,
-      "bodyChars": 567,
+      "bodyChars": 14009,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "updatedAt": "2026-09-12T09:42:19.474Z",
+        "providersOk": 6,
+        "matchesUpdated": 17,
+        "source": "ATLAS same-origin broker · corroborated feed"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "football-command",
       "profile": "desktop",
       "status": 200,
-      "bodyChars": 567,
+      "bodyChars": 14009,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "updatedAt": "2026-09-12T09:42:24.997Z",
+        "providersOk": 6,
+        "matchesUpdated": 17,
+        "source": "ATLAS same-origin broker · corroborated feed"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "football-deep",
       "profile": "android",
       "status": 200,
-      "bodyChars": 567,
+      "bodyChars": 15982,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
@@ -830,7 +834,7 @@
       "tool": "football-deep",
       "profile": "iphone",
       "status": 200,
-      "bodyChars": 572,
+      "bodyChars": 16009,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
@@ -845,22 +849,27 @@
       "tool": "football-deep",
       "profile": "ipad",
       "status": 200,
-      "bodyChars": 571,
+      "bodyChars": 16318,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "updatedAt": "2026-09-12T09:42:41.848Z",
+        "providersOk": 6,
+        "matchesUpdated": 19,
+        "source": "ATLAS same-origin broker · corroborated feed"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "football-deep",
       "profile": "desktop",
       "status": 200,
-      "bodyChars": 579,
+      "bodyChars": 16198,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
@@ -875,7 +884,7 @@
       "tool": "football-fusion",
       "profile": "android",
       "status": 200,
-      "bodyChars": 562,
+      "bodyChars": 16010,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
@@ -890,7 +899,7 @@
       "tool": "football-fusion",
       "profile": "iphone",
       "status": 200,
-      "bodyChars": 558,
+      "bodyChars": 16037,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
@@ -905,22 +914,27 @@
       "tool": "football-fusion",
       "profile": "ipad",
       "status": 200,
-      "bodyChars": 558,
+      "bodyChars": 16346,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "updatedAt": "2026-09-12T09:43:04.777Z",
+        "providersOk": 6,
+        "matchesUpdated": 19,
+        "source": "ATLAS same-origin broker · corroborated feed"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "football-fusion",
       "profile": "desktop",
       "status": 200,
-      "bodyChars": 560,
+      "bodyChars": 16226,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
@@ -935,60 +949,76 @@
       "tool": "calibration",
       "profile": "android",
       "status": 200,
-      "bodyChars": 580,
+      "bodyChars": 11773,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:43:15.690Z",
+        "source": "ATLAS same-origin broker"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "calibration",
       "profile": "iphone",
       "status": 200,
-      "bodyChars": 558,
+      "bodyChars": 11773,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:43:20.382Z",
+        "source": "ATLAS same-origin broker"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "calibration",
       "profile": "ipad",
       "status": 200,
-      "bodyChars": 558,
+      "bodyChars": 11798,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:43:25.041Z",
+        "source": "ATLAS same-origin broker"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "calibration",
       "profile": "desktop",
       "status": 200,
-      "bodyChars": 560,
+      "bodyChars": 11798,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T09:43:29.609Z",
+        "source": "ATLAS same-origin broker"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     }
   ]
 }
