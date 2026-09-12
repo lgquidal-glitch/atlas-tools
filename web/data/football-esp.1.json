@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T13:17:12+02:00",
+  "generatedAt": "2026-09-12T14:58:15+02:00",
   "source": "Soccerway rendered scoreboard",
   "tier": "corroborated",
   "leagueCode": "esp.1",
@@ -41,7 +41,7 @@
         }
       ],
       "source": "Soccerway rendered scoreboard",
-      "verified_at": "2026-09-12T13:17:12+02:00",
+      "verified_at": "2026-09-12T14:58:15+02:00",
       "leagueCode": "esp.1"
     },
     {
@@ -81,7 +81,7 @@
         }
       ],
       "source": "Soccerway rendered scoreboard",
-      "verified_at": "2026-09-12T13:17:12+02:00",
+      "verified_at": "2026-09-12T14:58:15+02:00",
       "leagueCode": "esp.1"
     },
     {
@@ -98,7 +98,7 @@
                 "displayName": "Racing Santander",
                 "shortDisplayName": "Racing Santander"
               },
-              "score": null
+              "score": "1"
             },
             {
               "homeAway": "away",
@@ -106,22 +106,22 @@
                 "displayName": "Alaves",
                 "shortDisplayName": "Alaves"
               },
-              "score": null
+              "score": "1"
             }
           ],
           "status": {
             "type": {
-              "state": "pre",
-              "name": "SCHEDULED",
-              "description": "SCHEDULED",
-              "detail": "SCHEDULED",
-              "shortDetail": "SCHEDULED"
+              "state": "in",
+              "name": "IN_PROGRESS",
+              "description": "IN_PROGRESS",
+              "detail": "Half Time",
+              "shortDetail": "Half Time"
             }
           }
         }
       ],
       "source": "Soccerway rendered scoreboard",
-      "verified_at": "2026-09-12T13:17:12+02:00",
+      "verified_at": "2026-09-12T14:58:15+02:00",
       "leagueCode": "esp.1"
     },
     {
@@ -161,7 +161,7 @@
         }
       ],
       "source": "Soccerway rendered scoreboard",
-      "verified_at": "2026-09-12T13:17:12+02:00",
+      "verified_at": "2026-09-12T14:58:15+02:00",
       "leagueCode": "esp.1"
     }
   ]
