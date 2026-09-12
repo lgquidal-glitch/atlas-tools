@@ -1,0 +1,35 @@
+name: Rebuild ATLAS exact mirror
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/rebuild-atlas-exact.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Rebuild payload
+        shell: bash
+        run: |
+          set -euxo pipefail
+          cat payloads/final-clean/*.part > /tmp/atlas_payload.b64
+          base64 -d /tmp/atlas_payload.b64 > /tmp/atlas_payload.xz
+          file /tmp/atlas_payload.xz
+          xz -t /tmp/atlas_payload.xz
+          xz -dc /tmp/atlas_payload.xz > /tmp/atlas_payload.raw
+          file /tmp/atlas_payload.raw
+          ls -lh /tmp/atlas_payload.*
+          echo '--- first bytes ---'
+          xxd -l 64 /tmp/atlas_payload.raw
+          echo '--- tar probe ---'
+          tar -tf /tmp/atlas_payload.raw | head -30 || true
+          echo '--- zip probe ---'
+          unzip -l /tmp/atlas_payload.raw | head -30 || true
