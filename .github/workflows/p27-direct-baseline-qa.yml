@@ -1,0 +1,102 @@
+name: P27 direct baseline QA
+on:
+  push:
+    branches: [p27-consolidation-candidate]
+    paths:
+      - '.github/workflows/p27-direct-baseline-qa.yml'
+permissions:
+  contents: write
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: p27-consolidation-candidate
+      - name: Audit authoritative web files directly
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p p27/direct-qa
+          python3 - <<'PY'
+          import os,re,json,subprocess,tempfile,pathlib,hashlib
+          files=[
+            'web/tennis-command/index.html','web/tennis-deep/index.html','web/tennis-fusion/index.html',
+            'web/football-command/index.html','web/football-deep/index.html','web/football-fusion/index.html','web/calibration/index.html']
+          report={'files':[],'scriptErrors':[],'summary':{}}
+          total_scripts=0
+          for p in files:
+            s=pathlib.Path(p).read_text(encoding='utf-8',errors='replace')
+            ids=re.findall(r'\bid=["\']([^"\']+)',s,re.I)
+            counts={x:ids.count(x) for x in set(ids)}
+            dup=sorted(x for x,n in counts.items() if n>1)
+            direct_espn=bool(re.search(r'https?://[^"\']*espn[^"\']*',s,re.I))
+            espn_refs=len(re.findall(r'espn',s,re.I))
+            scripts=0
+            for i,m in enumerate(re.finditer(r'<script(?![^>]+type=["\'](?:application/json|text/plain)["\'])[^>]*>(.*?)</script>',s,re.I|re.S)):
+              code=m.group(1).strip()
+              if not code: continue
+              scripts+=1; total_scripts+=1
+              with tempfile.NamedTemporaryFile('w',suffix='.js',delete=False,encoding='utf-8') as t:
+                t.write(code); n=t.name
+              r=subprocess.run(['node','--check',n],capture_output=True,text=True)
+              os.unlink(n)
+              if r.returncode:
+                report['scriptErrors'].append({'path':p,'script':i,'error':r.stderr[-1200:]})
+            report['files'].append({
+              'path':p,'bytes':len(s.encode()),'sha256':hashlib.sha256(s.encode()).hexdigest(),
+              'scripts':scripts,'duplicateIds':dup,'hasViewport':bool(re.search(r'<meta[^>]+name=["\']viewport',s,re.I)),
+              'espnRefs':espn_refs,'directEspnUrl':direct_espn,
+              'hasTennisSourceFeed':'ATLAS_TENNIS_SOURCE_FEED' in s,
+              'hasFootSourceFeed':'ATLAS_FOOT_SOURCE_FEED' in s,
+              'hasCalibrationSourceFeed':'ATLAS_CALIBRATION_SOURCE_FEED' in s,
+              'hasThreeStateLabels':all(x in s for x in ['À venir','En cours','Terminé']) or all(x in s.lower() for x in ['à venir','en cours','terminé'])
+            })
+          report['summary']={
+            'files':len(report['files']),'executableScripts':total_scripts,'scriptErrors':len(report['scriptErrors']),
+            'duplicateIdFiles':sum(bool(x['duplicateIds']) for x in report['files']),
+            'directEspnFiles':sum(x['directEspnUrl'] for x in report['files']),
+            'passSyntax':len(report['scriptErrors'])==0,
+            'passIds':sum(bool(x['duplicateIds']) for x in report['files'])==0
+          }
+          pathlib.Path('p27/direct-qa/baseline.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+          print(json.dumps(report['summary'],ensure_ascii=False,indent=2))
+          if report['scriptErrors']:
+            raise SystemExit(1)
+          PY
+      - name: Network source probe
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import urllib.request,json,datetime,pathlib
+          d=datetime.datetime.now(datetime.timezone.utc).date(); ds=d.strftime('%Y%m%d')
+          tests=[
+            ('tennis','TennisExplorer',f'https://www.tennisexplorer.com/matches/?type=all&year={d.year}&month={d.month:02d}&day={d.day:02d}'),
+            ('tennis','WTA','https://www.wtatennis.com/scores'),
+            ('football','worldcup26-eng1',f'https://worldcup26.ir/get/soccer/eng.1/scoreboard?dates={ds}'),
+            ('football','worldcup26-esp1',f'https://worldcup26.ir/get/soccer/esp.1/scoreboard?dates={ds}')]
+          out=[]
+          for sport,name,url in tests:
+            row={'sport':sport,'provider':name,'url':url}
+            try:
+              req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 ATLAS-P27','Accept':'*/*'})
+              with urllib.request.urlopen(req,timeout=25) as r:
+                b=r.read(); row.update(http=r.status,bytes=len(b),ok=(r.status==200))
+            except Exception as e:
+              row.update(ok=False,error=repr(e))
+            out.append(row)
+          pathlib.Path('p27/direct-qa/source-probe.json').write_text(json.dumps({'generatedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'tests':out},indent=2),encoding='utf-8')
+          print(json.dumps(out,indent=2))
+          if not any(x['ok'] for x in out if x['sport']=='tennis') or not any(x['ok'] for x in out if x['sport']=='football'):
+            raise SystemExit(1)
+          PY
+      - name: Commit QA reports
+        if: always()
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add p27/direct-qa
+          git diff --cached --quiet || git commit -m 'Record P27 direct baseline QA'
+          git push origin HEAD:p27-consolidation-candidate
