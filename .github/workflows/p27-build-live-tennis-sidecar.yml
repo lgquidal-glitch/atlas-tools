@@ -1,0 +1,77 @@
+name: P27 build live tennis sidecar
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/15 * * * *'
+  push:
+    branches: [p27-consolidation-candidate]
+    paths:
+      - '.github/workflows/p27-build-live-tennis-sidecar.yml'
+permissions:
+  contents: write
+concurrency:
+  group: p27-tennis-sidecar
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: p27-consolidation-candidate
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --quiet requests beautifulsoup4
+      - name: Build fresh same-origin tennis feed
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p web/data p27/candidate-qa
+          python - <<'PY'
+          import requests,datetime,json,re,pathlib
+          from bs4 import BeautifulSoup
+          now=datetime.datetime.now(datetime.timezone.utc); d=now.date(); stamp=now.isoformat()
+          H={'User-Agent':'Mozilla/5.0 ATLAS-P27','Accept':'text/html,*/*'}
+          u=f'https://www.tennisexplorer.com/matches/?type=all&year={d.year}&month={d.month:02d}&day={d.day:02d}'
+          r=requests.get(u,headers=H,timeout=30); r.raise_for_status(); soup=BeautifulSoup(r.text,'html.parser')
+          tournament=''; comps=[]; rows=soup.find_all('tr'); i=0
+          while i < len(rows):
+            tr=rows[i]; cls=tr.get('class',[]); text=' | '.join(tr.stripped_strings)
+            if 'head' in cls and 'flags' in cls:
+              a=tr.find('a'); tournament=a.get_text(' ',strip=True) if a else text.split('|')[0].strip(); i+=1; continue
+            rid=tr.get('id') or ''
+            if rid and not rid.endswith('b') and i+1<len(rows) and (rows[i+1].get('id') or '')==rid+'b':
+              tr2=rows[i+1]
+              pls=[a.get_text(' ',strip=True) for a in tr.find_all('a') if '/player/' in (a.get('href') or '')]
+              pls2=[a.get_text(' ',strip=True) for a in tr2.find_all('a') if '/player/' in (a.get('href') or '')]
+              if pls and pls2:
+                p1,p2=pls[-1],pls2[-1]
+                t1=' | '.join(tr.stripped_strings); t2=' | '.join(tr2.stripped_strings)
+                tm=re.search(r'\b([0-2]\d:[0-5]\d)\b',t1)
+                vals1=[x.get_text(' ',strip=True) for x in tr.find_all('td',recursive=False)]
+                vals2=[x.get_text(' ',strip=True) for x in tr2.find_all('td',recursive=False)]
+                has_score=not (' | -' in t1 and ' | -' in t2)
+                state='in' if has_score else 'pre'
+                detail=((tm.group(1)+' · ') if tm else '')+tournament
+                comps.append({'competitors':[{'homeAway':'home','athlete':{'displayName':p1},'linescores':[]},{'homeAway':'away','athlete':{'displayName':p2},'linescores':[]}],
+                              'status':{'type':{'state':state,'shortDetail':detail}},
+                              '_atlasSource':{'provider':'TennisExplorer','tier':'corroborated','timestamp':stamp,'confidence':'provisional','rule':'score-alone-never-final'}})
+              i+=2; continue
+            i+=1
+          if not comps: raise SystemExit('No tennis matches parsed; keeping previous verified feed')
+          tennis={'generatedAt':stamp,'source':'TennisExplorer','tier':'corroborated','confidence':'provisional','events':[{'competitions':comps}],
+                  'policy':{'postRequiresExplicitConfirmation':True,'scoreAloneNeverFinal':True,'staleOverwriteForbidden':True,'refreshTargetMinutes':15}}
+          pathlib.Path('web/data/tennis-feed.json').write_text(json.dumps(tennis,ensure_ascii=False,indent=2),encoding='utf-8')
+          pathlib.Path('p27/candidate-qa/tennis-feed-freshness.json').write_text(json.dumps({'generatedAt':stamp,'competitions':len(comps),'source':'TennisExplorer','scoreAloneNeverFinal':True},ensure_ascii=False,indent=2),encoding='utf-8')
+          print(json.dumps({'generatedAt':stamp,'competitions':len(comps)},ensure_ascii=False))
+          PY
+      - name: Commit fresh feed only when changed
+        shell: bash
+        run: |
+          git config user.name 'atlas-data-automation'
+          git config user.email 'atlas-data-automation@users.noreply.github.com'
+          git add web/data/tennis-feed.json p27/candidate-qa/tennis-feed-freshness.json
+          if git diff --cached --quiet; then echo 'No tennis feed change'; else git commit -m 'Refresh P27 tennis live feed'; git pull --rebase origin p27-consolidation-candidate; git push origin HEAD:p27-consolidation-candidate; fi
