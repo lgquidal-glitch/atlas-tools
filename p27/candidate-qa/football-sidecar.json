@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-09-12T13:17:12+02:00",
+  "requestedLeagues": 27,
+  "leaguesWithRecords": 22,
+  "compatFeeds": {
+    "fra.1": 5,
+    "esp.1": 4,
+    "ger.1": 6,
+    "eng.1": 7,
+    "ita.1": 3,
+    "ksa.1": 3
+  },
+  "scoreNeverImpliesFinal": true,
+  "explicitFinalOnly": true,
+  "totalMatches": 69
+}

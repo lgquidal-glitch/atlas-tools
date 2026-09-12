@@ -1,0 +1,309 @@
+{
+  "generatedAt": "2026-09-12T13:17:12+02:00",
+  "coverage": {
+    "fr": {
+      "league": "France",
+      "country": "FRANCE",
+      "records": 5,
+      "matched_league_names": [
+        "Ligue 1"
+      ],
+      "compat_code": "fra.1",
+      "source": "Soccerway rendered scoreboard",
+      "note": "0 record = no visible match in the controlled window; no fabrication."
+    },
+    "es": {
+      "league": "Espagne",
+      "country": "SPAIN",
+      "records": 4,
+      "matched_league_names": [
+        "LaLiga"
+      ],
+      "compat_code": "esp.1",
+      "source": "Soccerway rendered scoreboard",
+      "note": "0 record = no visible match in the controlled window; no fabrication."
+    },
+    "de": {
+      "league": "Allemagne",
+      "country": "GERMANY",
+      "records": 6,
+      "matched_league_names": [
+        "Bundesliga"
+      ],
+      "compat_code": "ger.1",
+      "source": "Soccerway rendered scoreboard",
+      "note": "0 record = no visible match in the controlled window; no fabrication."
+    },
+    "en": {
+      "league": "Angleterre",
+      "country": "ENGLAND",
+      "records": 7,
+      "matched_league_names": [
+        "Premier League"
+      ],
+      "compat_code": "eng.1",
+      "source": "Soccerway rendered scoreboard",
+      "note": "0 record = no visible match in the controlled window; no fabrication."
+    },
+    "it": {
+      "league": "Italie",
+      "country": "ITALY",
+      "records": 3,
+      "matched_league_names": [
+        "Serie A"
+      ],
+      "compat_code": "ita.1",
+      "source": "Soccerway rendered scoreboard",
+      "note": "0 record = no visible match in the controlled window; no fabrication."
+    },
+    "gr": {
+      "league": "Grèce",
+      "country": "GREECE",
+      "records": 2,
+      "matched_league_names": [
+        "Super League"
+      ],
+      "compat_code": null,
+      "source": "Soccerway rendered scoreboard",
+      "note": "0 record = no visible match in the controlled window; no fabrication."
+    },
+    "cy": {
+      "league": "Chypre",
+      "country": "CYPRUS",
+      "records": 3,
+      "matched_league_names": [
+        "Cyprus League"
+      ],
+      "compat_code": null,
+      "source": "Soccerway rendered scoreboard",
+      "note": "0 record = no visible match in the controlled window; no fabrication."
+    },
+    "sa": {
+      "league": "Arabie Saoudite",
+      "country": "SAUDI ARABIA",
+      "records": 3,
+      "matched_league_names": [
+        "Saudi Professional League"
+      ],
+      "compat_code": "ksa.1",
+      "source": "Soccerway rendered scoreboard",
+      "note": "0 record = no visible match in the controlled window; no fabrication."
+    },
+    "be": {
+      "league": "Belgique",
+      "country": "BELGIUM",
+      "records": 4,
+      "matched_league_names": [
+        "Jupiler Pro League"
+      ],
+      "compat_code": null,
+      "source": "Soccerway rendered scoreboard",
+      "note": "0 record = no visible match in the controlled window; no fabrication."
+    },
+    "ba": {
+      "league": "Bosnie-Herzégovine",
+      "country": "BOSNIA AND HERZEGOVINA",
+      "records": 2,
+      "matched_league_names": [
+        "WWIN Liga BiH"
+      ],
+      "compat_code": null,
+      "source": "Soccerway rendered scoreboard",
+      "note": "0 record = no visible match in the controlled window; no fabrication."
+    },
+    "bg": {
+      "league": "Bulgarie",
+      "country": "BULGARIA",
+      "records": 2,
+      "matched_league_names": [
+        "efbet League"
+      ],
+      "compat_code": null,
+      "source": "Soccerway rendered scoreboard",
+      "note": "0 record = no visible match in the controlled window; no fabrication."
+    },
+    "cn": {
+      "league": "Chine",
+      "country": "CHINA",
+      "records": 2,
+      "matched_league_names": [
+        "Super League"
+      ],
+      "compat_code": null,
+      "source": "Soccerway rendered scoreboard",
+      "note": "0 record = no visible match in the controlled window; no fabrication."
+    },
+    "hr": {
+      "league": "Croatie",
+      "country": "CROATIA",
+      "records": 2,
+      "matched_league_names": [
+        "HNL"
+      ],
+      "compat_code": null,
+      "source": "Soccerway rendered scoreboard",
+      "note": "0 record = no visible match in the controlled window; no fabrication."
+    },
+    "dk": {
+      "league": "Danemark",
+      "country": "DENMARK",
+      "records": 0,
+      "matched_league_names": [],
+      "compat_code": null,
+      "source": "Soccerway rendered scoreboard",
+      "note": "0 record = no visible match in the controlled window; no fabrication."
+    },
+    "sc": {
+      "league": "Écosse",
+      "country": "SCOTLAND",
+      "records": 0,
+      "matched_league_names": [],
+      "compat_code": null,
+      "source": "Soccerway rendered scoreboard",
+      "note": "0 record = no visible match in the controlled window; no fabrication."
+    },
+    "ae": {
+      "league": "Émirats",
+      "country": "UNITED ARAB EMIRATES",
+      "records": 0,
+      "matched_league_names": [],
+      "compat_code": null,
+      "source": "Soccerway rendered scoreboard",
+      "note": "0 record = no visible match in the controlled window; no fabrication."
+    },
+    "ec": {
+      "league": "Équateur",
+      "country": "ECUADOR",
+      "records": 2,
+      "matched_league_names": [
+        "Liga Pro"
+      ],
+      "compat_code": null,
+      "source": "Soccerway rendered scoreboard",
+      "note": "0 record = no visible match in the controlled window; no fabrication."
+    },
+    "fi": {
+      "league": "Finlande",
+      "country": "FINLAND",
+      "records": 0,
+      "matched_league_names": [],
+      "compat_code": null,
+      "source": "Soccerway rendered scoreboard",
+      "note": "0 record = no visible match in the controlled window; no fabrication."
+    },
+    "il": {
+      "league": "Israël",
+      "country": "ISRAEL",
+      "records": 0,
+      "matched_league_names": [],
+      "compat_code": null,
+      "source": "Soccerway rendered scoreboard",
+      "note": "0 record = no visible match in the controlled window; no fabrication."
+    },
+    "mt": {
+      "league": "Malte",
+      "country": "MALTA",
+      "records": 2,
+      "matched_league_names": [
+        "Premier League - First stage - Main"
+      ],
+      "compat_code": null,
+      "source": "Soccerway rendered scoreboard",
+      "note": "0 record = no visible match in the controlled window; no fabrication."
+    },
+    "nl": {
+      "league": "Pays-Bas",
+      "country": "NETHERLANDS",
+      "records": 4,
+      "matched_league_names": [
+        "Eredivisie"
+      ],
+      "compat_code": null,
+      "source": "Soccerway rendered scoreboard",
+      "note": "0 record = no visible match in the controlled window; no fabrication."
+    },
+    "pt": {
+      "league": "Portugal",
+      "country": "PORTUGAL",
+      "records": 3,
+      "matched_league_names": [
+        "Liga Portugal"
+      ],
+      "compat_code": null,
+      "source": "Soccerway rendered scoreboard",
+      "note": "0 record = no visible match in the controlled window; no fabrication."
+    },
+    "ro": {
+      "league": "Roumanie",
+      "country": "ROMANIA",
+      "records": 2,
+      "matched_league_names": [
+        "Superliga"
+      ],
+      "compat_code": null,
+      "source": "Soccerway rendered scoreboard",
+      "note": "0 record = no visible match in the controlled window; no fabrication."
+    },
+    "rs": {
+      "league": "Serbie",
+      "country": "SERBIA",
+      "records": 2,
+      "matched_league_names": [
+        "Mozzart Bet Super Liga"
+      ],
+      "compat_code": null,
+      "source": "Soccerway rendered scoreboard",
+      "note": "0 record = no visible match in the controlled window; no fabrication."
+    },
+    "se": {
+      "league": "Suède",
+      "country": "SWEDEN",
+      "records": 2,
+      "matched_league_names": [
+        "Allsvenskan"
+      ],
+      "compat_code": null,
+      "source": "Soccerway rendered scoreboard",
+      "note": "0 record = no visible match in the controlled window; no fabrication."
+    },
+    "tr": {
+      "league": "Turquie",
+      "country": "TURKEY",
+      "records": 4,
+      "matched_league_names": [
+        "Super Lig"
+      ],
+      "compat_code": null,
+      "source": "Soccerway rendered scoreboard",
+      "note": "0 record = no visible match in the controlled window; no fabrication."
+    },
+    "ua": {
+      "league": "Ukraine",
+      "country": "UKRAINE",
+      "records": 3,
+      "matched_league_names": [
+        "Premier League"
+      ],
+      "compat_code": null,
+      "source": "Soccerway rendered scoreboard",
+      "note": "0 record = no visible match in the controlled window; no fabrication."
+    }
+  },
+  "days": {
+    "2026-09-11": {
+      "requested_url": "https://www.soccerway.com/matches/2026/09/11/",
+      "resolved_url": "https://us.soccerway.com/",
+      "records": 69
+    },
+    "2026-09-12": {
+      "requested_url": "https://www.soccerway.com/matches/2026/09/12/",
+      "resolved_url": "https://www.soccerway.com/",
+      "records": 29
+    },
+    "2026-09-13": {
+      "requested_url": "https://www.soccerway.com/matches/2026/09/13/",
+      "resolved_url": "https://www.soccerway.com/",
+      "records": 29
+    }
+  }
+}

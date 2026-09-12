@@ -1,12 +1,208 @@
 {
-  "generatedAt": "2026-09-12T09:31:11.685606+00:00",
-  "source": "worldcup26.ir structured mirror",
+  "generatedAt": "2026-09-12T13:17:12+02:00",
+  "source": "Soccerway rendered scoreboard",
   "tier": "corroborated",
   "leagueCode": "fra.1",
-  "events": [],
-  "policy": {
-    "explicitStateOnly": true,
-    "finalLock": true
-  },
-  "http": 404
+  "events": [
+    {
+      "id": "KUw6nHvo",
+      "date": "2026-09-12T00:00:00+02:00",
+      "name": "Nice at Auxerre",
+      "shortName": "Nice @ Auxerre",
+      "competitions": [
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "team": {
+                "displayName": "Auxerre",
+                "shortDisplayName": "Auxerre"
+              },
+              "score": null
+            },
+            {
+              "homeAway": "away",
+              "team": {
+                "displayName": "Nice",
+                "shortDisplayName": "Nice"
+              },
+              "score": null
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "name": "SCHEDULED",
+              "description": "SCHEDULED",
+              "detail": "SCHEDULED",
+              "shortDetail": "SCHEDULED"
+            }
+          }
+        }
+      ],
+      "source": "Soccerway rendered scoreboard",
+      "verified_at": "2026-09-12T13:17:12+02:00",
+      "leagueCode": "fra.1"
+    },
+    {
+      "id": "YiUa8b14",
+      "date": "2026-09-12T00:00:00+02:00",
+      "name": "Angers at Le Havre",
+      "shortName": "Angers @ Le Havre",
+      "competitions": [
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "team": {
+                "displayName": "Le Havre",
+                "shortDisplayName": "Le Havre"
+              },
+              "score": null
+            },
+            {
+              "homeAway": "away",
+              "team": {
+                "displayName": "Angers",
+                "shortDisplayName": "Angers"
+              },
+              "score": null
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "name": "SCHEDULED",
+              "description": "SCHEDULED",
+              "detail": "SCHEDULED",
+              "shortDetail": "SCHEDULED"
+            }
+          }
+        }
+      ],
+      "source": "Soccerway rendered scoreboard",
+      "verified_at": "2026-09-12T13:17:12+02:00",
+      "leagueCode": "fra.1"
+    },
+    {
+      "id": "roMoafOj",
+      "date": "2026-09-12T00:00:00+02:00",
+      "name": "Toulouse at Lorient",
+      "shortName": "Toulouse @ Lorient",
+      "competitions": [
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "team": {
+                "displayName": "Lorient",
+                "shortDisplayName": "Lorient"
+              },
+              "score": null
+            },
+            {
+              "homeAway": "away",
+              "team": {
+                "displayName": "Toulouse",
+                "shortDisplayName": "Toulouse"
+              },
+              "score": null
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "name": "SCHEDULED",
+              "description": "SCHEDULED",
+              "detail": "SCHEDULED",
+              "shortDetail": "SCHEDULED"
+            }
+          }
+        }
+      ],
+      "source": "Soccerway rendered scoreboard",
+      "verified_at": "2026-09-12T13:17:12+02:00",
+      "leagueCode": "fra.1"
+    },
+    {
+      "id": "zu9XMcGc",
+      "date": "2026-09-12T00:00:00+02:00",
+      "name": "Lyon at Paris FC",
+      "shortName": "Lyon @ Paris FC",
+      "competitions": [
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "team": {
+                "displayName": "Paris FC",
+                "shortDisplayName": "Paris FC"
+              },
+              "score": null
+            },
+            {
+              "homeAway": "away",
+              "team": {
+                "displayName": "Lyon",
+                "shortDisplayName": "Lyon"
+              },
+              "score": null
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "name": "SCHEDULED",
+              "description": "SCHEDULED",
+              "detail": "SCHEDULED",
+              "shortDetail": "SCHEDULED"
+            }
+          }
+        }
+      ],
+      "source": "Soccerway rendered scoreboard",
+      "verified_at": "2026-09-12T13:17:12+02:00",
+      "leagueCode": "fra.1"
+    },
+    {
+      "id": "jVFmJFFM",
+      "date": "2026-09-12T00:00:00+02:00",
+      "name": "Monaco at Strasbourg",
+      "shortName": "Monaco @ Strasbourg",
+      "competitions": [
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "team": {
+                "displayName": "Strasbourg",
+                "shortDisplayName": "Strasbourg"
+              },
+              "score": null
+            },
+            {
+              "homeAway": "away",
+              "team": {
+                "displayName": "Monaco",
+                "shortDisplayName": "Monaco"
+              },
+              "score": null
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "name": "SCHEDULED",
+              "description": "SCHEDULED",
+              "detail": "SCHEDULED",
+              "shortDetail": "SCHEDULED"
+            }
+          }
+        }
+      ],
+      "source": "Soccerway rendered scoreboard",
+      "verified_at": "2026-09-12T13:17:12+02:00",
+      "leagueCode": "fra.1"
+    }
+  ]
 }
