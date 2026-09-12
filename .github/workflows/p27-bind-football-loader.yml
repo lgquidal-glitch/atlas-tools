@@ -1,0 +1,44 @@
+name: P27 bind football loader
+on:
+  push:
+    branches: [p27-consolidation-candidate]
+    paths:
+      - '.github/workflows/p27-bind-football-loader.yml'
+      - 'p27/football-resilient-loader.js'
+permissions:
+  contents: write
+jobs:
+  bind:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: p27-consolidation-candidate
+          fetch-depth: 0
+      - name: Bind current Football feed loader to all three Football interfaces
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp p27/football-resilient-loader.js web/football-resilient-loader.js
+          python - <<'PY'
+          from pathlib import Path
+          files=[Path('web/football-command/index.html'),Path('web/football-deep/index.html'),Path('web/football-fusion/index.html')]
+          tag='\n<script id="atlas-p27-football-resilient-external" src="../football-resilient-loader.js"></script>\n'
+          for p in files:
+              s=p.read_text(encoding='utf-8')
+              if 'atlas-p27-football-resilient-external' not in s:
+                  if '</body>' not in s: raise SystemExit(f'Missing body close: {p}')
+                  s=s.replace('</body>',tag+'</body>',1)
+                  p.write_text(s,encoding='utf-8')
+          for p in files:
+              s=p.read_text(encoding='utf-8')
+              assert 'atlas-p27-football-resilient-external' in s
+          print('Football external loader bound to 3/3 interfaces')
+          PY
+      - name: Commit binding
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add web/football-resilient-loader.js web/football-command/index.html web/football-deep/index.html web/football-fusion/index.html
+          if git diff --cached --quiet; then echo 'No binding changes'; else git commit -m 'Bind current P27 Football feed to three interfaces'; git push origin HEAD:p27-consolidation-candidate; fi
