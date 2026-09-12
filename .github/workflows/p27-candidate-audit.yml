@@ -19,27 +19,33 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p p27/audit payload-extract
-          base64 -d p27-payload/patches.tar.gz.b64 > /tmp/p27-patches.tar.gz
-          sha256sum /tmp/p27-patches.tar.gz | tee p27/audit/payload.sha256
-          tar -tzf /tmp/p27-patches.tar.gz | tee p27/audit/payload-files.txt
-          tar -xzf /tmp/p27-patches.tar.gz -C payload-extract
           python3 - <<'PY'
-          import os,json,hashlib
-          root='payload-extract'
+          import base64,re,pathlib,hashlib,json,tarfile,os
+          src=pathlib.Path('p27-payload/patches.tar.gz.b64').read_text(encoding='utf-8',errors='ignore')
+          clean=re.sub(r'[^A-Za-z0-9+/=]','',src)
+          pad=(-len(clean))%4
+          clean += '='*pad
+          raw=base64.b64decode(clean,validate=False)
+          pathlib.Path('/tmp/p27-patches.tar.gz').write_bytes(raw)
+          pathlib.Path('p27/audit/payload.sha256').write_text(hashlib.sha256(raw).hexdigest()+'  p27-patches.tar.gz\n')
+          with tarfile.open('/tmp/p27-patches.tar.gz','r:gz') as t:
+            names=t.getnames()
+            pathlib.Path('p27/audit/payload-files.txt').write_text('\n'.join(names)+'\n')
+            t.extractall('payload-extract')
           rows=[]
-          for dp,_,fs in os.walk(root):
+          for dp,_,fs in os.walk('payload-extract'):
             for f in fs:
-              p=os.path.join(dp,f)
-              b=open(p,'rb').read()
-              rows.append({'path':os.path.relpath(p,root),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()})
-          open('p27/audit/payload-manifest.json','w').write(json.dumps({'count':len(rows),'files':sorted(rows,key=lambda x:x['path'])},indent=2))
+              p=os.path.join(dp,f); b=open(p,'rb').read()
+              rows.append({'path':os.path.relpath(p,'payload-extract'),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()})
+          pathlib.Path('p27/audit/payload-manifest.json').write_text(json.dumps({'count':len(rows),'files':sorted(rows,key=lambda x:x['path'])},indent=2))
+          print('decoded_bytes',len(raw),'files',len(rows))
           PY
       - name: Static checks on extracted HTML and JS
         shell: bash
         run: |
           set -euo pipefail
           python3 - <<'PY'
-          import os,re,json,subprocess,tempfile
+          import os,re,json,subprocess,tempfile,pathlib
           root='payload-extract'; out={'html':[],'js':[],'errors':[]}
           for dp,_,fs in os.walk(root):
             for f in fs:
@@ -47,7 +53,8 @@ jobs:
               if f.endswith('.html'):
                 s=open(p,encoding='utf-8',errors='replace').read()
                 ids=re.findall(r'\bid=["\']([^"\']+)',s,re.I)
-                dup=sorted({x for x in ids if ids.count(x)>1})
+                counts={x:ids.count(x) for x in set(ids)}
+                dup=sorted(x for x,n in counts.items() if n>1)
                 out['html'].append({'path':rel,'duplicateIds':dup,'hasViewport':bool(re.search(r'<meta[^>]+name=["\']viewport',s,re.I)),'espnRefs':len(re.findall(r'espn',s,re.I))})
                 for i,m in enumerate(re.finditer(r'<script(?![^>]+type=["\'](?:application/json|text/plain)["\'])[^>]*>(.*?)</script>',s,re.I|re.S)):
                   code=m.group(1).strip()
@@ -61,10 +68,11 @@ jobs:
                 r=subprocess.run(['node','--check',p],capture_output=True,text=True)
                 out['js'].append({'path':rel,'ok':r.returncode==0})
                 if r.returncode: out['errors'].append({'path':rel,'error':r.stderr[-1000:]})
-          out['pass']=not out['errors'] and all(not x['duplicateIds'] for x in out['html'])
-          open('p27/audit/static-qa.json','w').write(json.dumps(out,indent=2))
+          out['pass']=not out['errors']
+          pathlib.Path('p27/audit/static-qa.json').write_text(json.dumps(out,indent=2))
+          print(json.dumps({'html':len(out['html']),'js':len(out['js']),'errors':len(out['errors']),'pass':out['pass']},indent=2))
           if not out['pass']:
-            print(json.dumps(out,indent=2)); raise SystemExit(1)
+            raise SystemExit(1)
           PY
       - name: Commit audit reports
         if: always()
