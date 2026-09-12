@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T13:58:39.387626+00:00",
+  "generatedAt": "2026-09-12T15:21:57.987100+00:00",
   "source": "TennisExplorer",
   "tier": "corroborated",
   "confidence": "provisional",
@@ -32,9 +32,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -63,9 +63,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -94,9 +94,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -125,9 +125,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -156,9 +156,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -187,9 +187,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -218,9 +218,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -249,9 +249,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -280,9 +280,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -311,9 +311,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -342,9 +342,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -373,9 +373,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -404,9 +404,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -435,9 +435,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -466,9 +466,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -497,9 +497,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -528,9 +528,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -559,9 +559,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -590,9 +590,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -621,9 +621,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -652,9 +652,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -683,9 +683,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -714,9 +714,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -745,9 +745,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -776,9 +776,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -807,9 +807,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -838,9 +838,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -869,9 +869,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -900,9 +900,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -931,9 +931,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -955,16 +955,16 @@
           ],
           "status": {
             "type": {
-              "state": "pre",
+              "state": "in",
               "shortDetail": "22:00 · US Open"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
             "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -1015,9 +1015,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -1039,16 +1039,16 @@
           ],
           "status": {
             "type": {
-              "state": "pre",
+              "state": "in",
               "shortDetail": "14:55 · Antalya 5 WTA"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
             "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -1076,9 +1076,6 @@
               "linescores": [
                 {
                   "value": "1"
-                },
-                {
-                  "value": "6 5"
                 }
               ],
               "score": "0"
@@ -1093,9 +1090,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -1117,16 +1114,16 @@
           ],
           "status": {
             "type": {
-              "state": "pre",
+              "state": "in",
               "shortDetail": "23:30 · Barranquilla"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
             "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -1136,28 +1133,41 @@
               "athlete": {
                 "displayName": "Noha Akugue N."
               },
-              "linescores": []
+              "linescores": [
+                {
+                  "value": "7"
+                },
+                {
+                  "value": "6"
+                }
+              ],
+              "score": "2"
             },
             {
               "homeAway": "away",
               "athlete": {
                 "displayName": "Maristany Zuleta De Re"
               },
-              "linescores": []
+              "linescores": [
+                {
+                  "value": "3"
+                }
+              ],
+              "score": "0"
             }
           ],
           "status": {
             "type": {
-              "state": "pre",
+              "state": "post",
               "shortDetail": "14:40 · Montreux WTA"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -1179,16 +1189,16 @@
           ],
           "status": {
             "type": {
-              "state": "pre",
-              "shortDetail": "16:00 · Montreux WTA"
+              "state": "in",
+              "shortDetail": "16:55 · Montreux WTA"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
             "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -1239,9 +1249,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -1286,9 +1296,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -1322,9 +1332,6 @@
                 },
                 {
                   "value": "6"
-                },
-                {
-                  "value": "6 8"
                 }
               ],
               "score": "1"
@@ -1339,9 +1346,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -1386,9 +1393,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -1433,9 +1440,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -1480,9 +1487,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -1527,9 +1534,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -1574,9 +1581,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -1627,9 +1634,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -1680,9 +1687,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -1727,9 +1734,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -1740,9 +1747,6 @@
                 "displayName": "Haddad I."
               },
               "linescores": [
-                {
-                  "value": "6 3"
-                },
                 {
                   "value": "6"
                 },
@@ -1780,9 +1784,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -1809,9 +1813,6 @@
               },
               "linescores": [
                 {
-                  "value": "6 2"
-                },
-                {
                   "value": "2"
                 }
               ],
@@ -1827,9 +1828,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -1851,16 +1852,16 @@
           ],
           "status": {
             "type": {
-              "state": "pre",
+              "state": "in",
               "shortDetail": "16:00 · Pilar ITF"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
             "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -1882,16 +1883,16 @@
           ],
           "status": {
             "type": {
-              "state": "pre",
+              "state": "in",
               "shortDetail": "16:00 · Pilar ITF"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
             "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -1942,9 +1943,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -1989,9 +1990,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2036,9 +2037,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2083,9 +2084,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2130,9 +2131,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2177,9 +2178,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2187,30 +2188,46 @@
             {
               "homeAway": "home",
               "athlete": {
-                "displayName": "Schaefer A."
+                "displayName": "Voracek E."
               },
-              "linescores": []
+              "linescores": [
+                {
+                  "value": "6"
+                },
+                {
+                  "value": "6"
+                }
+              ],
+              "score": "2"
             },
             {
               "homeAway": "away",
               "athlete": {
-                "displayName": "Voracek E."
+                "displayName": "Schaefer A."
               },
-              "linescores": []
+              "linescores": [
+                {
+                  "value": "1"
+                },
+                {
+                  "value": "2"
+                }
+              ],
+              "score": "0"
             }
           ],
           "status": {
             "type": {
-              "state": "pre",
+              "state": "post",
               "shortDetail": "14:30 · Viserba ITF"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2233,15 +2250,15 @@
           "status": {
             "type": {
               "state": "pre",
-              "shortDetail": "18:05 · Viserba ITF"
+              "shortDetail": "17:02 · Viserba ITF"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2292,9 +2309,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2345,9 +2362,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2376,9 +2393,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2407,9 +2424,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2438,9 +2455,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2469,9 +2486,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2500,9 +2517,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2531,9 +2548,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2562,9 +2579,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2587,15 +2604,15 @@
           "status": {
             "type": {
               "state": "pre",
-              "shortDetail": "16:10 · UTR Pro Match Series"
+              "shortDetail": "16:50 · UTR Pro Match Series"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2618,15 +2635,15 @@
           "status": {
             "type": {
               "state": "pre",
-              "shortDetail": "16:40 · UTR Pro Match Series"
+              "shortDetail": "16:50 · UTR Pro Match Series"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2649,15 +2666,15 @@
           "status": {
             "type": {
               "state": "pre",
-              "shortDetail": "16:40 · UTR Pro Match Series"
+              "shortDetail": "16:50 · UTR Pro Match Series"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2686,9 +2703,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2717,9 +2734,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2748,9 +2765,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2779,9 +2796,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2810,9 +2827,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2841,9 +2858,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2872,9 +2889,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2903,9 +2920,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2934,9 +2951,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2965,9 +2982,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -2996,9 +3013,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3027,9 +3044,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3058,9 +3075,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3111,9 +3128,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3158,9 +3175,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3189,9 +3206,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3220,9 +3237,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3251,9 +3268,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3282,9 +3299,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3329,9 +3346,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3376,9 +3393,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3400,16 +3417,16 @@
           ],
           "status": {
             "type": {
-              "state": "pre",
+              "state": "in",
               "shortDetail": "18:00 · Guadalajara 2 WTA"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
             "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3431,16 +3448,16 @@
           ],
           "status": {
             "type": {
-              "state": "pre",
+              "state": "in",
               "shortDetail": "18:00 · Guadalajara 2 WTA"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
             "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3462,16 +3479,16 @@
           ],
           "status": {
             "type": {
-              "state": "pre",
+              "state": "in",
               "shortDetail": "18:00 · Guadalajara 2 WTA"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
             "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3493,16 +3510,16 @@
           ],
           "status": {
             "type": {
-              "state": "pre",
+              "state": "in",
               "shortDetail": "19:30 · Guadalajara 2 WTA"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
             "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3524,16 +3541,16 @@
           ],
           "status": {
             "type": {
-              "state": "pre",
+              "state": "in",
               "shortDetail": "19:30 · Guadalajara 2 WTA"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
             "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3555,16 +3572,16 @@
           ],
           "status": {
             "type": {
-              "state": "pre",
+              "state": "in",
               "shortDetail": "19:30 · Guadalajara 2 WTA"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
             "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3593,9 +3610,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3617,16 +3634,16 @@
           ],
           "status": {
             "type": {
-              "state": "pre",
+              "state": "in",
               "shortDetail": "21:00 · Guadalajara 2 WTA"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
             "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3648,16 +3665,16 @@
           ],
           "status": {
             "type": {
-              "state": "pre",
-              "shortDetail": "16:00 · Sao Paulo WTA"
+              "state": "in",
+              "shortDetail": "16:10 · Sao Paulo WTA"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
             "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3679,16 +3696,16 @@
           ],
           "status": {
             "type": {
-              "state": "pre",
-              "shortDetail": "16:00 · Sao Paulo WTA"
+              "state": "in",
+              "shortDetail": "16:10 · Sao Paulo WTA"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
             "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3710,16 +3727,16 @@
           ],
           "status": {
             "type": {
-              "state": "pre",
-              "shortDetail": "16:00 · Sao Paulo WTA"
+              "state": "in",
+              "shortDetail": "16:10 · Sao Paulo WTA"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
             "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3741,16 +3758,16 @@
           ],
           "status": {
             "type": {
-              "state": "pre",
+              "state": "in",
               "shortDetail": "17:30 · Sao Paulo WTA"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
             "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3772,16 +3789,16 @@
           ],
           "status": {
             "type": {
-              "state": "pre",
+              "state": "in",
               "shortDetail": "17:30 · Sao Paulo WTA"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
             "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3803,16 +3820,16 @@
           ],
           "status": {
             "type": {
-              "state": "pre",
+              "state": "in",
               "shortDetail": "17:30 · Sao Paulo WTA"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
             "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3834,16 +3851,16 @@
           ],
           "status": {
             "type": {
-              "state": "pre",
+              "state": "in",
               "shortDetail": "19:00 · Sao Paulo WTA"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
             "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3900,9 +3917,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3924,16 +3941,16 @@
           ],
           "status": {
             "type": {
-              "state": "pre",
+              "state": "in",
               "shortDetail": "18:00 · Genoa challenger"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
             "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3955,16 +3972,16 @@
           ],
           "status": {
             "type": {
-              "state": "pre",
+              "state": "in",
               "shortDetail": "20:00 · Genoa challenger"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
             "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -3986,16 +4003,16 @@
           ],
           "status": {
             "type": {
-              "state": "pre",
+              "state": "in",
               "shortDetail": "19:00 · Sevilla challenger"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
             "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -4017,16 +4034,16 @@
           ],
           "status": {
             "type": {
-              "state": "pre",
+              "state": "in",
               "shortDetail": "20:30 · Sevilla challenger"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
             "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -4071,9 +4088,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -4118,9 +4135,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -4165,9 +4182,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -4212,9 +4229,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -4259,9 +4276,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -4288,9 +4305,6 @@
               },
               "linescores": [
                 {
-                  "value": "6 4"
-                },
-                {
                   "value": "4"
                 }
               ],
@@ -4306,9 +4320,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -4335,9 +4349,6 @@
               },
               "linescores": [
                 {
-                  "value": "6 2"
-                },
-                {
                   "value": "5"
                 }
               ],
@@ -4353,9 +4364,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -4365,28 +4376,47 @@
               "athlete": {
                 "displayName": "Droguet T."
               },
-              "linescores": []
+              "linescores": [
+                {
+                  "value": "6"
+                },
+                {
+                  "value": "6"
+                }
+              ],
+              "score": "2"
             },
             {
               "homeAway": "away",
               "athlete": {
                 "displayName": "Budkov Kjaer N."
               },
-              "linescores": []
+              "linescores": [
+                {
+                  "value": "7"
+                },
+                {
+                  "value": "2"
+                },
+                {
+                  "value": "4"
+                }
+              ],
+              "score": "1"
             }
           ],
           "status": {
             "type": {
-              "state": "pre",
+              "state": "post",
               "shortDetail": "14:10 · Cassis challenger"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -4437,9 +4467,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -4484,9 +4514,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -4520,9 +4550,6 @@
                 },
                 {
                   "value": "6"
-                },
-                {
-                  "value": "6 1"
                 }
               ],
               "score": "1"
@@ -4537,9 +4564,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -4550,9 +4577,6 @@
                 "displayName": "Saitoh K."
               },
               "linescores": [
-                {
-                  "value": "6 4"
-                },
                 {
                   "value": "6"
                 },
@@ -4590,9 +4614,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -4643,9 +4667,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -4690,9 +4714,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -4737,9 +4761,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -4784,9 +4808,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -4796,28 +4820,50 @@
               "athlete": {
                 "displayName": "Schoen P."
               },
-              "linescores": []
+              "linescores": [
+                {
+                  "value": "5"
+                },
+                {
+                  "value": "6"
+                },
+                {
+                  "value": "6"
+                }
+              ],
+              "score": "2"
             },
             {
               "homeAway": "away",
               "athlete": {
                 "displayName": "Anthrop J."
               },
-              "linescores": []
+              "linescores": [
+                {
+                  "value": "7"
+                },
+                {
+                  "value": "4"
+                },
+                {
+                  "value": "4"
+                }
+              ],
+              "score": "1"
             }
           ],
           "status": {
             "type": {
-              "state": "pre",
+              "state": "post",
               "shortDetail": "14:05 · Futures 2026"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -4827,28 +4873,44 @@
               "athlete": {
                 "displayName": "Banerjee S."
               },
-              "linescores": []
+              "linescores": [
+                {
+                  "value": "7"
+                },
+                {
+                  "value": "6"
+                }
+              ],
+              "score": "2"
             },
             {
               "homeAway": "away",
               "athlete": {
                 "displayName": "Zahraj P."
               },
-              "linescores": []
+              "linescores": [
+                {
+                  "value": "5"
+                },
+                {
+                  "value": "3"
+                }
+              ],
+              "score": "0"
             }
           ],
           "status": {
             "type": {
-              "state": "pre",
+              "state": "post",
               "shortDetail": "14:40 · Futures 2026"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -4858,28 +4920,41 @@
               "athlete": {
                 "displayName": "Houkes M."
               },
-              "linescores": []
+              "linescores": [
+                {
+                  "value": "7"
+                },
+                {
+                  "value": "6"
+                }
+              ],
+              "score": "2"
             },
             {
               "homeAway": "away",
               "athlete": {
                 "displayName": "Xilas I."
               },
-              "linescores": []
+              "linescores": [
+                {
+                  "value": "0"
+                }
+              ],
+              "score": "0"
             }
           ],
           "status": {
             "type": {
-              "state": "pre",
+              "state": "post",
               "shortDetail": "15:00 · Futures 2026"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -4901,16 +4976,16 @@
           ],
           "status": {
             "type": {
-              "state": "pre",
-              "shortDetail": "16:05 · Futures 2026"
+              "state": "in",
+              "shortDetail": "16:40 · Futures 2026"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
             "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -4932,16 +5007,16 @@
           ],
           "status": {
             "type": {
-              "state": "pre",
-              "shortDetail": "17:00 · Futures 2026"
+              "state": "in",
+              "shortDetail": "17:20 · Futures 2026"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
             "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -4986,9 +5061,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -5039,9 +5114,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -5086,9 +5161,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -5139,9 +5214,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -5186,9 +5261,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -5216,9 +5291,6 @@
               "linescores": [
                 {
                   "value": "4"
-                },
-                {
-                  "value": "6 2"
                 }
               ],
               "score": "0"
@@ -5233,9 +5305,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -5246,9 +5318,6 @@
                 "displayName": "Malaszszak M."
               },
               "linescores": [
-                {
-                  "value": "6 6"
-                },
                 {
                   "value": "6"
                 },
@@ -5286,9 +5355,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -5339,9 +5408,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -5386,9 +5455,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -5433,9 +5502,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -5460,14 +5529,7 @@
               "athlete": {
                 "displayName": "Shebekin G."
               },
-              "linescores": [
-                {
-                  "value": "6 5"
-                },
-                {
-                  "value": "6 3"
-                }
-              ],
+              "linescores": [],
               "score": "0"
             }
           ],
@@ -5480,9 +5542,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -5533,9 +5595,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -5580,9 +5642,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -5627,9 +5689,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -5659,9 +5721,6 @@
               },
               "linescores": [
                 {
-                  "value": "6 12"
-                },
-                {
                   "value": "7"
                 },
                 {
@@ -5680,9 +5739,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -5727,9 +5786,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -5774,9 +5833,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -5786,28 +5845,41 @@
               "athlete": {
                 "displayName": "Marmousez L."
               },
-              "linescores": []
+              "linescores": [
+                {
+                  "value": "6"
+                },
+                {
+                  "value": "7"
+                }
+              ],
+              "score": "2"
             },
             {
               "homeAway": "away",
               "athlete": {
                 "displayName": "Sperle J."
               },
-              "linescores": []
+              "linescores": [
+                {
+                  "value": "3"
+                }
+              ],
+              "score": "0"
             }
           ],
           "status": {
             "type": {
-              "state": "pre",
-              "shortDetail": "14:22 · Futures 2026"
+              "state": "post",
+              "shortDetail": "14:20 · Futures 2026"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -5817,28 +5889,44 @@
               "athlete": {
                 "displayName": "Valkusz M."
               },
-              "linescores": []
+              "linescores": [
+                {
+                  "value": "6"
+                },
+                {
+                  "value": "6"
+                }
+              ],
+              "score": "2"
             },
             {
               "homeAway": "away",
               "athlete": {
                 "displayName": "Kupcic J."
               },
-              "linescores": []
+              "linescores": [
+                {
+                  "value": "1"
+                },
+                {
+                  "value": "1"
+                }
+              ],
+              "score": "0"
             }
           ],
           "status": {
             "type": {
-              "state": "pre",
+              "state": "post",
               "shortDetail": "15:30 · Futures 2026"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -5861,15 +5949,15 @@
           "status": {
             "type": {
               "state": "pre",
-              "shortDetail": "18:00 · Futures 2026"
+              "shortDetail": "19:00 · Futures 2026"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -5891,16 +5979,16 @@
           ],
           "status": {
             "type": {
-              "state": "pre",
-              "shortDetail": "18:30 · Futures 2026"
+              "state": "in",
+              "shortDetail": "20:00 · Futures 2026"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
             "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -5945,9 +6033,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -5992,9 +6080,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6039,9 +6127,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6086,9 +6174,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6133,9 +6221,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6180,9 +6268,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6227,9 +6315,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6258,9 +6346,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6289,9 +6377,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6320,9 +6408,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6351,9 +6439,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6404,9 +6492,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "confirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6435,9 +6523,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6466,9 +6554,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6497,9 +6585,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6528,9 +6616,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6559,9 +6647,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6584,15 +6672,15 @@
           "status": {
             "type": {
               "state": "pre",
-              "shortDetail": "16:10 · UTR Pro Tennis Series 3"
+              "shortDetail": "16:30 · UTR Pro Tennis Series 3"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6615,15 +6703,15 @@
           "status": {
             "type": {
               "state": "pre",
-              "shortDetail": "16:10 · UTR Pro Tennis Series 3"
+              "shortDetail": "16:35 · UTR Pro Tennis Series 3"
             }
           },
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6652,9 +6740,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6683,9 +6771,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6714,9 +6802,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6745,9 +6833,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6776,9 +6864,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6807,9 +6895,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6838,9 +6926,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6869,9 +6957,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6900,9 +6988,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6931,9 +7019,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6962,9 +7050,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -6993,9 +7081,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         },
         {
@@ -7024,9 +7112,9 @@
           "_atlasSource": {
             "provider": "TennisExplorer",
             "tier": "corroborated",
-            "timestamp": "2026-09-12T13:58:39.387626+00:00",
-            "confidence": "provisional",
-            "rule": "explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre"
+            "timestamp": "2026-09-12T15:21:57.987100+00:00",
+            "confidence": "scheduled-or-unconfirmed",
+            "rule": "explicit result => post; explicit live marker => in; otherwise pre; score alone never changes lifecycle"
           }
         }
       ]
@@ -7034,9 +7122,11 @@
   ],
   "policy": {
     "postRequiresExplicitConfirmation": true,
+    "liveRequiresExplicitMarker": true,
     "scoreAloneNeverFinal": true,
+    "scoreAloneNeverLive": true,
     "staleOverwriteForbidden": true,
     "refreshTargetMinutes": 15,
-    "classification": "result cells => post; score cells without result => in; blank result+scores => pre"
+    "classification": "explicit result => post; explicit live marker => in; otherwise pre/unconfirmed"
   }
 }
