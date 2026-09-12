@@ -42,5 +42,8 @@ jobs:
           test -f tennis-command/index.html
           test -f p27-candidate/tennis-command/index.html
           test -f p27-candidate/data/tennis-feed.json
+          test -f p27-candidate/football-command/index.html
+          grep -q 'atlas-p27-football-resilient-loader' p27-candidate/football-command/index.html
           echo 'active_root_preserved=yes'
           echo 'candidate_subpath_present=yes'
+          echo 'football_resilient_loader_present=yes'
