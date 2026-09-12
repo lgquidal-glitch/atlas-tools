@@ -56,10 +56,12 @@ jobs:
                 proof=await page.evaluate(kind=>{
                   const live=kind==='tennis'?window.ATLAS_TENNIS_LIVE_STATUS:window.ATLAS_FOOT_LIVE_STATUS;
                   const feed=kind==='tennis'?window.ATLAS_TENNIS_SOURCE_FEED:window.ATLAS_FOOT_SOURCE_FEED;
-                  const nodes=[...document.querySelectorAll('[data-atlas-feed-match="1"]')].slice(0,6);
+                  const selector=kind==='tennis'?'[data-atlas-feed-match="1"]':'[data-atlas-foot-feed-match="1"]';
+                  const all=[...document.querySelectorAll(selector)];
+                  const nodes=all.slice(0,6);
                   const six=nodes.map(n=>({text:(n.innerText||'').trim(),visible:!!(n.offsetWidth||n.offsetHeight||n.getClientRects().length)}));
                   const body=(document.body.innerText||'');
-                  return {live,feedPresent:!!feed,renderedCount:document.querySelectorAll('[data-atlas-feed-match="1"]').length,six,bodyHasPre:/À venir/i.test(body),bodyHasLive:/En cours/i.test(body),bodyHasPost:/Terminé/i.test(body),overflow:document.documentElement.scrollWidth>document.documentElement.clientWidth+2};
+                  return {live,feedPresent:!!feed,renderedCount:all.length,six,bodyHasPre:/À venir/i.test(body),bodyHasLive:/En cours/i.test(body),bodyHasPost:/Terminé/i.test(body),overflow:document.documentElement.scrollWidth>document.documentElement.clientWidth+2};
                 },t.kind);
                 await page.screenshot({path:`p27/business-proof/${t.tool}__${profile}.png`,fullPage:true});
               }catch(e){errors.push(String(e));}
