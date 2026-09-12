@@ -1,0 +1,72 @@
+name: QA GitHub Pages ATLAS runtime
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  qa:
+    if: startsWith(github.event.issue.title, 'ATLAS-PAGES-RUNTIME-QA')
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install Playwright
+        run: |
+          npm init -y >/dev/null 2>&1
+          npm install playwright@latest >/dev/null 2>&1
+          npx playwright install --with-deps chromium webkit >/dev/null 2>&1
+      - name: Run GitHub Pages runtime QA
+        shell: bash
+        run: |
+          cat > qa-pages.mjs <<'EOF'
+          import { chromium, webkit } from 'playwright';
+          import fs from 'fs';
+          const base='https://lgquidal-glitch.github.io/atlas-tools';
+          const tools=[['tennis-command','tennis-command/'],['tennis-deep','tennis-deep/'],['tennis-fusion','tennis-fusion/'],['football-command','football-command/'],['football-deep','football-deep/'],['football-fusion','football-fusion/'],['calibration','calibration/']];
+          const profiles=[['android',390,844],['iphone',393,852],['ipad',820,1180],['desktop',1366,768]];
+          const browserDefs=[['chromium',chromium],['webkit',webkit]];
+          fs.mkdirSync('qa-pages-screenshots',{recursive:true});
+          const results=[];
+          for (const [browserName,browserType] of browserDefs){
+            const browser=await browserType.launch({headless:true});
+            for (const [tool,path] of tools){
+              for (const [profile,width,height] of profiles){
+                const context=await browser.newContext({viewport:{width,height}});
+                const page=await context.newPage();
+                const pageErrors=[]; const consoleErrors=[];
+                page.on('pageerror',e=>pageErrors.push(String(e)));
+                page.on('console',m=>{if(m.type()==='error')consoleErrors.push(m.text())});
+                let status=0,title='',bodyChars=0,overflow=false,pass=false;
+                try{
+                  const response=await page.goto(`${base}/${path}`,{waitUntil:'domcontentloaded',timeout:90000});
+                  status=response?.status()||0;
+                  await page.waitForTimeout(1500);
+                  title=await page.title();
+                  bodyChars=(await page.locator('body').innerText()).length;
+                  overflow=await page.evaluate(()=>document.documentElement.scrollWidth>document.documentElement.clientWidth+2);
+                  pass=status===200 && bodyChars>100 && !overflow && pageErrors.length===0;
+                  await page.screenshot({path:`qa-pages-screenshots/${tool}__${profile}__${browserName}.png`,fullPage:true});
+                }catch(e){pageErrors.push(String(e));}
+                results.push({browser:browserName,tool,profile,status,title,bodyChars,overflow,pageErrors,consoleErrors:consoleErrors.slice(0,20),pass});
+                await context.close();
+              }
+            }
+            await browser.close();
+          }
+          const summary={total:results.length,pass:results.filter(r=>r.pass).length,fail:results.filter(r=>!r.pass).length,results};
+          fs.writeFileSync('qa-gh-pages-runtime.json',JSON.stringify(summary,null,2));
+          console.log(JSON.stringify({total:summary.total,pass:summary.pass,fail:summary.fail},null,2));
+          if(summary.fail) process.exitCode=1;
+          EOF
+          node qa-pages.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: atlas-gh-pages-runtime-qa
+          path: |
+            qa-gh-pages-runtime.json
+            qa-pages-screenshots/
