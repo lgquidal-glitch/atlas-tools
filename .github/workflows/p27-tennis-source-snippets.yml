@@ -28,14 +28,21 @@ jobs:
           r=requests.get(u,headers={'User-Agent':'Mozilla/5.0 ATLAS-P27'},timeout=30); r.raise_for_status()
           s=BeautifulSoup(r.text,'html.parser'); out=[]
           rows=s.find_all('tr')
+          def txt(td): return td.get_text(' ',strip=True).replace('\xa0',' ').strip() if td else ''
           for idx,tr in enumerate(rows):
               rid=tr.get('id') or ''
-              text=' | '.join(tr.stripped_strings)
               if rid and not rid.endswith('b') and idx+1<len(rows) and (rows[idx+1].get('id') or '')==rid+'b':
                   tr2=rows[idx+1]
-                  out.append({'id':rid,'class1':tr.get('class',[]),'class2':tr2.get('class',[]),'text1':text,'text2':' | '.join(tr2.stripped_strings),'html1':str(tr)[:2500],'html2':str(tr2)[:2500]})
-          pathlib.Path('p27/candidate-qa/tennis-source-snippets.json').write_text(json.dumps({'date':str(d),'url':u,'rows':out[:40]},ensure_ascii=False,indent=2),encoding='utf-8')
-          print('captured',len(out))
+                  players1=[a.get_text(' ',strip=True) for a in tr.find_all('a') if '/player/' in (a.get('href') or '')]
+                  players2=[a.get_text(' ',strip=True) for a in tr2.find_all('a') if '/player/' in (a.get('href') or '')]
+                  result1=txt(tr.select_one('td.result')); result2=txt(tr2.select_one('td.result'))
+                  scores1=[txt(x) for x in tr.select('td.score')]; scores2=[txt(x) for x in tr2.select('td.score')]
+                  time=txt(tr.select_one('td.time'))
+                  out.append({'id':rid,'p1':players1[-1] if players1 else '', 'p2':players2[-1] if players2 else '', 'time':time,'result1':result1,'result2':result2,'scores1':scores1,'scores2':scores2,'class1':tr.get('class',[]),'class2':tr2.get('class',[]),'text1':' | '.join(tr.stripped_strings),'text2':' | '.join(tr2.stripped_strings)})
+          nonblank=[x for x in out if x['result1'] or x['result2'] or any(x['scores1']) or any(x['scores2'])]
+          payload={'date':str(d),'url':u,'count':len(out),'nonblankCount':len(nonblank),'rows':out[:220],'nonblank':nonblank[:120]}
+          pathlib.Path('p27/candidate-qa/tennis-source-snippets.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2),encoding='utf-8')
+          print(json.dumps({'count':len(out),'nonblankCount':len(nonblank),'examples':nonblank[:12]},ensure_ascii=False))
           PY
       - name: Commit diagnostics
         run: |
