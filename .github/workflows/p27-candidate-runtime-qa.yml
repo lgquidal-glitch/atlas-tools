@@ -1,0 +1,92 @@
+name: P27 candidate runtime QA
+on:
+  push:
+    branches: [p27-consolidation-candidate]
+    paths:
+      - '.github/workflows/p27-candidate-runtime-qa.yml'
+permissions:
+  contents: write
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: p27-consolidation-candidate
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install Playwright
+        run: |
+          npm init -y >/dev/null 2>&1
+          npm install playwright@latest >/dev/null 2>&1
+          npx playwright install --with-deps chromium webkit >/dev/null 2>&1
+      - name: Run candidate runtime QA
+        shell: bash
+        run: |
+          cat > p27-runtime.mjs <<'EOF'
+          import {chromium,webkit} from 'playwright';
+          import fs from 'fs';
+          const base='https://raw.githack.com/lgquidal-glitch/atlas-tools/p27-consolidation-candidate/web';
+          const tools=[['tennis-command','tennis-command/index.html','tennis'],['tennis-deep','tennis-deep/index.html','tennis'],['tennis-fusion','tennis-fusion/index.html','tennis'],['football-command','football-command/index.html','football'],['football-deep','football-deep/index.html','football'],['football-fusion','football-fusion/index.html','football'],['calibration','calibration/index.html','calibration']];
+          const profiles=[['android',390,844],['iphone',393,852],['ipad',820,1180],['desktop',1366,768]];
+          const browsers=[['chromium',chromium],['webkit',webkit]];
+          fs.mkdirSync('p27/runtime-screenshots',{recursive:true});
+          const results=[];
+          for(const [bn,bt] of browsers){
+            const browser=await bt.launch({headless:true});
+            for(const [tn,path,kind] of tools){
+              for(const [pn,w,h] of profiles){
+                const ctx=await browser.newContext({viewport:{width:w,height:h}}); const page=await ctx.newPage();
+                const pageErrors=[],consoleErrors=[],failedRequests=[];
+                page.on('pageerror',e=>pageErrors.push(String(e)));
+                page.on('console',m=>{if(m.type()==='error')consoleErrors.push(m.text())});
+                page.on('requestfailed',r=>failedRequests.push({url:r.url(),failure:r.failure()?.errorText||''}));
+                let status=0,bodyChars=0,overflow=false,live=null,sourceFeed=false,espnRequests=0,ok=false;
+                try{
+                  const resp=await page.goto(`${base}/${path}`,{waitUntil:'domcontentloaded',timeout:90000}); status=resp?.status()||0;
+                  await page.waitForTimeout(3500);
+                  bodyChars=(await page.locator('body').innerText()).length;
+                  overflow=await page.evaluate(()=>document.documentElement.scrollWidth>document.documentElement.clientWidth+2);
+                  const diag=await page.evaluate((kind)=>{
+                    const l=kind==='tennis'?window.ATLAS_TENNIS_LIVE_STATUS:kind==='football'?window.ATLAS_FOOT_LIVE_STATUS:window.ATLAS_CALIBRATION_LIVE_STATUS;
+                    const f=kind==='tennis'?window.ATLAS_TENNIS_SOURCE_FEED:kind==='football'?window.ATLAS_FOOT_SOURCE_FEED:window.ATLAS_CALIBRATION_SOURCE_FEED;
+                    return {live:l||null,sourceFeed:!!f};
+                  },kind);
+                  live=diag.live; sourceFeed=diag.sourceFeed;
+                  const reqs=await page.evaluate(()=>performance.getEntriesByType('resource').map(x=>x.name));
+                  espnRequests=reqs.filter(x=>/site\.api\.espn\.com/i.test(x)).length;
+                  const criticalConsole=consoleErrors.filter(x=>/cors|failed to fetch|networkerror|espn/i.test(x));
+                  ok=status===200&&bodyChars>100&&!overflow&&pageErrors.length===0&&failedRequests.length===0&&criticalConsole.length===0&&espnRequests===0&&sourceFeed===true&&(kind==='calibration'?!!live:!!live);
+                  await page.screenshot({path:`p27/runtime-screenshots/${tn}__${pn}__${bn}.png`,fullPage:true});
+                }catch(e){pageErrors.push(String(e));}
+                results.push({browser:bn,tool:tn,profile:pn,status,bodyChars,overflow,pageErrors,consoleErrors:consoleErrors.slice(0,20),failedRequests:failedRequests.slice(0,20),live,sourceFeed,espnRequests,pass:ok});
+                await ctx.close();
+              }
+            }
+            await browser.close();
+          }
+          const summary={total:results.length,pass:results.filter(x=>x.pass).length,fail:results.filter(x=>!x.pass).length,results};
+          fs.mkdirSync('p27/candidate-qa',{recursive:true});
+          fs.writeFileSync('p27/candidate-qa/runtime.json',JSON.stringify(summary,null,2));
+          console.log(JSON.stringify({total:summary.total,pass:summary.pass,fail:summary.fail},null,2));
+          if(summary.fail)process.exitCode=1;
+          EOF
+          node p27-runtime.mjs
+      - name: Commit runtime report
+        if: always()
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add p27/candidate-qa/runtime.json 2>/dev/null || true
+          git diff --cached --quiet || git commit -m 'Record P27 candidate runtime QA'
+          git push origin HEAD:p27-consolidation-candidate
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: p27-candidate-runtime-qa
+          path: |
+            p27/candidate-qa/runtime.json
+            p27/runtime-screenshots/
