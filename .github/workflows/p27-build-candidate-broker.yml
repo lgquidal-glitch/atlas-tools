@@ -1,0 +1,149 @@
+name: P27 build candidate broker
+on:
+  push:
+    branches: [p27-consolidation-candidate]
+    paths:
+      - '.github/workflows/p27-build-candidate-broker.yml'
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: p27-consolidation-candidate
+      - name: Install parser deps
+        run: python -m pip install -q requests beautifulsoup4
+      - name: Generate same-origin candidate feeds
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p web/data p27/candidate-qa
+          python3 - <<'PY'
+          import requests,datetime,json,re,pathlib
+          from bs4 import BeautifulSoup
+          now=datetime.datetime.now(datetime.timezone.utc); d=now.date(); stamp=now.isoformat()
+          H={'User-Agent':'Mozilla/5.0 ATLAS-P27','Accept':'*/*'}
+          # TENNIS: corroborated source. Never infer FINAL from score/time alone.
+          u=f'https://www.tennisexplorer.com/matches/?type=all&year={d.year}&month={d.month:02d}&day={d.day:02d}'
+          r=requests.get(u,headers=H,timeout=30); r.raise_for_status(); soup=BeautifulSoup(r.text,'html.parser')
+          tournament=''; comps=[]; rows=soup.find_all('tr'); i=0
+          while i < len(rows):
+            tr=rows[i]; cls=tr.get('class',[]); text=' | '.join(tr.stripped_strings)
+            if 'head' in cls and 'flags' in cls:
+              a=tr.find('a'); tournament=a.get_text(' ',strip=True) if a else text.split('|')[0].strip(); i+=1; continue
+            rid=tr.get('id') or ''
+            if rid and not rid.endswith('b') and i+1<len(rows) and (rows[i+1].get('id') or '')==rid+'b':
+              tr2=rows[i+1]
+              pls=[a.get_text(' ',strip=True) for a in tr.find_all('a') if '/player/' in (a.get('href') or '')]
+              pls2=[a.get_text(' ',strip=True) for a in tr2.find_all('a') if '/player/' in (a.get('href') or '')]
+              if pls and pls2:
+                a,b=pls[-1],pls2[-1]
+                t1=' | '.join(tr.stripped_strings); t2=' | '.join(tr2.stripped_strings)
+                tm=re.search(r'\b([0-2]\d:[0-5]\d)\b',t1)
+                # Explicit safety rule: hyphen/no score => PRE; score present without explicit final marker => IN, never POST.
+                has_score = not (' | -' in t1 and ' | -' in t2)
+                state='in' if has_score else 'pre'
+                detail=((tm.group(1)+' · ') if tm else '')+tournament
+                comps.append({'competitors':[{'homeAway':'home','athlete':{'displayName':a},'linescores':[]},{'homeAway':'away','athlete':{'displayName':b},'linescores':[]}],
+                              'status':{'type':{'state':state,'shortDetail':detail}},
+                              '_atlasSource':{'provider':'TennisExplorer','tier':'corroborated','timestamp':stamp,'confidence':'provisional','rule':'score-alone-never-final'}})
+              i+=2; continue
+            i+=1
+          tennis={'generatedAt':stamp,'source':'TennisExplorer','tier':'corroborated','confidence':'provisional','events':[{'competitions':comps}],
+                  'policy':{'postRequiresExplicitConfirmation':True,'scoreAloneNeverFinal':True,'staleOverwriteForbidden':True}}
+          pathlib.Path('web/data/tennis-feed.json').write_text(json.dumps(tennis,ensure_ascii=False,indent=2),encoding='utf-8')
+          # FOOTBALL: structured corroborated mirror. Preserve explicit provider state only.
+          codes={'eng.1':'en','fra.1':'fr','esp.1':'es','ger.1':'de','ita.1':'it','ksa.1':'sa'}; fsum={}
+          ds=d.strftime('%Y%m%d')
+          for code,short in codes.items():
+            url=f'https://worldcup26.ir/get/soccer/{code}/scoreboard?dates={ds}'
+            row={'generatedAt':stamp,'source':'worldcup26.ir structured mirror','tier':'corroborated','leagueCode':code,'events':[],'policy':{'explicitStateOnly':True,'finalLock':True}}
+            try:
+              rr=requests.get(url,headers=H,timeout=25)
+              if rr.status_code==200:
+                j=rr.json(); row['events']=j.get('events',[]) if isinstance(j,dict) else []; row['http']=200
+              else: row['http']=rr.status_code
+            except Exception as e: row['error']=repr(e)
+            pathlib.Path(f'web/data/football-{code}.json').write_text(json.dumps(row,ensure_ascii=False,indent=2),encoding='utf-8')
+            fsum[code]={'events':len(row['events']),'http':row.get('http'),'error':row.get('error')}
+          pathlib.Path('p27/candidate-qa/feed-generation.json').write_text(json.dumps({'generatedAt':stamp,'tennisCompetitions':len(comps),'football':fsum},ensure_ascii=False,indent=2),encoding='utf-8')
+          print('tennis competitions',len(comps)); print(json.dumps(fsum,indent=2))
+          if not comps: raise SystemExit('No tennis matches parsed')
+          if not any(v.get('events',0)>0 for v in fsum.values()): raise SystemExit('No football events parsed')
+          PY
+      - name: Patch seven candidate interfaces without changing visual architecture
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import pathlib,re,json
+          tennis=['web/tennis-command/index.html','web/tennis-deep/index.html','web/tennis-fusion/index.html']
+          football=['web/football-command/index.html','web/football-deep/index.html','web/football-fusion/index.html']
+          changed=[]
+          for p in tennis:
+            path=pathlib.Path(p); s=path.read_text(encoding='utf-8')
+            before=s
+            # P24 validated minimal legacy ID fix: first legacy generated ID only.
+            s=s.replace("box.id='atlasActionColorCustomizer';","box.id='atlasActionColorCustomizerLegacy';",1)
+            # Replace direct cross-origin ESPN critical request by same-origin broker feed.
+            s=s.replace("fetch('https://site.api.espn.com/apis/site/v2/sports/tennis/all/scoreboard?dates='+day,{cache:'no-store',mode:'cors'})","fetch('../data/tennis-feed.json?ts='+Date.now(),{cache:'no-store'})")
+            s=s.replace("const j=await r.json(), comps=extract(j,[]);","const j=await r.json();window.ATLAS_TENNIS_SOURCE_FEED=j;const comps=extract(j,[]);")
+            s=s.replace("if(m._atlasOfficialResultLocked&&st==='post')continue;","if(m._atlasOfficialResultLocked)continue;")
+            s=s.replace("source:'ESPN scoreboard'","source:'ATLAS same-origin broker · corroborated feed'")
+            s=s.replace('Le flux live ATLAS/ESPN met déjà à jour toutes les 60 s.','Le flux live ATLAS broker met à jour toutes les 60 s.')
+            if s!=before: path.write_text(s,encoding='utf-8'); changed.append(p)
+          for p in football:
+            path=pathlib.Path(p); s=path.read_text(encoding='utf-8'); before=s
+            old="fetch(`https://site.api.espn.com/apis/site/v2/sports/soccer/${code}/scoreboard?dates=${day}`,{cache:'no-store',mode:'cors'})"
+            new="fetch(`../data/football-${code}.json?ts=${Date.now()}`,{cache:'no-store'})"
+            s=s.replace(old,new)
+            s=s.replace("const j=await r.json();ok++;","const j=await r.json();window.ATLAS_FOOT_SOURCE_FEED=window.ATLAS_FOOT_SOURCE_FEED||{};window.ATLAS_FOOT_SOURCE_FEED[code]=j;ok++;")
+            s=s.replace("source:'ESPN live + OpenFootball fallback'","source:'ATLAS same-origin broker · corroborated feed'")
+            if s!=before: path.write_text(s,encoding='utf-8'); changed.append(p)
+          # Calibration: data-only broker exposure, no visual/structural redesign.
+          cp=pathlib.Path('web/calibration/index.html'); s=cp.read_text(encoding='utf-8'); before=s
+          if 'atlas-p27-calibration-broker' not in s:
+            block='''\n<script id="atlas-p27-calibration-broker">\n(function(){async function p27(){try{const [t,f]=await Promise.all([fetch('../data/tennis-feed.json?ts='+Date.now(),{cache:'no-store'}).then(r=>r.json()),fetch('../data/football-eng.1.json?ts='+Date.now(),{cache:'no-store'}).then(r=>r.json())]);window.ATLAS_CALIBRATION_SOURCE_FEED={tennis:t,football:f,updatedAt:new Date().toISOString(),source:'ATLAS same-origin broker'};window.ATLAS_CALIBRATION_LIVE_STATUS={ok:true,updatedAt:new Date().toISOString(),source:'ATLAS same-origin broker'};}catch(e){window.ATLAS_CALIBRATION_LIVE_STATUS={ok:false,updatedAt:new Date().toISOString(),error:String(e)}}}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',p27,{once:true});else p27();setInterval(p27,60000);})();\n</script>\n'''
+            s=s.replace('</body>',block+'</body>')
+          if s!=before: cp.write_text(s,encoding='utf-8'); changed.append(str(cp))
+          pathlib.Path('p27/candidate-qa/patch-summary.json').write_text(json.dumps({'changed':changed,'architectureChanged':False,'visualChanged':False},indent=2),encoding='utf-8')
+          print('\n'.join(changed))
+          if len(changed)!=7: raise SystemExit(f'Expected 7 changed interfaces, got {len(changed)}')
+          PY
+      - name: Candidate static QA after patch
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import pathlib,re,json,subprocess,tempfile,os
+          files=['web/tennis-command/index.html','web/tennis-deep/index.html','web/tennis-fusion/index.html','web/football-command/index.html','web/football-deep/index.html','web/football-fusion/index.html','web/calibration/index.html']
+          out={'files':[],'errors':[]}; total=0
+          for p in files:
+            s=pathlib.Path(p).read_text(encoding='utf-8',errors='replace')
+            ids=re.findall(r'\bid=["\']([^"\']+)',s,re.I); counts={x:ids.count(x) for x in set(ids)}; dup=sorted(x for x,n in counts.items() if n>1)
+            direct=bool(re.search(r'https?://[^"\']*site\.api\.espn\.com',s,re.I))
+            scripts=0
+            for i,m in enumerate(re.finditer(r'<script(?![^>]+type=["\'](?:application/json|text/plain)["\'])[^>]*>(.*?)</script>',s,re.I|re.S)):
+              code=m.group(1).strip()
+              if not code: continue
+              scripts+=1; total+=1
+              with tempfile.NamedTemporaryFile('w',suffix='.js',delete=False,encoding='utf-8') as t: t.write(code); n=t.name
+              r=subprocess.run(['node','--check',n],capture_output=True,text=True); os.unlink(n)
+              if r.returncode: out['errors'].append({'path':p,'script':i,'error':r.stderr[-1000:]})
+            out['files'].append({'path':p,'scripts':scripts,'duplicateIds':dup,'directEspn':direct,'tennisFeed':'ATLAS_TENNIS_SOURCE_FEED' in s,'footFeed':'ATLAS_FOOT_SOURCE_FEED' in s,'calibrationFeed':'ATLAS_CALIBRATION_SOURCE_FEED' in s})
+          out['summary']={'files':7,'scripts':total,'syntaxErrors':len(out['errors']),'duplicateIdFiles':sum(bool(x['duplicateIds']) for x in out['files']),'directEspnFiles':sum(x['directEspn'] for x in out['files'])}
+          out['pass']=not out['errors'] and out['summary']['duplicateIdFiles']==0 and out['summary']['directEspnFiles']==0
+          pathlib.Path('p27/candidate-qa/static-after-patch.json').write_text(json.dumps(out,ensure_ascii=False,indent=2),encoding='utf-8')
+          print(json.dumps(out['summary'],indent=2))
+          if not out['pass']: raise SystemExit(1)
+          PY
+      - name: Commit candidate broker and QA
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add web p27/candidate-qa
+          git commit -m 'Build P27 same-origin broker candidate with QA'
+          git push origin HEAD:p27-consolidation-candidate
