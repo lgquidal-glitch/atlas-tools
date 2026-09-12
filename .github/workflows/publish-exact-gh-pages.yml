@@ -1,0 +1,37 @@
+name: Publish exact ATLAS gh-pages
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    if: startsWith(github.event.issue.title, 'ATLAS-GHPAGES-PUBLISH')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Stage exact web bundle
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/atlas-pages
+          mkdir -p /tmp/atlas-pages
+          cp -a web/. /tmp/atlas-pages/
+          touch /tmp/atlas-pages/.nojekyll
+      - name: Publish to gh-pages root
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git checkout --orphan atlas-pages-stage
+          git rm -rf . >/dev/null 2>&1 || true
+          cp -a /tmp/atlas-pages/. .
+          git add -A
+          git commit -m 'Publish exact ATLAS web bundle to gh-pages root'
+          git push origin HEAD:gh-pages --force
