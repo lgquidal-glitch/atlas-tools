@@ -1,0 +1,26 @@
+name: P27 trigger football refresh every 15 minutes
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '2,17,32,47 * * * *'
+  push:
+    branches: [p27-consolidation-candidate]
+    paths:
+      - '.github/workflows/p27-refresh-football-quarter-hour.yml'
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  dispatch-football-refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger hardened football sidecar
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh workflow run p27-build-live-football-sidecar.yml \
+            --repo lgquidal-glitch/atlas-tools \
+            --ref p27-consolidation-candidate
