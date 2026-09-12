@@ -1,7 +1,7 @@
 {
   "total": 56,
-  "pass": 45,
-  "fail": 11,
+  "pass": 56,
+  "fail": 0,
   "results": [
     {
       "browser": "chromium",
@@ -15,7 +15,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:42:54.580Z",
+        "updatedAt": "2026-09-12T11:01:42.096Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -35,7 +35,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:42:59.627Z",
+        "updatedAt": "2026-09-12T11:01:47.311Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -55,7 +55,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:43:04.893Z",
+        "updatedAt": "2026-09-12T11:01:52.495Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -75,7 +75,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:43:10.129Z",
+        "updatedAt": "2026-09-12T11:01:57.885Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -95,7 +95,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:43:15.680Z",
+        "updatedAt": "2026-09-12T11:02:03.415Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -115,7 +115,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:43:20.869Z",
+        "updatedAt": "2026-09-12T11:02:08.756Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -135,7 +135,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:43:26.330Z",
+        "updatedAt": "2026-09-12T11:02:14.238Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -155,7 +155,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:43:31.965Z",
+        "updatedAt": "2026-09-12T11:02:19.904Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -175,7 +175,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:43:37.794Z",
+        "updatedAt": "2026-09-12T11:02:25.788Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -195,7 +195,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:43:43.313Z",
+        "updatedAt": "2026-09-12T11:02:31.201Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -215,7 +215,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:43:48.582Z",
+        "updatedAt": "2026-09-12T11:02:36.600Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -235,7 +235,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:43:54.025Z",
+        "updatedAt": "2026-09-12T11:02:42.162Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -248,14 +248,14 @@
       "tool": "football-command",
       "profile": "android",
       "status": 200,
-      "bodyChars": 21980,
+      "bodyChars": 9777,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:43:59.756Z",
+        "updatedAt": "2026-09-12T11:02:47.831Z",
         "providersOk": 6,
         "totalEvents": 11,
         "matchesUpdated": 0,
@@ -270,14 +270,14 @@
       "tool": "football-command",
       "profile": "iphone",
       "status": 200,
-      "bodyChars": 22007,
+      "bodyChars": 9804,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:44:05.958Z",
+        "updatedAt": "2026-09-12T11:02:53.221Z",
         "providersOk": 6,
         "totalEvents": 11,
         "matchesUpdated": 0,
@@ -292,14 +292,14 @@
       "tool": "football-command",
       "profile": "ipad",
       "status": 200,
-      "bodyChars": 22196,
+      "bodyChars": 9993,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:44:12.246Z",
+        "updatedAt": "2026-09-12T11:02:58.724Z",
         "providersOk": 6,
         "totalEvents": 11,
         "matchesUpdated": 0,
@@ -314,14 +314,14 @@
       "tool": "football-command",
       "profile": "desktop",
       "status": 200,
-      "bodyChars": 22196,
+      "bodyChars": 9993,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:44:18.847Z",
+        "updatedAt": "2026-09-12T11:03:04.541Z",
         "providersOk": 6,
         "totalEvents": 11,
         "matchesUpdated": 0,
@@ -336,14 +336,14 @@
       "tool": "football-deep",
       "profile": "android",
       "status": 200,
-      "bodyChars": 24265,
+      "bodyChars": 11762,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:44:25.923Z",
+        "updatedAt": "2026-09-12T11:03:10.681Z",
         "providersOk": 6,
         "totalEvents": 11,
         "matchesUpdated": 0,
@@ -358,14 +358,14 @@
       "tool": "football-deep",
       "profile": "iphone",
       "status": 200,
-      "bodyChars": 24292,
+      "bodyChars": 11789,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:44:32.142Z",
+        "updatedAt": "2026-09-12T11:03:16.234Z",
         "providersOk": 6,
         "totalEvents": 11,
         "matchesUpdated": 0,
@@ -380,14 +380,14 @@
       "tool": "football-deep",
       "profile": "ipad",
       "status": 200,
-      "bodyChars": 24481,
+      "bodyChars": 11978,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:44:38.618Z",
+        "updatedAt": "2026-09-12T11:03:21.944Z",
         "providersOk": 6,
         "totalEvents": 11,
         "matchesUpdated": 0,
@@ -402,14 +402,14 @@
       "tool": "football-deep",
       "profile": "desktop",
       "status": 200,
-      "bodyChars": 24481,
+      "bodyChars": 11978,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:44:45.574Z",
+        "updatedAt": "2026-09-12T11:03:27.871Z",
         "providersOk": 6,
         "totalEvents": 11,
         "matchesUpdated": 0,
@@ -424,14 +424,14 @@
       "tool": "football-fusion",
       "profile": "android",
       "status": 200,
-      "bodyChars": 24293,
+      "bodyChars": 11790,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:44:53.039Z",
+        "updatedAt": "2026-09-12T11:03:34.167Z",
         "providersOk": 6,
         "totalEvents": 11,
         "matchesUpdated": 0,
@@ -446,14 +446,14 @@
       "tool": "football-fusion",
       "profile": "iphone",
       "status": 200,
-      "bodyChars": 24320,
+      "bodyChars": 11817,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:44:59.265Z",
+        "updatedAt": "2026-09-12T11:03:39.750Z",
         "providersOk": 6,
         "totalEvents": 11,
         "matchesUpdated": 0,
@@ -468,14 +468,14 @@
       "tool": "football-fusion",
       "profile": "ipad",
       "status": 200,
-      "bodyChars": 24509,
+      "bodyChars": 12006,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:45:05.872Z",
+        "updatedAt": "2026-09-12T11:03:45.419Z",
         "providersOk": 6,
         "totalEvents": 11,
         "matchesUpdated": 0,
@@ -490,14 +490,14 @@
       "tool": "football-fusion",
       "profile": "desktop",
       "status": 200,
-      "bodyChars": 24509,
+      "bodyChars": 12006,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:45:12.803Z",
+        "updatedAt": "2026-09-12T11:03:51.397Z",
         "providersOk": 6,
         "totalEvents": 11,
         "matchesUpdated": 0,
@@ -519,7 +519,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:45:19.950Z",
+        "updatedAt": "2026-09-12T11:03:57.653Z",
         "source": "ATLAS same-origin broker"
       },
       "sourceFeed": true,
@@ -538,7 +538,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:45:25.183Z",
+        "updatedAt": "2026-09-12T11:04:02.841Z",
         "source": "ATLAS same-origin broker"
       },
       "sourceFeed": true,
@@ -557,7 +557,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:45:30.326Z",
+        "updatedAt": "2026-09-12T11:04:08.020Z",
         "source": "ATLAS same-origin broker"
       },
       "sourceFeed": true,
@@ -576,7 +576,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:45:35.392Z",
+        "updatedAt": "2026-09-12T11:04:13.131Z",
         "source": "ATLAS same-origin broker"
       },
       "sourceFeed": true,
@@ -595,7 +595,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:45:42.738Z",
+        "updatedAt": "2026-09-12T11:04:24.528Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -615,7 +615,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:45:48.547Z",
+        "updatedAt": "2026-09-12T11:04:30.374Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -635,7 +635,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:45:54.033Z",
+        "updatedAt": "2026-09-12T11:04:35.822Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -655,7 +655,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:45:59.618Z",
+        "updatedAt": "2026-09-12T11:04:41.405Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -675,7 +675,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:46:05.346Z",
+        "updatedAt": "2026-09-12T11:04:47.128Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -695,7 +695,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:46:11.040Z",
+        "updatedAt": "2026-09-12T11:04:52.709Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -715,7 +715,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:46:16.639Z",
+        "updatedAt": "2026-09-12T11:04:58.302Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -735,7 +735,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:46:22.429Z",
+        "updatedAt": "2026-09-12T11:05:04.069Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -755,7 +755,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:46:28.374Z",
+        "updatedAt": "2026-09-12T11:05:09.962Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -775,7 +775,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:46:33.969Z",
+        "updatedAt": "2026-09-12T11:05:15.554Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -795,7 +795,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:46:39.590Z",
+        "updatedAt": "2026-09-12T11:05:21.110Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -815,7 +815,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:46:45.331Z",
+        "updatedAt": "2026-09-12T11:05:26.934Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -828,21 +828,14 @@
       "tool": "football-command",
       "profile": "android",
       "status": 200,
-      "bodyChars": 13697,
+      "bodyChars": 7765,
       "overflow": false,
-      "pageErrors": [
-        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-eng.1.json?ts=1789210011158 due to access control checks.",
-        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-fra.1.json?ts=1789210011158 due to access control checks.",
-        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-esp.1.json?ts=1789210011158 due to access control checks.",
-        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ger.1.json?ts=1789210011158 due to access control checks.",
-        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ita.1.json?ts=1789210011158 due to access control checks.",
-        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ksa.1.json?ts=1789210011158 due to access control checks."
-      ],
+      "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:46:51.511Z",
+        "updatedAt": "2026-09-12T11:05:32.763Z",
         "providersOk": 6,
         "totalEvents": 11,
         "matchesUpdated": 0,
@@ -850,28 +843,21 @@
       },
       "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "football-command",
       "profile": "iphone",
       "status": 200,
-      "bodyChars": 13724,
+      "bodyChars": 7792,
       "overflow": false,
-      "pageErrors": [
-        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-eng.1.json?ts=1789210017343 due to access control checks.",
-        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-fra.1.json?ts=1789210017344 due to access control checks.",
-        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-esp.1.json?ts=1789210017344 due to access control checks.",
-        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ger.1.json?ts=1789210017344 due to access control checks.",
-        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ita.1.json?ts=1789210017344 due to access control checks.",
-        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ksa.1.json?ts=1789210017344 due to access control checks."
-      ],
+      "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:46:57.677Z",
+        "updatedAt": "2026-09-12T11:05:38.463Z",
         "providersOk": 6,
         "totalEvents": 11,
         "matchesUpdated": 0,
@@ -879,100 +865,65 @@
       },
       "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "football-command",
       "profile": "ipad",
       "status": 200,
-      "bodyChars": 14009,
+      "bodyChars": 7981,
       "overflow": false,
-      "pageErrors": [
-        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-eng.1.json?ts=1789210023623 due to access control checks.",
-        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-fra.1.json?ts=1789210023623 due to access control checks.",
-        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-esp.1.json?ts=1789210023623 due to access control checks.",
-        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ger.1.json?ts=1789210023623 due to access control checks.",
-        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ita.1.json?ts=1789210023623 due to access control checks.",
-        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ksa.1.json?ts=1789210023623 due to access control checks."
-      ],
+      "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
       "live": {
-        "updatedAt": "2026-09-12T10:47:04.270Z",
+        "ok": true,
+        "updatedAt": "2026-09-12T11:05:44.123Z",
         "providersOk": 6,
-        "matchesUpdated": 17,
-        "source": "ATLAS same-origin broker · corroborated feed"
+        "totalEvents": 11,
+        "matchesUpdated": 0,
+        "source": "ATLAS same-origin broker · resilient loader"
       },
       "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "football-command",
       "profile": "desktop",
       "status": 200,
-      "bodyChars": 14009,
+      "bodyChars": 7981,
       "overflow": false,
-      "pageErrors": [
-        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-eng.1.json?ts=1789210030120 due to access control checks.",
-        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-fra.1.json?ts=1789210030120 due to access control checks.",
-        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-esp.1.json?ts=1789210030120 due to access control checks.",
-        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ger.1.json?ts=1789210030120 due to access control checks.",
-        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ita.1.json?ts=1789210030120 due to access control checks.",
-        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ksa.1.json?ts=1789210030121 due to access control checks."
-      ],
+      "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
       "live": {
-        "updatedAt": "2026-09-12T10:47:10.751Z",
+        "ok": true,
+        "updatedAt": "2026-09-12T11:05:50.035Z",
         "providersOk": 6,
-        "matchesUpdated": 17,
-        "source": "ATLAS same-origin broker · corroborated feed"
+        "totalEvents": 11,
+        "matchesUpdated": 0,
+        "source": "ATLAS same-origin broker · resilient loader"
       },
       "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "football-deep",
       "profile": "android",
       "status": 200,
-      "bodyChars": 15982,
+      "bodyChars": 9750,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
-      "failedRequests": [
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ksa.1.json?ts=1789210037114",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-fra.1.json?ts=1789210037114",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-esp.1.json?ts=1789210037114",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ger.1.json?ts=1789210037114",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-eng.1.json?ts=1789210037113",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ita.1.json?ts=1789210037114",
-          "failure": "Load request cancelled"
-        }
-      ],
+      "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:47:17.418Z",
+        "updatedAt": "2026-09-12T11:05:56.188Z",
         "providersOk": 6,
         "totalEvents": 11,
         "matchesUpdated": 0,
@@ -980,46 +931,21 @@
       },
       "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "football-deep",
       "profile": "iphone",
       "status": 200,
-      "bodyChars": 16009,
+      "bodyChars": 9777,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
-      "failedRequests": [
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-fra.1.json?ts=1789210043482",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ita.1.json?ts=1789210043482",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ksa.1.json?ts=1789210043482",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-eng.1.json?ts=1789210043481",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-esp.1.json?ts=1789210043482",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ger.1.json?ts=1789210043482",
-          "failure": "Load request cancelled"
-        }
-      ],
+      "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:47:23.778Z",
+        "updatedAt": "2026-09-12T11:06:02.067Z",
         "providersOk": 6,
         "totalEvents": 11,
         "matchesUpdated": 0,
@@ -1027,46 +953,21 @@
       },
       "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "football-deep",
       "profile": "ipad",
       "status": 200,
-      "bodyChars": 16198,
+      "bodyChars": 9966,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
-      "failedRequests": [
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-eng.1.json?ts=1789210049885",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ger.1.json?ts=1789210049886",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ita.1.json?ts=1789210049886",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-fra.1.json?ts=1789210049885",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-esp.1.json?ts=1789210049886",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ksa.1.json?ts=1789210049886",
-          "failure": "Load request cancelled"
-        }
-      ],
+      "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:47:30.266Z",
+        "updatedAt": "2026-09-12T11:06:07.915Z",
         "providersOk": 6,
         "totalEvents": 11,
         "matchesUpdated": 0,
@@ -1074,91 +975,43 @@
       },
       "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "football-deep",
       "profile": "desktop",
       "status": 200,
-      "bodyChars": 16318,
+      "bodyChars": 9966,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
-      "failedRequests": [
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-esp.1.json?ts=1789210056683",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ger.1.json?ts=1789210056683",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ksa.1.json?ts=1789210056683",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ita.1.json?ts=1789210056683",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-fra.1.json?ts=1789210056683",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-eng.1.json?ts=1789210056683",
-          "failure": "Load request cancelled"
-        }
-      ],
+      "failedRequests": [],
       "live": {
-        "updatedAt": "2026-09-12T10:47:37.334Z",
+        "ok": true,
+        "updatedAt": "2026-09-12T11:06:13.995Z",
         "providersOk": 6,
-        "matchesUpdated": 19,
-        "source": "ATLAS same-origin broker · corroborated feed"
+        "totalEvents": 11,
+        "matchesUpdated": 0,
+        "source": "ATLAS same-origin broker · resilient loader"
       },
       "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "football-fusion",
       "profile": "android",
       "status": 200,
-      "bodyChars": 16010,
+      "bodyChars": 9778,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
-      "failedRequests": [
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-eng.1.json?ts=1789210064058",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ger.1.json?ts=1789210064059",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-fra.1.json?ts=1789210064059",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-esp.1.json?ts=1789210064059",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ksa.1.json?ts=1789210064059",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ita.1.json?ts=1789210064059",
-          "failure": "Load request cancelled"
-        }
-      ],
+      "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:47:44.358Z",
+        "updatedAt": "2026-09-12T11:06:20.340Z",
         "providersOk": 6,
         "totalEvents": 11,
         "matchesUpdated": 0,
@@ -1166,46 +1019,21 @@
       },
       "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "football-fusion",
       "profile": "iphone",
       "status": 200,
-      "bodyChars": 16037,
+      "bodyChars": 9805,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
-      "failedRequests": [
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ita.1.json?ts=1789210070424",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-fra.1.json?ts=1789210070424",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-eng.1.json?ts=1789210070423",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-esp.1.json?ts=1789210070424",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ger.1.json?ts=1789210070424",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ksa.1.json?ts=1789210070424",
-          "failure": "Load request cancelled"
-        }
-      ],
+      "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:47:50.731Z",
+        "updatedAt": "2026-09-12T11:06:26.176Z",
         "providersOk": 6,
         "totalEvents": 11,
         "matchesUpdated": 0,
@@ -1213,23 +1041,25 @@
       },
       "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
       "tool": "football-fusion",
       "profile": "ipad",
       "status": 200,
-      "bodyChars": 16346,
+      "bodyChars": 9994,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
       "live": {
-        "updatedAt": "2026-09-12T10:47:57.620Z",
+        "ok": true,
+        "updatedAt": "2026-09-12T11:06:32.037Z",
         "providersOk": 6,
-        "matchesUpdated": 19,
-        "source": "ATLAS same-origin broker · corroborated feed"
+        "totalEvents": 11,
+        "matchesUpdated": 0,
+        "source": "ATLAS same-origin broker · resilient loader"
       },
       "sourceFeed": true,
       "espnRequests": 0,
@@ -1240,39 +1070,14 @@
       "tool": "football-fusion",
       "profile": "desktop",
       "status": 200,
-      "bodyChars": 16226,
+      "bodyChars": 9994,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
-      "failedRequests": [
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ksa.1.json?ts=1789210083689",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-eng.1.json?ts=1789210083688",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-fra.1.json?ts=1789210083688",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ita.1.json?ts=1789210083689",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-esp.1.json?ts=1789210083688",
-          "failure": "Load request cancelled"
-        },
-        {
-          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ger.1.json?ts=1789210083688",
-          "failure": "Load request cancelled"
-        }
-      ],
+      "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:48:04.098Z",
+        "updatedAt": "2026-09-12T11:06:38.189Z",
         "providersOk": 6,
         "totalEvents": 11,
         "matchesUpdated": 0,
@@ -1280,7 +1085,7 @@
       },
       "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
@@ -1294,7 +1099,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:48:10.509Z",
+        "updatedAt": "2026-09-12T11:06:43.964Z",
         "source": "ATLAS same-origin broker"
       },
       "sourceFeed": true,
@@ -1313,7 +1118,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:48:16.107Z",
+        "updatedAt": "2026-09-12T11:06:49.589Z",
         "source": "ATLAS same-origin broker"
       },
       "sourceFeed": true,
@@ -1332,7 +1137,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:48:21.723Z",
+        "updatedAt": "2026-09-12T11:06:55.177Z",
         "source": "ATLAS same-origin broker"
       },
       "sourceFeed": true,
@@ -1351,7 +1156,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T10:48:27.209Z",
+        "updatedAt": "2026-09-12T11:07:00.698Z",
         "source": "ATLAS same-origin broker"
       },
       "sourceFeed": true,
