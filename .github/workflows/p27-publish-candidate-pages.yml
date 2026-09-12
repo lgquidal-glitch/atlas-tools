@@ -1,0 +1,46 @@
+name: P27 publish candidate pages
+on:
+  push:
+    branches: [p27-consolidation-candidate]
+    paths:
+      - '.github/workflows/p27-publish-candidate-pages.yml'
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: p27-consolidation-candidate
+          fetch-depth: 0
+      - name: Stage candidate web bundle
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/p27-web
+          mkdir -p /tmp/p27-web
+          cp -a web/. /tmp/p27-web/
+      - name: Publish under isolated gh-pages subpath
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin gh-pages:refs/remotes/origin/gh-pages
+          git checkout -B gh-pages origin/gh-pages
+          rm -rf p27-candidate
+          mkdir -p p27-candidate
+          cp -a /tmp/p27-web/. p27-candidate/
+          printf '%s\n' 'P27 candidate - isolated test copy. Active root remains unchanged.' > p27-candidate/CANDIDATE.txt
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add p27-candidate
+          git commit -m 'Publish isolated P27 candidate under subpath'
+          git push origin gh-pages
+      - name: Verify active root and candidate coexist
+        shell: bash
+        run: |
+          test -f tennis-command/index.html
+          test -f p27-candidate/tennis-command/index.html
+          test -f p27-candidate/data/tennis-feed.json
+          echo 'active_root_preserved=yes'
+          echo 'candidate_subpath_present=yes'
