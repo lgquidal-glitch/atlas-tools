@@ -10,34 +10,35 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Probe alternate live endpoints and record result
+      - name: Probe resilient public sources
         shell: bash
         run: |
           set -euo pipefail
           mkdir -p p27
           python3 - <<'PY'
           import json, urllib.request, datetime
-          date=datetime.datetime.now(datetime.timezone.utc).date().isoformat()
-          out={'generatedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'date':date,'probes':[]}
-          endpoints=[]
-          for sport in ('tennis','football'):
-              endpoints += [
-                (sport,'sofascore-www',f'https://www.sofascore.com/api/v1/sport/{sport}/scheduled-events/{date}'),
-                (sport,'sofascore-api',f'https://api.sofascore.com/api/v1/sport/{sport}/scheduled-events/{date}')
-              ]
-          for sport,provider,url in endpoints:
-              req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0','Accept':'application/json,text/plain,*/*','Referer':'https://www.sofascore.com/'})
-              row={'sport':sport,'provider':provider,'url':url}
-              try:
-                  with urllib.request.urlopen(req,timeout=30) as r:
-                      raw=r.read(); row['http']=r.status; row['contentType']=r.headers.get('content-type'); row['bytes']=len(raw)
-                      d=json.loads(raw); ev=d.get('events',[]) if isinstance(d,dict) else []
-                      row['events']=len(ev); row['ok']=bool(r.status==200 and isinstance(ev,list))
-                      if ev:
-                          e=ev[0]; row['sample']={'id':e.get('id'),'home':(e.get('homeTeam') or {}).get('name'),'away':(e.get('awayTeam') or {}).get('name'),'status':(e.get('status') or {}).get('type')}
-              except Exception as e:
-                  row['ok']=False; row['error']=repr(e)
-              out['probes'].append(row)
+          now=datetime.datetime.now(datetime.timezone.utc); d=now.date(); ds=d.isoformat()
+          tests=[
+            ('football','openfootapi',f'https://openfootapi.com/v1/matches?date={ds}'),
+            ('tennis','tennisexplorer',f'https://www.tennisexplorer.com/matches/?type=all&year={d.year}&month={d.month:02d}&day={d.day:02d}'),
+            ('tennis','atptour','https://www.atptour.com/en/scores/current'),
+            ('tennis','wtatennis','https://www.wtatennis.com/scores'),
+            ('tennis','sofascore-page',f'https://www.sofascore.com/tennis/{ds}'),
+            ('football','sofascore-page',f'https://www.sofascore.com/football/{ds}')]
+          out={'generatedAt':now.isoformat(),'date':ds,'probes':[]}
+          for sport,provider,url in tests:
+            row={'sport':sport,'provider':provider,'url':url}
+            try:
+              req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/130 Safari/537.36','Accept':'text/html,application/json;q=0.9,*/*;q=0.8'})
+              with urllib.request.urlopen(req,timeout=30) as r:
+                raw=r.read(); text=raw[:200000].decode('utf-8','ignore')
+                row.update(http=r.status,contentType=r.headers.get('content-type'),bytes=len(raw),ok=(r.status==200),markers={'live':('live' in text.lower()),'score':('score' in text.lower()),'match':('match' in text.lower())})
+                if 'application/json' in (row['contentType'] or ''):
+                  try:
+                    obj=json.loads(raw); row['jsonType']=type(obj).__name__; row['jsonKeys']=list(obj)[:20] if isinstance(obj,dict) else []
+                  except Exception as e: row['jsonError']=repr(e)
+            except Exception as e: row.update(ok=False,error=repr(e))
+            out['probes'].append(row)
           open('p27/probe-result.json','w',encoding='utf-8').write(json.dumps(out,ensure_ascii=False,indent=2))
           PY
           cat p27/probe-result.json
@@ -47,5 +48,5 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add p27/probe-result.json
-          git diff --cached --quiet || git commit -m 'Record P27 alternate source probe result'
+          git diff --cached --quiet || git commit -m 'Record P27 resilient source probe result'
           git push
