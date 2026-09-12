@@ -1,16 +1,32 @@
 {
-  "generatedAt": "2026-09-12T08:57:07.800699+00:00",
+  "generatedAt": "2026-09-12T08:57:50.335662+00:00",
   "date": "2026-09-12",
   "probes": [
     {
       "sport": "tennis",
+      "provider": "sofascore-www",
       "url": "https://www.sofascore.com/api/v1/sport/tennis/scheduled-events/2026-09-12",
       "ok": false,
       "error": "<HTTPError 403: 'Forbidden'>"
     },
     {
+      "sport": "tennis",
+      "provider": "sofascore-api",
+      "url": "https://api.sofascore.com/api/v1/sport/tennis/scheduled-events/2026-09-12",
+      "ok": false,
+      "error": "<HTTPError 403: 'Forbidden'>"
+    },
+    {
       "sport": "football",
+      "provider": "sofascore-www",
       "url": "https://www.sofascore.com/api/v1/sport/football/scheduled-events/2026-09-12",
+      "ok": false,
+      "error": "<HTTPError 403: 'Forbidden'>"
+    },
+    {
+      "sport": "football",
+      "provider": "sofascore-api",
+      "url": "https://api.sofascore.com/api/v1/sport/football/scheduled-events/2026-09-12",
       "ok": false,
       "error": "<HTTPError 403: 'Forbidden'>"
     }
