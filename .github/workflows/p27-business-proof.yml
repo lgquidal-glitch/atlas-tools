@@ -12,7 +12,7 @@ permissions:
 jobs:
   proof:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
         with:
@@ -24,7 +24,7 @@ jobs:
           npm init -y >/dev/null 2>&1
           npm install playwright@latest >/dev/null 2>&1
           npx playwright install --with-deps chromium webkit >/dev/null 2>&1
-      - name: Test published candidate with 6 Tennis and 6 Football matches
+      - name: Test all six published sports interfaces with 6 rendered matches each
         shell: bash
         run: |
           cat > p27-business-proof.mjs <<'EOF'
@@ -33,7 +33,11 @@ jobs:
           const base='https://lgquidal-glitch.github.io/atlas-tools/p27-candidate';
           const targets=[
             {kind:'tennis',tool:'tennis-command',path:'tennis-command/index.html'},
-            {kind:'football',tool:'football-command',path:'football-command/index.html'}
+            {kind:'tennis',tool:'tennis-deep',path:'tennis-deep/index.html'},
+            {kind:'tennis',tool:'tennis-fusion',path:'tennis-fusion/index.html'},
+            {kind:'football',tool:'football-command',path:'football-command/index.html'},
+            {kind:'football',tool:'football-deep',path:'football-deep/index.html'},
+            {kind:'football',tool:'football-fusion',path:'football-fusion/index.html'}
           ];
           const profiles=[['android',chromium,390,844],['ipad-webkit',webkit,820,1180]];
           fs.mkdirSync('p27/business-proof',{recursive:true});
@@ -60,9 +64,9 @@ jobs:
                 await page.screenshot({path:`p27/business-proof/${t.tool}__${profile}.png`,fullPage:true});
               }catch(e){errors.push(String(e));}
               const six=proof.six||[];
-              const fixturePass=six.length>=6&&six.every(x=>x.visible&&x.text.length>3);
-              const pass=status===200&&!errors.length&&proof.feedPresent&&proof.live?.ok!==false&&!proof.overflow&&fixturePass;
-              tr.profiles.push({profile,status,errors,proof,fixturePass,pass});
+              const sixVisible=six.length>=6&&six.every(x=>x.visible&&x.text.length>3);
+              const pass=status===200&&!errors.length&&proof.feedPresent&&proof.live?.ok!==false&&!proof.overflow&&sixVisible;
+              tr.profiles.push({profile,status,errors,proof,sixVisible,pass});
               await ctx.close();await browser.close();
             }
             report.targets.push(tr);
