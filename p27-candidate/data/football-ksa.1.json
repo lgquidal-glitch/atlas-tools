@@ -1,12 +1,128 @@
 {
-  "generatedAt": "2026-09-12T09:31:11.685606+00:00",
-  "source": "worldcup26.ir structured mirror",
+  "generatedAt": "2026-09-12T13:17:12+02:00",
+  "source": "Soccerway rendered scoreboard",
   "tier": "corroborated",
   "leagueCode": "ksa.1",
-  "events": [],
-  "policy": {
-    "explicitStateOnly": true,
-    "finalLock": true
-  },
-  "http": 404
+  "events": [
+    {
+      "id": "U5zn1p5K",
+      "date": "2026-09-11T17:50+02:00",
+      "name": "Al Hilal at Al Taawon",
+      "shortName": "Al Hilal @ Al Taawon",
+      "competitions": [
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "team": {
+                "displayName": "Al Taawon",
+                "shortDisplayName": "Al Taawon"
+              },
+              "score": null
+            },
+            {
+              "homeAway": "away",
+              "team": {
+                "displayName": "Al Hilal",
+                "shortDisplayName": "Al Hilal"
+              },
+              "score": null
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "name": "SCHEDULED",
+              "description": "SCHEDULED",
+              "detail": "SCHEDULED",
+              "shortDetail": "SCHEDULED"
+            }
+          }
+        }
+      ],
+      "source": "Soccerway rendered scoreboard",
+      "verified_at": "2026-09-12T13:17:12+02:00",
+      "leagueCode": "ksa.1"
+    },
+    {
+      "id": "Q91EiXXN",
+      "date": "2026-09-11T20:00+02:00",
+      "name": "Al Nassr at Al Khaleej",
+      "shortName": "Al Nassr @ Al Khaleej",
+      "competitions": [
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "team": {
+                "displayName": "Al Khaleej",
+                "shortDisplayName": "Al Khaleej"
+              },
+              "score": null
+            },
+            {
+              "homeAway": "away",
+              "team": {
+                "displayName": "Al Nassr",
+                "shortDisplayName": "Al Nassr"
+              },
+              "score": null
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "name": "SCHEDULED",
+              "description": "SCHEDULED",
+              "detail": "SCHEDULED",
+              "shortDetail": "SCHEDULED"
+            }
+          }
+        }
+      ],
+      "source": "Soccerway rendered scoreboard",
+      "verified_at": "2026-09-12T13:17:12+02:00",
+      "leagueCode": "ksa.1"
+    },
+    {
+      "id": "Iqb6gg3B",
+      "date": "2026-09-11T20:00+02:00",
+      "name": "Al Fayha at Al Shabab",
+      "shortName": "Al Fayha @ Al Shabab",
+      "competitions": [
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "team": {
+                "displayName": "Al Shabab",
+                "shortDisplayName": "Al Shabab"
+              },
+              "score": null
+            },
+            {
+              "homeAway": "away",
+              "team": {
+                "displayName": "Al Fayha",
+                "shortDisplayName": "Al Fayha"
+              },
+              "score": null
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "name": "SCHEDULED",
+              "description": "SCHEDULED",
+              "detail": "SCHEDULED",
+              "shortDetail": "SCHEDULED"
+            }
+          }
+        }
+      ],
+      "source": "Soccerway rendered scoreboard",
+      "verified_at": "2026-09-12T13:17:12+02:00",
+      "leagueCode": "ksa.1"
+    }
+  ]
 }

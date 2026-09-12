@@ -1,12 +1,128 @@
 {
-  "generatedAt": "2026-09-12T09:31:11.685606+00:00",
-  "source": "worldcup26.ir structured mirror",
+  "generatedAt": "2026-09-12T13:17:12+02:00",
+  "source": "Soccerway rendered scoreboard",
   "tier": "corroborated",
   "leagueCode": "ita.1",
-  "events": [],
-  "policy": {
-    "explicitStateOnly": true,
-    "finalLock": true
-  },
-  "http": 404
+  "events": [
+    {
+      "id": "zkzXvQEF",
+      "date": "2026-09-12T00:00:00+02:00",
+      "name": "Cagliari at Atalanta",
+      "shortName": "Cagliari @ Atalanta",
+      "competitions": [
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "team": {
+                "displayName": "Atalanta",
+                "shortDisplayName": "Atalanta"
+              },
+              "score": null
+            },
+            {
+              "homeAway": "away",
+              "team": {
+                "displayName": "Cagliari",
+                "shortDisplayName": "Cagliari"
+              },
+              "score": null
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "name": "SCHEDULED",
+              "description": "SCHEDULED",
+              "detail": "SCHEDULED",
+              "shortDetail": "SCHEDULED"
+            }
+          }
+        }
+      ],
+      "source": "Soccerway rendered scoreboard",
+      "verified_at": "2026-09-12T13:17:12+02:00",
+      "leagueCode": "ita.1"
+    },
+    {
+      "id": "EcUAXs7k",
+      "date": "2026-09-12T00:00:00+02:00",
+      "name": "Frosinone at Genoa",
+      "shortName": "Frosinone @ Genoa",
+      "competitions": [
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "team": {
+                "displayName": "Genoa",
+                "shortDisplayName": "Genoa"
+              },
+              "score": null
+            },
+            {
+              "homeAway": "away",
+              "team": {
+                "displayName": "Frosinone",
+                "shortDisplayName": "Frosinone"
+              },
+              "score": null
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "name": "SCHEDULED",
+              "description": "SCHEDULED",
+              "detail": "SCHEDULED",
+              "shortDetail": "SCHEDULED"
+            }
+          }
+        }
+      ],
+      "source": "Soccerway rendered scoreboard",
+      "verified_at": "2026-09-12T13:17:12+02:00",
+      "leagueCode": "ita.1"
+    },
+    {
+      "id": "vJU3gPT8",
+      "date": "2026-09-12T00:00:00+02:00",
+      "name": "AC Milan at Lazio",
+      "shortName": "AC Milan @ Lazio",
+      "competitions": [
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "team": {
+                "displayName": "Lazio",
+                "shortDisplayName": "Lazio"
+              },
+              "score": null
+            },
+            {
+              "homeAway": "away",
+              "team": {
+                "displayName": "AC Milan",
+                "shortDisplayName": "AC Milan"
+              },
+              "score": null
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "name": "SCHEDULED",
+              "description": "SCHEDULED",
+              "detail": "SCHEDULED",
+              "shortDetail": "SCHEDULED"
+            }
+          }
+        }
+      ],
+      "source": "Soccerway rendered scoreboard",
+      "verified_at": "2026-09-12T13:17:12+02:00",
+      "leagueCode": "ita.1"
+    }
+  ]
 }

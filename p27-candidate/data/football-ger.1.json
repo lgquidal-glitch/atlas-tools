@@ -1,12 +1,248 @@
 {
-  "generatedAt": "2026-09-12T09:31:11.685606+00:00",
-  "source": "worldcup26.ir structured mirror",
+  "generatedAt": "2026-09-12T13:17:12+02:00",
+  "source": "Soccerway rendered scoreboard",
   "tier": "corroborated",
   "leagueCode": "ger.1",
-  "events": [],
-  "policy": {
-    "explicitStateOnly": true,
-    "finalLock": true
-  },
-  "http": 404
+  "events": [
+    {
+      "id": "Q3IOHrq3",
+      "date": "2026-09-12T00:00:00+02:00",
+      "name": "Bayer Leverkusen at Augsburg",
+      "shortName": "Bayer Leverkusen @ Augsburg",
+      "competitions": [
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "team": {
+                "displayName": "Augsburg",
+                "shortDisplayName": "Augsburg"
+              },
+              "score": null
+            },
+            {
+              "homeAway": "away",
+              "team": {
+                "displayName": "Bayer Leverkusen",
+                "shortDisplayName": "Bayer Leverkusen"
+              },
+              "score": null
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "name": "SCHEDULED",
+              "description": "SCHEDULED",
+              "detail": "SCHEDULED",
+              "shortDetail": "SCHEDULED"
+            }
+          }
+        }
+      ],
+      "source": "Soccerway rendered scoreboard",
+      "verified_at": "2026-09-12T13:17:12+02:00",
+      "leagueCode": "ger.1"
+    },
+    {
+      "id": "2kmjGV7b",
+      "date": "2026-09-12T00:00:00+02:00",
+      "name": "Paderborn at Dortmund",
+      "shortName": "Paderborn @ Dortmund",
+      "competitions": [
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "team": {
+                "displayName": "Dortmund",
+                "shortDisplayName": "Dortmund"
+              },
+              "score": null
+            },
+            {
+              "homeAway": "away",
+              "team": {
+                "displayName": "Paderborn",
+                "shortDisplayName": "Paderborn"
+              },
+              "score": null
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "name": "SCHEDULED",
+              "description": "SCHEDULED",
+              "detail": "SCHEDULED",
+              "shortDetail": "SCHEDULED"
+            }
+          }
+        }
+      ],
+      "source": "Soccerway rendered scoreboard",
+      "verified_at": "2026-09-12T13:17:12+02:00",
+      "leagueCode": "ger.1"
+    },
+    {
+      "id": "xQAA8v6k",
+      "date": "2026-09-12T00:00:00+02:00",
+      "name": "Werder Bremen at FC Koln",
+      "shortName": "Werder Bremen @ FC Koln",
+      "competitions": [
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "team": {
+                "displayName": "FC Koln",
+                "shortDisplayName": "FC Koln"
+              },
+              "score": null
+            },
+            {
+              "homeAway": "away",
+              "team": {
+                "displayName": "Werder Bremen",
+                "shortDisplayName": "Werder Bremen"
+              },
+              "score": null
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "name": "SCHEDULED",
+              "description": "SCHEDULED",
+              "detail": "SCHEDULED",
+              "shortDetail": "SCHEDULED"
+            }
+          }
+        }
+      ],
+      "source": "Soccerway rendered scoreboard",
+      "verified_at": "2026-09-12T13:17:12+02:00",
+      "leagueCode": "ger.1"
+    },
+    {
+      "id": "Y9Vxfuid",
+      "date": "2026-09-12T00:00:00+02:00",
+      "name": "B. Monchengladbach at Freiburg",
+      "shortName": "B. Monchengladbach @ Freiburg",
+      "competitions": [
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "team": {
+                "displayName": "Freiburg",
+                "shortDisplayName": "Freiburg"
+              },
+              "score": null
+            },
+            {
+              "homeAway": "away",
+              "team": {
+                "displayName": "B. Monchengladbach",
+                "shortDisplayName": "B. Monchengladbach"
+              },
+              "score": null
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "name": "SCHEDULED",
+              "description": "SCHEDULED",
+              "detail": "SCHEDULED",
+              "shortDetail": "SCHEDULED"
+            }
+          }
+        }
+      ],
+      "source": "Soccerway rendered scoreboard",
+      "verified_at": "2026-09-12T13:17:12+02:00",
+      "leagueCode": "ger.1"
+    },
+    {
+      "id": "t2DVe1Mq",
+      "date": "2026-09-12T00:00:00+02:00",
+      "name": "Stuttgart at Hoffenheim",
+      "shortName": "Stuttgart @ Hoffenheim",
+      "competitions": [
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "team": {
+                "displayName": "Hoffenheim",
+                "shortDisplayName": "Hoffenheim"
+              },
+              "score": null
+            },
+            {
+              "homeAway": "away",
+              "team": {
+                "displayName": "Stuttgart",
+                "shortDisplayName": "Stuttgart"
+              },
+              "score": null
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "name": "SCHEDULED",
+              "description": "SCHEDULED",
+              "detail": "SCHEDULED",
+              "shortDetail": "SCHEDULED"
+            }
+          }
+        }
+      ],
+      "source": "Soccerway rendered scoreboard",
+      "verified_at": "2026-09-12T13:17:12+02:00",
+      "leagueCode": "ger.1"
+    },
+    {
+      "id": "YTLWFMDF",
+      "date": "2026-09-12T00:00:00+02:00",
+      "name": "Eintracht Frankfurt at Mainz",
+      "shortName": "Eintracht Frankfurt @ Mainz",
+      "competitions": [
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "team": {
+                "displayName": "Mainz",
+                "shortDisplayName": "Mainz"
+              },
+              "score": null
+            },
+            {
+              "homeAway": "away",
+              "team": {
+                "displayName": "Eintracht Frankfurt",
+                "shortDisplayName": "Eintracht Frankfurt"
+              },
+              "score": null
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "name": "SCHEDULED",
+              "description": "SCHEDULED",
+              "detail": "SCHEDULED",
+              "shortDetail": "SCHEDULED"
+            }
+          }
+        }
+      ],
+      "source": "Soccerway rendered scoreboard",
+      "verified_at": "2026-09-12T13:17:12+02:00",
+      "leagueCode": "ger.1"
+    }
+  ]
 }
