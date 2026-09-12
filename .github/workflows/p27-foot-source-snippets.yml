@@ -1,0 +1,34 @@
+name: P27 football source snippets
+on:
+  push:
+    branches: [p27-consolidation-candidate]
+    paths: ['.github/workflows/p27-foot-source-snippets.yml']
+permissions:
+  contents: write
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: p27-consolidation-candidate}
+      - name: Extract football source contexts
+        shell: bash
+        run: |
+          mkdir -p p27/direct-qa
+          python3 - <<'PY'
+          import pathlib,re,json
+          out={}
+          for p in ['web/football-command/index.html','web/football-deep/index.html','web/football-fusion/index.html']:
+            s=pathlib.Path(p).read_text(encoding='utf-8',errors='replace')
+            arr=[]
+            for m in re.finditer('espn',s,re.I): arr.append(s[max(0,m.start()-700):min(len(s),m.end()+1300)])
+            out[p]=arr
+          pathlib.Path('p27/direct-qa/football-source-snippets.json').write_text(json.dumps(out,ensure_ascii=False,indent=2),encoding='utf-8')
+          PY
+      - name: Commit
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add p27/direct-qa/football-source-snippets.json
+          git diff --cached --quiet || git commit -m 'Record football source snippets'
+          git push origin HEAD:p27-consolidation-candidate
