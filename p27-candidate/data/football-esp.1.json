@@ -1,0 +1,1543 @@
+{
+  "generatedAt": "2026-09-12T09:31:11.685606+00:00",
+  "source": "worldcup26.ir structured mirror",
+  "tier": "corroborated",
+  "leagueCode": "esp.1",
+  "events": [
+    {
+      "id": "401882881",
+      "uid": "s:600~l:740~e:401882881",
+      "date": "2026-09-12T12:00:00.000Z",
+      "name": "Alavés at Racing Santander",
+      "shortName": "ALA @ RAC",
+      "season": {
+        "year": 2026,
+        "type_id": "14357",
+        "slug": "2026-27-laliga",
+        "name": ""
+      },
+      "competitions": [
+        {
+          "id": "401882881",
+          "uid": "s:600~l:740~e:401882881",
+          "date": "2026-09-12T12:00:00.000Z",
+          "startDate": "2026-09-12T12:00:00.000Z",
+          "status": {
+            "clock": 0,
+            "displayClock": "0'",
+            "period": 0,
+            "type": {
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Sat, September 12th at 8:00 AM EDT",
+              "shortDetail": "Scheduled"
+            }
+          },
+          "attendance": 0,
+          "venue": {
+            "id": "10643",
+            "fullName": "El Sardineros",
+            "address": {
+              "city": "Santander",
+              "country": "Spain"
+            }
+          },
+          "competitors": [
+            {
+              "id": "87",
+              "uid": "s:600~t:87",
+              "type": "team",
+              "homeAway": "home",
+              "score": "0",
+              "winner": false,
+              "form": "LWLDW",
+              "team": {
+                "id": "87",
+                "uid": "s:600~t:87",
+                "slug": "",
+                "name": "Racing Santander",
+                "displayName": "Racing Santander",
+                "shortDisplayName": "Racing",
+                "abbreviation": "RAC",
+                "location": "Racing Santander",
+                "country": "",
+                "city": "",
+                "logo": "https://worldcup26.ir/media/clubs/8d00248eb14c47d4561a6047996c7351ff671d61088ef3b4312e929bed4f70e7.png",
+                "logos": [],
+                "color": "ffffff",
+                "alternateColor": "3B6C1A",
+                "venue": null,
+                "isActive": true,
+                "catalogSource": "club-catalog"
+              },
+              "statistics": []
+            },
+            {
+              "id": "96",
+              "uid": "s:600~t:96",
+              "type": "team",
+              "homeAway": "away",
+              "score": "0",
+              "winner": false,
+              "form": "WWDWL",
+              "team": {
+                "id": "96",
+                "uid": "s:600~t:96",
+                "slug": "",
+                "name": "Alavés",
+                "displayName": "Alavés",
+                "shortDisplayName": "Alavés",
+                "abbreviation": "ALA",
+                "location": "Alavés",
+                "country": "",
+                "city": "",
+                "logo": "https://worldcup26.ir/media/clubs/971ec444c9afdb30d13fd61c8ac8bd9cc069e945ae904384ed08c777876a5d1b.png",
+                "logos": [],
+                "color": "0000ff",
+                "alternateColor": "FFC0CB",
+                "venue": null,
+                "isActive": true,
+                "catalogSource": "club-catalog"
+              },
+              "statistics": []
+            }
+          ],
+          "details": [],
+          "broadcasts": [
+            {
+              "market": "national",
+              "names": [
+                "ESPN Deportes",
+                "ESPN+"
+              ]
+            }
+          ],
+          "odds": [
+            {
+              "overUnder": 2.5,
+              "link": {
+                "language": "en-US",
+                "rel": [
+                  "game",
+                  "desktop",
+                  "bets"
+                ],
+                "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602767",
+                "text": "Game",
+                "shortText": "Game",
+                "isExternal": true,
+                "isPremium": false,
+                "isHidden": false
+              },
+              "provider": {
+                "id": "100",
+                "name": "DraftKings",
+                "priority": 1,
+                "displayName": "DraftKings",
+                "logos": [
+                  {
+                    "href": "",
+                    "rel": [
+                      "light"
+                    ]
+                  },
+                  {
+                    "href": "",
+                    "rel": [
+                      "dark"
+                    ]
+                  }
+                ]
+              },
+              "drawOdds": {
+                "moneyLine": 245,
+                "link": {
+                  "language": "en-US",
+                  "rel": [
+                    "draw",
+                    "desktop",
+                    "bets",
+                    "draftkings"
+                  ],
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602767%3Foutcomes%3D0ML86109520_2",
+                  "text": "Draw Bet",
+                  "shortText": "Draw Bet",
+                  "isExternal": true,
+                  "isPremium": false,
+                  "isHidden": false
+                }
+              },
+              "total": {
+                "displayName": "Total",
+                "shortDisplayName": "Total",
+                "over": {
+                  "open": {
+                    "line": "o2.5",
+                    "odds": "-120"
+                  },
+                  "close": {
+                    "line": "o2.5",
+                    "odds": "-145",
+                    "link": {
+                      "rel": [
+                        "over",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602767%3Foutcomes%3D0OU86109676O250_1",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882881,
+                          "betSide": "over",
+                          "betType": "straight",
+                          "betDetails": "Over:2.5"
+                        }
+                      }
+                    }
+                  }
+                },
+                "under": {
+                  "open": {
+                    "line": "u2.5",
+                    "odds": "-110"
+                  },
+                  "close": {
+                    "line": "u2.5",
+                    "odds": "+115",
+                    "link": {
+                      "rel": [
+                        "under",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602767%3Foutcomes%3D0OU86109676U250_3",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882881,
+                          "betSide": "under",
+                          "betType": "straight",
+                          "betDetails": "Under:2.5"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "pointSpread": {
+                "displayName": "Spread",
+                "shortDisplayName": "Spread",
+                "home": {
+                  "open": {
+                    "line": "-0.5",
+                    "odds": "+125"
+                  },
+                  "close": {
+                    "line": "+0.5",
+                    "odds": "-205",
+                    "link": {
+                      "rel": [
+                        "homeSpread",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602767%3Foutcomes%3D0HC86109681P50_1",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882881,
+                          "betSide": "home",
+                          "betType": "straight",
+                          "betDetails": "Spread:RAC+0.5"
+                        }
+                      }
+                    }
+                  }
+                },
+                "away": {
+                  "open": {
+                    "line": "+0.5",
+                    "odds": "-195"
+                  },
+                  "close": {
+                    "line": "-0.5",
+                    "odds": "+145",
+                    "link": {
+                      "rel": [
+                        "awaySpread",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602767%3Foutcomes%3D0HC86109681N50_3",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882881,
+                          "betSide": "away",
+                          "betType": "straight",
+                          "betDetails": "Spread:ALA-0.5"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "moneyline": {
+                "displayName": "Moneyline",
+                "shortDisplayName": "ML",
+                "home": {
+                  "open": {
+                    "odds": "+140"
+                  },
+                  "close": {
+                    "odds": "+165",
+                    "link": {
+                      "rel": [
+                        "home",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602767%3Foutcomes%3D0ML86109520_1",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882881,
+                          "betSide": "home",
+                          "betType": "straight"
+                        }
+                      }
+                    }
+                  }
+                },
+                "away": {
+                  "open": {
+                    "odds": "+180"
+                  },
+                  "close": {
+                    "odds": "+165",
+                    "link": {
+                      "rel": [
+                        "away",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602767%3Foutcomes%3D0ML86109520_3",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882881,
+                          "betSide": "away",
+                          "betType": "straight"
+                        }
+                      }
+                    }
+                  }
+                },
+                "draw": {
+                  "open": {
+                    "odds": "+240"
+                  },
+                  "close": {
+                    "odds": "+245",
+                    "link": {
+                      "rel": [
+                        "draw",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602767%3Foutcomes%3D0ML86109520_2",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882881,
+                          "betSide": "draw",
+                          "betType": "straight"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "details": "RAC +165"
+            }
+          ],
+          "notes": [],
+          "format": {
+            "regulation": {
+              "periods": 2
+            }
+          },
+          "playByPlayAvailable": true,
+          "wasSuspended": false
+        }
+      ],
+      "status": {
+        "clock": 0,
+        "displayClock": "0'",
+        "period": 0,
+        "type": {
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Sat, September 12th at 8:00 AM EDT",
+          "shortDetail": "Scheduled"
+        }
+      },
+      "venue": {
+        "displayName": "El Sardineros"
+      }
+    },
+    {
+      "id": "401882882",
+      "uid": "s:600~l:740~e:401882882",
+      "date": "2026-09-12T14:15:00.000Z",
+      "name": "Espanyol at Osasuna",
+      "shortName": "ESP @ OSA",
+      "season": {
+        "year": 2026,
+        "type_id": "14357",
+        "slug": "2026-27-laliga",
+        "name": ""
+      },
+      "competitions": [
+        {
+          "id": "401882882",
+          "uid": "s:600~l:740~e:401882882",
+          "date": "2026-09-12T14:15:00.000Z",
+          "startDate": "2026-09-12T14:15:00.000Z",
+          "status": {
+            "clock": 0,
+            "displayClock": "0'",
+            "period": 0,
+            "type": {
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Sat, September 12th at 10:15 AM EDT",
+              "shortDetail": "Scheduled"
+            }
+          },
+          "attendance": 0,
+          "venue": {
+            "id": "10629",
+            "fullName": "El Sadar",
+            "address": {
+              "city": "Pamplona",
+              "country": "Spain"
+            }
+          },
+          "competitors": [
+            {
+              "id": "97",
+              "uid": "s:600~t:97",
+              "type": "team",
+              "homeAway": "home",
+              "score": "0",
+              "winner": false,
+              "form": "LWWDL",
+              "team": {
+                "id": "97",
+                "uid": "s:600~t:97",
+                "slug": "",
+                "name": "Osasuna",
+                "displayName": "Osasuna",
+                "shortDisplayName": "Osasuna",
+                "abbreviation": "OSA",
+                "location": "Osasuna",
+                "country": "",
+                "city": "",
+                "logo": "https://worldcup26.ir/media/clubs/a68df398708085e0c1d573402f7d03a9ee714086b32477ef10ac2a660af8d693.png",
+                "logos": [],
+                "color": "cd0000",
+                "alternateColor": "ffffff",
+                "venue": null,
+                "isActive": true,
+                "catalogSource": "club-catalog"
+              },
+              "statistics": []
+            },
+            {
+              "id": "88",
+              "uid": "s:600~t:88",
+              "type": "team",
+              "homeAway": "away",
+              "score": "0",
+              "winner": false,
+              "form": "DLLWD",
+              "team": {
+                "id": "88",
+                "uid": "s:600~t:88",
+                "slug": "",
+                "name": "Espanyol",
+                "displayName": "Espanyol",
+                "shortDisplayName": "Espanyol",
+                "abbreviation": "ESP",
+                "location": "Espanyol",
+                "country": "",
+                "city": "",
+                "logo": "https://worldcup26.ir/media/clubs/e8e3d4a33a3a846e8cc09e456ff26a8f8a6d507bd1ff874656cb72032ace855a.png",
+                "logos": [],
+                "color": "3366CC",
+                "alternateColor": "C8142F",
+                "venue": null,
+                "isActive": true,
+                "catalogSource": "club-catalog"
+              },
+              "statistics": []
+            }
+          ],
+          "details": [],
+          "broadcasts": [
+            {
+              "market": "national",
+              "names": [
+                "ESPN Deportes",
+                "ESPN+"
+              ]
+            }
+          ],
+          "odds": [
+            {
+              "overUnder": 2.5,
+              "link": {
+                "language": "en-US",
+                "rel": [
+                  "game",
+                  "desktop",
+                  "bets"
+                ],
+                "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602763",
+                "text": "Game",
+                "shortText": "Game",
+                "isExternal": true,
+                "isPremium": false,
+                "isHidden": false
+              },
+              "provider": {
+                "id": "100",
+                "name": "DraftKings",
+                "priority": 1
+              },
+              "drawOdds": {
+                "moneyLine": 215,
+                "link": {
+                  "language": "en-US",
+                  "rel": [
+                    "draw",
+                    "desktop",
+                    "bets",
+                    "draftkings"
+                  ],
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602763%3Foutcomes%3D0ML86109516_2",
+                  "text": "Draw Bet",
+                  "shortText": "Draw Bet",
+                  "isExternal": true,
+                  "isPremium": false,
+                  "isHidden": false
+                }
+              },
+              "total": {
+                "displayName": "Total",
+                "shortDisplayName": "Total",
+                "over": {
+                  "open": {
+                    "line": "o2.5",
+                    "odds": "+110"
+                  },
+                  "close": {
+                    "line": "o2.5",
+                    "odds": "+120",
+                    "link": {
+                      "rel": [
+                        "over",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602763%3Foutcomes%3D0OU86109540O250_1",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882882,
+                          "betSide": "over",
+                          "betType": "straight",
+                          "betDetails": "Over:2.5"
+                        }
+                      }
+                    }
+                  }
+                },
+                "under": {
+                  "open": {
+                    "line": "u2.5",
+                    "odds": "-145"
+                  },
+                  "close": {
+                    "line": "u2.5",
+                    "odds": "-150",
+                    "link": {
+                      "rel": [
+                        "under",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602763%3Foutcomes%3D0OU86109540U250_3",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882882,
+                          "betSide": "under",
+                          "betType": "straight",
+                          "betDetails": "Under:2.5"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "pointSpread": {
+                "displayName": "Spread",
+                "shortDisplayName": "Spread",
+                "home": {
+                  "open": {
+                    "line": "-0.5",
+                    "odds": "-110"
+                  },
+                  "close": {
+                    "line": "-0.5",
+                    "odds": "+115",
+                    "link": {
+                      "rel": [
+                        "homeSpread",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602763%3Foutcomes%3D0HC86109545N50_1",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882882,
+                          "betSide": "home",
+                          "betType": "straight",
+                          "betDetails": "Spread:OSA-0.5"
+                        }
+                      }
+                    }
+                  }
+                },
+                "away": {
+                  "open": {
+                    "line": "+0.5",
+                    "odds": "-135"
+                  },
+                  "close": {
+                    "line": "+0.5",
+                    "odds": "-160",
+                    "link": {
+                      "rel": [
+                        "awaySpread",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602763%3Foutcomes%3D0HC86109545P50_3",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882882,
+                          "betSide": "away",
+                          "betType": "straight",
+                          "betDetails": "Spread:ESP+0.5"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "moneyline": {
+                "displayName": "Moneyline",
+                "shortDisplayName": "ML",
+                "home": {
+                  "open": {
+                    "odds": "+100"
+                  },
+                  "close": {
+                    "odds": "+125",
+                    "link": {
+                      "rel": [
+                        "home",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602763%3Foutcomes%3D0ML86109516_1",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882882,
+                          "betSide": "home",
+                          "betType": "straight"
+                        }
+                      }
+                    }
+                  }
+                },
+                "away": {
+                  "open": {
+                    "odds": "+270"
+                  },
+                  "close": {
+                    "odds": "+245",
+                    "link": {
+                      "rel": [
+                        "away",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602763%3Foutcomes%3D0ML86109516_3",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882882,
+                          "betSide": "away",
+                          "betType": "straight"
+                        }
+                      }
+                    }
+                  }
+                },
+                "draw": {
+                  "open": {
+                    "odds": "+235"
+                  },
+                  "close": {
+                    "odds": "+215",
+                    "link": {
+                      "rel": [
+                        "draw",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602763%3Foutcomes%3D0ML86109516_2",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882882,
+                          "betSide": "draw",
+                          "betType": "straight"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "details": "OSA +125"
+            }
+          ],
+          "notes": [],
+          "format": {
+            "regulation": {
+              "periods": 2
+            }
+          },
+          "playByPlayAvailable": true,
+          "wasSuspended": false
+        }
+      ],
+      "status": {
+        "clock": 0,
+        "displayClock": "0'",
+        "period": 0,
+        "type": {
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Sat, September 12th at 10:15 AM EDT",
+          "shortDetail": "Scheduled"
+        }
+      },
+      "venue": {
+        "displayName": "El Sadar"
+      }
+    },
+    {
+      "id": "401882886",
+      "uid": "s:600~l:740~e:401882886",
+      "date": "2026-09-12T16:30:00.000Z",
+      "name": "Elche at Athletic Club",
+      "shortName": "ELC @ ATH",
+      "season": {
+        "year": 2026,
+        "type_id": "14357",
+        "slug": "2026-27-laliga",
+        "name": ""
+      },
+      "competitions": [
+        {
+          "id": "401882886",
+          "uid": "s:600~l:740~e:401882886",
+          "date": "2026-09-12T16:30:00.000Z",
+          "startDate": "2026-09-12T16:30:00.000Z",
+          "status": {
+            "clock": 0,
+            "displayClock": "0'",
+            "period": 0,
+            "type": {
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Sat, September 12th at 12:30 PM EDT",
+              "shortDetail": "Scheduled"
+            }
+          },
+          "attendance": 0,
+          "venue": {
+            "id": "10634",
+            "fullName": "San Mamés",
+            "address": {
+              "city": "Bilbao",
+              "country": "Spain"
+            }
+          },
+          "competitors": [
+            {
+              "id": "93",
+              "uid": "s:600~t:93",
+              "type": "team",
+              "homeAway": "home",
+              "score": "0",
+              "winner": false,
+              "form": "WWLLL",
+              "team": {
+                "id": "93",
+                "uid": "s:600~t:93",
+                "slug": "",
+                "name": "Athletic Club",
+                "displayName": "Athletic Club",
+                "shortDisplayName": "Athletic",
+                "abbreviation": "ATH",
+                "location": "Athletic Club",
+                "country": "",
+                "city": "",
+                "logo": "https://worldcup26.ir/media/clubs/df9093c7751c2e8a8e828819d06b37bbacc00e10902c7ff2e2750728ebcbea89.png",
+                "logos": [],
+                "color": "C8142F",
+                "alternateColor": "000000",
+                "venue": null,
+                "isActive": true,
+                "catalogSource": "club-catalog"
+              },
+              "statistics": []
+            },
+            {
+              "id": "3751",
+              "uid": "s:600~t:3751",
+              "type": "team",
+              "homeAway": "away",
+              "score": "0",
+              "winner": false,
+              "form": "LLLDD",
+              "team": {
+                "id": "3751",
+                "uid": "s:600~t:3751",
+                "slug": "",
+                "name": "Elche",
+                "displayName": "Elche",
+                "shortDisplayName": "Elche",
+                "abbreviation": "ELC",
+                "location": "Elche",
+                "country": "",
+                "city": "",
+                "logo": "https://worldcup26.ir/media/clubs/d099c68416a64f17869d860e7d7ac34b969b9d9b1faeff33dbfaa9f86ddc935f.png",
+                "logos": [],
+                "color": "288A00",
+                "alternateColor": "4B2B67",
+                "venue": null,
+                "isActive": true,
+                "catalogSource": "club-catalog"
+              },
+              "statistics": []
+            }
+          ],
+          "details": [],
+          "broadcasts": [
+            {
+              "market": "national",
+              "names": [
+                "ESPN Deportes",
+                "ESPN+"
+              ]
+            }
+          ],
+          "odds": [
+            {
+              "overUnder": 2.5,
+              "link": {
+                "language": "en-US",
+                "rel": [
+                  "game",
+                  "desktop",
+                  "bets"
+                ],
+                "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602764",
+                "text": "Game",
+                "shortText": "Game",
+                "isExternal": true,
+                "isPremium": false,
+                "isHidden": false
+              },
+              "provider": {
+                "id": "100",
+                "name": "DraftKings",
+                "priority": 1
+              },
+              "drawOdds": {
+                "moneyLine": 380,
+                "link": {
+                  "language": "en-US",
+                  "rel": [
+                    "draw",
+                    "desktop",
+                    "bets",
+                    "draftkings"
+                  ],
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602764%3Foutcomes%3D0ML86109517_2",
+                  "text": "Draw Bet",
+                  "shortText": "Draw Bet",
+                  "isExternal": true,
+                  "isPremium": false,
+                  "isHidden": false
+                }
+              },
+              "total": {
+                "displayName": "Total",
+                "shortDisplayName": "Total",
+                "over": {
+                  "open": {
+                    "line": "o2.5",
+                    "odds": "-120"
+                  },
+                  "close": {
+                    "line": "o2.5",
+                    "odds": "-145",
+                    "link": {
+                      "rel": [
+                        "over",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602764%3Foutcomes%3D0OU86109574O250_1",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882886,
+                          "betSide": "over",
+                          "betType": "straight",
+                          "betDetails": "Over:2.5"
+                        }
+                      }
+                    }
+                  }
+                },
+                "under": {
+                  "open": {
+                    "line": "u2.5",
+                    "odds": "-115"
+                  },
+                  "close": {
+                    "line": "u2.5",
+                    "odds": "+120",
+                    "link": {
+                      "rel": [
+                        "under",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602764%3Foutcomes%3D0OU86109574U250_3",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882886,
+                          "betSide": "under",
+                          "betType": "straight",
+                          "betDetails": "Under:2.5"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "pointSpread": {
+                "displayName": "Spread",
+                "shortDisplayName": "Spread",
+                "home": {
+                  "open": {
+                    "line": "-0.5",
+                    "odds": "-200"
+                  },
+                  "close": {
+                    "line": "-1.5",
+                    "odds": "+110",
+                    "link": {
+                      "rel": [
+                        "homeSpread",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602764%3Foutcomes%3D0HC86109579N150_1",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882886,
+                          "betSide": "home",
+                          "betType": "straight",
+                          "betDetails": "Spread:ATH-1.5"
+                        }
+                      }
+                    }
+                  }
+                },
+                "away": {
+                  "open": {
+                    "line": "+0.5",
+                    "odds": "+130"
+                  },
+                  "close": {
+                    "line": "+1.5",
+                    "odds": "-150",
+                    "link": {
+                      "rel": [
+                        "awaySpread",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602764%3Foutcomes%3D0HC86109579P150_3",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882886,
+                          "betSide": "away",
+                          "betType": "straight",
+                          "betDetails": "Spread:ELC+1.5"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "moneyline": {
+                "displayName": "Moneyline",
+                "shortDisplayName": "ML",
+                "home": {
+                  "open": {
+                    "odds": "-180"
+                  },
+                  "close": {
+                    "odds": "-240",
+                    "link": {
+                      "rel": [
+                        "home",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602764%3Foutcomes%3D0ML86109517_1",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882886,
+                          "betSide": "home",
+                          "betType": "straight"
+                        }
+                      }
+                    }
+                  }
+                },
+                "away": {
+                  "open": {
+                    "odds": "+450"
+                  },
+                  "close": {
+                    "odds": "+650",
+                    "link": {
+                      "rel": [
+                        "away",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602764%3Foutcomes%3D0ML86109517_3",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882886,
+                          "betSide": "away",
+                          "betType": "straight"
+                        }
+                      }
+                    }
+                  }
+                },
+                "draw": {
+                  "open": {
+                    "odds": "+300"
+                  },
+                  "close": {
+                    "odds": "+380",
+                    "link": {
+                      "rel": [
+                        "draw",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602764%3Foutcomes%3D0ML86109517_2",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882886,
+                          "betSide": "draw",
+                          "betType": "straight"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "details": "ATH -240"
+            }
+          ],
+          "notes": [],
+          "format": {
+            "regulation": {
+              "periods": 2
+            }
+          },
+          "playByPlayAvailable": true,
+          "wasSuspended": false
+        }
+      ],
+      "status": {
+        "clock": 0,
+        "displayClock": "0'",
+        "period": 0,
+        "type": {
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Sat, September 12th at 12:30 PM EDT",
+          "shortDetail": "Scheduled"
+        }
+      },
+      "venue": {
+        "displayName": "San Mamés"
+      }
+    },
+    {
+      "id": "401882880",
+      "uid": "s:600~l:740~e:401882880",
+      "date": "2026-09-12T19:00:00.000Z",
+      "name": "Rayo Vallecano at Real Madrid",
+      "shortName": "RAY @ RMA",
+      "season": {
+        "year": 2026,
+        "type_id": "14357",
+        "slug": "2026-27-laliga",
+        "name": ""
+      },
+      "competitions": [
+        {
+          "id": "401882880",
+          "uid": "s:600~l:740~e:401882880",
+          "date": "2026-09-12T19:00:00.000Z",
+          "startDate": "2026-09-12T19:00:00.000Z",
+          "status": {
+            "clock": 0,
+            "displayClock": "0'",
+            "period": 0,
+            "type": {
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Sat, September 12th at 3:00 PM EDT",
+              "shortDetail": "Scheduled"
+            }
+          },
+          "attendance": 0,
+          "venue": {
+            "id": "10630",
+            "fullName": "Santiago Bernabéu",
+            "address": {
+              "city": "Madrid",
+              "country": "Spain"
+            }
+          },
+          "competitors": [
+            {
+              "id": "86",
+              "uid": "s:600~t:86",
+              "type": "team",
+              "homeAway": "home",
+              "score": "0",
+              "winner": false,
+              "form": "WLWWW",
+              "team": {
+                "id": "86",
+                "uid": "s:600~t:86",
+                "slug": "",
+                "name": "Real Madrid",
+                "displayName": "Real Madrid",
+                "shortDisplayName": "Real Madrid",
+                "abbreviation": "RMA",
+                "location": "Real Madrid",
+                "country": "",
+                "city": "",
+                "logo": "https://worldcup26.ir/media/clubs/6b0b9bab7a0770372ab75cf214ab89627b15a696c69dc9c1ca51d9b52d1518d0.png",
+                "logos": [],
+                "color": "ffffff",
+                "alternateColor": "1B4D3E",
+                "venue": null,
+                "isActive": true,
+                "catalogSource": "club-catalog"
+              },
+              "statistics": []
+            },
+            {
+              "id": "101",
+              "uid": "s:600~t:101",
+              "type": "team",
+              "homeAway": "away",
+              "score": "0",
+              "winner": false,
+              "form": "WLDLL",
+              "team": {
+                "id": "101",
+                "uid": "s:600~t:101",
+                "slug": "",
+                "name": "Rayo Vallecano",
+                "displayName": "Rayo Vallecano",
+                "shortDisplayName": "Rayo",
+                "abbreviation": "RAY",
+                "location": "Rayo Vallecano",
+                "country": "",
+                "city": "",
+                "logo": "https://worldcup26.ir/media/clubs/6a6f4d839097f9cf72c77931270a9eb310838f5a59e0109aa658912b63e90676.png",
+                "logos": [],
+                "color": "ffffff",
+                "alternateColor": "cd0000",
+                "venue": null,
+                "isActive": true,
+                "catalogSource": "club-catalog"
+              },
+              "statistics": []
+            }
+          ],
+          "details": [],
+          "broadcasts": [
+            {
+              "market": "national",
+              "names": [
+                "ESPN+"
+              ]
+            }
+          ],
+          "odds": [
+            {
+              "overUnder": 3.5,
+              "link": {
+                "language": "en-US",
+                "rel": [
+                  "game",
+                  "desktop",
+                  "bets"
+                ],
+                "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602769",
+                "text": "Game",
+                "shortText": "Game",
+                "isExternal": true,
+                "isPremium": false,
+                "isHidden": false
+              },
+              "provider": {
+                "id": "100",
+                "name": "DraftKings",
+                "priority": 1
+              },
+              "drawOdds": {
+                "moneyLine": 800,
+                "link": {
+                  "language": "en-US",
+                  "rel": [
+                    "draw",
+                    "desktop",
+                    "bets",
+                    "draftkings"
+                  ],
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602769%3Foutcomes%3D0ML86109523_2",
+                  "text": "Draw Bet",
+                  "shortText": "Draw Bet",
+                  "isExternal": true,
+                  "isPremium": false,
+                  "isHidden": false
+                }
+              },
+              "total": {
+                "displayName": "Total",
+                "shortDisplayName": "Total",
+                "over": {
+                  "open": {
+                    "line": "o3.5",
+                    "odds": "-130"
+                  },
+                  "close": {
+                    "line": "o3.5",
+                    "odds": "-145",
+                    "link": {
+                      "rel": [
+                        "over",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602769%3Foutcomes%3D0OU86109744O350_1",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882880,
+                          "betSide": "over",
+                          "betType": "straight",
+                          "betDetails": "Over:3.5"
+                        }
+                      }
+                    }
+                  }
+                },
+                "under": {
+                  "open": {
+                    "line": "u3.5",
+                    "odds": "+100"
+                  },
+                  "close": {
+                    "line": "u3.5",
+                    "odds": "+115",
+                    "link": {
+                      "rel": [
+                        "under",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602769%3Foutcomes%3D0OU86109744U350_3",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882880,
+                          "betSide": "under",
+                          "betType": "straight",
+                          "betDetails": "Under:3.5"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "pointSpread": {
+                "displayName": "Spread",
+                "shortDisplayName": "Spread",
+                "home": {
+                  "open": {
+                    "line": "-2.5",
+                    "odds": "-115"
+                  },
+                  "close": {
+                    "line": "-2.5",
+                    "odds": "-105",
+                    "link": {
+                      "rel": [
+                        "homeSpread",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602769%3Foutcomes%3D0HC86109749N250_1",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882880,
+                          "betSide": "home",
+                          "betType": "straight",
+                          "betDetails": "Spread:RMA-2.5"
+                        }
+                      }
+                    }
+                  }
+                },
+                "away": {
+                  "open": {
+                    "line": "+2.5",
+                    "odds": "-130"
+                  },
+                  "close": {
+                    "line": "+2.5",
+                    "odds": "-130",
+                    "link": {
+                      "rel": [
+                        "awaySpread",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602769%3Foutcomes%3D0HC86109749P250_3",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882880,
+                          "betSide": "away",
+                          "betType": "straight",
+                          "betDetails": "Spread:RAY+2.5"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "moneyline": {
+                "displayName": "Moneyline",
+                "shortDisplayName": "ML",
+                "home": {
+                  "open": {
+                    "odds": "-700"
+                  },
+                  "close": {
+                    "odds": "-750",
+                    "link": {
+                      "rel": [
+                        "home",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602769%3Foutcomes%3D0ML86109523_1",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882880,
+                          "betSide": "home",
+                          "betType": "straight"
+                        }
+                      }
+                    }
+                  }
+                },
+                "away": {
+                  "open": {
+                    "odds": "+1400"
+                  },
+                  "close": {
+                    "odds": "+1700",
+                    "link": {
+                      "rel": [
+                        "away",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602769%3Foutcomes%3D0ML86109523_3",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882880,
+                          "betSide": "away",
+                          "betType": "straight"
+                        }
+                      }
+                    }
+                  }
+                },
+                "draw": {
+                  "open": {
+                    "odds": "+800"
+                  },
+                  "close": {
+                    "odds": "+800",
+                    "link": {
+                      "rel": [
+                        "draw",
+                        "bets"
+                      ],
+                      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602769%3Foutcomes%3D0ML86109523_2",
+                      "tracking": {
+                        "campaign": "betting-integrations",
+                        "tags": {
+                          "league": "esp.1",
+                          "sport": "soccer",
+                          "gameId": 401882880,
+                          "betSide": "draw",
+                          "betType": "straight"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "details": "RMA -750"
+            }
+          ],
+          "notes": [],
+          "format": {
+            "regulation": {
+              "periods": 2
+            }
+          },
+          "playByPlayAvailable": true,
+          "wasSuspended": false
+        }
+      ],
+      "status": {
+        "clock": 0,
+        "displayClock": "0'",
+        "period": 0,
+        "type": {
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Sat, September 12th at 3:00 PM EDT",
+          "shortDetail": "Scheduled"
+        }
+      },
+      "venue": {
+        "displayName": "Santiago Bernabéu"
+      }
+    }
+  ],
+  "policy": {
+    "explicitStateOnly": true,
+    "finalLock": true
+  },
+  "http": 200
+}

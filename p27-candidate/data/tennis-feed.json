@@ -1,0 +1,5380 @@
+{
+  "generatedAt": "2026-09-12T09:31:11.685606+00:00",
+  "source": "TennisExplorer",
+  "tier": "corroborated",
+  "confidence": "provisional",
+  "events": [
+    {
+      "competitions": [
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Suh S."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Dumitrascu S."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "03:30 · UTR Pro Match Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Fakih K."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Chainykova Y."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "03:30 · UTR Pro Match Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Okhtenberg N."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Shaw E."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "16:30 · UTR Pro Match Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Battesti A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Moreno C."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "17:00 · UTR Pro Match Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Niewiadomska P."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Rogin A."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "18:30 · UTR Pro Match Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Perry L."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Valdez N."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "18:30 · UTR Pro Match Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Miroshnichenko V."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Pradkin L."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "20:00 · UTR Pro Match Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Allegre O."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Millan Acosta I."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "20:00 · UTR Pro Match Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Mar T."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Chainykova Y."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "20:00 · UTR Pro Match Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Lesauvage A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Aulia A."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "22:00 · UTR Pro Match Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Lesauvage A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Ristic T."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "22:45 · UTR Pro Match Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Munroe S."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Apisah V."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "01:00 · UTR Pro Tennis Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Bhardwaj B."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Mickoska S."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "02:25 · UTR Pro Tennis Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Alame R."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Di Tommaso C."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "02:30 · UTR Pro Tennis Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Lopez E."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Ng K."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "02:30 · UTR Pro Tennis Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Thompson B."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Dodaj C."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "03:45 · UTR Pro Tennis Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Hoole C."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Gothelf J."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "01:00 · UTR Pro Tennis Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Alam S."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Atkinson C."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "03:40 · UTR Pro Tennis Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Van Loben Sels E."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Mouret H."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "03:30 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Krishna R."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Bouzoubaa I."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "03:30 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Oliver L."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Chinlund C."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "03:35 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Godsick N."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Ezerzer O."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "15:30 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Rusher A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Apltauer F."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "15:30 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Martinez M."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Ezerzer O."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "16:00 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Rusher A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Hernandez J."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "16:00 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Garcia J."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Kopilevich D."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "17:00 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Pade L."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Gonzales C."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "17:00 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Tonejc V."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Scott A."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "17:10 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Hornung G."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Widell A."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "17:35 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Benoit J."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Itsusaki S."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "pre",
+              "shortDetail": "19:20 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Sabalenka A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Rybakina E."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "22:00 · US Open"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Dencheva R."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Burillo Escorihuela I."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "12:00 · Antalya 5 WTA"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Ibragimova A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Herrero Linana A."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "13:30 · Antalya 5 WTA"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Blinkova A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Jacquemot E."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "01:00 · Barranquilla"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Liu C."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Blinkova A."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "23:30 · Barranquilla"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Noha Akugue N."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Maristany Zuleta De Re"
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "14:30 · Montreux WTA"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Galfi D."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Ferro F."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "16:00 · Montreux WTA"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Johnson S."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Jorge M."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "11:40 · Evora ITF"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Gasanova A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Ito A."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "11:40 · Evora ITF"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Ren Y."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Khomutsianskaya D."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "04:10 · Guiyang ITF"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Shubladze A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Kokkinis T."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "07:10 · Guiyang ITF"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Cortez Llorca L."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Argyrokastriti M."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "10:10 · Reus ITF"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Geerlings A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Pace F."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "11:35 · Reus ITF"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Bojica S."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Biro M."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "09:00 · Campulung ITF"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Popa G."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Todoni C."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "09:00 · Campulung ITF"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Iliev S."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Mpetshi Perricard D."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "10:00 · Dijon 2 ITF"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Ezzat Y."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Perapekhina Y."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "08:00 · Hurghada 10 ITF"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Mdlulwa W."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Breen S."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "08:00 · Hurghada 10 ITF"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Lukosiute A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Kikawada R."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "10:30 · Monastir 49 ITF"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Haddad I."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Cirotte A."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "10:30 · Monastir 49 ITF"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Romero C."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Cabezas Dominguez S."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "16:00 · Pilar ITF"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Cinalli L."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Ayala L."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "16:00 · Pilar ITF"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Sucha A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Petruzelova L."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "10:30 · Radom ITF"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Adams J."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Kmiecik A."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "12:00 · Radom ITF"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Tomase E."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Schaefer A."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "10:00 · Viserba ITF"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Alvisi E."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Voracek E."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "10:00 · Viserba ITF"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Shapatava S."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Raggi A."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "11:30 · Viserba ITF"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Fumagalli S."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Lombardini M."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "11:30 · Viserba ITF"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Kim Y."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Tsao C."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "10:00 · Yeongwol 2 ITF"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Kim D."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Lee H."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "10:00 · Yeongwol 2 ITF"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Suh S."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Ekstrand M."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "03:30 · UTR Pro Match Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Huh J."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Dumitrascu S."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "03:30 · UTR Pro Match Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Kay S."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Haile A."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "03:30 · UTR Pro Match Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Kennedy J."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Moreno C."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "15:00 · UTR Pro Match Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Perry L."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Zhu J."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "15:00 · UTR Pro Match Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Okhtenberg N."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Salibayeva A."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "15:30 · UTR Pro Match Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Deatherage M."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Barendse L."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "15:35 · UTR Pro Match Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Soulie A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Ristic T."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "18:00 · UTR Pro Match Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Webb S."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Thornton M."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "18:05 · UTR Pro Match Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Kasday S."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Crowder R."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "18:05 · UTR Pro Match Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Mildren S."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Lesauvage A."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "19:35 · UTR Pro Match Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Dowdell E."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Roberts H."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "19:40 · UTR Pro Match Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Mihulka B."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Ng K."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "01:00 · UTR Pro Tennis Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Mickoska S."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Zylberman A."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "01:00 · UTR Pro Tennis Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Khan L."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Arnautovic L."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "01:00 · UTR Pro Tennis Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Dodaj C."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Johnson E."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "02:00 · UTR Pro Tennis Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Bhardwaj B."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Schwarz M."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "03:30 · UTR Pro Tennis Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Shah M."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Munroe S."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "03:30 · UTR Pro Tennis Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Thompson B."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Lopez E."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "03:50 · UTR Pro Tennis Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Simes A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Desai N."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "03:50 · UTR Pro Tennis Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Apisah V."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Di Tommaso C."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "05:05 · UTR Pro Tennis Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Lepchenko V."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Melichar-Martinez N."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "18:00 · Guadalajara 2 WTA"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Bielinska S."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Hibino N."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "18:00 · Guadalajara 2 WTA"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Panova A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Scott K."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "18:00 · Guadalajara 2 WTA"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Monnet C."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Garcia J."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "19:30 · Guadalajara 2 WTA"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Sorribes Tormo S."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Koike E."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "19:30 · Guadalajara 2 WTA"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Xu M."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Dolehide C."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "19:30 · Guadalajara 2 WTA"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Shymanovich I."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Sanchez A."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "21:00 · Guadalajara 2 WTA"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Ma L."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Zavatska K."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "22:15 · Guadalajara 2 WTA"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "You X."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Fullana L."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "15:00 · Sao Paulo WTA"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Bosio V."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Cabrera L."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "15:00 · Sao Paulo WTA"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Mikulskyte J."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Vergara Rivera A."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "15:00 · Sao Paulo WTA"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Kinoshita H."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Rodriguez V."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "16:30 · Sao Paulo WTA"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Candiotto A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Brace C."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "16:30 · Sao Paulo WTA"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Paquet C."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Capurro Taborda M."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "16:30 · Sao Paulo WTA"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Osuigwe W."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Labrana F."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "18:00 · Sao Paulo WTA"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Smith A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Tikhonova A."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "18:00 · Sao Paulo WTA"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Shelton B."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Tiafoe F."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "01:45 · US Open"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Djere L."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Martinez P."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "18:00 · Genoa challenger"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Seyboth Wild T."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Dodig M."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "20:00 · Genoa challenger"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Munar J."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Diaz Acosta F."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "19:00 · Sevilla challenger"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Alcala Gurri M."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Lajovic D."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "20:30 · Sevilla challenger"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Castelnuovo L."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Ivashka I."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "11:05 · Shanghai challenger"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Kotov P."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Sharipov M."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "12:10 · Shanghai challenger"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Sachko V."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Brunold M."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "11:05 · Tulln challenger"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Reis Da Silva J."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Barrena A."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "13:45 · Tulln challenger"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Basing M."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Mayot H."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "10:10 · Istanbul challenger"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Kasnikowski M."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Friend J."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "11:45 · Istanbul challenger"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Lajal M."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Masur D."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "11:30 · Cassis challenger"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Droguet T."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Budkov Kjaer N."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "14:00 · Cassis challenger"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Simakin I."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Purcell M."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "05:10 · Phan Thiet 3 challenger"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Weber A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Shimizu Y."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "05:10 · Phan Thiet 3 challenger"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Roddick J."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Ferguson C."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "03:10 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Saitoh K."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Hong S."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "06:20 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Efstathiou M."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Moroni F."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "11:10 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Marques G."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Tabacco F."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "11:10 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Nijboer R."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Jong S."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "12:00 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "McHugh A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Rossi L."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "12:15 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Schoen P."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Anthrop J."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "12:30 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Banerjee S."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Zahraj P."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "14:30 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Houkes M."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Xilas I."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "15:00 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Chidekh C."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Dominko S."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "16:00 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Ahouda W."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Delage P."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "17:00 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Alves M."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Lage E."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "03:06 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Zhao Z."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Kim G."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "04:00 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Koyama H."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Choe J."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "04:00 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Chang A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Barki N."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "05:00 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Chanta T."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Sornlaksup P."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "05:00 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Singh K."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Singh D."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "05:00 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Malaszszak M."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "De Cuyper J."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "05:00 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Kshitij A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Lorusso L."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "08:00 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Hurrion M."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Petrov S."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "08:00 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Popko D."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Shebekin G."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "08:30 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Monzon I."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Denolly C."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "08:30 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Marmousez L."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Kimhi O."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "10:00 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Sperle J."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Noce G."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "10:00 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Kupcic J."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Baragiola Mordini T."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "10:00 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Valkusz M."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Fernandez B."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "10:00 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Bouchelaghem C."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Rahmani K."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "10:30 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Naw H."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Brown O."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "10:30 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Remondy Pagotto V."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Sakamoto P."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "18:00 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Alves M."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Tosetto R."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "18:00 · Futures 2026"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Burton C."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Boniel N."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "01:00 · UTR Pro Tennis Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Tripathi E."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Girdler J."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "01:00 · UTR Pro Tennis Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Braund A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Andrews O."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "01:00 · UTR Pro Tennis Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Burton M."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Staley J."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "02:25 · UTR Pro Tennis Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Bulte A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Hoole C."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "02:45 · UTR Pro Tennis Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Jones S."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Beale J."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "03:20 · UTR Pro Tennis Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Ito K."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Estephan J."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "04:10 · UTR Pro Tennis Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Bagaric D."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Cairncross J."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "04:30 · UTR Pro Tennis Series"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Oliver L."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Brumm J."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "03:30 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Krishna R."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Soohoo R."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "03:30 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Bharadwaj P."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Bouzoubaa I."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "03:30 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Djakouris A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Gamal G."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "03:30 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Cham E."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Atkinson C."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "03:55 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Garcia J."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Pade L."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "15:00 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Kopilevich D."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Duran D."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "15:00 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Rihane Y."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Andre S."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "15:30 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Kodjoed Y."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Alimli M."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "15:30 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Kalinin A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Bastiaansen P."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "16:10 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Moreno A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Doskocil M."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "16:35 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Tonejc V."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Delattre G."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "16:40 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Hornung G."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Ezerzer O."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "16:40 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Duran B."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Onofrei M."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "18:00 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Martinez De Freitas O."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Gonzales C."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "18:00 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Bennour Dit Sahli A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Jovanovski D."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "18:00 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Lyons J."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Mirarchi W."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "18:30 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "McMillin W."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Abarca A."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "19:10 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Bojarski A."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Itsusaki S."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "19:35 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Krupkin M."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Saar A."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "19:40 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Van Loben Sels E."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Cruz C."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "23:30 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Brumm J."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Lemaitre L."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "23:30 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        },
+        {
+          "competitors": [
+            {
+              "homeAway": "home",
+              "athlete": {
+                "displayName": "Wuelfing M."
+              },
+              "linescores": []
+            },
+            {
+              "homeAway": "away",
+              "athlete": {
+                "displayName": "Clark M."
+              },
+              "linescores": []
+            }
+          ],
+          "status": {
+            "type": {
+              "state": "in",
+              "shortDetail": "23:30 · UTR Pro Tennis Series 3"
+            }
+          },
+          "_atlasSource": {
+            "provider": "TennisExplorer",
+            "tier": "corroborated",
+            "timestamp": "2026-09-12T09:31:11.685606+00:00",
+            "confidence": "provisional",
+            "rule": "score-alone-never-final"
+          }
+        }
+      ]
+    }
+  ],
+  "policy": {
+    "postRequiresExplicitConfirmation": true,
+    "scoreAloneNeverFinal": true,
+    "staleOverwriteForbidden": true
+  }
+}
