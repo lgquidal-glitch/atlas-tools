@@ -1,0 +1,89 @@
+name: P27 prune football duplicate loaders
+on:
+  push:
+    branches: [p27-consolidation-candidate]
+    paths:
+      - '.github/workflows/p27-prune-football-duplicate-loaders.yml'
+permissions:
+  contents: write
+jobs:
+  prune-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: p27-consolidation-candidate
+          fetch-depth: 0
+      - name: Remove duplicate football sidecar fetchers
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import pathlib,re,json
+          files=[pathlib.Path('web/football-command/index.html'),pathlib.Path('web/football-deep/index.html'),pathlib.Path('web/football-fusion/index.html')]
+          report=[]
+          pat=re.compile(r'<script(?P<attrs>[^>]*)>(?P<body>.*?)</script>',re.I|re.S)
+          for p in files:
+            s=p.read_text(encoding='utf-8')
+            removed=[]
+            def repl(m):
+              attrs=m.group('attrs') or ''; body=m.group('body') or ''
+              whole=m.group(0)
+              if 'atlas-p27-football-resilient-loader' in attrs:
+                return whole
+              # Candidate sidecar network loaders are redundant once the resilient loader exists.
+              if ('../data/football-' in body or 'data/football-' in body) and 'fetch(' in body:
+                removed.append((attrs.strip()[:120], body.strip()[:180]))
+                return '\n<!-- ATLAS P27 duplicate football sidecar loader removed -->\n'
+              return whole
+            ns=pat.sub(repl,s)
+            if ns==s:
+              report.append({'path':str(p),'removed':0,'note':'no duplicate loader found'})
+            else:
+              p.write_text(ns,encoding='utf-8')
+              report.append({'path':str(p),'removed':len(removed),'samples':removed})
+            final=p.read_text(encoding='utf-8')
+            if final.count('atlas-p27-football-resilient-loader')!=1:
+              raise SystemExit(f'{p}: resilient loader count != 1')
+          pathlib.Path('p27/candidate-qa/football-loader-prune.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+          print(json.dumps(report,ensure_ascii=False,indent=2))
+          PY
+      - name: Static guard
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import pathlib,re
+          for p in map(pathlib.Path,['web/football-command/index.html','web/football-deep/index.html','web/football-fusion/index.html']):
+            s=p.read_text(encoding='utf-8')
+            assert 'atlas-p27-football-resilient-loader' in s
+            assert 'site.api.espn.com' not in s
+            # outside resilient loader there must be no candidate sidecar fetcher left
+            blocks=re.findall(r'<script([^>]*)>(.*?)</script>',s,re.I|re.S)
+            extras=[]
+            for attrs,body in blocks:
+              if 'atlas-p27-football-resilient-loader' in attrs: continue
+              if ('../data/football-' in body or 'data/football-' in body) and 'fetch(' in body: extras.append(body[:100])
+            assert not extras, (p,extras)
+          print('P27 football duplicate-loader prune PASS')
+          PY
+      - name: Commit repaired candidate
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add web/football-* p27/candidate-qa/football-loader-prune.json
+          git diff --cached --quiet || git commit -m 'Remove duplicate P27 football sidecar fetchers'
+          git push origin HEAD:p27-consolidation-candidate
+      - name: Publish repaired candidate under isolated path
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/p27-web && mkdir -p /tmp/p27-web && cp -a web/. /tmp/p27-web/
+          git fetch origin gh-pages:refs/remotes/origin/gh-pages
+          git checkout -B gh-pages origin/gh-pages
+          rm -rf p27-candidate && mkdir -p p27-candidate
+          cp -a /tmp/p27-web/. p27-candidate/
+          printf '%s\n' 'P27 candidate - isolated test copy. Active root remains unchanged.' > p27-candidate/CANDIDATE.txt
+          git add p27-candidate
+          git diff --cached --quiet || git commit -m 'Republish P27 after WebKit football loader prune'
+          git push origin gh-pages
