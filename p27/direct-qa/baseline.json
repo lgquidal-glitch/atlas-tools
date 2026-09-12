@@ -1,0 +1,118 @@
+{
+  "files": [
+    {
+      "path": "web/tennis-command/index.html",
+      "bytes": 966972,
+      "sha256": "475385f23fd9bec5e991ce58da07aa1a02a33afe8d2dd31caea99236eabb14ca",
+      "scripts": 36,
+      "duplicateIds": [
+        "atlasActionColorCustomizer"
+      ],
+      "hasViewport": true,
+      "espnRefs": 3,
+      "directEspnUrl": true,
+      "hasTennisSourceFeed": false,
+      "hasFootSourceFeed": false,
+      "hasCalibrationSourceFeed": false,
+      "hasThreeStateLabels": true
+    },
+    {
+      "path": "web/tennis-deep/index.html",
+      "bytes": 993687,
+      "sha256": "7830ce18d6be317153a904591cc1a0871b68c95ba29e856960673e3bb77fe9f6",
+      "scripts": 43,
+      "duplicateIds": [
+        "atlasActionColorCustomizer"
+      ],
+      "hasViewport": true,
+      "espnRefs": 3,
+      "directEspnUrl": true,
+      "hasTennisSourceFeed": false,
+      "hasFootSourceFeed": false,
+      "hasCalibrationSourceFeed": false,
+      "hasThreeStateLabels": true
+    },
+    {
+      "path": "web/tennis-fusion/index.html",
+      "bytes": 994279,
+      "sha256": "48ac1391bf8a5b5f4bbd89d422ff25eaaaa4e4c3ea708202bdc461004304a841",
+      "scripts": 43,
+      "duplicateIds": [
+        "atlasActionColorCustomizer"
+      ],
+      "hasViewport": true,
+      "espnRefs": 3,
+      "directEspnUrl": true,
+      "hasTennisSourceFeed": false,
+      "hasFootSourceFeed": false,
+      "hasCalibrationSourceFeed": false,
+      "hasThreeStateLabels": true
+    },
+    {
+      "path": "web/football-command/index.html",
+      "bytes": 339226,
+      "sha256": "fc7418b8a293389a6858b221f2f41fe2bdfc2b2c1bf9cc00845153c299a9b6f6",
+      "scripts": 27,
+      "duplicateIds": [],
+      "hasViewport": true,
+      "espnRefs": 2,
+      "directEspnUrl": true,
+      "hasTennisSourceFeed": false,
+      "hasFootSourceFeed": false,
+      "hasCalibrationSourceFeed": false,
+      "hasThreeStateLabels": true
+    },
+    {
+      "path": "web/football-deep/index.html",
+      "bytes": 374934,
+      "sha256": "f6492b415edacdd30e11a3b122d1348f5c32d5ed74d2db9cd2ad72734d9071a4",
+      "scripts": 36,
+      "duplicateIds": [],
+      "hasViewport": true,
+      "espnRefs": 2,
+      "directEspnUrl": true,
+      "hasTennisSourceFeed": false,
+      "hasFootSourceFeed": false,
+      "hasCalibrationSourceFeed": false,
+      "hasThreeStateLabels": true
+    },
+    {
+      "path": "web/football-fusion/index.html",
+      "bytes": 374487,
+      "sha256": "33acba20e0a3d9d965f6acbbb2e98d3e368face8acae21198cc0f2f15010d63a",
+      "scripts": 36,
+      "duplicateIds": [],
+      "hasViewport": true,
+      "espnRefs": 2,
+      "directEspnUrl": true,
+      "hasTennisSourceFeed": false,
+      "hasFootSourceFeed": false,
+      "hasCalibrationSourceFeed": false,
+      "hasThreeStateLabels": true
+    },
+    {
+      "path": "web/calibration/index.html",
+      "bytes": 119536,
+      "sha256": "15b075d17e4216837a4fd9b0c8704cdbfba1f192be82ce6d1ef7fd00b98c50a4",
+      "scripts": 17,
+      "duplicateIds": [],
+      "hasViewport": true,
+      "espnRefs": 0,
+      "directEspnUrl": false,
+      "hasTennisSourceFeed": false,
+      "hasFootSourceFeed": false,
+      "hasCalibrationSourceFeed": false,
+      "hasThreeStateLabels": false
+    }
+  ],
+  "scriptErrors": [],
+  "summary": {
+    "files": 7,
+    "executableScripts": 238,
+    "scriptErrors": 0,
+    "duplicateIdFiles": 3,
+    "directEspnFiles": 6,
+    "passSyntax": true,
+    "passIds": false
+  }
+}

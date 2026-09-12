@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-09-12T09:28:11.159714+00:00",
+  "tests": [
+    {
+      "sport": "tennis",
+      "provider": "TennisExplorer",
+      "url": "https://www.tennisexplorer.com/matches/?type=all&year=2026&month=09&day=12",
+      "http": 200,
+      "bytes": 415297,
+      "ok": true
+    },
+    {
+      "sport": "tennis",
+      "provider": "WTA",
+      "url": "https://www.wtatennis.com/scores",
+      "http": 200,
+      "bytes": 205529,
+      "ok": true
+    },
+    {
+      "sport": "football",
+      "provider": "worldcup26-eng1",
+      "url": "https://worldcup26.ir/get/soccer/eng.1/scoreboard?dates=20260912",
+      "http": 200,
+      "bytes": 50885,
+      "ok": true
+    },
+    {
+      "sport": "football",
+      "provider": "worldcup26-esp1",
+      "url": "https://worldcup26.ir/get/soccer/esp.1/scoreboard?dates=20260912",
+      "http": 200,
+      "bytes": 29747,
+      "ok": true
+    }
+  ]
+}
