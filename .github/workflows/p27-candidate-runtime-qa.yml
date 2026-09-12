@@ -28,7 +28,7 @@ jobs:
           cat > p27-runtime.mjs <<'EOF'
           import {chromium,webkit} from 'playwright';
           import fs from 'fs';
-          const base='https://raw.githack.com/lgquidal-glitch/atlas-tools/p27-consolidation-candidate/web';
+          const base='https://lgquidal-glitch.github.io/atlas-tools/p27-candidate';
           const tools=[['tennis-command','tennis-command/index.html','tennis'],['tennis-deep','tennis-deep/index.html','tennis'],['tennis-fusion','tennis-fusion/index.html','tennis'],['football-command','football-command/index.html','football'],['football-deep','football-deep/index.html','football'],['football-fusion','football-fusion/index.html','football'],['calibration','calibration/index.html','calibration']];
           const profiles=[['android',390,844],['iphone',393,852],['ipad',820,1180],['desktop',1366,768]];
           const browsers=[['chromium',chromium],['webkit',webkit]];
@@ -58,7 +58,7 @@ jobs:
                   const reqs=await page.evaluate(()=>performance.getEntriesByType('resource').map(x=>x.name));
                   espnRequests=reqs.filter(x=>/site\.api\.espn\.com/i.test(x)).length;
                   const criticalConsole=consoleErrors.filter(x=>/cors|failed to fetch|networkerror|espn/i.test(x));
-                  ok=status===200&&bodyChars>100&&!overflow&&pageErrors.length===0&&failedRequests.length===0&&criticalConsole.length===0&&espnRequests===0&&sourceFeed===true&&(kind==='calibration'?!!live:!!live);
+                  ok=status===200&&bodyChars>100&&!overflow&&pageErrors.length===0&&failedRequests.length===0&&criticalConsole.length===0&&espnRequests===0&&sourceFeed===true&&!!live;
                   await page.screenshot({path:`p27/runtime-screenshots/${tn}__${pn}__${bn}.png`,fullPage:true});
                 }catch(e){pageErrors.push(String(e));}
                 results.push({browser:bn,tool:tn,profile:pn,status,bodyChars,overflow,pageErrors,consoleErrors:consoleErrors.slice(0,20),failedRequests:failedRequests.slice(0,20),live,sourceFeed,espnRequests,pass:ok});
