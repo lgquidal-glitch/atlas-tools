@@ -1,3 +1,4 @@
+/* P27 direct-render Football loader · publication trigger after 3-interface binding */
 (function(){
   const CODES={en:'eng.1',fr:'fra.1',es:'esp.1',de:'ger.1',it:'ita.1',sa:'ksa.1'};
   const LEAGUES={'eng.1':'Premier League','fra.1':'Ligue 1','esp.1':'LaLiga','ger.1':'Bundesliga','ita.1':'Serie A','ksa.1':'Saudi Pro League'};
