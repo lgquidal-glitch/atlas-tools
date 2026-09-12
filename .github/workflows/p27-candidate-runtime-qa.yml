@@ -1,10 +1,19 @@
-# final P27 rerun after WebKit football cleanup
+# P27 continuous runtime QA after data and interface changes
 name: P27 candidate runtime QA
 on:
   push:
     branches: [p27-consolidation-candidate]
     paths:
       - '.github/workflows/p27-candidate-runtime-qa.yml'
+      - 'web/data/**'
+      - 'web/football-command/**'
+      - 'web/football-deep/**'
+      - 'web/football-fusion/**'
+      - 'web/tennis-command/**'
+      - 'web/tennis-deep/**'
+      - 'web/tennis-fusion/**'
+      - 'web/calibration/**'
+      - 'p27/football-resilient-loader.js'
 permissions:
   contents: write
 jobs:
