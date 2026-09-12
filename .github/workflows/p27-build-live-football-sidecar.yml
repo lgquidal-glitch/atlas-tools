@@ -3,6 +3,10 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '17 * * * *'
+  push:
+    branches: [p27-consolidation-candidate]
+    paths:
+      - '.github/workflows/p27-build-live-football-sidecar.yml'
 permissions:
   contents: write
 concurrency:
@@ -156,7 +160,7 @@ jobs:
       - name: Validate safety and coverage contract
         run: |
           python - <<'PY'
-          import json,glob
+          import json
           q=json.load(open('p27/candidate-qa/football-sidecar.json'))
           assert q['requestedLeagues']==27
           assert q['scoreNeverImpliesFinal'] is True and q['explicitFinalOnly'] is True
