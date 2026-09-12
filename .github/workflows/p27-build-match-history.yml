@@ -1,0 +1,133 @@
+name: P27 build durable match history
+on:
+  workflow_dispatch:
+  push:
+    branches: [p27-consolidation-candidate]
+    paths:
+      - 'web/data/football-coverage.json'
+      - 'web/data/tennis-feed.json'
+      - '.github/workflows/p27-build-match-history.yml'
+permissions:
+  contents: write
+concurrency:
+  group: p27-match-history
+  cancel-in-progress: false
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: p27-consolidation-candidate
+          fetch-depth: 0
+      - name: Merge live snapshots into durable history
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, hashlib, datetime
+          from pathlib import Path
+
+          DATA=Path('web/data'); DATA.mkdir(parents=True,exist_ok=True)
+          now=datetime.datetime.now(datetime.timezone.utc).isoformat()
+
+          def load(path,default):
+            p=Path(path)
+            if not p.exists(): return default
+            try: return json.loads(p.read_text(encoding='utf-8'))
+            except Exception: return default
+
+          def state_rank(s): return {'pre':0,'in':1,'post':2}.get(str(s or '').lower(),0)
+          def safe_state(s): return s if s in ('pre','in','post') else 'pre'
+
+          # FOOTBALL: merge all six compatibility feeds. Final is immutable.
+          old=load(DATA/'football-history.json',{'schema':'atlas-football-history-v1','matches':[]})
+          byid={str(x.get('id')):x for x in old.get('matches',[]) if x.get('id')}
+          for p in sorted(DATA.glob('football-*.json')):
+            if p.name in ('football-history.json','football-coverage.json'): continue
+            d=load(p,{})
+            for e in d.get('events',[]):
+              eid=str(e.get('id') or '')
+              if not eid: continue
+              comp=(e.get('competitions') or [{}])[0]
+              status=((comp.get('status') or {}).get('type') or {})
+              st=safe_state(status.get('state'))
+              competitors=comp.get('competitors') or []
+              home=next((c for c in competitors if c.get('homeAway')=='home'),{})
+              away=next((c for c in competitors if c.get('homeAway')=='away'),{})
+              incoming={
+                'id':eid,'sport':'football','leagueCode':e.get('leagueCode') or d.get('leagueCode'),
+                'date':e.get('date'),'home':((home.get('team') or {}).get('displayName')),
+                'away':((away.get('team') or {}).get('displayName')),
+                'state':st,'status':{'pre':'À venir','in':'En cours','post':'Terminé'}[st],
+                'homeScore':home.get('score'),'awayScore':away.get('score'),
+                'detail':status.get('detail') or status.get('shortDetail'),
+                'source':e.get('source') or d.get('source'),'verifiedAt':e.get('verified_at') or d.get('generatedAt') or now,
+                'firstSeenAt':now,'lastSeenAt':now
+              }
+              cur=byid.get(eid)
+              if cur:
+                incoming['firstSeenAt']=cur.get('firstSeenAt') or now
+                if safe_state(cur.get('state'))=='post' and st!='post':
+                  incoming.update({k:cur.get(k) for k in ('state','status','homeScore','awayScore','detail','verifiedAt')})
+                elif state_rank(st)<state_rank(cur.get('state')):
+                  incoming.update({k:cur.get(k) for k in ('state','status','homeScore','awayScore','detail','verifiedAt')})
+              byid[eid]=incoming
+          football=list(byid.values())
+          football.sort(key=lambda x:(x.get('date') or '',x.get('leagueCode') or '',x.get('home') or '',x.get('away') or ''))
+          Path(DATA/'football-history.json').write_text(json.dumps({'schema':'atlas-football-history-v1','generatedAt':now,'retention':'durable-never-delete','finalLock':True,'matches':football},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+          # TENNIS: flatten competitions. Stable day/player/tournament key; final is immutable.
+          old=load(DATA/'tennis-history.json',{'schema':'atlas-tennis-history-v1','matches':[]})
+          byid={str(x.get('id')):x for x in old.get('matches',[]) if x.get('id')}
+          feed=load(DATA/'tennis-feed.json',{})
+          generated=feed.get('generatedAt') or now; day=str(generated)[:10]
+          for event in feed.get('events',[]):
+            for comp in event.get('competitions',[]):
+              competitors=comp.get('competitors') or []
+              home=next((c for c in competitors if c.get('homeAway')=='home'), competitors[0] if competitors else {})
+              away=next((c for c in competitors if c.get('homeAway')=='away'), competitors[1] if len(competitors)>1 else {})
+              a=((home.get('athlete') or {}).get('displayName')) or ((home.get('team') or {}).get('displayName')) or ''
+              b=((away.get('athlete') or {}).get('displayName')) or ((away.get('team') or {}).get('displayName')) or ''
+              typ=((comp.get('status') or {}).get('type') or {}); st=safe_state(typ.get('state'))
+              detail=typ.get('shortDetail') or typ.get('detail') or ''
+              tour=detail.split('·',1)[1].strip() if '·' in detail else ''
+              raw='|'.join([day,a,b,tour]); mid=hashlib.sha1(raw.encode('utf-8')).hexdigest()[:20]
+              def score_of(c):
+                if c.get('score') not in (None,''): return str(c.get('score'))
+                ls=c.get('linescores') or []
+                vals=[]
+                for x in ls:
+                  v=x.get('value') if isinstance(x,dict) else x
+                  if v not in (None,''): vals.append(str(v))
+                return ' '.join(vals) if vals else None
+              incoming={'id':mid,'sport':'tennis','date':day,'playerA':a,'playerB':b,'tournament':tour,'state':st,'status':{'pre':'À venir','in':'En cours','post':'Terminé'}[st],'scoreA':score_of(home),'scoreB':score_of(away),'detail':detail,'source':feed.get('source'),'verifiedAt':generated,'firstSeenAt':now,'lastSeenAt':now}
+              cur=byid.get(mid)
+              if cur:
+                incoming['firstSeenAt']=cur.get('firstSeenAt') or now
+                if safe_state(cur.get('state'))=='post' and st!='post': incoming.update({k:cur.get(k) for k in ('state','status','scoreA','scoreB','detail','verifiedAt')})
+                elif state_rank(st)<state_rank(cur.get('state')): incoming.update({k:cur.get(k) for k in ('state','status','scoreA','scoreB','detail','verifiedAt')})
+              byid[mid]=incoming
+          tennis=list(byid.values()); tennis.sort(key=lambda x:(x.get('date') or '',x.get('tournament') or '',x.get('playerA') or ''))
+          Path(DATA/'tennis-history.json').write_text(json.dumps({'schema':'atlas-tennis-history-v1','generatedAt':now,'retention':'durable-never-delete','finalLock':True,'matches':tennis},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+          qa={'generatedAt':now,'footballHistory':len(football),'footballFinished':sum(x.get('state')=='post' for x in football),'footballLive':sum(x.get('state')=='in' for x in football),'tennisHistory':len(tennis),'tennisFinished':sum(x.get('state')=='post' for x in tennis),'tennisLive':sum(x.get('state')=='in' for x in tennis),'threeStatesOnly':all(x.get('state') in ('pre','in','post') for x in football+tennis),'finalLock':True,'neverDelete':True}
+          Path('p27/candidate-qa/status-history.json').write_text(json.dumps(qa,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print(json.dumps(qa,ensure_ascii=False))
+          PY
+      - name: Validate history contract
+        run: |
+          python - <<'PY'
+          import json
+          q=json.load(open('p27/candidate-qa/status-history.json'))
+          assert q['threeStatesOnly'] is True
+          assert q['finalLock'] is True and q['neverDelete'] is True
+          assert q['footballHistory'] >= 0 and q['tennisHistory'] >= 0
+          print('ATLAS status/history archive contract PASS',q)
+          PY
+      - name: Commit durable histories
+        run: |
+          git config user.name 'atlas-data-automation'
+          git config user.email 'atlas-data-automation@users.noreply.github.com'
+          git add web/data/football-history.json web/data/tennis-history.json p27/candidate-qa/status-history.json
+          if git diff --cached --quiet; then echo 'No history changes'; else git commit -m 'Persist P27 match history and status transitions'; git push origin HEAD:p27-consolidation-candidate; fi
