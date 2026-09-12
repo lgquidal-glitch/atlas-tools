@@ -1,7 +1,7 @@
 {
   "total": 56,
-  "pass": 37,
-  "fail": 19,
+  "pass": 45,
+  "fail": 11,
   "results": [
     {
       "browser": "chromium",
@@ -15,7 +15,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:38:48.508Z",
+        "updatedAt": "2026-09-12T10:42:54.580Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -35,7 +35,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:38:52.682Z",
+        "updatedAt": "2026-09-12T10:42:59.627Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -55,7 +55,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:38:56.851Z",
+        "updatedAt": "2026-09-12T10:43:04.893Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -75,7 +75,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:39:01.181Z",
+        "updatedAt": "2026-09-12T10:43:10.129Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -95,7 +95,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:39:05.678Z",
+        "updatedAt": "2026-09-12T10:43:15.680Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -115,7 +115,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:39:09.998Z",
+        "updatedAt": "2026-09-12T10:43:20.869Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -135,7 +135,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:39:14.395Z",
+        "updatedAt": "2026-09-12T10:43:26.330Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -155,7 +155,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:39:19.003Z",
+        "updatedAt": "2026-09-12T10:43:31.965Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -175,7 +175,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:39:23.812Z",
+        "updatedAt": "2026-09-12T10:43:37.794Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -195,7 +195,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:39:28.197Z",
+        "updatedAt": "2026-09-12T10:43:43.313Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -215,7 +215,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:39:32.559Z",
+        "updatedAt": "2026-09-12T10:43:48.582Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -235,7 +235,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:39:37.054Z",
+        "updatedAt": "2026-09-12T10:43:54.025Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -253,10 +253,17 @@
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T10:43:59.756Z",
+        "providersOk": 6,
+        "totalEvents": 11,
+        "matchesUpdated": 0,
+        "source": "ATLAS same-origin broker · resilient loader"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
@@ -268,10 +275,17 @@
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T10:44:05.958Z",
+        "providersOk": 6,
+        "totalEvents": 11,
+        "matchesUpdated": 0,
+        "source": "ATLAS same-origin broker · resilient loader"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
@@ -283,10 +297,17 @@
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T10:44:12.246Z",
+        "providersOk": 6,
+        "totalEvents": 11,
+        "matchesUpdated": 0,
+        "source": "ATLAS same-origin broker · resilient loader"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
@@ -298,10 +319,17 @@
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T10:44:18.847Z",
+        "providersOk": 6,
+        "totalEvents": 11,
+        "matchesUpdated": 0,
+        "source": "ATLAS same-origin broker · resilient loader"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
@@ -313,10 +341,17 @@
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T10:44:25.923Z",
+        "providersOk": 6,
+        "totalEvents": 11,
+        "matchesUpdated": 0,
+        "source": "ATLAS same-origin broker · resilient loader"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
@@ -328,10 +363,17 @@
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T10:44:32.142Z",
+        "providersOk": 6,
+        "totalEvents": 11,
+        "matchesUpdated": 0,
+        "source": "ATLAS same-origin broker · resilient loader"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
@@ -343,10 +385,17 @@
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T10:44:38.618Z",
+        "providersOk": 6,
+        "totalEvents": 11,
+        "matchesUpdated": 0,
+        "source": "ATLAS same-origin broker · resilient loader"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
@@ -358,10 +407,17 @@
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T10:44:45.574Z",
+        "providersOk": 6,
+        "totalEvents": 11,
+        "matchesUpdated": 0,
+        "source": "ATLAS same-origin broker · resilient loader"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
@@ -373,10 +429,17 @@
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T10:44:53.039Z",
+        "providersOk": 6,
+        "totalEvents": 11,
+        "matchesUpdated": 0,
+        "source": "ATLAS same-origin broker · resilient loader"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
@@ -388,10 +451,17 @@
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T10:44:59.265Z",
+        "providersOk": 6,
+        "totalEvents": 11,
+        "matchesUpdated": 0,
+        "source": "ATLAS same-origin broker · resilient loader"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
@@ -403,10 +473,17 @@
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T10:45:05.872Z",
+        "providersOk": 6,
+        "totalEvents": 11,
+        "matchesUpdated": 0,
+        "source": "ATLAS same-origin broker · resilient loader"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
@@ -418,10 +495,17 @@
       "pageErrors": [],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T10:45:12.803Z",
+        "providersOk": 6,
+        "totalEvents": 11,
+        "matchesUpdated": 0,
+        "source": "ATLAS same-origin broker · resilient loader"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
@@ -435,7 +519,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:40:50.101Z",
+        "updatedAt": "2026-09-12T10:45:19.950Z",
         "source": "ATLAS same-origin broker"
       },
       "sourceFeed": true,
@@ -454,7 +538,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:40:54.349Z",
+        "updatedAt": "2026-09-12T10:45:25.183Z",
         "source": "ATLAS same-origin broker"
       },
       "sourceFeed": true,
@@ -473,7 +557,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:40:58.550Z",
+        "updatedAt": "2026-09-12T10:45:30.326Z",
         "source": "ATLAS same-origin broker"
       },
       "sourceFeed": true,
@@ -492,7 +576,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:41:02.674Z",
+        "updatedAt": "2026-09-12T10:45:35.392Z",
         "source": "ATLAS same-origin broker"
       },
       "sourceFeed": true,
@@ -511,7 +595,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:41:12.235Z",
+        "updatedAt": "2026-09-12T10:45:42.738Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -531,7 +615,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:41:17.317Z",
+        "updatedAt": "2026-09-12T10:45:48.547Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -551,7 +635,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:41:21.759Z",
+        "updatedAt": "2026-09-12T10:45:54.033Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -571,7 +655,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:41:26.334Z",
+        "updatedAt": "2026-09-12T10:45:59.618Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -591,7 +675,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:41:31.027Z",
+        "updatedAt": "2026-09-12T10:46:05.346Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -611,7 +695,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:41:35.609Z",
+        "updatedAt": "2026-09-12T10:46:11.040Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -631,7 +715,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:41:40.201Z",
+        "updatedAt": "2026-09-12T10:46:16.639Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -651,7 +735,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:41:44.913Z",
+        "updatedAt": "2026-09-12T10:46:22.429Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -671,7 +755,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:41:49.831Z",
+        "updatedAt": "2026-09-12T10:46:28.374Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -691,7 +775,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:41:54.402Z",
+        "updatedAt": "2026-09-12T10:46:33.969Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -711,7 +795,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:41:58.992Z",
+        "updatedAt": "2026-09-12T10:46:39.590Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -731,7 +815,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:42:03.718Z",
+        "updatedAt": "2026-09-12T10:46:45.331Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -744,20 +828,29 @@
       "tool": "football-command",
       "profile": "android",
       "status": 200,
-      "bodyChars": 13793,
+      "bodyChars": 13697,
       "overflow": false,
-      "pageErrors": [],
+      "pageErrors": [
+        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-eng.1.json?ts=1789210011158 due to access control checks.",
+        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-fra.1.json?ts=1789210011158 due to access control checks.",
+        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-esp.1.json?ts=1789210011158 due to access control checks.",
+        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ger.1.json?ts=1789210011158 due to access control checks.",
+        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ita.1.json?ts=1789210011158 due to access control checks.",
+        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ksa.1.json?ts=1789210011158 due to access control checks."
+      ],
       "consoleErrors": [],
       "failedRequests": [],
       "live": {
-        "updatedAt": "2026-09-12T09:42:09.155Z",
+        "ok": true,
+        "updatedAt": "2026-09-12T10:46:51.511Z",
         "providersOk": 6,
-        "matchesUpdated": 17,
-        "source": "ATLAS same-origin broker · corroborated feed"
+        "totalEvents": 11,
+        "matchesUpdated": 0,
+        "source": "ATLAS same-origin broker · resilient loader"
       },
       "sourceFeed": true,
       "espnRequests": 0,
-      "pass": true
+      "pass": false
     },
     {
       "browser": "webkit",
@@ -766,11 +859,25 @@
       "status": 200,
       "bodyChars": 13724,
       "overflow": false,
-      "pageErrors": [],
+      "pageErrors": [
+        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-eng.1.json?ts=1789210017343 due to access control checks.",
+        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-fra.1.json?ts=1789210017344 due to access control checks.",
+        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-esp.1.json?ts=1789210017344 due to access control checks.",
+        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ger.1.json?ts=1789210017344 due to access control checks.",
+        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ita.1.json?ts=1789210017344 due to access control checks.",
+        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ksa.1.json?ts=1789210017344 due to access control checks."
+      ],
       "consoleErrors": [],
       "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T10:46:57.677Z",
+        "providersOk": 6,
+        "totalEvents": 11,
+        "matchesUpdated": 0,
+        "source": "ATLAS same-origin broker · resilient loader"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
       "pass": false
     },
@@ -781,18 +888,25 @@
       "status": 200,
       "bodyChars": 14009,
       "overflow": false,
-      "pageErrors": [],
+      "pageErrors": [
+        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-eng.1.json?ts=1789210023623 due to access control checks.",
+        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-fra.1.json?ts=1789210023623 due to access control checks.",
+        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-esp.1.json?ts=1789210023623 due to access control checks.",
+        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ger.1.json?ts=1789210023623 due to access control checks.",
+        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ita.1.json?ts=1789210023623 due to access control checks.",
+        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ksa.1.json?ts=1789210023623 due to access control checks."
+      ],
       "consoleErrors": [],
       "failedRequests": [],
       "live": {
-        "updatedAt": "2026-09-12T09:42:19.474Z",
+        "updatedAt": "2026-09-12T10:47:04.270Z",
         "providersOk": 6,
         "matchesUpdated": 17,
         "source": "ATLAS same-origin broker · corroborated feed"
       },
       "sourceFeed": true,
       "espnRequests": 0,
-      "pass": true
+      "pass": false
     },
     {
       "browser": "webkit",
@@ -801,18 +915,25 @@
       "status": 200,
       "bodyChars": 14009,
       "overflow": false,
-      "pageErrors": [],
+      "pageErrors": [
+        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-eng.1.json?ts=1789210030120 due to access control checks.",
+        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-fra.1.json?ts=1789210030120 due to access control checks.",
+        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-esp.1.json?ts=1789210030120 due to access control checks.",
+        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ger.1.json?ts=1789210030120 due to access control checks.",
+        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ita.1.json?ts=1789210030120 due to access control checks.",
+        "Fetch API cannot load https: /lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ksa.1.json?ts=1789210030121 due to access control checks."
+      ],
       "consoleErrors": [],
       "failedRequests": [],
       "live": {
-        "updatedAt": "2026-09-12T09:42:24.997Z",
+        "updatedAt": "2026-09-12T10:47:10.751Z",
         "providersOk": 6,
         "matchesUpdated": 17,
         "source": "ATLAS same-origin broker · corroborated feed"
       },
       "sourceFeed": true,
       "espnRequests": 0,
-      "pass": true
+      "pass": false
     },
     {
       "browser": "webkit",
@@ -823,9 +944,41 @@
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
-      "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "failedRequests": [
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ksa.1.json?ts=1789210037114",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-fra.1.json?ts=1789210037114",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-esp.1.json?ts=1789210037114",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ger.1.json?ts=1789210037114",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-eng.1.json?ts=1789210037113",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ita.1.json?ts=1789210037114",
+          "failure": "Load request cancelled"
+        }
+      ],
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T10:47:17.418Z",
+        "providersOk": 6,
+        "totalEvents": 11,
+        "matchesUpdated": 0,
+        "source": "ATLAS same-origin broker · resilient loader"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
       "pass": false
     },
@@ -838,9 +991,41 @@
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
-      "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "failedRequests": [
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-fra.1.json?ts=1789210043482",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ita.1.json?ts=1789210043482",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ksa.1.json?ts=1789210043482",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-eng.1.json?ts=1789210043481",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-esp.1.json?ts=1789210043482",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ger.1.json?ts=1789210043482",
+          "failure": "Load request cancelled"
+        }
+      ],
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T10:47:23.778Z",
+        "providersOk": 6,
+        "totalEvents": 11,
+        "matchesUpdated": 0,
+        "source": "ATLAS same-origin broker · resilient loader"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
       "pass": false
     },
@@ -849,33 +1034,90 @@
       "tool": "football-deep",
       "profile": "ipad",
       "status": 200,
-      "bodyChars": 16318,
+      "bodyChars": 16198,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-eng.1.json?ts=1789210049885",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ger.1.json?ts=1789210049886",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ita.1.json?ts=1789210049886",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-fra.1.json?ts=1789210049885",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-esp.1.json?ts=1789210049886",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ksa.1.json?ts=1789210049886",
+          "failure": "Load request cancelled"
+        }
+      ],
       "live": {
-        "updatedAt": "2026-09-12T09:42:41.848Z",
+        "ok": true,
+        "updatedAt": "2026-09-12T10:47:30.266Z",
         "providersOk": 6,
-        "matchesUpdated": 19,
-        "source": "ATLAS same-origin broker · corroborated feed"
+        "totalEvents": 11,
+        "matchesUpdated": 0,
+        "source": "ATLAS same-origin broker · resilient loader"
       },
       "sourceFeed": true,
       "espnRequests": 0,
-      "pass": true
+      "pass": false
     },
     {
       "browser": "webkit",
       "tool": "football-deep",
       "profile": "desktop",
       "status": 200,
-      "bodyChars": 16198,
+      "bodyChars": 16318,
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
-      "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "failedRequests": [
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-esp.1.json?ts=1789210056683",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ger.1.json?ts=1789210056683",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ksa.1.json?ts=1789210056683",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ita.1.json?ts=1789210056683",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-fra.1.json?ts=1789210056683",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-eng.1.json?ts=1789210056683",
+          "failure": "Load request cancelled"
+        }
+      ],
+      "live": {
+        "updatedAt": "2026-09-12T10:47:37.334Z",
+        "providersOk": 6,
+        "matchesUpdated": 19,
+        "source": "ATLAS same-origin broker · corroborated feed"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
       "pass": false
     },
@@ -888,9 +1130,41 @@
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
-      "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "failedRequests": [
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-eng.1.json?ts=1789210064058",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ger.1.json?ts=1789210064059",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-fra.1.json?ts=1789210064059",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-esp.1.json?ts=1789210064059",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ksa.1.json?ts=1789210064059",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ita.1.json?ts=1789210064059",
+          "failure": "Load request cancelled"
+        }
+      ],
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T10:47:44.358Z",
+        "providersOk": 6,
+        "totalEvents": 11,
+        "matchesUpdated": 0,
+        "source": "ATLAS same-origin broker · resilient loader"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
       "pass": false
     },
@@ -903,9 +1177,41 @@
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
-      "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "failedRequests": [
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ita.1.json?ts=1789210070424",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-fra.1.json?ts=1789210070424",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-eng.1.json?ts=1789210070423",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-esp.1.json?ts=1789210070424",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ger.1.json?ts=1789210070424",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ksa.1.json?ts=1789210070424",
+          "failure": "Load request cancelled"
+        }
+      ],
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T10:47:50.731Z",
+        "providersOk": 6,
+        "totalEvents": 11,
+        "matchesUpdated": 0,
+        "source": "ATLAS same-origin broker · resilient loader"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
       "pass": false
     },
@@ -920,7 +1226,7 @@
       "consoleErrors": [],
       "failedRequests": [],
       "live": {
-        "updatedAt": "2026-09-12T09:43:04.777Z",
+        "updatedAt": "2026-09-12T10:47:57.620Z",
         "providersOk": 6,
         "matchesUpdated": 19,
         "source": "ATLAS same-origin broker · corroborated feed"
@@ -938,9 +1244,41 @@
       "overflow": false,
       "pageErrors": [],
       "consoleErrors": [],
-      "failedRequests": [],
-      "live": null,
-      "sourceFeed": false,
+      "failedRequests": [
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ksa.1.json?ts=1789210083689",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-eng.1.json?ts=1789210083688",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-fra.1.json?ts=1789210083688",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ita.1.json?ts=1789210083689",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-esp.1.json?ts=1789210083688",
+          "failure": "Load request cancelled"
+        },
+        {
+          "url": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate/data/football-ger.1.json?ts=1789210083688",
+          "failure": "Load request cancelled"
+        }
+      ],
+      "live": {
+        "ok": true,
+        "updatedAt": "2026-09-12T10:48:04.098Z",
+        "providersOk": 6,
+        "totalEvents": 11,
+        "matchesUpdated": 0,
+        "source": "ATLAS same-origin broker · resilient loader"
+      },
+      "sourceFeed": true,
       "espnRequests": 0,
       "pass": false
     },
@@ -956,7 +1294,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:43:15.690Z",
+        "updatedAt": "2026-09-12T10:48:10.509Z",
         "source": "ATLAS same-origin broker"
       },
       "sourceFeed": true,
@@ -975,7 +1313,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:43:20.382Z",
+        "updatedAt": "2026-09-12T10:48:16.107Z",
         "source": "ATLAS same-origin broker"
       },
       "sourceFeed": true,
@@ -994,7 +1332,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:43:25.041Z",
+        "updatedAt": "2026-09-12T10:48:21.723Z",
         "source": "ATLAS same-origin broker"
       },
       "sourceFeed": true,
@@ -1013,7 +1351,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T09:43:29.609Z",
+        "updatedAt": "2026-09-12T10:48:27.209Z",
         "source": "ATLAS same-origin broker"
       },
       "sourceFeed": true,
