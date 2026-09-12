@@ -4,6 +4,16 @@ on:
     branches: [p27-consolidation-candidate]
     paths:
       - '.github/workflows/p27-publish-candidate-pages.yml'
+      - 'web/data/football-*.json'
+      - 'web/data/football-coverage.json'
+      - 'web/data/tennis-feed.json'
+      - 'web/football-command/index.html'
+      - 'web/football-deep/index.html'
+      - 'web/football-fusion/index.html'
+      - 'web/tennis-command/index.html'
+      - 'web/tennis-deep/index.html'
+      - 'web/tennis-fusion/index.html'
+      - 'web/calibration/index.html'
 permissions:
   contents: write
 jobs:
@@ -34,8 +44,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add p27-candidate
-          git commit -m 'Publish isolated P27 candidate under subpath'
-          git push origin gh-pages
+          if git diff --cached --quiet; then echo 'No candidate changes to publish'; else git commit -m 'Publish isolated P27 candidate under subpath'; git push origin gh-pages; fi
       - name: Verify active root and candidate coexist
         shell: bash
         run: |
