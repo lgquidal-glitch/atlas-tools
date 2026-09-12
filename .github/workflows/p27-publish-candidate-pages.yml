@@ -7,6 +7,8 @@ on:
       - 'web/data/football-*.json'
       - 'web/data/football-coverage.json'
       - 'web/data/tennis-feed.json'
+      - 'web/data/football-history.json'
+      - 'web/data/tennis-history.json'
       - 'web/football-command/index.html'
       - 'web/football-deep/index.html'
       - 'web/football-fusion/index.html'
@@ -53,6 +55,8 @@ jobs:
           test -f p27-candidate/data/tennis-feed.json
           test -f p27-candidate/football-command/index.html
           grep -q 'atlas-p27-football-resilient-loader' p27-candidate/football-command/index.html
+          if test -f p27-candidate/data/football-history.json; then echo 'football_history_present=yes'; fi
+          if test -f p27-candidate/data/tennis-history.json; then echo 'tennis_history_present=yes'; fi
           echo 'active_root_preserved=yes'
           echo 'candidate_subpath_present=yes'
           echo 'football_resilient_loader_present=yes'
