@@ -1,0 +1,39 @@
+name: Verify ATLAS GitHub Pages live
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  verify:
+    if: startsWith(github.event.issue.title, 'ATLAS-PAGES-LIVE-QA')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify GitHub Pages exact live content
+        shell: bash
+        run: |
+          set -euo pipefail
+          base='https://lgquidal-glitch.github.io/atlas-tools'
+          paths=(index.html tennis-command/index.html tennis-deep/index.html tennis-fusion/index.html football-command/index.html football-deep/index.html football-fusion/index.html calibration/index.html)
+          : > qa-pages-live.txt
+          fail=0
+          for p in "${paths[@]}"; do
+            tmp=$(mktemp)
+            code=$(curl -L --retry 4 --retry-delay 2 --connect-timeout 20 --max-time 120 -sS -o "$tmp" -w '%{http_code}' "$base/$p" || true)
+            ctype=$(curl -L --retry 2 --connect-timeout 20 --max-time 120 -sSI "$base/$p" | tr -d '\r' | awk -F': ' 'tolower($1)=="content-type"{print $2}' | tail -n1 || true)
+            if [ "$code" = 200 ] && cmp -s "web/$p" "$tmp" && [[ "$ctype" == text/html* ]]; then
+              echo "PASS $p HTTP=200 CT=$ctype EXACT=YES" | tee -a qa-pages-live.txt
+            else
+              echo "FAIL $p HTTP=$code CT=$ctype EXACT=$(cmp -s "web/$p" "$tmp" && echo YES || echo NO)" | tee -a qa-pages-live.txt
+              fail=1
+            fi
+            rm -f "$tmp"
+          done
+          cat qa-pages-live.txt
+          exit $fail
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: atlas-gh-pages-live-qa
+          path: qa-pages-live.txt
