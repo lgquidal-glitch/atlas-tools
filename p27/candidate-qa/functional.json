@@ -1,7 +1,7 @@
 {
   "total": 56,
-  "pass": 0,
-  "fail": 56,
+  "pass": 32,
+  "fail": 24,
   "results": [
     {
       "browser": "chromium",
@@ -16,13 +16,18 @@
         "buttons": 357,
         "inputs": 9,
         "selects": 4,
-        "preselect": false,
+        "preselect": true,
         "analyse": true,
         "training": true,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
@@ -37,13 +42,18 @@
         "buttons": 357,
         "inputs": 9,
         "selects": 4,
-        "preselect": false,
+        "preselect": true,
         "analyse": true,
         "training": true,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
@@ -58,13 +68,18 @@
         "buttons": 357,
         "inputs": 9,
         "selects": 4,
-        "preselect": false,
+        "preselect": true,
         "analyse": true,
         "training": true,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
@@ -79,13 +94,18 @@
         "buttons": 357,
         "inputs": 9,
         "selects": 4,
-        "preselect": false,
+        "preselect": true,
         "analyse": true,
         "training": true,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
@@ -100,13 +120,18 @@
         "buttons": 363,
         "inputs": 9,
         "selects": 4,
-        "preselect": false,
+        "preselect": true,
         "analyse": true,
         "training": true,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
@@ -121,13 +146,18 @@
         "buttons": 363,
         "inputs": 9,
         "selects": 4,
-        "preselect": false,
+        "preselect": true,
         "analyse": true,
         "training": true,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
@@ -142,13 +172,18 @@
         "buttons": 363,
         "inputs": 9,
         "selects": 4,
-        "preselect": false,
+        "preselect": true,
         "analyse": true,
         "training": true,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
@@ -163,13 +198,18 @@
         "buttons": 363,
         "inputs": 9,
         "selects": 4,
-        "preselect": false,
+        "preselect": true,
         "analyse": true,
         "training": true,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
@@ -184,13 +224,18 @@
         "buttons": 363,
         "inputs": 9,
         "selects": 4,
-        "preselect": false,
+        "preselect": true,
         "analyse": true,
         "training": true,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
@@ -205,13 +250,18 @@
         "buttons": 363,
         "inputs": 9,
         "selects": 4,
-        "preselect": false,
+        "preselect": true,
         "analyse": true,
         "training": true,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
@@ -226,13 +276,18 @@
         "buttons": 363,
         "inputs": 9,
         "selects": 4,
-        "preselect": false,
+        "preselect": true,
         "analyse": true,
         "training": true,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
@@ -247,13 +302,18 @@
         "buttons": 363,
         "inputs": 9,
         "selects": 4,
-        "preselect": false,
+        "preselect": true,
         "analyse": true,
         "training": true,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
@@ -272,7 +332,12 @@
         "analyse": true,
         "training": false,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
       "pass": false
     },
@@ -293,7 +358,12 @@
         "analyse": true,
         "training": false,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
       "pass": false
     },
@@ -314,7 +384,12 @@
         "analyse": true,
         "training": false,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
       "pass": false
     },
@@ -335,7 +410,12 @@
         "analyse": true,
         "training": false,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
       "pass": false
     },
@@ -356,7 +436,12 @@
         "analyse": true,
         "training": false,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
       "pass": false
     },
@@ -377,7 +462,12 @@
         "analyse": true,
         "training": false,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
       "pass": false
     },
@@ -398,7 +488,12 @@
         "analyse": true,
         "training": false,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
       "pass": false
     },
@@ -419,7 +514,12 @@
         "analyse": true,
         "training": false,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
       "pass": false
     },
@@ -440,7 +540,12 @@
         "analyse": true,
         "training": false,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
       "pass": false
     },
@@ -461,7 +566,12 @@
         "analyse": true,
         "training": false,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
       "pass": false
     },
@@ -482,7 +592,12 @@
         "analyse": true,
         "training": false,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
       "pass": false
     },
@@ -503,7 +618,12 @@
         "analyse": true,
         "training": false,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
       "pass": false
     },
@@ -520,9 +640,11 @@
         "buttons": 35,
         "inputs": 91,
         "selects": 34,
-        "status": false
+        "status": true,
+        "search": true,
+        "filters": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
@@ -537,9 +659,11 @@
         "buttons": 35,
         "inputs": 91,
         "selects": 34,
-        "status": false
+        "status": true,
+        "search": true,
+        "filters": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
@@ -554,9 +678,11 @@
         "buttons": 35,
         "inputs": 91,
         "selects": 34,
-        "status": false
+        "status": true,
+        "search": true,
+        "filters": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "chromium",
@@ -571,9 +697,11 @@
         "buttons": 35,
         "inputs": 91,
         "selects": 34,
-        "status": false
+        "status": true,
+        "search": true,
+        "filters": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
@@ -588,13 +716,18 @@
         "buttons": 357,
         "inputs": 9,
         "selects": 4,
-        "preselect": false,
+        "preselect": true,
         "analyse": true,
-        "training": false,
+        "training": true,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
@@ -609,13 +742,18 @@
         "buttons": 357,
         "inputs": 9,
         "selects": 4,
-        "preselect": false,
+        "preselect": true,
         "analyse": true,
-        "training": false,
+        "training": true,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
@@ -630,13 +768,18 @@
         "buttons": 357,
         "inputs": 9,
         "selects": 4,
-        "preselect": false,
+        "preselect": true,
         "analyse": true,
-        "training": false,
+        "training": true,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
@@ -651,13 +794,18 @@
         "buttons": 357,
         "inputs": 9,
         "selects": 4,
-        "preselect": false,
+        "preselect": true,
         "analyse": true,
-        "training": false,
+        "training": true,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
@@ -672,13 +820,18 @@
         "buttons": 363,
         "inputs": 9,
         "selects": 4,
-        "preselect": false,
+        "preselect": true,
         "analyse": true,
-        "training": false,
+        "training": true,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
@@ -693,13 +846,18 @@
         "buttons": 363,
         "inputs": 9,
         "selects": 4,
-        "preselect": false,
+        "preselect": true,
         "analyse": true,
-        "training": false,
+        "training": true,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
@@ -714,13 +872,18 @@
         "buttons": 363,
         "inputs": 9,
         "selects": 4,
-        "preselect": false,
+        "preselect": true,
         "analyse": true,
-        "training": false,
+        "training": true,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
@@ -735,13 +898,18 @@
         "buttons": 363,
         "inputs": 9,
         "selects": 4,
-        "preselect": false,
+        "preselect": true,
         "analyse": true,
-        "training": false,
+        "training": true,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
@@ -756,13 +924,18 @@
         "buttons": 363,
         "inputs": 9,
         "selects": 4,
-        "preselect": false,
+        "preselect": true,
         "analyse": true,
-        "training": false,
+        "training": true,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
@@ -777,13 +950,18 @@
         "buttons": 363,
         "inputs": 9,
         "selects": 4,
-        "preselect": false,
+        "preselect": true,
         "analyse": true,
-        "training": false,
+        "training": true,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
@@ -798,13 +976,18 @@
         "buttons": 363,
         "inputs": 9,
         "selects": 4,
-        "preselect": false,
+        "preselect": true,
         "analyse": true,
-        "training": false,
+        "training": true,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
@@ -819,13 +1002,18 @@
         "buttons": 363,
         "inputs": 9,
         "selects": 4,
-        "preselect": false,
+        "preselect": true,
         "analyse": true,
-        "training": false,
+        "training": true,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
@@ -844,7 +1032,12 @@
         "analyse": true,
         "training": false,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
       "pass": false
     },
@@ -865,7 +1058,12 @@
         "analyse": true,
         "training": false,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
       "pass": false
     },
@@ -886,7 +1084,12 @@
         "analyse": true,
         "training": false,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
       "pass": false
     },
@@ -907,7 +1110,12 @@
         "analyse": true,
         "training": false,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
       "pass": false
     },
@@ -928,7 +1136,12 @@
         "analyse": true,
         "training": false,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
       "pass": false
     },
@@ -949,7 +1162,12 @@
         "analyse": true,
         "training": false,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
       "pass": false
     },
@@ -970,7 +1188,12 @@
         "analyse": true,
         "training": false,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
       "pass": false
     },
@@ -991,7 +1214,12 @@
         "analyse": true,
         "training": false,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
       "pass": false
     },
@@ -1012,7 +1240,12 @@
         "analyse": true,
         "training": false,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
       "pass": false
     },
@@ -1033,7 +1266,12 @@
         "analyse": true,
         "training": false,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
       "pass": false
     },
@@ -1054,7 +1292,12 @@
         "analyse": true,
         "training": false,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
       "pass": false
     },
@@ -1075,7 +1318,12 @@
         "analyse": true,
         "training": false,
         "all": true,
-        "staking": true
+        "staking": true,
+        "reset": true,
+        "palette": true,
+        "dateControl": true,
+        "preselectClickable": true,
+        "analyseClickable": true
       },
       "pass": false
     },
@@ -1092,9 +1340,11 @@
         "buttons": 35,
         "inputs": 91,
         "selects": 34,
-        "status": false
+        "status": true,
+        "search": true,
+        "filters": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
@@ -1109,9 +1359,11 @@
         "buttons": 35,
         "inputs": 91,
         "selects": 34,
-        "status": false
+        "status": true,
+        "search": true,
+        "filters": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
@@ -1126,9 +1378,11 @@
         "buttons": 35,
         "inputs": 91,
         "selects": 34,
-        "status": false
+        "status": true,
+        "search": true,
+        "filters": true
       },
-      "pass": false
+      "pass": true
     },
     {
       "browser": "webkit",
@@ -1143,9 +1397,11 @@
         "buttons": 35,
         "inputs": 91,
         "selects": 34,
-        "status": false
+        "status": true,
+        "search": true,
+        "filters": true
       },
-      "pass": false
+      "pass": true
     }
   ]
 }
