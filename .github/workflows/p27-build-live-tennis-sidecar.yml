@@ -38,6 +38,7 @@ jobs:
           u=f'https://www.tennisexplorer.com/matches/?type=all&year={d.year}&month={d.month:02d}&day={d.day:02d}'
           r=requests.get(u,headers=H,timeout=30); r.raise_for_status(); soup=BeautifulSoup(r.text,'html.parser')
           tournament=''; comps=[]; rows=soup.find_all('tr'); i=0
+          def txt(td): return td.get_text(' ',strip=True).replace('\xa0',' ').strip() if td else ''
           while i < len(rows):
             tr=rows[i]; cls=tr.get('class',[]); text=' | '.join(tr.stripped_strings)
             if 'head' in cls and 'flags' in cls:
@@ -49,24 +50,30 @@ jobs:
               pls2=[a.get_text(' ',strip=True) for a in tr2.find_all('a') if '/player/' in (a.get('href') or '')]
               if pls and pls2:
                 p1,p2=pls[-1],pls2[-1]
-                t1=' | '.join(tr.stripped_strings); t2=' | '.join(tr2.stripped_strings)
+                t1=' | '.join(tr.stripped_strings)
                 tm=re.search(r'\b([0-2]\d:[0-5]\d)\b',t1)
-                vals1=[x.get_text(' ',strip=True) for x in tr.find_all('td',recursive=False)]
-                vals2=[x.get_text(' ',strip=True) for x in tr2.find_all('td',recursive=False)]
-                has_score=not (' | -' in t1 and ' | -' in t2)
-                state='in' if has_score else 'pre'
+                result1=txt(tr.select_one('td.result')); result2=txt(tr2.select_one('td.result'))
+                scores1=[txt(x) for x in tr.select('td.score')]; scores2=[txt(x) for x in tr2.select('td.score')]
+                score_present=any(scores1) or any(scores2)
+                explicit_result=bool(result1 and result2 and re.fullmatch(r'\d+',result1) and re.fullmatch(r'\d+',result2))
+                state='post' if explicit_result else ('in' if score_present else 'pre')
                 detail=((tm.group(1)+' · ') if tm else '')+tournament
-                comps.append({'competitors':[{'homeAway':'home','athlete':{'displayName':p1},'linescores':[]},{'homeAway':'away','athlete':{'displayName':p2},'linescores':[]}],
+                h={'homeAway':'home','athlete':{'displayName':p1},'linescores':[{'value':x} for x in scores1 if x]}
+                a={'homeAway':'away','athlete':{'displayName':p2},'linescores':[{'value':x} for x in scores2 if x]}
+                if explicit_result:
+                  h['score']=result1; a['score']=result2
+                comps.append({'competitors':[h,a],
                               'status':{'type':{'state':state,'shortDetail':detail}},
-                              '_atlasSource':{'provider':'TennisExplorer','tier':'corroborated','timestamp':stamp,'confidence':'provisional','rule':'score-alone-never-final'}})
+                              '_atlasSource':{'provider':'TennisExplorer','tier':'corroborated','timestamp':stamp,'confidence':'provisional','rule':'explicit-result-cells-for-post; score-cells-for-live; blanks-for-pre'}})
               i+=2; continue
             i+=1
           if not comps: raise SystemExit('No tennis matches parsed; keeping previous verified feed')
+          counts={s:sum(1 for c in comps if c['status']['type']['state']==s) for s in ['pre','in','post']}
           tennis={'generatedAt':stamp,'source':'TennisExplorer','tier':'corroborated','confidence':'provisional','events':[{'competitions':comps}],
-                  'policy':{'postRequiresExplicitConfirmation':True,'scoreAloneNeverFinal':True,'staleOverwriteForbidden':True,'refreshTargetMinutes':15}}
+                  'policy':{'postRequiresExplicitConfirmation':True,'scoreAloneNeverFinal':True,'staleOverwriteForbidden':True,'refreshTargetMinutes':15,'classification':'result cells => post; score cells without result => in; blank result+scores => pre'}}
           pathlib.Path('web/data/tennis-feed.json').write_text(json.dumps(tennis,ensure_ascii=False,indent=2),encoding='utf-8')
-          pathlib.Path('p27/candidate-qa/tennis-feed-freshness.json').write_text(json.dumps({'generatedAt':stamp,'competitions':len(comps),'source':'TennisExplorer','scoreAloneNeverFinal':True},ensure_ascii=False,indent=2),encoding='utf-8')
-          print(json.dumps({'generatedAt':stamp,'competitions':len(comps)},ensure_ascii=False))
+          pathlib.Path('p27/candidate-qa/tennis-feed-freshness.json').write_text(json.dumps({'generatedAt':stamp,'competitions':len(comps),'source':'TennisExplorer','states':counts,'scoreAloneNeverFinal':True,'explicitFinalOnly':True},ensure_ascii=False,indent=2),encoding='utf-8')
+          print(json.dumps({'generatedAt':stamp,'competitions':len(comps),'states':counts},ensure_ascii=False))
           PY
       - name: Commit fresh feed only when changed
         shell: bash
