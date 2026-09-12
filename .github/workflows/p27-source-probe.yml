@@ -1,0 +1,54 @@
+name: P27 source probe
+on:
+  issues:
+    types: [opened]
+permissions:
+  contents: read
+jobs:
+  probe:
+    if: startsWith(github.event.issue.title, 'ATLAS-P27-SOURCE-PROBE')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probe public live endpoints
+        shell: bash
+        run: |
+          set -euo pipefail
+          DATE=$(date -u +%F)
+          urls=(
+            "https://www.sofascore.com/api/v1/sport/tennis/scheduled-events/${DATE}"
+            "https://www.sofascore.com/api/v1/sport/football/scheduled-events/${DATE}"
+          )
+          : > probe.txt
+          for u in "${urls[@]}"; do
+            echo "URL=$u" | tee -a probe.txt
+            tmp=$(mktemp)
+            code=$(curl -L --retry 2 --connect-timeout 20 --max-time 60 -A 'Mozilla/5.0 ATLAS-P27' -sS -o "$tmp" -w '%{http_code}' "$u" || true)
+            ctype=$(curl -L --retry 1 --connect-timeout 20 --max-time 60 -A 'Mozilla/5.0 ATLAS-P27' -sSI "$u" | tr -d '\r' | awk -F': ' 'tolower($1)=="content-type"{print $2}' | tail -n1 || true)
+            echo "HTTP=$code CT=$ctype BYTES=$(wc -c < "$tmp")" | tee -a probe.txt
+            python3 - "$tmp" <<'PY' | tee -a probe.txt
+import json,sys
+p=sys.argv[1]
+try:
+    d=json.load(open(p,encoding='utf-8'))
+    if isinstance(d,dict):
+        print('JSON_KEYS='+','.join(list(d.keys())[:20]))
+        ev=d.get('events')
+        print('EVENTS='+str(len(ev) if isinstance(ev,list) else 'NA'))
+        if isinstance(ev,list) and ev:
+            e=ev[0]
+            print('SAMPLE_KEYS='+','.join(list(e.keys())[:30]))
+            print('SAMPLE_ID='+str(e.get('id')))
+            print('SAMPLE_HOME='+str((e.get('homeTeam') or {}).get('name')))
+            print('SAMPLE_AWAY='+str((e.get('awayTeam') or {}).get('name')))
+            print('SAMPLE_STATUS='+str((e.get('status') or {}).get('type')))
+    else:
+        print('JSON_TYPE='+type(d).__name__)
+except Exception as e:
+    print('JSON_ERROR='+repr(e))
+PY
+            rm -f "$tmp"
+          done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: p27-source-probe
+          path: probe.txt
