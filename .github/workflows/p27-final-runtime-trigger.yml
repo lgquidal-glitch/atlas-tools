@@ -1,0 +1,10 @@
+name: P27 final runtime trigger
+on:
+  push:
+    branches: [p27-consolidation-candidate]
+    paths: ['.github/workflows/p27-final-runtime-trigger.yml']
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'P27 repaired candidate ready for final 56-case runtime QA'
