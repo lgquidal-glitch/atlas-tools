@@ -1,6 +1,12 @@
 {
-  "generatedAt": "2026-09-12T12:55:27.547355+00:00",
-  "competitions": 182,
+  "generatedAt": "2026-09-12T13:58:39.387626+00:00",
+  "competitions": 187,
   "source": "TennisExplorer",
-  "scoreAloneNeverFinal": true
+  "states": {
+    "pre": 119,
+    "in": 0,
+    "post": 68
+  },
+  "scoreAloneNeverFinal": true,
+  "explicitFinalOnly": true
 }
