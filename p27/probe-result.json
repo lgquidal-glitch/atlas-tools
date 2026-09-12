@@ -1,32 +1,60 @@
 {
-  "generatedAt": "2026-09-12T08:57:50.335662+00:00",
+  "generatedAt": "2026-09-12T08:58:41.158183+00:00",
   "date": "2026-09-12",
   "probes": [
     {
+      "sport": "football",
+      "provider": "openfootapi",
+      "url": "https://openfootapi.com/v1/matches?date=2026-09-12",
+      "ok": false,
+      "error": "<HTTPError 401: 'Unauthorized'>"
+    },
+    {
       "sport": "tennis",
-      "provider": "sofascore-www",
-      "url": "https://www.sofascore.com/api/v1/sport/tennis/scheduled-events/2026-09-12",
+      "provider": "tennisexplorer",
+      "url": "https://www.tennisexplorer.com/matches/?type=all&year=2026&month=09&day=12",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 415802,
+      "ok": true,
+      "markers": {
+        "live": true,
+        "score": true,
+        "match": true
+      }
+    },
+    {
+      "sport": "tennis",
+      "provider": "atptour",
+      "url": "https://www.atptour.com/en/scores/current",
       "ok": false,
       "error": "<HTTPError 403: 'Forbidden'>"
     },
     {
       "sport": "tennis",
-      "provider": "sofascore-api",
-      "url": "https://api.sofascore.com/api/v1/sport/tennis/scheduled-events/2026-09-12",
+      "provider": "wtatennis",
+      "url": "https://www.wtatennis.com/scores",
+      "http": 200,
+      "contentType": "text/html;charset=utf-8",
+      "bytes": 205529,
+      "ok": true,
+      "markers": {
+        "live": true,
+        "score": true,
+        "match": true
+      }
+    },
+    {
+      "sport": "tennis",
+      "provider": "sofascore-page",
+      "url": "https://www.sofascore.com/tennis/2026-09-12",
       "ok": false,
       "error": "<HTTPError 403: 'Forbidden'>"
     },
     {
       "sport": "football",
-      "provider": "sofascore-www",
-      "url": "https://www.sofascore.com/api/v1/sport/football/scheduled-events/2026-09-12",
-      "ok": false,
-      "error": "<HTTPError 403: 'Forbidden'>"
-    },
-    {
-      "sport": "football",
-      "provider": "sofascore-api",
-      "url": "https://api.sofascore.com/api/v1/sport/football/scheduled-events/2026-09-12",
+      "provider": "sofascore-page",
+      "url": "https://www.sofascore.com/football/2026-09-12",
       "ok": false,
       "error": "<HTTPError 403: 'Forbidden'>"
     }
