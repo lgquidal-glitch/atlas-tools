@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: python -m pip install -q requests beautifulsoup4
-      - name: Inspect source shapes
+      - name: Inspect TennisExplorer structure
         shell: bash
         run: |
           set -euo pipefail
@@ -19,28 +19,16 @@ jobs:
           python3 - <<'PY'
           import json, datetime, requests
           from bs4 import BeautifulSoup
-          now=datetime.datetime.now(datetime.timezone.utc); d=now.date(); ds=d.isoformat(); ymd=d.strftime('%Y%m%d')
-          out={'generatedAt':now.isoformat(),'date':ds,'tennis':{},'football':[]}
+          now=datetime.datetime.now(datetime.timezone.utc); d=now.date();
           u=f'https://www.tennisexplorer.com/matches/?type=all&year={d.year}&month={d.month:02d}&day={d.day:02d}'
-          try:
-            r=requests.get(u,headers={'User-Agent':'Mozilla/5.0'},timeout=30); r.raise_for_status(); s=BeautifulSoup(r.text,'html.parser')
-            samples=[]
-            for tr in s.find_all('tr'):
-              links=[a.get_text(' ',strip=True) for a in tr.select('a[href*="/player/"]') if a.get_text(strip=True)]
-              if len(links)>=2:
-                samples.append({'class':tr.get('class',[]),'id':tr.get('id'),'players':links[:2],'text':' | '.join(tr.stripped_strings)[:500]})
-              if len(samples)>=20: break
-            out['tennis']={'url':u,'http':r.status_code,'rows':len(samples),'samples':samples}
-          except Exception as e: out['tennis']={'url':u,'error':repr(e)}
-          for league in ['eng.1','esp.1','deu.1','ger.1','fra.1','ita.1']:
-            u=f'https://worldcup26.ir/get/soccer/{league}/scoreboard?dates={ymd}'
-            row={'league':league,'url':u}
-            try:
-              r=requests.get(u,headers={'User-Agent':'Mozilla/5.0','Accept':'application/json'},timeout=30); row['http']=r.status_code; row['bytes']=len(r.content)
-              if r.ok:
-                j=r.json(); row['type']=type(j).__name__; row['keys']=list(j)[:20] if isinstance(j,dict) else []; row['preview']=str(j)[:1000]
-            except Exception as e: row['error']=repr(e)
-            out['football'].append(row)
+          r=requests.get(u,headers={'User-Agent':'Mozilla/5.0'},timeout=30); r.raise_for_status(); s=BeautifulSoup(r.text,'html.parser')
+          rows=[]
+          for tr in s.find_all('tr'):
+            text=' | '.join(tr.stripped_strings)
+            if not text: continue
+            rows.append({'class':tr.get('class',[]),'id':tr.get('id'),'text':text[:800],'links':[{'text':a.get_text(' ',strip=True)[:100],'href':a.get('href')} for a in tr.find_all('a')[:8]]})
+            if len(rows)>=80: break
+          out={'generatedAt':now.isoformat(),'url':u,'http':r.status_code,'bytes':len(r.content),'rows':rows}
           open('p27/probe-result.json','w',encoding='utf-8').write(json.dumps(out,ensure_ascii=False,indent=2))
           PY
           cat p27/probe-result.json
@@ -50,5 +38,5 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add p27/probe-result.json
-          git diff --cached --quiet || git commit -m 'Record P27 source shape inspection'
+          git diff --cached --quiet || git commit -m 'Record TennisExplorer structure for P27'
           git push
