@@ -1,0 +1,32 @@
+[
+  {
+    "path": "web/football-command/index.html",
+    "removed": 1,
+    "samples": [
+      [
+        "",
+        "(async()=>{\n      const root=document.getElementById('atlas-foot-calendar'); if(!root||root.dataset.ready)return; root.dataset.ready='1';\n      const fixtures=[];\n      const filte"
+      ]
+    ]
+  },
+  {
+    "path": "web/football-deep/index.html",
+    "removed": 1,
+    "samples": [
+      [
+        "",
+        "(async()=>{\n      const root=document.getElementById('atlas-foot-calendar'); if(!root||root.dataset.ready)return; root.dataset.ready='1';\n      const fixtures=[];\n      const filte"
+      ]
+    ]
+  },
+  {
+    "path": "web/football-fusion/index.html",
+    "removed": 1,
+    "samples": [
+      [
+        "",
+        "(async()=>{\n      const root=document.getElementById('atlas-foot-calendar'); if(!root||root.dataset.ready)return; root.dataset.ready='1';\n      const fixtures=[];\n      const filte"
+      ]
+    ]
+  }
+]
