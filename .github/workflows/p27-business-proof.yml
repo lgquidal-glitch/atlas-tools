@@ -1,5 +1,6 @@
 name: P27 published business proof
 on:
+  workflow_dispatch:
   push:
     branches: [p27-consolidation-candidate]
     paths:
