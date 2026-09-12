@@ -1,0 +1,46 @@
+name: P27 inspect critical snippets
+on:
+  push:
+    branches: [p27-consolidation-candidate]
+    paths:
+      - '.github/workflows/p27-inspect-critical-snippets.yml'
+permissions:
+  contents: write
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: p27-consolidation-candidate
+      - name: Inspect ESPN and duplicate ID contexts
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p p27/direct-qa
+          python3 - <<'PY'
+          import pathlib,re,json
+          files=[
+            'web/tennis-command/index.html','web/tennis-deep/index.html','web/tennis-fusion/index.html',
+            'web/football-command/index.html','web/football-deep/index.html','web/football-fusion/index.html','web/calibration/index.html']
+          out={}
+          for p in files:
+            s=pathlib.Path(p).read_text(encoding='utf-8',errors='replace')
+            rows={'espn':[],'duplicateId':[]}
+            for m in re.finditer('espn',s,re.I):
+              a=max(0,m.start()-500); b=min(len(s),m.end()+900)
+              rows['espn'].append(s[a:b])
+            for m in re.finditer(r'id=["\']atlasActionColorCustomizer["\']',s,re.I):
+              a=max(0,m.start()-400); b=min(len(s),m.end()+700)
+              rows['duplicateId'].append(s[a:b])
+            out[p]=rows
+          pathlib.Path('p27/direct-qa/critical-snippets.json').write_text(json.dumps(out,ensure_ascii=False,indent=2),encoding='utf-8')
+          PY
+      - name: Commit report
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add p27/direct-qa/critical-snippets.json
+          git diff --cached --quiet || git commit -m 'Record P27 critical source snippets'
+          git push origin HEAD:p27-consolidation-candidate
