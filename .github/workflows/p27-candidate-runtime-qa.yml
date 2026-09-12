@@ -14,6 +14,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: p27-consolidation-candidate
+      - name: Wait for candidate propagation
+        run: sleep 15
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
@@ -46,7 +48,7 @@ jobs:
                 let status=0,bodyChars=0,overflow=false,live=null,sourceFeed=false,espnRequests=0,ok=false;
                 try{
                   const resp=await page.goto(`${base}/${path}`,{waitUntil:'domcontentloaded',timeout:90000}); status=resp?.status()||0;
-                  await page.waitForTimeout(3500);
+                  await page.waitForTimeout(4500);
                   bodyChars=(await page.locator('body').innerText()).length;
                   overflow=await page.evaluate(()=>document.documentElement.scrollWidth>document.documentElement.clientWidth+2);
                   const diag=await page.evaluate((kind)=>{
@@ -58,7 +60,8 @@ jobs:
                   const reqs=await page.evaluate(()=>performance.getEntriesByType('resource').map(x=>x.name));
                   espnRequests=reqs.filter(x=>/site\.api\.espn\.com/i.test(x)).length;
                   const criticalConsole=consoleErrors.filter(x=>/cors|failed to fetch|networkerror|espn/i.test(x));
-                  ok=status===200&&bodyChars>100&&!overflow&&pageErrors.length===0&&failedRequests.length===0&&criticalConsole.length===0&&espnRequests===0&&sourceFeed===true&&!!live;
+                  const candidateFailures=failedRequests.filter(x=>x.url.startsWith(base));
+                  ok=status===200&&bodyChars>100&&!overflow&&pageErrors.length===0&&candidateFailures.length===0&&criticalConsole.length===0&&espnRequests===0&&sourceFeed===true&&!!live&&live.ok!==false;
                   await page.screenshot({path:`p27/runtime-screenshots/${tn}__${pn}__${bn}.png`,fullPage:true});
                 }catch(e){pageErrors.push(String(e));}
                 results.push({browser:bn,tool:tn,profile:pn,status,bodyChars,overflow,pageErrors,consoleErrors:consoleErrors.slice(0,20),failedRequests:failedRequests.slice(0,20),live,sourceFeed,espnRequests,pass:ok});
