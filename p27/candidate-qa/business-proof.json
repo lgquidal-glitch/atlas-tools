@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T13:41:39.705Z",
+  "generatedAt": "2026-09-12T13:48:30.705Z",
   "base": "https://lgquidal-glitch.github.io/atlas-tools/p27-candidate",
   "targets": [
     {
@@ -13,7 +13,7 @@
           "proof": {
             "live": {
               "ok": true,
-              "updatedAt": "2026-09-12T13:41:43.657Z",
+              "updatedAt": "2026-09-12T13:48:31.750Z",
               "source": "ATLAS same-origin broker · corroborated feed",
               "competitions": 182
             },
@@ -60,7 +60,7 @@
           "proof": {
             "live": {
               "ok": true,
-              "updatedAt": "2026-09-12T13:42:01.200Z",
+              "updatedAt": "2026-09-12T13:48:41.877Z",
               "source": "ATLAS same-origin broker · corroborated feed",
               "competitions": 182
             },
@@ -113,7 +113,7 @@
           "proof": {
             "live": {
               "ok": true,
-              "updatedAt": "2026-09-12T13:42:09.563Z",
+              "updatedAt": "2026-09-12T13:48:50.909Z",
               "source": "ATLAS same-origin broker · corroborated feed",
               "competitions": 182
             },
@@ -160,7 +160,7 @@
           "proof": {
             "live": {
               "ok": true,
-              "updatedAt": "2026-09-12T13:42:17.863Z",
+              "updatedAt": "2026-09-12T13:49:00.001Z",
               "source": "ATLAS same-origin broker · corroborated feed",
               "competitions": 182
             },
@@ -213,7 +213,7 @@
           "proof": {
             "live": {
               "ok": true,
-              "updatedAt": "2026-09-12T13:42:26.202Z",
+              "updatedAt": "2026-09-12T13:49:09.259Z",
               "source": "ATLAS same-origin broker · corroborated feed",
               "competitions": 182
             },
@@ -260,7 +260,7 @@
           "proof": {
             "live": {
               "ok": true,
-              "updatedAt": "2026-09-12T13:42:34.526Z",
+              "updatedAt": "2026-09-12T13:49:18.359Z",
               "source": "ATLAS same-origin broker · corroborated feed",
               "competitions": 182
             },
@@ -313,7 +313,7 @@
           "proof": {
             "live": {
               "ok": true,
-              "updatedAt": "2026-09-12T13:42:42.718Z",
+              "updatedAt": "2026-09-12T13:49:27.310Z",
               "providersOk": 6,
               "totalEvents": 28,
               "matchesUpdated": 0,
@@ -322,8 +322,8 @@
             "feedPresent": true,
             "renderedCount": 0,
             "six": [],
-            "bodyHasPre": false,
-            "bodyHasLive": false,
+            "bodyHasPre": true,
+            "bodyHasLive": true,
             "bodyHasPost": true,
             "overflow": false
           },
@@ -337,17 +337,25 @@
           "proof": {
             "live": {
               "ok": true,
-              "updatedAt": "2026-09-12T13:42:50.640Z",
+              "updatedAt": "2026-09-12T13:49:35.940Z",
               "providersOk": 6,
               "totalEvents": 28,
-              "matchesUpdated": 0,
-              "source": "ATLAS same-origin broker · resilient loader"
+              "matchesUpdated": 28,
+              "rendered": 28,
+              "source": "ATLAS same-origin broker · direct render",
+              "rules": {
+                "threeStatesOnly": true,
+                "scoreAloneNeverFinal": true,
+                "liveScoreVisible": true,
+                "finalLock": true,
+                "trainingOption": true
+              }
             },
             "feedPresent": true,
             "renderedCount": 0,
             "six": [],
-            "bodyHasPre": false,
-            "bodyHasLive": false,
+            "bodyHasPre": true,
+            "bodyHasLive": true,
             "bodyHasPost": false,
             "overflow": false
           },
@@ -367,7 +375,7 @@
           "proof": {
             "live": {
               "ok": true,
-              "updatedAt": "2026-09-12T13:42:58.392Z",
+              "updatedAt": "2026-09-12T13:49:44.196Z",
               "providersOk": 6,
               "totalEvents": 28,
               "matchesUpdated": 0,
@@ -376,8 +384,8 @@
             "feedPresent": true,
             "renderedCount": 0,
             "six": [],
-            "bodyHasPre": false,
-            "bodyHasLive": false,
+            "bodyHasPre": true,
+            "bodyHasLive": true,
             "bodyHasPost": true,
             "overflow": false
           },
@@ -391,17 +399,25 @@
           "proof": {
             "live": {
               "ok": true,
-              "updatedAt": "2026-09-12T13:43:06.566Z",
+              "updatedAt": "2026-09-12T13:49:53.129Z",
               "providersOk": 6,
               "totalEvents": 28,
-              "matchesUpdated": 0,
-              "source": "ATLAS same-origin broker · resilient loader"
+              "matchesUpdated": 28,
+              "rendered": 28,
+              "source": "ATLAS same-origin broker · direct render",
+              "rules": {
+                "threeStatesOnly": true,
+                "scoreAloneNeverFinal": true,
+                "liveScoreVisible": true,
+                "finalLock": true,
+                "trainingOption": true
+              }
             },
             "feedPresent": true,
             "renderedCount": 0,
             "six": [],
-            "bodyHasPre": false,
-            "bodyHasLive": false,
+            "bodyHasPre": true,
+            "bodyHasLive": true,
             "bodyHasPost": false,
             "overflow": false
           },
@@ -421,7 +437,7 @@
           "proof": {
             "live": {
               "ok": true,
-              "updatedAt": "2026-09-12T13:43:14.602Z",
+              "updatedAt": "2026-09-12T13:50:01.419Z",
               "providersOk": 6,
               "totalEvents": 28,
               "matchesUpdated": 0,
@@ -430,8 +446,8 @@
             "feedPresent": true,
             "renderedCount": 0,
             "six": [],
-            "bodyHasPre": false,
-            "bodyHasLive": false,
+            "bodyHasPre": true,
+            "bodyHasLive": true,
             "bodyHasPost": true,
             "overflow": false
           },
@@ -445,17 +461,25 @@
           "proof": {
             "live": {
               "ok": true,
-              "updatedAt": "2026-09-12T13:43:22.671Z",
+              "updatedAt": "2026-09-12T13:50:10.301Z",
               "providersOk": 6,
               "totalEvents": 28,
-              "matchesUpdated": 0,
-              "source": "ATLAS same-origin broker · resilient loader"
+              "matchesUpdated": 28,
+              "rendered": 28,
+              "source": "ATLAS same-origin broker · direct render",
+              "rules": {
+                "threeStatesOnly": true,
+                "scoreAloneNeverFinal": true,
+                "liveScoreVisible": true,
+                "finalLock": true,
+                "trainingOption": true
+              }
             },
             "feedPresent": true,
             "renderedCount": 0,
             "six": [],
-            "bodyHasPre": false,
-            "bodyHasLive": false,
+            "bodyHasPre": true,
+            "bodyHasLive": true,
             "bodyHasPost": false,
             "overflow": false
           },
