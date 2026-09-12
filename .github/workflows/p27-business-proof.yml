@@ -24,7 +24,7 @@ jobs:
           npm init -y >/dev/null 2>&1
           npm install playwright@latest >/dev/null 2>&1
           npx playwright install --with-deps chromium webkit >/dev/null 2>&1
-      - name: Test all six published sports interfaces with 6 rendered matches each
+      - name: Test all six published sports interfaces with lifecycle-balanced rendered matches
         shell: bash
         run: |
           cat > p27-business-proof.mjs <<'EOF'
@@ -58,17 +58,22 @@ jobs:
                   const feed=kind==='tennis'?window.ATLAS_TENNIS_SOURCE_FEED:window.ATLAS_FOOT_SOURCE_FEED;
                   const selector=kind==='tennis'?'[data-atlas-feed-match="1"]':'[data-atlas-foot-feed-match="1"]';
                   const all=[...document.querySelectorAll(selector)];
-                  const nodes=all.slice(0,6);
-                  const six=nodes.map(n=>({text:(n.innerText||'').trim(),visible:!!(n.offsetWidth||n.offsetHeight||n.getClientRects().length)}));
+                  const row=n=>({text:(n.innerText||'').trim(),visible:!!(n.offsetWidth||n.offsetHeight||n.getClientRects().length)});
+                  const buckets={pre:[],in:[],post:[]};
+                  for(const n of all){const s=(n.innerText||''); if(/Terminé/i.test(s))buckets.post.push(n); else if(/En cours/i.test(s))buckets.in.push(n); else if(/À venir/i.test(s))buckets.pre.push(n);}
+                  const chosen=[]; for(const k of ['in','pre','post']) chosen.push(...buckets[k].slice(0,2));
+                  for(const n of all){if(chosen.length>=6)break;if(!chosen.includes(n))chosen.push(n)}
+                  const six=chosen.slice(0,6).map(row);
                   const body=(document.body.innerText||'');
-                  return {live,feedPresent:!!feed,renderedCount:all.length,six,bodyHasPre:/À venir/i.test(body),bodyHasLive:/En cours/i.test(body),bodyHasPost:/Terminé/i.test(body),overflow:document.documentElement.scrollWidth>document.documentElement.clientWidth+2};
+                  return {live,feedPresent:!!feed,renderedCount:all.length,stateCounts:{pre:buckets.pre.length,in:buckets.in.length,post:buckets.post.length},six,bodyHasPre:/À venir/i.test(body),bodyHasLive:/En cours/i.test(body),bodyHasPost:/Terminé/i.test(body),overflow:document.documentElement.scrollWidth>document.documentElement.clientWidth+2};
                 },t.kind);
                 await page.screenshot({path:`p27/business-proof/${t.tool}__${profile}.png`,fullPage:true});
               }catch(e){errors.push(String(e));}
               const six=proof.six||[];
               const sixVisible=six.length>=6&&six.every(x=>x.visible&&x.text.length>3);
-              const pass=status===200&&!errors.length&&proof.feedPresent&&proof.live?.ok!==false&&!proof.overflow&&sixVisible;
-              tr.profiles.push({profile,status,errors,proof,sixVisible,pass});
+              const lifecycleEvidence=t.kind==='tennis' ? ((proof.stateCounts?.pre||0)>0 && (proof.stateCounts?.post||0)>0) : ((proof.stateCounts?.pre||0)+(proof.stateCounts?.in||0)+(proof.stateCounts?.post||0)>=6);
+              const pass=status===200&&!errors.length&&proof.feedPresent&&proof.live?.ok!==false&&!proof.overflow&&sixVisible&&lifecycleEvidence;
+              tr.profiles.push({profile,status,errors,proof,sixVisible,lifecycleEvidence,pass});
               await ctx.close();await browser.close();
             }
             report.targets.push(tr);
