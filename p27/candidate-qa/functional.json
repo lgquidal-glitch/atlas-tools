@@ -1,0 +1,1151 @@
+{
+  "total": 56,
+  "pass": 0,
+  "fail": 56,
+  "results": [
+    {
+      "browser": "chromium",
+      "tool": "tennis-command",
+      "profile": "android",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 357,
+        "inputs": 9,
+        "selects": 4,
+        "preselect": false,
+        "analyse": true,
+        "training": true,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "chromium",
+      "tool": "tennis-command",
+      "profile": "iphone",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 357,
+        "inputs": 9,
+        "selects": 4,
+        "preselect": false,
+        "analyse": true,
+        "training": true,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "chromium",
+      "tool": "tennis-command",
+      "profile": "ipad",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 357,
+        "inputs": 9,
+        "selects": 4,
+        "preselect": false,
+        "analyse": true,
+        "training": true,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "chromium",
+      "tool": "tennis-command",
+      "profile": "desktop",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 357,
+        "inputs": 9,
+        "selects": 4,
+        "preselect": false,
+        "analyse": true,
+        "training": true,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "chromium",
+      "tool": "tennis-deep",
+      "profile": "android",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 363,
+        "inputs": 9,
+        "selects": 4,
+        "preselect": false,
+        "analyse": true,
+        "training": true,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "chromium",
+      "tool": "tennis-deep",
+      "profile": "iphone",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 363,
+        "inputs": 9,
+        "selects": 4,
+        "preselect": false,
+        "analyse": true,
+        "training": true,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "chromium",
+      "tool": "tennis-deep",
+      "profile": "ipad",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 363,
+        "inputs": 9,
+        "selects": 4,
+        "preselect": false,
+        "analyse": true,
+        "training": true,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "chromium",
+      "tool": "tennis-deep",
+      "profile": "desktop",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 363,
+        "inputs": 9,
+        "selects": 4,
+        "preselect": false,
+        "analyse": true,
+        "training": true,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "chromium",
+      "tool": "tennis-fusion",
+      "profile": "android",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 363,
+        "inputs": 9,
+        "selects": 4,
+        "preselect": false,
+        "analyse": true,
+        "training": true,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "chromium",
+      "tool": "tennis-fusion",
+      "profile": "iphone",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 363,
+        "inputs": 9,
+        "selects": 4,
+        "preselect": false,
+        "analyse": true,
+        "training": true,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "chromium",
+      "tool": "tennis-fusion",
+      "profile": "ipad",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 363,
+        "inputs": 9,
+        "selects": 4,
+        "preselect": false,
+        "analyse": true,
+        "training": true,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "chromium",
+      "tool": "tennis-fusion",
+      "profile": "desktop",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 363,
+        "inputs": 9,
+        "selects": 4,
+        "preselect": false,
+        "analyse": true,
+        "training": true,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "chromium",
+      "tool": "football-command",
+      "profile": "android",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 302,
+        "inputs": 3,
+        "selects": 8,
+        "preselect": true,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "chromium",
+      "tool": "football-command",
+      "profile": "iphone",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 302,
+        "inputs": 3,
+        "selects": 8,
+        "preselect": true,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "chromium",
+      "tool": "football-command",
+      "profile": "ipad",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 302,
+        "inputs": 3,
+        "selects": 8,
+        "preselect": true,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "chromium",
+      "tool": "football-command",
+      "profile": "desktop",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 302,
+        "inputs": 3,
+        "selects": 8,
+        "preselect": true,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "chromium",
+      "tool": "football-deep",
+      "profile": "android",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 308,
+        "inputs": 3,
+        "selects": 8,
+        "preselect": true,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "chromium",
+      "tool": "football-deep",
+      "profile": "iphone",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 308,
+        "inputs": 3,
+        "selects": 8,
+        "preselect": true,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "chromium",
+      "tool": "football-deep",
+      "profile": "ipad",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 308,
+        "inputs": 3,
+        "selects": 8,
+        "preselect": true,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "chromium",
+      "tool": "football-deep",
+      "profile": "desktop",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 308,
+        "inputs": 3,
+        "selects": 8,
+        "preselect": true,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "chromium",
+      "tool": "football-fusion",
+      "profile": "android",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 308,
+        "inputs": 3,
+        "selects": 8,
+        "preselect": true,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "chromium",
+      "tool": "football-fusion",
+      "profile": "iphone",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 308,
+        "inputs": 3,
+        "selects": 8,
+        "preselect": true,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "chromium",
+      "tool": "football-fusion",
+      "profile": "ipad",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 308,
+        "inputs": 3,
+        "selects": 8,
+        "preselect": true,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "chromium",
+      "tool": "football-fusion",
+      "profile": "desktop",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 308,
+        "inputs": 3,
+        "selects": 8,
+        "preselect": true,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "chromium",
+      "tool": "calibration",
+      "profile": "android",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 35,
+        "inputs": 91,
+        "selects": 34,
+        "status": false
+      },
+      "pass": false
+    },
+    {
+      "browser": "chromium",
+      "tool": "calibration",
+      "profile": "iphone",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 35,
+        "inputs": 91,
+        "selects": 34,
+        "status": false
+      },
+      "pass": false
+    },
+    {
+      "browser": "chromium",
+      "tool": "calibration",
+      "profile": "ipad",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 35,
+        "inputs": 91,
+        "selects": 34,
+        "status": false
+      },
+      "pass": false
+    },
+    {
+      "browser": "chromium",
+      "tool": "calibration",
+      "profile": "desktop",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 35,
+        "inputs": 91,
+        "selects": 34,
+        "status": false
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "tennis-command",
+      "profile": "android",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 357,
+        "inputs": 9,
+        "selects": 4,
+        "preselect": false,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "tennis-command",
+      "profile": "iphone",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 357,
+        "inputs": 9,
+        "selects": 4,
+        "preselect": false,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "tennis-command",
+      "profile": "ipad",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 357,
+        "inputs": 9,
+        "selects": 4,
+        "preselect": false,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "tennis-command",
+      "profile": "desktop",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 357,
+        "inputs": 9,
+        "selects": 4,
+        "preselect": false,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "tennis-deep",
+      "profile": "android",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 363,
+        "inputs": 9,
+        "selects": 4,
+        "preselect": false,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "tennis-deep",
+      "profile": "iphone",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 363,
+        "inputs": 9,
+        "selects": 4,
+        "preselect": false,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "tennis-deep",
+      "profile": "ipad",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 363,
+        "inputs": 9,
+        "selects": 4,
+        "preselect": false,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "tennis-deep",
+      "profile": "desktop",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 363,
+        "inputs": 9,
+        "selects": 4,
+        "preselect": false,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "tennis-fusion",
+      "profile": "android",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 363,
+        "inputs": 9,
+        "selects": 4,
+        "preselect": false,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "tennis-fusion",
+      "profile": "iphone",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 363,
+        "inputs": 9,
+        "selects": 4,
+        "preselect": false,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "tennis-fusion",
+      "profile": "ipad",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 363,
+        "inputs": 9,
+        "selects": 4,
+        "preselect": false,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "tennis-fusion",
+      "profile": "desktop",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 363,
+        "inputs": 9,
+        "selects": 4,
+        "preselect": false,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "football-command",
+      "profile": "android",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 302,
+        "inputs": 3,
+        "selects": 8,
+        "preselect": true,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "football-command",
+      "profile": "iphone",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 302,
+        "inputs": 3,
+        "selects": 8,
+        "preselect": true,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "football-command",
+      "profile": "ipad",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 302,
+        "inputs": 3,
+        "selects": 8,
+        "preselect": true,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "football-command",
+      "profile": "desktop",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 302,
+        "inputs": 3,
+        "selects": 8,
+        "preselect": true,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "football-deep",
+      "profile": "android",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 308,
+        "inputs": 3,
+        "selects": 8,
+        "preselect": true,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "football-deep",
+      "profile": "iphone",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 308,
+        "inputs": 3,
+        "selects": 8,
+        "preselect": true,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "football-deep",
+      "profile": "ipad",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 308,
+        "inputs": 3,
+        "selects": 8,
+        "preselect": true,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "football-deep",
+      "profile": "desktop",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 308,
+        "inputs": 3,
+        "selects": 8,
+        "preselect": true,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "football-fusion",
+      "profile": "android",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 308,
+        "inputs": 3,
+        "selects": 8,
+        "preselect": true,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "football-fusion",
+      "profile": "iphone",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 308,
+        "inputs": 3,
+        "selects": 8,
+        "preselect": true,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "football-fusion",
+      "profile": "ipad",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 308,
+        "inputs": 3,
+        "selects": 8,
+        "preselect": true,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "football-fusion",
+      "profile": "desktop",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 308,
+        "inputs": 3,
+        "selects": 8,
+        "preselect": true,
+        "analyse": true,
+        "training": false,
+        "all": true,
+        "staking": true
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "calibration",
+      "profile": "android",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 35,
+        "inputs": 91,
+        "selects": 34,
+        "status": false
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "calibration",
+      "profile": "iphone",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 35,
+        "inputs": 91,
+        "selects": 34,
+        "status": false
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "calibration",
+      "profile": "ipad",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 35,
+        "inputs": 91,
+        "selects": 34,
+        "status": false
+      },
+      "pass": false
+    },
+    {
+      "browser": "webkit",
+      "tool": "calibration",
+      "profile": "desktop",
+      "status": 200,
+      "overflow": false,
+      "errors": [],
+      "sourceFeed": true,
+      "liveOk": true,
+      "controls": {
+        "buttons": 35,
+        "inputs": 91,
+        "selects": 34,
+        "status": false
+      },
+      "pass": false
+    }
+  ]
+}
