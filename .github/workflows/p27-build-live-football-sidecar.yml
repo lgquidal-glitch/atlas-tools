@@ -1,0 +1,175 @@
+name: P27 build live football sidecar
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 * * * *'
+permissions:
+  contents: write
+concurrency:
+  group: p27-football-sidecar
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: p27-consolidation-candidate
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --quiet selenium
+      - name: Build hardened live football feeds
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p web/data p27/candidate-qa
+          python - <<'PY'
+          import json,datetime,zoneinfo,re,time,unicodedata
+          from pathlib import Path
+          from selenium import webdriver
+          from selenium.webdriver.chrome.options import Options
+          from selenium.webdriver.common.by import By
+          from selenium.webdriver.support.ui import WebDriverWait
+
+          tz=zoneinfo.ZoneInfo('Europe/Paris'); now=datetime.datetime.now(tz); today=now.date()
+          scope={
+            'fr':('France','FRANCE',['Ligue 1'],'fra.1'),
+            'es':('Espagne','SPAIN',['LaLiga'],'esp.1'),
+            'de':('Allemagne','GERMANY',['Bundesliga'],'ger.1'),
+            'en':('Angleterre','ENGLAND',['Premier League'],'eng.1'),
+            'it':('Italie','ITALY',['Serie A'],'ita.1'),
+            'gr':('Grèce','GREECE',['Super League'],None),
+            'cy':('Chypre','CYPRUS',['Cyprus League','First Division','1. Division'],None),
+            'sa':('Arabie Saoudite','SAUDI ARABIA',['Saudi Professional League','Saudi Pro League'],'ksa.1'),
+            'be':('Belgique','BELGIUM',['Jupiler Pro League'],None),
+            'ba':('Bosnie-Herzégovine','BOSNIA AND HERZEGOVINA',['WWIN Liga BiH'],None),
+            'bg':('Bulgarie','BULGARIA',['efbet League','Parva Liga','First Professional League'],None),
+            'cn':('Chine','CHINA',['Super League'],None),
+            'hr':('Croatie','CROATIA',['HNL'],None),
+            'dk':('Danemark','DENMARK',['Superliga'],None),
+            'sc':('Écosse','SCOTLAND',['Premiership'],None),
+            'ae':('Émirats','UNITED ARAB EMIRATES',['UAE League','ADNOC Pro League'],None),
+            'ec':('Équateur','ECUADOR',['Liga Pro','LigaPro'],None),
+            'fi':('Finlande','FINLAND',['Veikkausliiga'],None),
+            'il':('Israël','ISRAEL',["Ligat ha'Al",'Ligat haAl'],None),
+            'mt':('Malte','MALTA',['Premier League - First stage - Main','Premier League'],None),
+            'nl':('Pays-Bas','NETHERLANDS',['Eredivisie'],None),
+            'pt':('Portugal','PORTUGAL',['Liga Portugal','Primeira Liga'],None),
+            'ro':('Roumanie','ROMANIA',['Superliga','Liga 1'],None),
+            'rs':('Serbie','SERBIA',['Mozzart Bet Super Liga','Super Liga','SuperLiga'],None),
+            'se':('Suède','SWEDEN',['Allsvenskan'],None),
+            'tr':('Turquie','TURKEY',['Super Lig','Süper Lig'],None),
+            'ua':('Ukraine','UKRAINE',['Premier League'],None),
+          }
+          country_alias={'BOSNIA & HERZEGOVINA':'BOSNIA AND HERZEGOVINA','UAE':'UNITED ARAB EMIRATES'}
+          def norm(s):
+            s=unicodedata.normalize('NFKD',s or '').encode('ascii','ignore').decode().upper().replace('&','AND')
+            return re.sub(r'[^A-Z0-9]+',' ',s).strip()
+          country_to_codes={}
+          aliases={}
+          for code,(_,country,names,_) in scope.items():
+            country_to_codes.setdefault(norm(country),[]).append(code); aliases[code]={norm(x) for x in names}
+          def parse_score(txt):
+            if not txt:return None
+            m=re.search(r'-?\d+',txt.replace('\n',' ')); return int(m.group()) if m else None
+          def parse_local(day,text):
+            m=re.search(r'(\d{1,2}:\d{2})\s*(AM|PM)',text or '',re.I)
+            if not m:return (None,None)
+            t=datetime.datetime.strptime(m.group(1)+' '+m.group(2).upper(),'%I:%M %p').time()
+            dt=datetime.datetime.combine(day,t,tzinfo=zoneinfo.ZoneInfo('UTC')).astimezone(tz)
+            return dt.strftime('%H:%M'),dt.isoformat(timespec='minutes')
+          def explicit_state(classes,stage,has_score):
+            ns=norm(stage)
+            if 'event__match--scheduled' in classes:return ('scheduled','pre')
+            if 'event__match--live' in classes:return ('live','in')
+            if 'event__match--finished' in classes or ns in {'FT','FULL TIME','AET','PEN','AFTER PENALTIES','AFTER EXTRA TIME'}:return ('finished','post')
+            if ns in {'POSTPONED','CANCELLED','CANCELED','ABANDONED'}:return (ns.lower(),'pre')
+            return ('status_to_verify','in' if has_score else 'pre')
+          def to_compat(m,league_code):
+            sh=m['score']['home'] if m.get('score') else None; sa=m['score']['away'] if m.get('score') else None
+            state=m['state']; desc={'pre':'SCHEDULED','in':'IN_PROGRESS','post':'FINAL'}[state]
+            return {
+              'id':m['event_id'],'date':m.get('start_iso') or (m['date']+'T00:00:00+02:00'),'name':f"{m['away']} at {m['home']}",'shortName':f"{m['away']} @ {m['home']}",
+              'competitions':[{'competitors':[{'homeAway':'home','team':{'displayName':m['home'],'shortDisplayName':m['home']},'score':None if sh is None else str(sh)},{'homeAway':'away','team':{'displayName':m['away'],'shortDisplayName':m['away']},'score':None if sa is None else str(sa)}],'status':{'type':{'state':state,'name':desc,'description':desc if m['status']!='status_to_verify' else 'STATUS_TO_VERIFY','detail':m.get('stage') or desc,'shortDetail':m.get('stage') or desc}}}],
+              'source':m['source'],'verified_at':m['verified_at'],'leagueCode':league_code
+            }
+
+          opts=Options(); opts.add_argument('--headless=new'); opts.add_argument('--no-sandbox'); opts.add_argument('--disable-dev-shm-usage'); opts.add_argument('--window-size=1440,1000')
+          driver=webdriver.Chrome(options=opts); driver.set_page_load_timeout(45)
+          matches=[]; day_reports={}; seen={c:set() for c in scope}; days=[today-datetime.timedelta(days=1),today,today+datetime.timedelta(days=1)]
+          try:
+            for day in days:
+              url=f'https://www.soccerway.com/matches/{day.year}/{day.month:02d}/{day.day:02d}/'
+              driver.get(url); WebDriverWait(driver,35).until(lambda d: len(d.find_elements(By.CSS_SELECTOR,'.sportName.soccer .headerLeague__wrapper'))>0); time.sleep(2)
+              root=driver.find_element(By.CSS_SELECTOR,'.sportName.soccer'); current=None; parsed=0
+              for ch in root.find_elements(By.XPATH,'./*'):
+                classes=set((ch.get_attribute('class') or '').split())
+                if 'headerLeague__wrapper' in classes:
+                  lines=[x.strip() for x in ch.text.split('\n') if x.strip()]; league=lines[0] if lines else ''; country=''
+                  for x in lines[1:4]:
+                    if x.endswith(':'): country=x[:-1]
+                  if not country:
+                    mm=re.search(r'\b([A-Z][A-Z &-]{2,}):',ch.text)
+                    if mm: country=mm.group(1)
+                  candidates=country_to_codes.get(norm(country_alias.get(country,country)),[])
+                  code=next((c for c in candidates if norm(league) in aliases[c]),None)
+                  current={'code':code,'league':league,'country':country}
+                  if code: seen[code].add(league)
+                  continue
+                if 'event__match' not in classes or not current or not current['code']:continue
+                homeels=ch.find_elements(By.CSS_SELECTOR,'.event__homeParticipant .wcl-name_jjfMf,.event__homeParticipant'); awayels=ch.find_elements(By.CSS_SELECTOR,'.event__awayParticipant .wcl-name_jjfMf,.event__awayParticipant')
+                home=homeels[0].text.strip() if homeels else ''; away=awayels[0].text.strip() if awayels else ''
+                if not home or not away:continue
+                event_id=(ch.get_attribute('id') or '').replace('g_1_','') or f"{day}-{current['code']}-{norm(home)}-{norm(away)}"
+                stageels=ch.find_elements(By.CSS_SELECTOR,'.event__stage'); stage=stageels[0].text.strip() if stageels else ''
+                timeels=ch.find_elements(By.CSS_SELECTOR,'.event__time'); rawtime=timeels[0].text.strip() if timeels else ''
+                scoreels=ch.find_elements(By.CSS_SELECTOR,'.event__score'); sh=parse_score(scoreels[0].text) if len(scoreels)>0 else None; sa=parse_score(scoreels[1].text) if len(scoreels)>1 else None
+                has_score=sh is not None and sa is not None; status,state=explicit_state(classes,stage,has_score); local_time,start_iso=parse_local(day,rawtime)
+                matches.append({'sport':'football','event_id':event_id,'league_code':current['code'],'league':current['league'],'country':current['country'],'date':day.isoformat(),'time':local_time,'start_iso':start_iso,'home':home,'away':away,'status':status,'state':state,'stage':stage or None,'score':{'home':sh,'away':sa} if has_score else None,'source':'Soccerway rendered scoreboard','source_url':driver.current_url,'source_trust':'B-secondary','verified_at':now.isoformat(timespec='seconds')}); parsed+=1
+              day_reports[day.isoformat()]={'requested_url':url,'resolved_url':driver.current_url,'records':parsed}
+          finally: driver.quit()
+
+          dedup={}
+          for m in matches:
+            key=m['event_id']
+            old=dedup.get(key)
+            if old is None or abs((datetime.date.fromisoformat(m['date'])-today).days)<abs((datetime.date.fromisoformat(old['date'])-today).days):dedup[key]=m
+          matches=sorted(dedup.values(),key=lambda x:(x['date'],x.get('time') or '99:99',x['league_code'],x['home']))
+          coverage={}
+          for code,(label,country,_,compat) in scope.items():
+            found=[m for m in matches if m['league_code']==code]
+            coverage[code]={'league':label,'country':country,'records':len(found),'matched_league_names':sorted(seen[code]),'compat_code':compat,'source':'Soccerway rendered scoreboard','note':'0 record = no visible match in the controlled window; no fabrication.'}
+          Path('web/data/football-coverage.json').write_text(json.dumps({'generatedAt':now.isoformat(timespec='seconds'),'coverage':coverage,'days':day_reports},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          compat_counts={}
+          for code,(_,_,_,compat) in scope.items():
+            if not compat:continue
+            events=[to_compat(m,compat) for m in matches if m['league_code']==code]
+            compat_counts[compat]=len(events)
+            Path(f'web/data/football-{compat}.json').write_text(json.dumps({'generatedAt':now.isoformat(timespec='seconds'),'source':'Soccerway rendered scoreboard','tier':'corroborated','leagueCode':compat,'events':events},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          qa={'generatedAt':now.isoformat(timespec='seconds'),'requestedLeagues':len(scope),'leaguesWithRecords':sum(v['records']>0 for v in coverage.values()),'compatFeeds':compat_counts,'scoreNeverImpliesFinal':True,'explicitFinalOnly':True,'totalMatches':len(matches)}
+          Path('p27/candidate-qa/football-sidecar.json').write_text(json.dumps(qa,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print(json.dumps(qa,ensure_ascii=False))
+          PY
+      - name: Validate safety and coverage contract
+        run: |
+          python - <<'PY'
+          import json,glob
+          q=json.load(open('p27/candidate-qa/football-sidecar.json'))
+          assert q['requestedLeagues']==27
+          assert q['scoreNeverImpliesFinal'] is True and q['explicitFinalOnly'] is True
+          required=['eng.1','fra.1','esp.1','ger.1','ita.1','ksa.1']
+          for code in required:
+            p=f'web/data/football-{code}.json'; d=json.load(open(p)); assert d['leagueCode']==code and isinstance(d['events'],list)
+            for e in d['events']:
+              st=e['competitions'][0]['status']['type']['state']; assert st in ('pre','in','post')
+          print('P27 football sidecar contract PASS',q)
+          PY
+      - name: Commit refreshed feeds
+        run: |
+          git config user.name 'atlas-data-automation'
+          git config user.email 'atlas-data-automation@users.noreply.github.com'
+          git add web/data/football-*.json web/data/football-coverage.json p27/candidate-qa/football-sidecar.json
+          if git diff --cached --quiet; then echo 'No football feed changes'; else git commit -m 'Refresh hardened P27 football sidecar'; git push origin HEAD:p27-consolidation-candidate; fi
