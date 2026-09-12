@@ -9,6 +9,8 @@ on:
       - 'web/data/tennis-feed.json'
       - 'web/data/football-history.json'
       - 'web/data/tennis-history.json'
+      - 'web/football-resilient-loader.js'
+      - 'web/tennis-resilient-loader.js'
       - 'web/football-command/index.html'
       - 'web/football-deep/index.html'
       - 'web/football-fusion/index.html'
@@ -26,6 +28,16 @@ jobs:
         with:
           ref: p27-consolidation-candidate
           fetch-depth: 0
+      - name: Verify candidate source bundle before publication
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f web/tennis-resilient-loader.js
+          test -f web/football-resilient-loader.js
+          for f in web/tennis-command/index.html web/tennis-deep/index.html web/tennis-fusion/index.html; do grep -q 'atlas-p27-tennis-resilient-loader' "$f"; done
+          for f in web/football-command/index.html web/football-deep/index.html web/football-fusion/index.html; do grep -q 'atlas-p27-football-resilient-loader' "$f"; done
+          test -f web/data/tennis-feed.json
+          test -f web/data/football-coverage.json
       - name: Stage candidate web bundle
         shell: bash
         run: |
@@ -50,13 +62,15 @@ jobs:
       - name: Verify active root and candidate coexist
         shell: bash
         run: |
+          set -euo pipefail
           test -f tennis-command/index.html
           test -f p27-candidate/tennis-command/index.html
           test -f p27-candidate/data/tennis-feed.json
-          test -f p27-candidate/football-command/index.html
-          grep -q 'atlas-p27-football-resilient-loader' p27-candidate/football-command/index.html
-          if test -f p27-candidate/data/football-history.json; then echo 'football_history_present=yes'; fi
-          if test -f p27-candidate/data/tennis-history.json; then echo 'tennis_history_present=yes'; fi
+          test -f p27-candidate/tennis-resilient-loader.js
+          test -f p27-candidate/football-resilient-loader.js
+          for f in p27-candidate/tennis-command/index.html p27-candidate/tennis-deep/index.html p27-candidate/tennis-fusion/index.html; do grep -q 'atlas-p27-tennis-resilient-loader' "$f"; done
+          for f in p27-candidate/football-command/index.html p27-candidate/football-deep/index.html p27-candidate/football-fusion/index.html; do grep -q 'atlas-p27-football-resilient-loader' "$f"; done
           echo 'active_root_preserved=yes'
           echo 'candidate_subpath_present=yes'
+          echo 'tennis_resilient_loader_present=yes'
           echo 'football_resilient_loader_present=yes'
