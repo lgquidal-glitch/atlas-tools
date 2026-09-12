@@ -4,6 +4,9 @@ on:
     branches: [p27-consolidation-candidate]
     paths:
       - '.github/workflows/p27-business-proof.yml'
+      - 'web/tennis-resilient-loader.js'
+      - 'web/football-resilient-loader.js'
+      - 'web/data/**'
 permissions:
   contents: write
 jobs:
@@ -21,7 +24,7 @@ jobs:
           npm init -y >/dev/null 2>&1
           npm install playwright@latest >/dev/null 2>&1
           npx playwright install --with-deps chromium webkit >/dev/null 2>&1
-      - name: Test published candidate with 6 Tennis and 6 Football fixtures
+      - name: Test published candidate with 6 Tennis and 6 Football matches
         shell: bash
         run: |
           cat > p27-business-proof.mjs <<'EOF'
@@ -49,16 +52,15 @@ jobs:
                 proof=await page.evaluate(kind=>{
                   const live=kind==='tennis'?window.ATLAS_TENNIS_LIVE_STATUS:window.ATLAS_FOOT_LIVE_STATUS;
                   const feed=kind==='tennis'?window.ATLAS_TENNIS_SOURCE_FEED:window.ATLAS_FOOT_SOURCE_FEED;
-                  const arr=(typeof fixtures!=='undefined'&&Array.isArray(fixtures))?fixtures:[];
-                  const six=arr.slice(0,6).map(f=>({home:f.h||f.home||f.player1||'',away:f.a||f.away||f.player2||'',state:f._atlasLiveState||f.status||'',label:f._atlasStatusLabel||'',score:f._atlasLiveScore||f._atlasFinalScore||f.s||'',date:f.d||f.date||'',tour:f.tour||f.comp||f.l||''}));
+                  const nodes=[...document.querySelectorAll('[data-atlas-feed-match="1"]')].slice(0,6);
+                  const six=nodes.map(n=>({text:(n.innerText||'').trim(),visible:!!(n.offsetWidth||n.offsetHeight||n.getClientRects().length)}));
                   const body=(document.body.innerText||'');
-                  const visible=six.map(x=>({ ...x, visible: !!(x.home&&x.away&&body.includes(x.home)&&body.includes(x.away)) }));
-                  return {live,feedPresent:!!feed,fixtureCount:arr.length,six:visible,bodyHasPre:/À venir/i.test(body),bodyHasLive:/En cours/i.test(body),bodyHasPost:/Terminé/i.test(body),overflow:document.documentElement.scrollWidth>document.documentElement.clientWidth+2};
+                  return {live,feedPresent:!!feed,renderedCount:document.querySelectorAll('[data-atlas-feed-match="1"]').length,six,bodyHasPre:/À venir/i.test(body),bodyHasLive:/En cours/i.test(body),bodyHasPost:/Terminé/i.test(body),overflow:document.documentElement.scrollWidth>document.documentElement.clientWidth+2};
                 },t.kind);
                 await page.screenshot({path:`p27/business-proof/${t.tool}__${profile}.png`,fullPage:true});
               }catch(e){errors.push(String(e));}
               const six=proof.six||[];
-              const fixturePass=six.length>=6&&six.every(x=>x.home&&x.away&&x.visible);
+              const fixturePass=six.length>=6&&six.every(x=>x.visible&&x.text.length>3);
               const pass=status===200&&!errors.length&&proof.feedPresent&&proof.live?.ok!==false&&!proof.overflow&&fixturePass;
               tr.profiles.push({profile,status,errors,proof,fixturePass,pass});
               await ctx.close();await browser.close();
