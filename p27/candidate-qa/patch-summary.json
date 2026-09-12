@@ -1,0 +1,13 @@
+{
+  "changed": [
+    "web/tennis-command/index.html",
+    "web/tennis-deep/index.html",
+    "web/tennis-fusion/index.html",
+    "web/football-command/index.html",
+    "web/football-deep/index.html",
+    "web/football-fusion/index.html",
+    "web/calibration/index.html"
+  ],
+  "architectureChanged": false,
+  "visualChanged": false
+}

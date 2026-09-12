@@ -1023,4 +1023,8 @@ unverified:'N/A / Statut à vérifier',stakingRequiresFreshVerifiedData:true};
 })();
 </script>
 
+
+<script id="atlas-p27-calibration-broker">
+(function(){async function p27(){try{const [t,f]=await Promise.all([fetch('../data/tennis-feed.json?ts='+Date.now(),{cache:'no-store'}).then(r=>r.json()),fetch('../data/football-eng.1.json?ts='+Date.now(),{cache:'no-store'}).then(r=>r.json())]);window.ATLAS_CALIBRATION_SOURCE_FEED={tennis:t,football:f,updatedAt:new Date().toISOString(),source:'ATLAS same-origin broker'};window.ATLAS_CALIBRATION_LIVE_STATUS={ok:true,updatedAt:new Date().toISOString(),source:'ATLAS same-origin broker'};}catch(e){window.ATLAS_CALIBRATION_LIVE_STATUS={ok:false,updatedAt:new Date().toISOString(),error:String(e)}}}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',p27,{once:true});else p27();setInterval(p27,60000);})();
+</script>
 </body></html>

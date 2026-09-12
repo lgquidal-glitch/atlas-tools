@@ -1,0 +1,76 @@
+{
+  "files": [
+    {
+      "path": "web/tennis-command/index.html",
+      "scripts": 36,
+      "duplicateIds": [],
+      "directEspn": false,
+      "tennisFeed": true,
+      "footFeed": false,
+      "calibrationFeed": false
+    },
+    {
+      "path": "web/tennis-deep/index.html",
+      "scripts": 43,
+      "duplicateIds": [],
+      "directEspn": false,
+      "tennisFeed": true,
+      "footFeed": false,
+      "calibrationFeed": false
+    },
+    {
+      "path": "web/tennis-fusion/index.html",
+      "scripts": 43,
+      "duplicateIds": [],
+      "directEspn": false,
+      "tennisFeed": true,
+      "footFeed": false,
+      "calibrationFeed": false
+    },
+    {
+      "path": "web/football-command/index.html",
+      "scripts": 27,
+      "duplicateIds": [],
+      "directEspn": false,
+      "tennisFeed": false,
+      "footFeed": true,
+      "calibrationFeed": false
+    },
+    {
+      "path": "web/football-deep/index.html",
+      "scripts": 36,
+      "duplicateIds": [],
+      "directEspn": false,
+      "tennisFeed": false,
+      "footFeed": true,
+      "calibrationFeed": false
+    },
+    {
+      "path": "web/football-fusion/index.html",
+      "scripts": 36,
+      "duplicateIds": [],
+      "directEspn": false,
+      "tennisFeed": false,
+      "footFeed": true,
+      "calibrationFeed": false
+    },
+    {
+      "path": "web/calibration/index.html",
+      "scripts": 18,
+      "duplicateIds": [],
+      "directEspn": false,
+      "tennisFeed": false,
+      "footFeed": false,
+      "calibrationFeed": true
+    }
+  ],
+  "errors": [],
+  "summary": {
+    "files": 7,
+    "scripts": 239,
+    "syntaxErrors": 0,
+    "duplicateIdFiles": 0,
+    "directEspnFiles": 0
+  },
+  "pass": true
+}

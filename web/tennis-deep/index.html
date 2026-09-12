@@ -1689,13 +1689,13 @@ window.ATLAS_LATEST_QA_20260905={status:"CANDIDATE_FINAL_QA_REQUIRED",verifiedAt
    applyFixed();
    try{
      const day=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Paris',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date()).replace(/-/g,'');
-     const r=await fetch('https://site.api.espn.com/apis/site/v2/sports/tennis/all/scoreboard?dates='+day,{cache:'no-store',mode:'cors'});if(!r.ok)throw new Error('HTTP '+r.status);
-     const j=await r.json(), comps=extract(j,[]);
+     const r=await fetch('../data/tennis-feed.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);
+     const j=await r.json();window.ATLAS_TENNIS_SOURCE_FEED=j;const comps=extract(j,[]);
      if(typeof DATA!=='undefined'&&Array.isArray(DATA.matches))for(const c of comps){
        const cs=c.competitors||[],a=cname(cs[0]),b=cname(cs[1]);if(!a||!b)continue;const k=pair(a,b),st=c.status?.type?.state||'',detail=c.status?.type?.shortDetail||c.status?.type?.detail||c.status?.type?.description||'';
-       for(const m of DATA.matches){if(pair(m.a,m.b)!==k)continue;if(m._atlasOfficialResultLocked&&st==='post')continue;m._atlasLiveState=st;m._atlasStatusVerifiedAt=new Date().toISOString();if(st==='post'){m.status='Terminé'+(detail?' — '+detail:'');const s0=score(cs[0]),s1=score(cs[1]);if(s0||s1)m.score=(s0&&s1)?s0+' / '+s1:(s0||s1)}else if(st==='in')m.status='En cours'+(detail?' — '+detail:'');else if(st==='pre')m.status='À venir'+(detail?' — '+detail:'');}
+       for(const m of DATA.matches){if(pair(m.a,m.b)!==k)continue;if(m._atlasOfficialResultLocked)continue;m._atlasLiveState=st;m._atlasStatusVerifiedAt=new Date().toISOString();if(st==='post'){m.status='Terminé'+(detail?' — '+detail:'');const s0=score(cs[0]),s1=score(cs[1]);if(s0||s1)m.score=(s0&&s1)?s0+' / '+s1:(s0||s1)}else if(st==='in')m.status='En cours'+(detail?' — '+detail:'');else if(st==='pre')m.status='À venir'+(detail?' — '+detail:'');}
      }
-     window.ATLAS_TENNIS_LIVE_STATUS={ok:true,updatedAt:new Date().toISOString(),source:'ESPN scoreboard',competitions:comps.length};
+     window.ATLAS_TENNIS_LIVE_STATUS={ok:true,updatedAt:new Date().toISOString(),source:'ATLAS same-origin broker · corroborated feed',competitions:comps.length};
    }catch(e){window.ATLAS_TENNIS_LIVE_STATUS={ok:false,updatedAt:new Date().toISOString(),source:'snapshot ATLAS + source officielle',error:String(e)};}
    try{if(typeof render==='function')render()}catch(e){}
  }
@@ -1790,7 +1790,7 @@ window.ATLAS_LATEST_QA_20260905={status:"CANDIDATE_FINAL_QA_REQUIRED",verifiedAt
    if(document.getElementById('atlasActionColorCustomizer')) return;
    const host=document.querySelector('[data-subpanel="themes"] .customGroup')||document.querySelector('[data-subpanel="themes"]');
    if(!host)return;
-   const box=document.createElement('div');box.id='atlasActionColorCustomizer';
+   const box=document.createElement('div');box.id='atlasActionColorCustomizerLegacy';
    box.innerHTML=`<div class="aacc-head"><div><div class="aacc-title">🎯 PERSONNALISATION DES DEUX BOUTONS</div><div class="aacc-sub">60 couleurs VISIBLES pour chaque bouton · cliquez sur une pastille pour appliquer instantanément la couleur</div></div></div><div class="aacc-grid">${card('pre','Couleur « + Présélectionner » — 60 choix')}${card('an','Couleur « Analyser V4.1 » — 60 choix')}</div>`;
    host.appendChild(box);
    box.addEventListener('click',e=>{
@@ -2339,7 +2339,7 @@ document.addEventListener('DOMContentLoaded',()=>{
       if(typeof render==='function')render();
     });
 
-    // Le flux live ATLAS/ESPN met déjà à jour toutes les 60 s.
+    // Le flux live ATLAS broker met à jour toutes les 60 s.
     // Ici, l'interface se resynchronise visuellement toutes les 5 s.
     setInterval(refreshView,5000);
     refreshView();

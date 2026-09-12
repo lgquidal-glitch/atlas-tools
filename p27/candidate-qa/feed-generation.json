@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-09-12T09:31:11.685606+00:00",
+  "tennisCompetitions": 173,
+  "football": {
+    "eng.1": {
+      "events": 7,
+      "http": 200,
+      "error": null
+    },
+    "fra.1": {
+      "events": 0,
+      "http": 404,
+      "error": null
+    },
+    "esp.1": {
+      "events": 4,
+      "http": 200,
+      "error": null
+    },
+    "ger.1": {
+      "events": 0,
+      "http": 404,
+      "error": null
+    },
+    "ita.1": {
+      "events": 0,
+      "http": 404,
+      "error": null
+    },
+    "ksa.1": {
+      "events": 0,
+      "http": 404,
+      "error": null
+    }
+  }
+}
