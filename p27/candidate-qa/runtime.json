@@ -15,7 +15,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:24:43.634Z",
+        "updatedAt": "2026-09-12T12:36:05.944Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -35,7 +35,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:24:48.580Z",
+        "updatedAt": "2026-09-12T12:36:11.055Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -55,7 +55,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:24:53.641Z",
+        "updatedAt": "2026-09-12T12:36:16.136Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -75,7 +75,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:24:58.809Z",
+        "updatedAt": "2026-09-12T12:36:21.404Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -95,7 +95,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:25:04.598Z",
+        "updatedAt": "2026-09-12T12:36:26.719Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -115,7 +115,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:25:09.757Z",
+        "updatedAt": "2026-09-12T12:36:31.975Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -135,7 +135,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:25:15.077Z",
+        "updatedAt": "2026-09-12T12:36:37.245Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -155,7 +155,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:25:20.402Z",
+        "updatedAt": "2026-09-12T12:36:42.681Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -175,7 +175,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:25:26.495Z",
+        "updatedAt": "2026-09-12T12:36:48.297Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -195,7 +195,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:25:31.719Z",
+        "updatedAt": "2026-09-12T12:36:53.589Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -215,7 +215,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:25:36.929Z",
+        "updatedAt": "2026-09-12T12:36:58.831Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -235,7 +235,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:25:42.271Z",
+        "updatedAt": "2026-09-12T12:37:04.216Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -255,9 +255,9 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:25:47.869Z",
+        "updatedAt": "2026-09-12T12:37:09.710Z",
         "providersOk": 6,
-        "totalEvents": 11,
+        "totalEvents": 28,
         "matchesUpdated": 0,
         "source": "ATLAS same-origin broker · resilient loader"
       },
@@ -277,9 +277,9 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:25:52.938Z",
+        "updatedAt": "2026-09-12T12:37:15.002Z",
         "providersOk": 6,
-        "totalEvents": 11,
+        "totalEvents": 28,
         "matchesUpdated": 0,
         "source": "ATLAS same-origin broker · resilient loader"
       },
@@ -299,9 +299,9 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:25:58.266Z",
+        "updatedAt": "2026-09-12T12:37:20.362Z",
         "providersOk": 6,
-        "totalEvents": 11,
+        "totalEvents": 28,
         "matchesUpdated": 0,
         "source": "ATLAS same-origin broker · resilient loader"
       },
@@ -321,9 +321,9 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:26:03.865Z",
+        "updatedAt": "2026-09-12T12:37:25.963Z",
         "providersOk": 6,
-        "totalEvents": 11,
+        "totalEvents": 28,
         "matchesUpdated": 0,
         "source": "ATLAS same-origin broker · resilient loader"
       },
@@ -343,9 +343,9 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:26:09.753Z",
+        "updatedAt": "2026-09-12T12:37:31.762Z",
         "providersOk": 6,
-        "totalEvents": 11,
+        "totalEvents": 28,
         "matchesUpdated": 0,
         "source": "ATLAS same-origin broker · resilient loader"
       },
@@ -365,9 +365,9 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:26:15.142Z",
+        "updatedAt": "2026-09-12T12:37:37.196Z",
         "providersOk": 6,
-        "totalEvents": 11,
+        "totalEvents": 28,
         "matchesUpdated": 0,
         "source": "ATLAS same-origin broker · resilient loader"
       },
@@ -387,9 +387,9 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:26:20.852Z",
+        "updatedAt": "2026-09-12T12:37:42.632Z",
         "providersOk": 6,
-        "totalEvents": 11,
+        "totalEvents": 28,
         "matchesUpdated": 0,
         "source": "ATLAS same-origin broker · resilient loader"
       },
@@ -409,9 +409,9 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:26:26.224Z",
+        "updatedAt": "2026-09-12T12:37:48.350Z",
         "providersOk": 6,
-        "totalEvents": 11,
+        "totalEvents": 28,
         "matchesUpdated": 0,
         "source": "ATLAS same-origin broker · resilient loader"
       },
@@ -431,9 +431,9 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:26:32.323Z",
+        "updatedAt": "2026-09-12T12:37:54.299Z",
         "providersOk": 6,
-        "totalEvents": 11,
+        "totalEvents": 28,
         "matchesUpdated": 0,
         "source": "ATLAS same-origin broker · resilient loader"
       },
@@ -453,9 +453,9 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:26:37.703Z",
+        "updatedAt": "2026-09-12T12:37:59.675Z",
         "providersOk": 6,
-        "totalEvents": 11,
+        "totalEvents": 28,
         "matchesUpdated": 0,
         "source": "ATLAS same-origin broker · resilient loader"
       },
@@ -475,9 +475,9 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:26:43.157Z",
+        "updatedAt": "2026-09-12T12:38:05.067Z",
         "providersOk": 6,
-        "totalEvents": 11,
+        "totalEvents": 28,
         "matchesUpdated": 0,
         "source": "ATLAS same-origin broker · resilient loader"
       },
@@ -497,9 +497,9 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:26:48.852Z",
+        "updatedAt": "2026-09-12T12:38:10.743Z",
         "providersOk": 6,
-        "totalEvents": 11,
+        "totalEvents": 28,
         "matchesUpdated": 0,
         "source": "ATLAS same-origin broker · resilient loader"
       },
@@ -519,7 +519,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:26:54.992Z",
+        "updatedAt": "2026-09-12T12:38:16.571Z",
         "source": "ATLAS same-origin broker"
       },
       "sourceFeed": true,
@@ -538,7 +538,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:27:00.055Z",
+        "updatedAt": "2026-09-12T12:38:21.595Z",
         "source": "ATLAS same-origin broker"
       },
       "sourceFeed": true,
@@ -557,7 +557,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:27:05.118Z",
+        "updatedAt": "2026-09-12T12:38:26.637Z",
         "source": "ATLAS same-origin broker"
       },
       "sourceFeed": true,
@@ -576,7 +576,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:27:10.122Z",
+        "updatedAt": "2026-09-12T12:38:31.675Z",
         "source": "ATLAS same-origin broker"
       },
       "sourceFeed": true,
@@ -595,7 +595,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:27:20.932Z",
+        "updatedAt": "2026-09-12T12:38:43.079Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -615,7 +615,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:27:26.509Z",
+        "updatedAt": "2026-09-12T12:38:48.635Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -635,7 +635,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:27:31.771Z",
+        "updatedAt": "2026-09-12T12:38:53.898Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -655,7 +655,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:27:37.086Z",
+        "updatedAt": "2026-09-12T12:38:59.230Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -675,7 +675,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:27:42.608Z",
+        "updatedAt": "2026-09-12T12:39:04.688Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -695,7 +695,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:27:47.958Z",
+        "updatedAt": "2026-09-12T12:39:10.067Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -715,7 +715,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:27:53.315Z",
+        "updatedAt": "2026-09-12T12:39:15.424Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -735,7 +735,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:27:58.827Z",
+        "updatedAt": "2026-09-12T12:39:20.940Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -755,7 +755,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:28:04.478Z",
+        "updatedAt": "2026-09-12T12:39:26.520Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -775,7 +775,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:28:09.824Z",
+        "updatedAt": "2026-09-12T12:39:31.858Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -795,7 +795,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:28:15.218Z",
+        "updatedAt": "2026-09-12T12:39:37.242Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -815,7 +815,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:28:20.679Z",
+        "updatedAt": "2026-09-12T12:39:42.742Z",
         "source": "ATLAS same-origin broker · corroborated feed",
         "competitions": 173
       },
@@ -835,9 +835,9 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:28:26.242Z",
+        "updatedAt": "2026-09-12T12:39:48.253Z",
         "providersOk": 6,
-        "totalEvents": 11,
+        "totalEvents": 28,
         "matchesUpdated": 0,
         "source": "ATLAS same-origin broker · resilient loader"
       },
@@ -857,9 +857,9 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:28:31.685Z",
+        "updatedAt": "2026-09-12T12:39:53.685Z",
         "providersOk": 6,
-        "totalEvents": 11,
+        "totalEvents": 28,
         "matchesUpdated": 0,
         "source": "ATLAS same-origin broker · resilient loader"
       },
@@ -879,9 +879,9 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:28:37.189Z",
+        "updatedAt": "2026-09-12T12:39:59.159Z",
         "providersOk": 6,
-        "totalEvents": 11,
+        "totalEvents": 28,
         "matchesUpdated": 0,
         "source": "ATLAS same-origin broker · resilient loader"
       },
@@ -901,9 +901,9 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:28:42.776Z",
+        "updatedAt": "2026-09-12T12:40:04.751Z",
         "providersOk": 6,
-        "totalEvents": 11,
+        "totalEvents": 28,
         "matchesUpdated": 0,
         "source": "ATLAS same-origin broker · resilient loader"
       },
@@ -923,9 +923,9 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:28:48.650Z",
+        "updatedAt": "2026-09-12T12:40:10.584Z",
         "providersOk": 6,
-        "totalEvents": 11,
+        "totalEvents": 28,
         "matchesUpdated": 0,
         "source": "ATLAS same-origin broker · resilient loader"
       },
@@ -945,9 +945,9 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:28:54.194Z",
+        "updatedAt": "2026-09-12T12:40:16.152Z",
         "providersOk": 6,
-        "totalEvents": 11,
+        "totalEvents": 28,
         "matchesUpdated": 0,
         "source": "ATLAS same-origin broker · resilient loader"
       },
@@ -967,9 +967,9 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:28:59.790Z",
+        "updatedAt": "2026-09-12T12:40:21.712Z",
         "providersOk": 6,
-        "totalEvents": 11,
+        "totalEvents": 28,
         "matchesUpdated": 0,
         "source": "ATLAS same-origin broker · resilient loader"
       },
@@ -989,9 +989,9 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:29:05.549Z",
+        "updatedAt": "2026-09-12T12:40:27.500Z",
         "providersOk": 6,
-        "totalEvents": 11,
+        "totalEvents": 28,
         "matchesUpdated": 0,
         "source": "ATLAS same-origin broker · resilient loader"
       },
@@ -1011,9 +1011,9 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:29:11.591Z",
+        "updatedAt": "2026-09-12T12:40:33.492Z",
         "providersOk": 6,
-        "totalEvents": 11,
+        "totalEvents": 28,
         "matchesUpdated": 0,
         "source": "ATLAS same-origin broker · resilient loader"
       },
@@ -1033,9 +1033,9 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:29:17.087Z",
+        "updatedAt": "2026-09-12T12:40:39.007Z",
         "providersOk": 6,
-        "totalEvents": 11,
+        "totalEvents": 28,
         "matchesUpdated": 0,
         "source": "ATLAS same-origin broker · resilient loader"
       },
@@ -1055,9 +1055,9 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:29:22.713Z",
+        "updatedAt": "2026-09-12T12:40:44.646Z",
         "providersOk": 6,
-        "totalEvents": 11,
+        "totalEvents": 28,
         "matchesUpdated": 0,
         "source": "ATLAS same-origin broker · resilient loader"
       },
@@ -1077,9 +1077,9 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:29:28.442Z",
+        "updatedAt": "2026-09-12T12:40:50.422Z",
         "providersOk": 6,
-        "totalEvents": 11,
+        "totalEvents": 28,
         "matchesUpdated": 0,
         "source": "ATLAS same-origin broker · resilient loader"
       },
@@ -1099,7 +1099,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:29:34.025Z",
+        "updatedAt": "2026-09-12T12:40:55.969Z",
         "source": "ATLAS same-origin broker"
       },
       "sourceFeed": true,
@@ -1118,7 +1118,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:29:39.397Z",
+        "updatedAt": "2026-09-12T12:41:01.379Z",
         "source": "ATLAS same-origin broker"
       },
       "sourceFeed": true,
@@ -1137,7 +1137,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:29:44.772Z",
+        "updatedAt": "2026-09-12T12:41:06.789Z",
         "source": "ATLAS same-origin broker"
       },
       "sourceFeed": true,
@@ -1156,7 +1156,7 @@
       "failedRequests": [],
       "live": {
         "ok": true,
-        "updatedAt": "2026-09-12T11:29:50.086Z",
+        "updatedAt": "2026-09-12T12:41:12.098Z",
         "source": "ATLAS same-origin broker"
       },
       "sourceFeed": true,
