@@ -1,0 +1,77 @@
+name: P27 candidate audit
+on:
+  push:
+    branches: [p27-consolidation-candidate]
+    paths:
+      - '.github/workflows/p27-candidate-audit.yml'
+      - 'p27-payload/**'
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: p27-consolidation-candidate
+      - name: Decode and inspect P27 payload
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p p27/audit payload-extract
+          base64 -d p27-payload/patches.tar.gz.b64 > /tmp/p27-patches.tar.gz
+          sha256sum /tmp/p27-patches.tar.gz | tee p27/audit/payload.sha256
+          tar -tzf /tmp/p27-patches.tar.gz | tee p27/audit/payload-files.txt
+          tar -xzf /tmp/p27-patches.tar.gz -C payload-extract
+          python3 - <<'PY'
+          import os,json,hashlib
+          root='payload-extract'
+          rows=[]
+          for dp,_,fs in os.walk(root):
+            for f in fs:
+              p=os.path.join(dp,f)
+              b=open(p,'rb').read()
+              rows.append({'path':os.path.relpath(p,root),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()})
+          open('p27/audit/payload-manifest.json','w').write(json.dumps({'count':len(rows),'files':sorted(rows,key=lambda x:x['path'])},indent=2))
+          PY
+      - name: Static checks on extracted HTML and JS
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import os,re,json,subprocess,tempfile
+          root='payload-extract'; out={'html':[],'js':[],'errors':[]}
+          for dp,_,fs in os.walk(root):
+            for f in fs:
+              p=os.path.join(dp,f); rel=os.path.relpath(p,root)
+              if f.endswith('.html'):
+                s=open(p,encoding='utf-8',errors='replace').read()
+                ids=re.findall(r'\bid=["\']([^"\']+)',s,re.I)
+                dup=sorted({x for x in ids if ids.count(x)>1})
+                out['html'].append({'path':rel,'duplicateIds':dup,'hasViewport':bool(re.search(r'<meta[^>]+name=["\']viewport',s,re.I)),'espnRefs':len(re.findall(r'espn',s,re.I))})
+                for i,m in enumerate(re.finditer(r'<script(?![^>]+type=["\'](?:application/json|text/plain)["\'])[^>]*>(.*?)</script>',s,re.I|re.S)):
+                  code=m.group(1).strip()
+                  if not code: continue
+                  with tempfile.NamedTemporaryFile('w',suffix='.js',delete=False,encoding='utf-8') as t:
+                    t.write(code); n=t.name
+                  r=subprocess.run(['node','--check',n],capture_output=True,text=True)
+                  os.unlink(n)
+                  if r.returncode: out['errors'].append({'path':rel,'script':i,'error':r.stderr[-1000:]})
+              elif f.endswith('.js'):
+                r=subprocess.run(['node','--check',p],capture_output=True,text=True)
+                out['js'].append({'path':rel,'ok':r.returncode==0})
+                if r.returncode: out['errors'].append({'path':rel,'error':r.stderr[-1000:]})
+          out['pass']=not out['errors'] and all(not x['duplicateIds'] for x in out['html'])
+          open('p27/audit/static-qa.json','w').write(json.dumps(out,indent=2))
+          if not out['pass']:
+            print(json.dumps(out,indent=2)); raise SystemExit(1)
+          PY
+      - name: Commit audit reports
+        if: always()
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add p27/audit
+          git diff --cached --quiet || git commit -m 'Record P27 candidate payload audit'
+          git push origin HEAD:p27-consolidation-candidate
