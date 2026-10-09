@@ -1,0 +1,49 @@
+<style id="atlas-r18-visual-harmonization" data-atlas-r18="HOLD">
+/* Visual-only, mobile-first: preserve JS event bindings, data, and historical modules. */
+/* Preserve historical Flashscore/SportyTrader source references without duplicating filters or bookmaker controls. */
+body:not(:has(.r61-main)) .sourcebar{display:flex!important;gap:5px!important;justify-content:center!important;align-items:center!important;flex-wrap:wrap!important;overflow:hidden!important;max-width:100%!important;min-width:0!important;padding:0 3px 6px!important;margin:-3px 0 10px!important}
+body:not(:has(.r61-main)) .sourcebar:before{content:"Sources de contrôle :";font-size:9px;color:#acc7d8}
+body:not(:has(.r61-main)) .sourcebar>.src:not(.flash):not(.sportylogo),body:not(:has(.r61-main)) .sourcebar>.verified,body:not(:has(.r61-main)) .sourcebar .atlasBookmakerFilters{display:none!important}
+body:not(:has(.r61-main)) .sourcebar>.src.flash,body:not(:has(.r61-main)) .sourcebar>.src.sportylogo{display:inline-flex!important;max-width:46%!important;overflow-wrap:anywhere!important;white-space:normal!important;font-size:9px!important}
+@media (max-width: 700px) {
+  /* A has a legacy scroll-strip of eleven functional buttons; distribute those exact DOM buttons
+     into three coherent rows without creating replacements or cloning event handlers. */
+  body:not(:has(.r61-main)) .atlasTopNav {
+    display:grid!important;
+    grid-template-columns:repeat(12,minmax(0,1fr))!important;
+    gap:7px!important;align-items:stretch!important;
+    overflow:visible!important;max-width:100%!important;
+    min-width:0!important;white-space:normal!important;
+    padding:10px!important;margin:7px 0 12px!important;
+    border:1px solid #2a5278!important;border-radius:16px!important;
+    background:#061629!important;
+  }
+  body:not(:has(.r61-main)) .atlasTopNav button {
+    box-sizing:border-box!important;max-width:100%!important;min-width:0!important;
+    min-height:38px!important;padding:8px 2px!important;
+    white-space:normal!important;overflow-wrap:anywhere!important;
+    font-size:11px!important;line-height:1.15!important;
+    text-align:center!important;justify-content:center!important;
+  }
+  body:not(:has(.r61-main)) .atlasTopNav button[data-circuit="all"]{grid-row:1;grid-column:1/4}
+  body:not(:has(.r61-main)) .atlasTopNav button[data-r200-status="active"]{grid-row:1;grid-column:4/7}
+  body:not(:has(.r61-main)) .atlasTopNav button[data-r200-status="upcoming"]{grid-row:1;grid-column:7/10}
+  body:not(:has(.r61-main)) .atlasTopNav button[data-r200-status="finished"]{grid-row:1;grid-column:10/13}
+  body:not(:has(.r61-main)) .atlasTopNav button[data-circuit="wta"]{grid-row:2;grid-column:1/4}
+  body:not(:has(.r61-main)) .atlasTopNav button[data-circuit="atp"]{grid-row:2;grid-column:4/7}
+  body:not(:has(.r61-main)) .atlasTopNav button[data-circuit="ch"]{grid-row:2;grid-column:7/10}
+  body:not(:has(.r61-main)) .atlasTopNav button[data-circuit="itf"]{grid-row:2;grid-column:10/13}
+  body:not(:has(.r61-main)) .atlasTopNav button[data-bookmaker="betclic"]{grid-row:3;grid-column:1/5}
+  body:not(:has(.r61-main)) .atlasTopNav button[data-bookmaker="winamax"]{grid-row:3;grid-column:5/9}
+  body:not(:has(.r61-main)) .atlasTopNav button[data-bookmaker="unibet"]{grid-row:3;grid-column:9/13}
+  /* A legacy static sourcebar duplicates names and bookmaker buttons from the live header.
+     Preserve nodes/event listeners; remove only this redundant rendered row. */
+  /* Keep B's historically validated three groups; do not modify their ordering or events. */
+  body:has(.r61-main) .r61-main,body:has(.r61-main) .r61-sources,body:has(.r61-main) .r61-book {
+    max-width:100%!important;min-width:0!important;flex-wrap:wrap!important;
+  }
+  .atlasExtensions,.atlasReliability,.atlas-reliability,#atlasR16LiveCards {max-width:100%!important;min-width:0!important;box-sizing:border-box!important}
+  .extGrid,.extCard{min-width:0!important;box-sizing:border-box!important}
+  .extAction{box-sizing:border-box!important;max-width:100%!important;white-space:normal!important;overflow-wrap:anywhere!important}
+}
+</style>
