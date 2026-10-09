@@ -1,0 +1,86 @@
+name: ATLAS R18 public HTTPS A+B runtime QA [HOLD]
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/atlas-r18-public-live-qa.yml'
+permissions:
+  contents: read
+jobs:
+  published-live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 13
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install isolated Chromium
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Run published GitHub Pages live A+B across devices
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p qa_out
+          node --input-type=module - <<'JS'
+          import { chromium } from 'playwright';
+          import fs from 'node:fs/promises';
+          const browser=await chromium.launch({headless:true});
+          const results=[];
+          try{
+            for(const b of ['a','b']){
+              for(const device of [{name:'Android',w:390,h:844},{name:'iPhone',w:393,h:852},{name:'Tablet',w:820,h:1180},{name:'PC',w:1366,h:768}]){
+                const ctx=await browser.newContext({viewport:{width:device.w,height:device.h},locale:'fr-FR',timezoneId:'Europe/Paris'});
+                const page=await ctx.newPage(),errors=[],http=[];
+                page.on('pageerror',x=>errors.push(String(x)));
+                page.on('response',r=>{if(r.url().startsWith('https://sportscore.com/api/widget/matches/'))http.push(r.status())});
+                const url='https://lgquidal-glitch.github.io/atlas-tools/atlas-previews/r18/'+b+'/';
+                const row={branch:b.toUpperCase(),device:device.name,url,pass:false};
+                try{
+                  const nav=await page.goto(url,{waitUntil:'domcontentloaded',timeout:45000});
+                  row.pageHttp=nav.status();
+                  await page.waitForFunction("() => ['connected','hold_network','hold_stale'].includes(window.ATLAS_R12_LIVE?.mode)",null,{timeout:28000});
+                  await page.evaluate(()=>{
+                    const a=document.querySelector('#statusSelector [data-status-view="active"]');
+                    if(a&&!a.classList.contains('active'))a.click();
+                  });
+                  await page.waitForTimeout(1000);
+                  row.observation=await page.evaluate(()=>{
+                    const s=window.ATLAS_R12_LIVE||{};
+                    return {mode:s.mode,providerHttp:s.http,total:s.total,scoreRows:s.scoreRows,
+                      active:!!document.querySelector('#statusSelector [data-status-view="active"].active'),
+                      matched:s.matchedHistoric,source:s.sourceOnlyDisplayed,
+                      sourceCards:document.querySelectorAll('#atlasR18LiveCards [data-atlas-provider-card]').length,
+                      inlineCards:document.querySelectorAll('#matches .atlas-r12-inline-live').length,
+                      canonical:typeof matches==='undefined'?null:matches.length,
+                      r18Marker:!!document.querySelector('#atlas-r18-visual-harmonization'),
+                      duplicateControlsShown:(()=>{const d=document.querySelector('.sourcebar');return !!(d&&d.getClientRects().length&&getComputedStyle(d).display!=='none')})(),
+                      buttons:document.querySelectorAll('button').length,
+                      overflow:document.documentElement.scrollWidth>innerWidth+3,
+                      ageSeconds:s.ageSeconds};
+                  });
+                  await page.screenshot({path:'qa_out/R18_PUBLIC_'+b+'_'+device.name+'.png',fullPage:false});
+                  const x=row.observation;
+                  row.pass=row.pageHttp===200&&x.mode==='connected'&&x.providerHttp===200&&
+                    x.total>0&&x.canonical>0&&x.active&&!x.overflow&&x.r18Marker&&(b!=='b'||!x.duplicateControlsShown)&&
+                    x.ageSeconds>=-120&&x.ageSeconds<300&&
+                    (x.scoreRows===0||x.sourceCards+x.inlineCards>0)&&http.includes(200)&&!errors.length;
+                }catch(e){row.error=String(e).slice(0,450)}
+                row.httpStatuses=http;row.errors=errors;results.push(row);
+                console.log('ATLAS_R18_PUBLIC_LIVE',JSON.stringify(row));
+                await ctx.close();
+              }
+            }
+          }finally{await browser.close()}
+          const pass=results.filter(x=>x.pass).length;
+          console.log('ATLAS_R18_PUBLIC_LIVE_GATE',pass+'/'+results.length,pass===results.length?'PASS':'HOLD');
+          await fs.writeFile('qa_out/R18_PUBLIC_LIVE_RESULTS.json',JSON.stringify({pass,total:results.length,simulated:false,publicUrls:true,referenceModified:false,results},null,2));
+          if(pass!==results.length)process.exitCode=1;
+          JS
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-R18-PUBLIC-LIVE-CAPTURES
+          path: qa_out/
+          retention-days: 5
