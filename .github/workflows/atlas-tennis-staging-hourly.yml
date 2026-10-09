@@ -1,0 +1,88 @@
+name: ATLAS Tennis — isolated hourly ESPN staging refresh [HOLD]
+on:
+  schedule:
+    - cron: '43 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/atlas-tennis-staging-hourly.yml'
+permissions:
+  contents: write
+concurrency:
+  group: atlas-tennis-staging-espn-hourly
+  cancel-in-progress: false
+jobs:
+  refresh-only-staging:
+    if: github.repository == 'lgquidal-glitch/atlas-tools'
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - name: Checkout only ATLAS source staging branch (never main)
+        uses: actions/checkout@v4
+        with:
+          ref: atlas-tennis-data-stage-20261009
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify exact staging branch and capture stable archive checksum
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git branch --show-current)" = "atlas-tennis-data-stage-20261009"
+          test -f staging/tennis/atlas-tennis-source-HOLD.json
+          sha256sum staging/tennis/atlas-tennis-source-HOLD.json > /tmp/atlas-source-protected.sha256
+      - name: Fetch separate ESPN provisional J to J+2 snapshot
+        run: python staging/tennis/build_public_source.py --output qa_out/espn-fresh.json
+      - name: Compare with prior ESPN-only snapshot (never with the 655-event archive)
+        run: |
+          python staging/tennis/check_espn_refresh.py \
+            --candidate qa_out/espn-fresh.json \
+            --previous staging/tennis/atlas-tennis-espn-j2-HOLD.json \
+            --output qa_out/espn-refresh-gate.json
+      - name: Evaluate publication gate
+        id: gate
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          g=json.loads(Path('qa_out/espn-refresh-gate.json').read_text())
+          if g['productionModified'] or g['canonicalMultisourceModified']:
+              raise SystemExit('ATLAS refused: production or canonical changed')
+          accepted=g['acceptedForStaging'] is True
+          with open(os.environ['GITHUB_OUTPUT'],'a') as o:
+              o.write('accepted='+('true' if accepted else 'false')+'\n')
+          print('ATLAS ESPN STAGING GATE:',g['mode'],g['reasons'])
+          PY
+      - name: Update exactly one staging data file on safe PASS
+        if: steps.gate.outputs.accepted == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git branch --show-current)" = "atlas-tennis-data-stage-20261009"
+          cp qa_out/espn-fresh.json staging/tennis/atlas-tennis-espn-j2-HOLD.json
+          sha256sum -c /tmp/atlas-source-protected.sha256
+          git config user.name "atlas-tennis-staging-bot"
+          git config user.email "atlas-tennis-staging-bot@users.noreply.github.com"
+          git add -- staging/tennis/atlas-tennis-espn-j2-HOLD.json
+          if git diff --cached --quiet; then
+            echo "Snapshot unchanged; nothing to publish"
+          else
+            test "$(git diff --cached --name-only)" = "staging/tennis/atlas-tennis-espn-j2-HOLD.json"
+            git commit -m "Refresh ESPN J+2 provisional staging feed [HOLD]"
+            git push origin HEAD:refs/heads/atlas-tennis-data-stage-20261009
+          fi
+      - name: Rejected data preserves previous staging snapshot
+        if: steps.gate.outputs.accepted != 'true'
+        run: echo "HOLD — no data file changed; retained previous staging snapshot."
+      - name: Save evidence (never deploy a website)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: atlas-tennis-hourly-stage-HOLD
+          path: |
+            qa_out/espn-refresh-gate.json
+          if-no-files-found: warn
+          retention-days: 3
