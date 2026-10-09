@@ -2,12 +2,13 @@
 """ATLAS public staging: ESPN-only J→J+2 provisional snapshot generator.
 No secrets, no bookmaker claim. Does not write production UI or the default branch.
 """
-import argparse,datetime as dt,hashlib,json,pathlib,urllib.request
+import argparse,datetime as dt,hashlib,json,pathlib,re,urllib.request
 from zoneinfo import ZoneInfo
 PARIS=ZoneInfo("Europe/Paris")
 API="https://site.api.espn.com/apis/site/v2/sports/tennis/all/scoreboard"
 MAX_BYTES=4_000_000
 SAFE_STATES={"scheduled","live","finished","status_to_verify"}
+UNDECIDED_PLAYER=re.compile(r"^(?:tbd|tba|bye|unknown|to be determined|qualifier|q|lucky loser|ll|winner of(?:\\s+.*)?)$",re.I)
 
 def all_competitions(root,out):
     if isinstance(root,list):
@@ -49,7 +50,7 @@ def run(outfile):
         counted=0
         for c in comps:
             cs=c.get("competitors") or [];a,b=name(cs[0]),name(cs[1])
-            if not a or not b or a.casefold()==b.casefold():continue
+            if not a or not b or a.casefold()==b.casefold() or UNDECIDED_PLAYER.fullmatch(a) or UNDECIDED_PLAYER.fullmatch(b):continue
             event_stamp=c.get("date")
             # Unknown event dates are excluded rather than guessed from the URL.
             if not event_stamp:continue
