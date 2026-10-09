@@ -1,0 +1,169 @@
+name: ATLAS R18 A+B — gated LIVE and functional QA [HOLD]
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/atlas-r18-gated-web.yml'
+permissions:
+  contents: write
+concurrency:
+  group: atlas-r18-pages-isolated-qa
+  cancel-in-progress: false
+jobs:
+  verify-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Build R18 from exact published R17 plus isolated patches
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main gh-pages
+          git show origin/main:atlas-previews/r18-patch/visual-style.html > /tmp/atlas-r18-css.html
+          git show origin/main:atlas-previews/r18-patch/source-actions.html > /tmp/atlas-r18-actions.html
+          git checkout gh-pages
+          python3 - <<'PY'
+          from pathlib import Path
+          import json,hashlib
+          css=Path('/tmp/atlas-r18-css.html').read_text()
+          adapter=Path('/tmp/atlas-r18-actions.html').read_text()
+          assert css.startswith('<style id="atlas-r18-visual-harmonization"')
+          assert adapter.startswith('<script id="atlas-r18-source-actions"')
+          expected={'a':'d1279024d42f07e48952c96f1a4357f37e9ee9fb',
+                    'b':'2d14be09aac5b55d50125450ddce0737cf88953b'}
+          out={}
+          for branch in ('a','b'):
+            source=Path('atlas-previews/r17')/branch/'index.html'
+            target=Path('atlas-previews/r18')/branch/'index.html'
+            assert source.is_file() and not target.exists()
+            import subprocess
+            blob=subprocess.check_output(['git','hash-object',str(source)],text=True).strip()
+            assert blob==expected[branch],('R17 altered; no R18 publication',branch,blob)
+            old=source.read_text()
+            assert old.count('</head>')==old.count('</body>')==1
+            assert 'atlas-r18-source-actions' not in old
+            output=old.replace('</head>',css+'\n</head>').replace('</body>',adapter+'\n</body>')
+            target.parent.mkdir(parents=True,exist_ok=True)
+            target.write_text(output)
+            assert source.read_text()==old
+            out[branch]={'sourceGitSHA':blob,'r18sha256':hashlib.sha256(target.read_bytes()).hexdigest(),
+              'bytes':target.stat().st_size,'sameLegacyHtml':output.replace(css+'\n','').replace(adapter+'\n','')==old}
+            assert out[branch]['sameLegacyHtml']
+          print('ATLAS_R18_INTEGRITY',json.dumps(out))
+          PY
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install isolated Chromium
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Real HTTPS supplier + interaction audits on complete A+B
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/atlas-r18-evidence
+          (python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/atlas-r18-server.log 2>&1) &
+          node --input-type=module - <<'JS'
+          import {chromium} from 'playwright';
+          import fs from 'node:fs/promises';
+          const browser=await chromium.launch({headless:true});
+          const results=[];
+          const devices=[{name:'Android',w:390,h:844},{name:'iPhone',w:393,h:852},{name:'Tablet',w:820,h:1180},{name:'PC',w:1366,h:768}];
+          try{
+            for(const b of ['a','b'])for(const d of devices){
+              const context=await browser.newContext({viewport:{width:d.w,height:d.h},locale:'fr-FR',timezoneId:'Europe/Paris'});
+              const page=await context.newPage(),errors=[],network=[];
+              page.on('pageerror',e=>errors.push(String(e)));
+              page.on('response',r=>{if(r.url().startsWith('https://sportscore.com/api/widget/matches/'))network.push(r.status())});
+              await page.route('**/*',r=>{
+                const u=r.request().url();
+                return u.startsWith('http://127.0.0.1:8765/')||u.startsWith('https://sportscore.com/api/widget/matches/')?r.continue():r.abort();
+              });
+              const item={branch:b.toUpperCase(),device:d.name,pass:false,buttons:{},problems:[]};
+              try{
+                await page.goto('http://127.0.0.1:8765/atlas-previews/r18/'+b+'/',{waitUntil:'domcontentloaded',timeout:35000});
+                await page.waitForFunction("() => ['connected','hold_network','hold_stale'].includes(window.ATLAS_R12_LIVE?.mode)",null,{timeout:35000});
+                await page.waitForTimeout(800);
+                item.base=await page.evaluate(()=>{
+                  const s=window.ATLAS_R12_LIVE||{};
+                  const v=e=>e?.getBoundingClientRect().width>0&&e?.getBoundingClientRect().height>0&&getComputedStyle(e).display!=='none';
+                  const operators=(document.querySelector('.r61-main')?'.r61-book button':'.atlasTopNav button[data-bookmaker]');
+                  return {mode:s.mode,http:s.http,age:s.ageSeconds,total:s.total,
+                    live:s.live,scoreRows:s.scoreRows,matched:s.matchedHistoric,sourceOnly:s.sourceOnlyDisplayed,
+                    canonical:typeof matches==='undefined'?null:matches.length,
+                    buttons:document.querySelectorAll('button').length,
+                    extButtons:document.querySelectorAll('.extCard button').length,
+                    operators:[...document.querySelectorAll(operators)].filter(v).map(e=>e.innerText.trim()),
+                    badOverflow:document.documentElement.scrollWidth>innerWidth+3,
+                    r18Style:!!document.getElementById('atlas-r18-visual-harmonization'),
+                    topGrid:document.querySelector('.r61-main')?true:getComputedStyle(document.querySelector('.atlasTopNav')).display==='grid',
+                    duplicateBar:!!document.querySelector('.r61-main')&&v(document.querySelector('.sourcebar')),
+                    cards:document.querySelectorAll('#matches article.match,#atlasR16LiveCards article.match').length};
+                });
+                let x=item.base;
+                if(x.mode!=='connected'||x.http!==200||!network.includes(200)||x.age< -120||x.age>300||x.total<=0) item.problems.push('provider-unavailable-or-stale');
+                if(x.badOverflow||!x.r18Style||x.extButtons!==9||x.operators.length!==3||x.duplicateBar) item.problems.push('ui-structure-or-overflow');
+                if(b==='a'&&d.w<=700&&!x.topGrid)item.problems.push('mobile-top-not-grid');
+                if(x.canonical<47)item.problems.push('canonical-registry-lost');
+                if(d.name==='Android'){
+                  const statusSel=b==='a'?'.atlasTopNav button[data-r200-status="upcoming"]':'.r61-main button';
+                  const e=b==='a'?page.locator(statusSel):page.locator(statusSel).filter({hasText:'À venir'});
+                  if(await e.count()){
+                    await e.first().click({force:true,timeout:2500});
+                    const state=await e.first().getAttribute('class');
+                    item.buttons['À venir']=Boolean(state?.includes('active'));
+                    if(!item.buttons['À venir'])item.problems.push('upcoming-filter');
+                  } else item.problems.push('missing-upcoming');
+                  if(b==='b'){
+                    for(const name of ['WTA','ATP','ITF']){
+                      const btn=page.locator('#atlasR61Topbar .r61-sources button').filter({hasText:name}).first();
+                      await btn.click({force:true,timeout:2500});
+                      item.buttons[name]=await btn.getAttribute('aria-pressed')==='true';
+                      if(!item.buttons[name])item.problems.push('source-'+name);
+                    }
+                  }
+                  const ext=page.locator('#atlasExtensions .extCard button').first();
+                  if(!(await ext.isVisible()))await page.locator('#collapseExtensions').click({timeout:2500});
+                  await ext.click({timeout:2500});
+                  item.buttons['Data Trust Gate']=(await page.locator('#extWorkspace').innerText()).includes('Data Trust Gate');
+                  if(!item.buttons['Data Trust Gate'])item.problems.push('data-trust-visibility');
+                  const extCount=await page.locator('#atlasExtensions .extCard button').count();
+                  item.buttons['extensionsTotal']=extCount;
+                }
+                item.pass=item.problems.length===0&&!errors.length;
+                await page.screenshot({path:'/tmp/atlas-r18-evidence/R18_'+b+'_'+d.name+'.png',fullPage:false});
+              }catch(e){item.problems.push('error:'+String(e).slice(0,260))}
+              item.providerResponses=network;item.errors=errors;
+              results.push(item);console.log('ATLAS_R18_REAL_QA',JSON.stringify(item));
+              await context.close();
+            }
+          }finally{await browser.close()}
+          const pass=results.filter(x=>x.pass).length;
+          await fs.writeFile('/tmp/atlas-r18-evidence/results.json',JSON.stringify({version:'R18',hold:true,liveSupplier:true,pass,total:results.length,results},null,2));
+          console.log('ATLAS_R18_GATE',pass+'/'+results.length);
+          if(pass!==8)process.exitCode=1;
+          JS
+      - name: Publish ONLY R18 A/B additive previews after full PASS
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- atlas-previews/r18/a/index.html atlas-previews/r18/b/index.html
+          changed="$(git diff --cached --name-only)"
+          expected="$(printf 'atlas-previews/r18/a/index.html\natlas-previews/r18/b/index.html')"
+          test "$changed" = "$expected"
+          git commit -m 'ATLAS R18 HOLD previews — harmonized A/B + real LIVE QA 8/8'
+          git push origin HEAD:gh-pages
+          echo 'ATLAS R18 ADDITIVE PUBLICATION DONE — await public HTTPS integrity verification'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-R18-A-B-REAL-QA-HOLD
+          path: /tmp/atlas-r18-evidence/
+          retention-days: 5
+          if-no-files-found: warn
