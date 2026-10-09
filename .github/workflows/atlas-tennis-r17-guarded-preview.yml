@@ -1,0 +1,164 @@
+name: ATLAS Tennis R17 — guarded A+B mobile LIVE preview [HOLD]
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/atlas-tennis-r17-guarded-preview.yml'
+permissions:
+  contents: write
+concurrency:
+  group: atlas-tennis-r17-ghpages-additive
+  cancel-in-progress: false
+jobs:
+  verify-before-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          fetch-depth: 0
+      - name: Build two isolated R17 candidates from existing public R16 without modifying R16
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib,json
+          css="""
+          <style id="atlas-r17-mobile-nonregression">
+          @media(max-width:600px){
+          #matches article.match{display:grid!important;grid-template-columns:34px minmax(112px,1fr) 66px 102px!important;
+            box-sizing:border-box!important;width:calc(100% - 8px)!important;max-width:calc(100% - 8px)!important;
+            min-width:0!important;margin:10px 4px!important;padding:5px!important;column-gap:0!important;overflow:hidden!important}
+          #matches article.match>.meta{min-width:0!important;padding:8px 3px!important}
+          #matches article.match>.meta .circuit{max-width:100%!important;font-size:10px!important;overflow-wrap:anywhere!important}
+          #matches article.match>.meta .tourline{font-size:11px!important;max-width:100%!important;overflow-wrap:anywhere!important}
+          #matches article.match>.players{min-width:0!important;padding:24px 5px 8px 5px!important;gap:8px!important}
+          #matches article.match>.players .portraitrow{min-width:0!important;max-width:100%!important;grid-template-columns:40px minmax(0,1fr)!important;gap:5px!important}
+          #matches article.match>.players .portrait{width:38px!important;height:38px!important;min-width:38px!important;min-height:38px!important;max-width:38px!important;max-height:38px!important}
+          #matches article.match>.players .portraitrow>span:last-child{font-size:10px!important;line-height:1.24!important;white-space:normal!important;overflow-wrap:anywhere!important}
+          #matches article.match>.players .dash,#matches article.match>.players .quality,#matches article.match>.players .sporty{margin-left:0!important;max-width:100%!important;white-space:normal!important;overflow-wrap:anywhere!important}
+          #matches article.match>.state{min-width:0!important;padding:8px 2px!important;overflow-wrap:anywhere!important}
+          #matches article.match>.state .time,#matches article.match>.state .tz,#matches article.match>.state .status{font-size:9px!important;max-width:100%!important;white-space:normal!important;overflow-wrap:anywhere!important}
+          #matches article.match>.actions{min-width:0!important;padding:8px 4px!important;gap:8px!important}
+          #matches article.match>.actions .btn{box-sizing:border-box!important;display:flex!important;justify-content:center!important;align-items:center!important;
+             width:100%!important;max-width:100%!important;min-width:0!important;font-size:10px!important;line-height:1.26!important;
+             padding:7px 2px!important;min-height:47px!important;white-space:normal!important;overflow-wrap:anywhere!important}
+          #atlasR16LiveCards{max-width:100%!important;min-width:0!important}
+          #atlasR16LiveCards article.match{box-sizing:border-box!important;max-width:calc(100% - 8px)!important;width:calc(100% - 8px)!important;min-width:0!important;margin:10px 4px!important;overflow:hidden!important}
+          .atlasTopNav{overflow-x:auto!important;overscroll-behavior-x:contain!important;scrollbar-width:thin!important}
+          }
+          body:has(.r61-main) .sourcebar{display:none!important}
+          .atlas-r17-context-note{font-size:11px;line-height:1.45;margin:7px 0 11px;padding:9px 11px;color:#b8e1e6;background:rgba(11,42,63,.82);border:1px solid rgba(56,154,205,.45);border-radius:10px;overflow-wrap:anywhere}
+          </style>
+          """
+          js="""
+          <script id="atlas-r17-data-context-notice">
+          (()=>{'use strict';const status=document.querySelector('#statusSelector');if(!status||document.getElementById('atlasR17DataContext'))return;
+          const p=document.createElement('p');p.id='atlasR17DataContext';p.className='atlas-r17-context-note';
+          p.textContent='SportScore : données externes horodatées. « Live API non connectée », « clé absente » et « HTTPS non validé » concernent les autres circuits ou une ancienne archive, pas SportScore. J+15 et Betclic restent non certifiés.';
+          status.insertAdjacentElement('beforebegin',p);})();
+          </script>
+          """
+          old="if(a!==null&&b!==null)return 'Score '+a+'–'+b;"
+          new="if(a!==null&&b!==null){if(a==='0'&&b==='0')return null;return 'Score '+a+'–'+b;}"
+          evidence={}
+          for branch in ('a','b'):
+            source=Path('atlas-previews/r16')/branch/'index.html'
+            target=Path('atlas-previews/r17')/branch/'index.html'
+            assert source.is_file() and not target.exists(), 'Non-overwrite protection: '+str(target)
+            original=source.read_bytes()
+            text=original.decode('utf-8')
+            assert text.count(old)==1 and text.count('</body>')==1 and 'atlasR16LiveCards' in text
+            changed=text.replace(old,new).replace('</body>',css+js+'</body>')
+            assert changed.count('atlas-r17-context-note')>=2
+            target.parent.mkdir(parents=True,exist_ok=True)
+            target.write_text(changed,encoding='utf-8')
+            assert source.read_bytes()==original
+            evidence[branch]={'r16sha256':hashlib.sha256(original).hexdigest(),'r17sha256':hashlib.sha256(target.read_bytes()).hexdigest(),'r17bytes':target.stat().st_size}
+          Path('atlas_r17_manifest_tmp.json').write_text(json.dumps(evidence,indent=2))
+          print('ATLAS_R17_BUILD',json.dumps(evidence))
+          PY
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Chromium QA only
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Verify actual CORS SportScore and mobile R17 A/B before any publication
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/atlas-r17-qa
+          (python3 -m http.server 8799 --bind 127.0.0.1 >/tmp/atlas-r17-server.log 2>&1) &
+          node --input-type=module - <<'JS'
+          import {chromium} from 'playwright';
+          import fs from 'node:fs/promises';
+          const browser=await chromium.launch({headless:true});
+          let results=[];
+          try{
+            for(const b of ['a','b'])for(const device of [{name:'Android',w:390,h:844},{name:'iPhone',w:393,h:852},{name:'Tablet',w:820,h:1180},{name:'PC',w:1366,h:768}]){
+              const ctx=await browser.newContext({viewport:{width:device.w,height:device.h},locale:'fr-FR',timezoneId:'Europe/Paris'});
+              const page=await ctx.newPage(),errors=[],statuses=[];
+              page.on('pageerror',e=>errors.push(String(e)));
+              page.on('response',r=>{if(r.url().startsWith('https://sportscore.com/api/widget/matches/'))statuses.push(r.status())});
+              await page.route('**/*',r=>{let url=r.request().url();return url.startsWith('http://127.0.0.1:8799/')||url.startsWith('https://sportscore.com/api/widget/matches/')?r.continue():r.abort()});
+              const record={branch:b.toUpperCase(),device:device.name,pass:false};
+              try{
+                await page.goto('http://127.0.0.1:8799/atlas-previews/r17/'+b+'/',{waitUntil:'domcontentloaded',timeout:28000});
+                await page.waitForFunction("()=>['connected','hold_network','hold_stale'].includes(window.ATLAS_R12_LIVE?.mode)",null,{timeout:28000});
+                await page.waitForTimeout(800);
+                record.display=await page.evaluate(()=>{
+                  const source=window.ATLAS_R12_LIVE||{};
+                  const first=document.querySelector('#matches article.match');
+                  const card=first?.getBoundingClientRect();
+                  return {mode:source.mode,http:source.http,age:source.ageSeconds,total:source.total,
+                    canonical:typeof matches==='undefined'?null:matches.length,buttons:document.querySelectorAll('button').length,
+                    context:!!document.getElementById('atlasR17DataContext'),
+                    mobileGrid:first?getComputedStyle(first).gridTemplateColumns.split(' ').length:0,
+                    sourcebarVisible:!!document.querySelector('.sourcebar')?.getClientRects().length&&getComputedStyle(document.querySelector('.sourcebar')).display!=='none',
+                    score:source.rows?.filter(r=>r.live).map(x=>x.score),
+                    docOverflow:document.documentElement.scrollWidth>innerWidth+3,
+                    firstCardRight:card?.right??null,viewport:innerWidth};
+                });
+                const d=record.display;
+                record.pass=d.mode==='connected'&&d.http===200&&statuses.includes(200)&&
+                  d.total>0&&d.age>=-120&&d.age<300&&d.canonical>0&&d.context&&!d.docOverflow&&
+                  d.mobileGrid===(device.w<=600?4:d.mobileGrid)&&
+                  (d.firstCardRight===null||d.firstCardRight<=d.viewport+2)&&
+                  (b!=='b'||!d.sourcebarVisible)&&errors.length===0;
+                if(device.name==='Android')await page.screenshot({path:'/tmp/atlas-r17-qa/R17_'+b+'.png',fullPage:false});
+              }catch(e){record.error=String(e).slice(0,360)}
+              record.network=statuses;record.errors=errors;
+              console.log('ATLAS_R17_HTTPS_QA',JSON.stringify(record));
+              results.push(record);await ctx.close();
+            }
+          }finally{await browser.close()}
+          const pass=results.filter(x=>x.pass).length;
+          await fs.writeFile('/tmp/atlas-r17-qa/results.json',JSON.stringify({pass,total:results.length,realSupplier:true,referenceModified:false,results},null,2));
+          console.log('ATLAS_R17_GATE',pass+'/'+results.length,pass===8?'PASS':'HOLD');
+          if(pass!==8)process.exitCode=1;
+          JS
+      - name: Publish ONLY two new preview paths after QA PASS
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "atlas-r17-preview-bot"
+          git config user.email "atlas-r17-preview-bot@users.noreply.github.com"
+          git add -- atlas-previews/r17/a/index.html atlas-previews/r17/b/index.html
+          diff="$(git diff --cached --name-only)"
+          printf 'Changed paths:\n%s\n' "$diff"
+          [ "$diff" = "$(printf 'atlas-previews/r17/a/index.html\natlas-previews/r17/b/index.html')" ]
+          git commit -m 'ATLAS R17 preview only: responsive cards, 0–0 truth gate, consolidated B controls'
+          git push origin HEAD:gh-pages
+          echo "R17 candidate URLs after GitHub Pages rebuild:"
+          echo "https://lgquidal-glitch.github.io/atlas-tools/atlas-previews/r17/a/"
+          echo "https://lgquidal-glitch.github.io/atlas-tools/atlas-previews/r17/b/"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-R17-REAL-NETWORK-QA-HOLD
+          path: /tmp/atlas-r17-qa/
+          retention-days: 5
+          if-no-files-found: warn
