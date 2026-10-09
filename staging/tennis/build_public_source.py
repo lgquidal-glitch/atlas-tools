@@ -8,7 +8,7 @@ PARIS=ZoneInfo("Europe/Paris")
 API="https://site.api.espn.com/apis/site/v2/sports/tennis/all/scoreboard"
 MAX_BYTES=4_000_000
 SAFE_STATES={"scheduled","live","finished","status_to_verify"}
-UNDECIDED_PLAYER=re.compile(r"^(?:tbd|tba|bye|unknown|to be determined|qualifier|q|lucky loser|ll|winner of(?:\\s+.*)?)$",re.I)
+UNDECIDED_PLAYER=re.compile(r"^(?:tbd|tba|bye|unknown|to be determined|qualifier|q|lucky loser|ll|winner of(?:\s+.*)?)$",re.I)
 
 def all_competitions(root,out):
     if isinstance(root,list):
