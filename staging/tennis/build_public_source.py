@@ -2,7 +2,7 @@
 """ATLAS public staging: ESPN-only J→J+2 provisional snapshot generator.
 No secrets, no bookmaker claim. Does not write production UI or the default branch.
 """
-import argparse,datetime as dt,json,pathlib,urllib.request
+import argparse,datetime as dt,hashlib,json,pathlib,urllib.request
 from zoneinfo import ZoneInfo
 PARIS=ZoneInfo("Europe/Paris")
 API="https://site.api.espn.com/apis/site/v2/sports/tennis/all/scoreboard"
@@ -41,9 +41,11 @@ def sets(a,b):
 
 def run(outfile):
     now=dt.datetime.now(PARIS);days=[now.date()+dt.timedelta(days=i) for i in range(3)]
-    out=[];seen=set();daily=[]
+    out=[];seen=set();daily=[];fingerprints=[]
     for day in days:
         raw=fetch(day);comps=[];all_competitions(raw,comps)
+        fingerprint=hashlib.sha256('|'.join(sorted(str(x.get('id') or '') for x in comps)).encode()).hexdigest()[:16]
+        fingerprints.append(fingerprint)
         counted=0
         for c in comps:
             cs=c.get("competitors") or [];a,b=name(cs[0]),name(cs[1])
@@ -84,20 +86,29 @@ def run(outfile):
                 "score":score,"source":"ESPN","source_trust":"Source simple provisoire",
                 "consensus":"SINGLE_SOURCE","_atlas_gate":"REVIEW" if status in ("live","status_to_verify") else "ALLOW"
             })
-        daily.append({"date":day.isoformat(),"recordsFound":counted,"upstreamParsed":len(comps)})
+        daily.append({"date":day.isoformat(),"recordsFound":0,"acceptedDuringRequest":counted,"upstreamParsed":len(comps),"sourceFingerprint":fingerprint})
+    # Count actual event dates, never the date of the API request that returned them.
+    for item in daily:
+        item["recordsFound"]=sum(m["date"]==item["date"] for m in out)
+    request_dates_distinct=(len(set(fingerprints))==len(fingerprints))
     if len(out)<20:raise ValueError("Too few valid matches: refuse update")
     if len(out)>3000:raise ValueError("Too many matches: refuse update")
     obj={"schema":"atlas-tennis-sandbox-bridge-v1","source":"ESPN public scoreboard",
          "generatedAt":now.isoformat(timespec="seconds"),"rowsCount":len(out),"uniqueIds":len(seen),
          "rows":sorted(out,key=lambda x:(x["date"],x["time"],x["player1"])),
          "sourceCoverage":daily,"windowMode":"J→J+2 priority (unverified)",
+         "dateRequestIndependenceVerified":request_dates_distinct,
+         "coverageVerified":False,"publicationEligible":False,
          "publicStaging":True,"hold":True,"productionReady":False,
          "betclicCertified":False,"j15Certified":False,"liveCertified":False}
     assert len(out)==len(seen)
     assert all(x["status"] in SAFE_STATES for x in out)
     path=pathlib.Path(outfile);path.parent.mkdir(parents=True,exist_ok=True)
     path.write_text(json.dumps(obj,ensure_ascii=False,separators=(",",":")),encoding="utf-8")
-    print("ATLAS ESPN TEST PASS",json.dumps({"rows":len(out),"dates":daily,"certified":False},ensure_ascii=False))
+    print("ATLAS ESPN PROVISIONAL QA",json.dumps({
+        "rows":len(out),"dates":daily,"certified":False,
+        "dateRequestIndependenceVerified":request_dates_distinct,
+        "publicationEligible":False},ensure_ascii=False))
 if __name__=="__main__":
     parser=argparse.ArgumentParser();parser.add_argument("--output",required=True)
     run(parser.parse_args().output)
