@@ -1,0 +1,39 @@
+name: ATLAS R18 published preview integrity A+B [HOLD]
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/atlas-r18-public-integrity.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Compare HTTPS pages against exact QA byte digests
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import urllib.request,hashlib,time
+          pairs={'a':'ef91d7b425a74bacfefc92e063e06be04a171cea9a95efcb2881ff957b2d3613',
+                 'b':'0529e16d680877d44d9cd7fc2a2ef6865d3aa13a7ce4c8f3d26d1f01ba81126f'}
+          for branch,digest in pairs.items():
+            url=f'https://lgquidal-glitch.github.io/atlas-tools/atlas-previews/r18/{branch}/'
+            failures=[]
+            for trial in range(7):
+              try:
+                with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'ATLAS-R18-preview-integrity-QA'}),timeout=20) as r:
+                  raw=r.read();actual=hashlib.sha256(raw).hexdigest()
+                  if r.status!=200 or actual!=digest:
+                    raise AssertionError(f'HTTP {r.status}, sha {actual}, expected {digest}')
+                  print('ATLAS_R18_PUBLIC_PASS',branch.upper(),url,'HTTP',r.status,'bytes',len(raw),'SHA256',actual)
+                  break
+              except Exception as e:
+                failures.append(str(e)[:150])
+                time.sleep(4)
+            else:
+              print('ATLAS_R18_HOLD',branch,failures)
+              raise SystemExit(1)
+          print('ATLAS R18 BOTH VERIFIED 2/2: no old page overwritten')
+          PY
