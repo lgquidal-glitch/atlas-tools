@@ -3,10 +3,12 @@
 Checks every write of the independently refreshed ESPN J→J+2 feed.
 Does not certify Betclic or touch HTML, live production or the 655-event archive.
 """
-import argparse, datetime as dt, json, sys
+import argparse, datetime as dt, json, sys, re
 from zoneinfo import ZoneInfo
 from collections import Counter
 from pathlib import Path
+
+UNDECIDED_PLAYER=re.compile(r"^(?:tbd|tba|bye|unknown|to be determined|qualifier|q|lucky loser|ll|winner of(?:\s+.*)?)$",re.I)
 
 def check(path, multisource, now=None):
     now=now or dt.datetime.now(dt.timezone.utc)
@@ -50,6 +52,8 @@ def check(path, multisource, now=None):
         counts[row.get("date")]+=1
         if row.get("source")!="ESPN":failures.append("unknown_source")
         if not row.get("player1") or not row.get("player2"):failures.append("player_missing")
+        if any(UNDECIDED_PLAYER.fullmatch(str(row.get(k) or "").strip()) for k in ("player1","player2")):
+            failures.append("undecided_opponent")
         if row.get("status") not in ("scheduled","live","finished","status_to_verify"):
             failures.append("invalid_status")
         if row.get("status")=="finished" and row.get("score") is None:
