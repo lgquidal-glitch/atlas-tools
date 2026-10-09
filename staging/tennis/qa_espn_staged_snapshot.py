@@ -4,6 +4,7 @@ Checks every write of the independently refreshed ESPN J→J+2 feed.
 Does not certify Betclic or touch HTML, live production or the 655-event archive.
 """
 import argparse, datetime as dt, json, sys
+from zoneinfo import ZoneInfo
 from collections import Counter
 from pathlib import Path
 
@@ -37,7 +38,7 @@ def check(path, multisource, now=None):
     daily=d.get("sourceCoverage",[])
     dates=[v.get("date") for v in daily if isinstance(v,dict)]
     try:
-        today=gen.astimezone(dt.timezone(dt.timedelta(hours=2))).date()
+        today=gen.astimezone(ZoneInfo("Europe/Paris")).date()
         expected={(today+dt.timedelta(days=i)).isoformat() for i in range(3)}
         # Use the captured coverage calendar to avoid wrong daily offsets around DST changes.
         if set(dates)!=expected or len(dates)!=3:failures.append("incorrect_window")
