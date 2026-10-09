@@ -11,7 +11,7 @@ from pathlib import Path
 from collections import Counter
 
 STATES = {"scheduled", "live", "finished", "status_to_verify"}
-UNDECIDED_PLAYER=re.compile(r"^(?:tbd|tba|bye|unknown|to be determined|qualifier|q|lucky loser|ll|winner of(?:\\s+.*)?)$", re.I)
+UNDECIDED_PLAYER=re.compile(r"^(?:tbd|tba|bye|unknown|to be determined|qualifier|q|lucky loser|ll|winner of(?:\s+.*)?)$", re.I)
 FIELDS = {"event_id","date","time","tournament","player1","player2","status","status_fr",
           "score","source","source_trust","consensus","_atlas_gate"}
 BLOCKED_WORDS = ("secret","token","password","authorization","api_key","cookie","bearer")
