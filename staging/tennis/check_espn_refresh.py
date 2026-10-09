@@ -5,11 +5,13 @@ No bookmaker data, API secret, or certification is produced.
 """
 import argparse
 import datetime as dt
+import re
 import json
 from pathlib import Path
 from collections import Counter
 
 STATES = {"scheduled", "live", "finished", "status_to_verify"}
+UNDECIDED_PLAYER=re.compile(r"^(?:tbd|tba|bye|unknown|to be determined|qualifier|q|lucky loser|ll|winner of(?:\\s+.*)?)$", re.I)
 FIELDS = {"event_id","date","time","tournament","player1","player2","status","status_fr",
           "score","source","source_trust","consensus","_atlas_gate"}
 BLOCKED_WORDS = ("secret","token","password","authorization","api_key","cookie","bearer")
@@ -48,6 +50,8 @@ def check(candidate, previous=None, now=None):
         seen.add(eid)
         if not str(m.get("player1") or "").strip() or not str(m.get("player2") or "").strip():
             problems.append("player_name_missing")
+        if any(UNDECIDED_PLAYER.fullmatch(str(m.get(k) or "").strip()) for k in ("player1","player2")):
+            problems.append("undecided_opponent")
         if m.get("source")!="ESPN":problems.append("unverified_source")
         if m.get("status") not in STATES:problems.append("unsupported_status")
         if m.get("status")=="finished" and m.get("score") is None:
