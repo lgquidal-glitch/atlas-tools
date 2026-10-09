@@ -1,0 +1,45 @@
+<script id="atlas-r18-source-actions" data-atlas-r18="HOLD">
+(()=>{'use strict';
+ const urls={Flashscore:'https://www.flashscore.fr/tennis/',SportyTrader:'https://www.sportytrader.com/pronostics/tennis/'};
+ function external(target,label){
+   if(target.dataset.atlasR18Wired==='1')return;
+   target.dataset.atlasR18Wired='1';target.title='Ouvrir '+label+' sur son site officiel (nouvel onglet)';
+   if(target.tagName!=='BUTTON'){
+     target.setAttribute('role','link');target.setAttribute('tabindex','0');
+     target.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();target.click()}});
+     target.style.cursor='pointer';
+   }
+   target.addEventListener('click',()=>window.open(urls[label],'_blank','noopener,noreferrer'));
+ }
+ function setup(){
+   document.querySelectorAll('#atlasR61Topbar .r61-sources button').forEach(btn=>{
+     const label=btn.textContent.trim();
+     if(urls[label]){external(btn,label);return}
+     const key={WTA:'wta',ATP:'atp',ITF:'itf'}[label];
+     if(!key||btn.dataset.atlasR18Wired==='1')return;
+     btn.dataset.atlasR18Wired='1';
+     btn.setAttribute('aria-pressed','false');
+     btn.title='Filtrer le circuit '+label+' dans ATLAS';
+     btn.addEventListener('click',()=>{
+       const native=document.querySelector('.atlasTopNav button[data-circuit="'+key+'"]');
+       if(!native)return;
+       native.click();
+       const selected=native.classList.contains('active');
+       document.querySelectorAll('#atlasR61Topbar .r61-sources button[aria-pressed]').forEach(x=>{
+         const match=x===btn&&selected;
+         x.setAttribute('aria-pressed',match?'true':'false');
+         x.classList.toggle('atlas-r18-selected',match);
+       });
+     });
+   });
+   document.querySelectorAll('body:not(:has(.r61-main)) .sourcebar .src.flash,body:not(:has(.r61-main)) .sourcebar .src.sportylogo').forEach(el=>{
+     const label=el.classList.contains('flash')?'Flashscore':'SportyTrader';external(el,label);
+   });
+ }
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',setup,{once:true});else setup();
+})();
+</script>
+<style id="atlas-r18-source-active-css">
+#atlasR61Topbar .r61-sources button.atlas-r18-selected{background:#073b52!important;outline:1px solid #38d9fc!important;color:#e9fbff!important}
+body:not(:has(.r61-main)) .sourcebar .src[role="link"]:focus-visible{outline:2px solid #38d9fc;outline-offset:2px}
+</style>
