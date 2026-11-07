@@ -1,0 +1,48 @@
+name: ATLAS Tennis — isolated public source generator QA [HOLD]
+on:
+  pull_request:
+    paths:
+      - 'staging/tennis/build_public_source.py'
+      - '.github/workflows/atlas-tennis-stage-generator-qa.yml'
+  push:
+    branches:
+      - atlas-tennis-data-stage-20261009
+    paths:
+      - 'staging/tennis/build_public_source.py'
+      - '.github/workflows/atlas-tennis-stage-generator-qa.yml'
+permissions:
+  contents: read
+jobs:
+  verify-generator:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Generate fresh public ESPN J+2 provisional feed, separately
+        run: |
+          python staging/tennis/build_public_source.py --output qa_out/generated.json
+      - name: Check staging-only schema and no bookmaker certification
+        run: |
+          python - <<'PY'
+          import json,datetime as dt
+          from pathlib import Path
+          d=json.loads(Path('qa_out/generated.json').read_text())
+          assert d['schema']=='atlas-tennis-sandbox-bridge-v1'
+          assert not d['productionReady'] and d['hold'] and d['publicStaging']
+          assert not d['betclicCertified'] and not d['j15Certified'] and not d['liveCertified']
+          assert len(d['rows'])==d['rowsCount']==d['uniqueIds']
+          assert len({x['event_id'] for x in d['rows']})==len(d['rows'])
+          assert all(x['date'] in {a['date'] for a in d['sourceCoverage']} for x in d['rows'])
+          assert all(x['source']=='ESPN' for x in d['rows'])
+          assert not any('secret' in k.lower() or 'token' in k.lower() for x in d['rows'] for k in x)
+          print('ATLAS GENERATOR QA PASS; no production deployment')
+          PY
+      - name: Preserve candidate JSON for private QA
+        uses: actions/upload-artifact@v4
+        with:
+          name: ATLAS-TENNIS-GENERATED-PROVISIONAL-HOLD
+          path: qa_out/generated.json
+          retention-days: 3
