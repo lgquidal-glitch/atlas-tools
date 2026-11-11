@@ -1,0 +1,34 @@
+name: ATLAS Tennis — audit every ESPN staging update [HOLD]
+on:
+  push:
+    branches:
+      - atlas-tennis-data-stage-20261009
+    paths:
+      - staging/tennis/atlas-tennis-espn-j2-HOLD.json
+      - staging/tennis/qa_espn_staged_snapshot.py
+      - .github/workflows/atlas-tennis-stage-snapshot-qa.yml
+permissions:
+  contents: read
+jobs:
+  test-stage-snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify staged data and protected 655 archive
+        run: |
+          python staging/tennis/qa_espn_staged_snapshot.py \
+            --espn staging/tennis/atlas-tennis-espn-j2-HOLD.json \
+            --archive staging/tennis/atlas-tennis-source-HOLD.json \
+            --out qa_out/snapshot-audit.json
+      - name: Store evidence only
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ATLAS-HOURLY-SNAPSHOT-AUDIT-HOLD
+          path: qa_out/snapshot-audit.json
+          retention-days: 3
+          if-no-files-found: warn
